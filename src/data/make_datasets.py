@@ -14,7 +14,7 @@ lg.setLevel(RDLogger.CRITICAL)
 
 
 class FGRDataset(Dataset):
-    """Pytorch dataset for loading data"""
+    """Pytorch dataset for training and testing different models"""
 
     def __init__(
         self,
@@ -54,4 +54,31 @@ class FGRDataset(Dataset):
             mfg,
             num_features,
             target,
+        )
+
+
+class FGRPretrainDataset(Dataset):
+    """Pytorch dataset for pretraining autoencoder"""
+
+    def __init__(self, smiles: List[str], fgroups_list: List[str], tokenizer: Tokenizer) -> None:
+        """Initialize arguments
+
+        Args:
+            smiles (List[str]): List of SMILES strings
+            fgroups_list (List[str]): List of functional groups
+            tokenizer (Tokenizer): Pretrained Tokenizer
+        """
+        self.smiles = smiles
+        self.fgroups_list = fgroups_list
+        self.tokenizer = tokenizer
+
+    def __len__(self):
+        return len(self.smiles)
+
+    def __getitem__(self, idx):
+        smile = self.smiles[idx]
+        f_g, mfg = util_funcs.smiles2vector_fgr(smile, self.tokenizer, self.fgroups_list)
+        return (
+            f_g,
+            mfg,
         )
