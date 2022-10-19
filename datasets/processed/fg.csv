@@ -1,0 +1,2787 @@
+Functional_Groups,SMARTS
+Acid halides,"[F,Cl,Br][CX3](=[OX1])[#1,*&!$([OH1])&!$([SH1])]"
+Acid azides,"[CX3](=[OX1])[$([NX2]=[NX2+]=[NX1-]),$(N=[NX2+]=N),$([NX2-]-[NX2+]#[NX1])]"
+Sulphonyl halides,"[#6][Sv6X4](=[OX1])(=[OX1])[Cl,Br]"
+Sulphonyl azides,"[Sv6X4](=[OX1])(=[OX1])[$([NX2]=[NX2+]=[NX1-]),$([NX2]=[NX2+]=N)]"
+Acid anhydrides,[CX3](=[OX1])[OX2][CX3](=[OX1])
+Diacyl peroxides,[CX3](=[OX1])[OX2][OX2][CX3](=[OX1])
+Phenyl esters,[cR1]1([OX2][CX3](=[OX1])[#6])[cR1][cR1][cR1][cR1][cR1]1
+Isocyanates,[NX2]=[CX2]=[OX1]
+β-Lactams,[NX3]1[CX4][CX4][CX3]1(=[OX1])
+Thioesters,[CX3](=[SX1])[SX2]
+Haloalkanes,"[CX4][Cl,Br,I]"
+Dialkylsulfates/ sulfonates,"[$([#6][OX2][Sv6X4](=[OX1])(=[OX1])[OX2][#6]),$([#6][Sv6X4](=[OX1])(=[OX1])[OX2][#6])]"
+N-Trihalomethyl imides,"[CX3](=[OX1])[NX3]([CX4]([Cl,Br,I])([Cl,Br,I])[Cl,Br,I])[CX3](=[OX1])"
+Quinones,"[$([#6X3]1=,:[#6X3]-,:[#6X3](=[OX1])-,:[#6X3]=,:[#6X3]-,:[#6X3]1(=[OX1])),$([#6X3]1(=[OX1])-,:[#6X3](=[OX1])-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]1)]"
+Hydroquinones and O-alkyl precursors,"[#1,CX4][OX2][cR1]1[cR1][cR1][cR1]([OX2][#1,CX4])[cR1][cR1]1"
+Catechols and O-alkyl precursors,"[#1,CX4][OX2][cR1]1[cR1]([OX2][#1,CX4])[cR1][cR1][cR1][cR1]1"
+"α, β-Unsaturated aldehydes, amides, esters and ketones","[$([CX3]([#6,$([NX3]([CX3]=[OX1])([#6])[#6]),$([OX2]([CX3]=[OX1])[#6]);!$([OH][CX3]=[OX1]);!$([O-][CX3]=[OX1])])(=[OX1])[CX3]([#6,#1])=[CX3]([!a])([!a])),$([CX3H1](=[OX1])[CX3]([#6,#1])=[CX3])]"
+"Precursors of α, β-unsaturated aldehydes, amides, esters and ketones (1)","[$([CX4]([OX2])([OX2])([#6,#7,#8])[CX3]([#6,#1])=[CX3]([!a])([!a])),$([CX4H1]([OX2])([OX2])[CX3]([#6,#1])=[CX3])]"
+"1,3-Diketones","[CX4,a!r0][CX3](=[OX1])[CH2][CX3](=[OX1])[CX4,a!r0]"
+Aldehydes,"[CX3]([H])(=[OX1])[#1,CX4,a!r0]"
+Ketones,"[CX4,a!r0][CX3](=[OX1])[CX4,a!r0]"
+Formaldehyde donors,"[$([NX3][CH2][NX3]),$([NX3][CH2][OX2]),$([CX4]([F,Cl,Br,I])([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])[CH2][OH1])]"
+Precursors of aldehydes and ketones,"[CX4]([OX2])([OX2])([CX4,a!r0])[CX4,a!r0]"
+Enol precursor of aldehydes and ketones,"[CX3]=[CX3]([#6,#1])[OX2]"
+Aromatic primary and secondary amines,"[a!r0][$([NX3H2]),$([NX3H1][CX4,a!r0])]"
+N-Haloimides,"[CX3](=[OX1])[NX3]([Cl,Br])[CX3](=[OX1])"
+N-Chloro-sulfonamides,[Sv6X4](=[OX1])(=[OX1])[NX3H1]Cl
+Disullides,"[CX4,a!r0][SX2][SX2][CX4,a!r0]"
+Phenyl carbonates,"c1ccccc1[OX2][CX3](=[OX1])[OX2][CX4,a!r0]"
+Epoxides,[CX4]1[CX4][OX2]1
+1.2-Dicarbonyls,"[CX4,a!r0][CX3](=[OX1])[CX3](=[OX1])[#1,CX4,a!r0]"
+Thiazolones,"[$([SX2]1[CX3]([CX4,a!r0])=[CX3]([CX4,a!r0])[CX3](=[OX1])[NX3]1([CX4,a!r0])),$([sX2]1[cX3]([CX4,a!r0])[cX3]([CX4,a!r0])[cX3](=[OX1])[nX3]1([CX4,a!r0]))]"
+"1, 2-Diamines","[CX4,a!r0][NX3H1][CX4][CX4][NX3H1][CX4,a!r0]"
+Quaternary ammonium cation,"[NX4+]([CX4,a!r0])([CX4,a!r0])([CX4,a!r0])[CX4,a!r0]"
+Activated N-heterocycle halides,"[$(n1c([F,Cl])ncnc1),$(n1c([F,Cl])ccnc1),$(n1c([F,Cl])nccc1)]"
+Aromatic sulphuric acids and salts,"[a!r0][Sv4X3](=[OX1])[$([OH]),$([O-])]"
+Iso(thio)cyanates,"[NX2]=[CX2]=[OX1,SX1]"
+Acid imides,"[NX3]1([#1,#6])[CX3](=[OX1])[CX3]([!R])=[CX3]([!R])[CX3]1(=[OX1])"
+Activated N-heterocycles,"[$(n1c([F,Cl,$([CX2]#[NX1])])nccc1),$(n1cnccc1([F,Cl,$([CX2]#[NX1])])),$(n1cncnc1([F,Cl,$([CX2]#[NX1])]))]"
+Dialkyl sulfonates,[CX4][Sv6X4](=[OX1])(=[OX1])[OX2][CX4]
+Dialkyl sulfates,[CX4][OX2][Sv6X4](=[OX1])(=[OX1])[OX2][CX4]
+Ring strained amides,[NX3H1]1[CX4][CX4][CX3]1(=[OX1])
+Aldehydes and precursors,"[$([#1,#6;!$(C=C);!$(C#C)][CX3]([H])(=[OX1])),$([CX4;H1]([OX2])[OX2])]"
+"α, β-Unsaturated carbonyls","[CX3]=[CX3][CX3](=[OX1])[$([OX2]([CX3]=[OX1])[!#1]),$([#1][CX3]=[OX1]),$([NX3H2]([CX3]=[OX1])),$([NX3]([CX3]=[OX1])),$([CX4][CX3]=[OX1])]"
+Hydroquinones,[OH1]c1ccc([OH1])cc1
+Catechols,[OH1]c1c([OH1])cccc1
+Resorcinols,[OH1]c1cc([OH1])ccc1
+O-Alkyl hydroquinones precursors,[OH1]c1ccc([OX2][CX4])cc1
+O-Alkyl resorcinols precursors,[OH1]c1cc([OX2][CX4])ccc1
+O-Alkyl catechols precursors,[OH1]c1c([OX2][CX4])cccc1
+Thiols,[#16X2H1]
+Disulfides,*[#16X2][#16X2]*
+Diaryl peroxides,[a!r0][CX3](=[OX1])[OX2][OX2][CX3](=[OX1])[a!r0]
+Arylacyl peroxides,[a!r0][CX3](=[OX1])[OX2][OX2][CX3](=[OX1])[A]
+Haloamides,"[#6][CX3](=[OX1])[NX3]([F,Cl,Br,I])[#6]"
+Hydroperoxides and precursors,[#6][OX2][OX2][OH1]
+"1,2-Dihydroxy aromatic compounds",[OH1]aa[OH1]
+"1,4-Dihydroxy aromatic compounds",[OH1]aaaa[OH1]
+2 or 4-Hydroxysubstituted alkylphenyl ether,"[$(c1c([OX2][CX4])c([OH1])ccc1),$(c1c([OX2][CX4])ccc([OH1])c1)]"
+Aromatic amines,"[a!r0][$([NX3H2]),$([NX3H1][#6])]"
+Aromatic amines precursors,"[$([a!r0][NH1][CX3](=[OX1])),$(c1c([NX2]=[NX2][a!r0])ccc([$([NX3]([CX4])([CX4])),$([NX3H1][CX4]),$([NH2]),$([OH1])])c1)]"
+Alkyl or aryl sylfonyl halides,"[CX4,a!r0][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]"
+Sulfonamides,"c1c([Sv6X4](=[OX1])(=[OX1])[NX3H1][$([#1]),$([CX4]),$([a!r0])])ccc([NX3H2])c1"
+Dithiocarbamates,[SX2][CX3](=[SX1])[NX3]
+Hydrazines,"[#6&!$([CX3]=[OX1,SX1,NX2])][NX3H1][NX3H2,$([NX3H1][#6&!$([CX3]=[OX1,SX1,NX2])])]"
+Aromatic nitro (general),"[a!r0][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]"
+Aromatic amine (general),[a!r0][NX3H2]
+Three-membered heterocycles (general),"[NX3H1,SX2,OX2]1[CX4][CX4]1"
+Nitroso (general),[NX2]=[OX1]
+Unsubstituted heteroatom-bonded heteroatom (general),"[$([NX3H2]-[#7]),$([NX3H2]-[#8]),$([OX2H1]-[#7]),$([OX2H1]-[#8])]"
+Azo-type (general),[NX2]=[NX2]
+Aliphatic halide (general),"[CX4][Cl,Br,I]"
+Polycyclic aromatic system (general),"[$([aR3]),$([$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))])]"
+Aromatic nitroso (specific),[a!r0][NX2]=[OX1]
+Alkyl nitrite (specific),[OX1]=[NX2][OX2][CX4]
+Nitrosamine (specific),"[OX1]=[NX2][NX3]([#6,#1])[#6,#1]"
+Epoxide (specific),[CX4]1[OX2][CX4]1
+Aziridine (specific),[CX4]1[NX3H1][CX4]1
+Azide (specific),"[$([NX2]=[NX2+]=[NX1-]),$(N=[NX2+]=N),$([NX2-]-[NX2+]#[NX1])]"
+Diazo (specific),"[$([#6]=[NX2+]=N),$([#6]=[NX2]=[NX1]),$([#6]=[NX2+]=[NX1-]),$([#6]-[NX2+]#[NX1]),$([#6-]-[NX2+]#[NX1])]"
+Triazene (specific),[NX3!R][NX2!R]=[NX2!R]
+Aromatic hydroxylamine (specific),[a!r0][NX3H1][OH1]
+Aliphatic halide (specific),"[Cl,Br,I][$([CX4]);!$([CX3](=[OX1,SX1,NX2]));!$([CH2][CH2][SX2,NX3])]"
+Carboxylic acid halide (specific),"[Cl,Br,I][CX3](=[OX1])[#1,*&!$([OH1])&!$([SH1])]"
+Nitrogen and sulphur mustard (specific),"[Cl,Br,I][CH2][CH2][SX2,NX3]"
+Bay-region in polycyclic aromatic hydrocarbons (specific),[cR1H1]1[cR1H1][cR1][cR1][cR2]2[cR2]1[cR2]3[cR2]([cR1][cR1]2)[cR1][cR1][cR1H1][cR1H1]3
+K-region in polycyclic aromatic hydrocarbons (specific),[cR1]1[cR1][cR1][cR1H1][cR2]2[cR2]1[cR2]3c([cR1H1][cR1H1]2)[cR1H1][cR1][cR1][cR1]3
+Sulfonate-bonded carbon atom (additional),[CX4][Sv6X4](=[OX1])(=[OX1])[OX2]
+"α, β-Unsaturated aldehyde (additional)",[CX3]=[CX3][CX3;H1]=[OX1]
+Aliphatic N-nitro (additional),"[NX3][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1][O-]))]"
+Diazonium (additional),"[$([a!r0][NX2+]#[NX1]),$([a!r0][NX2]#[NX1])]"
+β-Propiolactone (additional),[OX2]1[CX4][CX4][CX3]1(=[OX1])
+"α,β-Unsaturated alkoxy (additional)",[CX4][OX2][CX3H1]=[CX3H1]
+1-Aryl-2-monoalkyl hydrazine (additional),[a!r0][NX3H1]-[NX3H1][CX4]
+Aromatic methylamine (additional),[a!r0][NX3;H1][CH3]
+Aromatic hydroxylamine ester (additional),[a!r0][NH][OX2][CX3](=[OX1])
+Polycyclic planar system (additional),[*R1]1[*R2]2=[*R1][*R1]=[*R1][*R1]=[*R2]2[*R1][*R2]3=[*R1][*R1]=[*R1][*R1]=[*R2]13
+Acyl halides,"[Br,Cl,F,I][CX3](=[OX1])[#1,*&!$([OH1])&!$([SH1])]"
+N-Methylol derivatives,[OX2;H1][CH2][NX3]
+Monohaloalkene,"[CX3]([CX4,#1])([F,Cl,Br,I])=[CX3]([CX4,#1])[!F!Cl!Br!I]"
+S or N mustard,"[F,Cl,Br,I][CH2][CH2][NX3,SX2][CH2][CH2][F,Cl,Br,I]"
+Propiolactones or propiosultones,"[$([OX2]1[CX4][CX4][CX3]1(=[OX1])),$([CX4]1[CX4][CX4][Sv6;X4](=[OX1])(=[OX1])[OX2]1)]"
+Epoxides and aziridines,"[CX4]1[OX2,NX3][CX4]1"
+Aliphatic halogens,"[CX4;!H0][Br,Cl,I]"
+Alkyl nitrite,[OX1]=[NX2][OX2][CX4]
+Simple aldehyde,"[CX3]([H])(=[OX1])[#1,#6&!$([CX3]=[CX3])]"
+Hydrazine,[NX3;!$([NX3](=[OX1])=[OX1]);!$([NX3+](=[OX1])[O-])][NX3;!$([NX3](=[OX1])=[OX1]);!$([NX3+](=[OX1])[O-])]
+Aliphatic azo and azoxy,"[$([C,#1][NX2]=[NX2][C,#1]),$([CX3]=[NX2+]=N),$([CX3]=[NX2+]=[NX1-]),$([CX3-][NX2+]#[NX1]),$([CX3][NX2]#[NX1]),$(C[NX2]=N(=O)[*]),$(C[NX2]=[N+]([O-])[*])]"
+Isocyanate and isothiocyanate groups,"[NX2]=[CX2]=[OX1,Sv2X1]"
+Alkyl carbamate   and  thiocarbamate,"[NX3]([C,#1])([C,#1])[CX3](=[OX1,Sv2X1])[OX2,Sv2X2]C"
+Thiocarbonyl,"[$([NX3][CX3](=[Sv2X1])[NX3]),$([CX3;!$(C[OH]);!$(C[SH]);!$(C[O-]);!$(C[S-]);!$(CO[#6])](=[Sv2X1])[NX3])]"
+Heterocyclic polycyclic aromatic hydrocarbons,"[$([aR3].[n,o,s]),$([$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[n,o,s])]"
+Alkyl and aryl N-nitroso groups,[#6][NX3][NX2]=[OX1]
+Azide and triazene groups,"[$([NX2!R]=[NX2!R][NX3!R]),$([NX2]=[NX2+]=[NX1-]),$([NX2]=[NX2+]=N)]"
+Aliphatic N-nitro group,"[NX3]([#1,C])([#1,C])[$([NX3+](=[OX1])[O-]),$([NX3](=O)=O)]"
+"α, β-Unsaturated aliphatic alkoxy group",C[CX3;H1]=[CX3;H1][OX2][#6]
+Aromatic nitroso group,[a!r0][NX2]=[OX1]
+Aromatic ring N-oxide,[O-][N+]1=CC=CC=C1
+Coumarins and furocoumarins,"[$(c1cccc2c1oc(=O)cc2),$(C1=CC(=O)OC2=CC=CC=C12),$(C1=CC(=O)Oc2ccccc12)]"
+Halogenated benzene,"c1ccccc1[$([Br,Cl,F,I]);!$([Br,Cl,F,I]aa[Br,Cl,F,I]);!$([Br,Cl,F,I]aaa[Br,Cl,F,I]);!$([Br,Cl,F,I]aa([OH])a([OH])a[OH]);!$([Br,Cl,F,I]aaa([OH])a([OH])a[OH]);!$([Br,Cl,F,I]aa([OH])a([OH])aa[OH])]"
+Halogenated PAH,"[Br,Cl,F,I][$([cR1]1[cR1][cR1][cR1][cR1][cR1]1-[cR1]2[cR1][cR1][cR1][cR1][cR1]2),$([cR1]1[cR1][cR1][cR1][cR2]2[cR2]1[cR1][cR1][cR1][cR1]2)]"
+Halogenated dibenzodioxins,"[OR1]1[CR2]2=[CR1][CR1]=[CR1][CR1]=[CR2]2[OR1][CR2]3=[CR1][CR1]([F,Cl,Br,I])=[CR1][CR1]=[CR2]13"
+Primary and secondary aromatic amines,"[$([a!r0][NX3;H2]),$([a!r0][NX3;H1][CH3]),$([a!r0][NX3;H1][CH2][CH3])]"
+Tertiary aromatic amines,"a[NX3]([$([CH3]),$([CH2][CH3])])[$([CH3]),$([CH2][CH3])]"
+Secondary aromatic acetamides and formamides,"[$([a!r0][NX3;H1][CX3;H1](=[OX1])),$([a!r0][NX3;H1][CX3](=[OX1])[CH3])]"
+Nitroarenes,"[a!r0][$([NX3+](=[OX1])[O-]),$([NX3](=O)(=O))]"
+Nitrosoarenes,[a!r0][NX2]=[OX1]
+Arylhydroxylamines,"[a!r0][NX3;H1][OX2][#1,#6]"
+N-Nitroso-N-dialkylamines,[NX3]([CX4])([CX4])[NX2]=[OX1]
+N-Nitroso-N-alkylamides,"[CX4,a!r0][CX3](=[OX1])[NX3]([CX4])[NX2]=[OX1]"
+N-Nitroso-N-alkylureas,"[OX1]=[NX2][NX3]([CX4])[CX3](=[OX1])[NX3H1][CX4,a!r0]"
+N-Nitroso-N-alkylcarbamates (aka urethanes),"[OX1]=[NX2][NX3]([CX4])[CX3](=[OX1])[OX2][CX4,a!r0]"
+N-Nitroso-N-alkylnitriles,[OX1]=[NX2][NX3]([CX4])[CX2]#[NX1]
+N-Nitroso-N-hydroxylamines,[OX1]=[NX2][NX3]([OH1])[#6]
+Benzylic halides,"[a!r0][CH2][Cl,Br,I]"
+Oxiranes and aziridines,"[CX4]1[OX2,NX3][CX4]1"
+Propiolactones,[OX2]1[CX4][CX4][CX3]1(=[OX1])
+Alkyl esters of sulfonic and sulphuric acids,"[$([CX4,a!r0][Sv6X4](=[OX1])(=[OX1])[OX2][$([CH3]),$([CH2][CH3])]),$([CX4,a!r0][OX2][Sv6X4](=[OX1])(=[OX1])[OX2][$([CH3]),$([CH2][CH3])])]"
+Alkyl esters of phosphonic and phosphoric acids,"[$([CX4,a!r0][Pv5X4](=[OX1])([OX2][$([CH3]),$([CH2][CH3])])[OX2][$([CH3]),$([CH2][CH3])]),$([CX4,#1][OX2][Pv5X4](=[OX1])([OX2][CX4,#1])[OX2][$([CH3]),$([CH2][CH3])])]"
+Mixed alkyl esters of thiophosphoric acid,"[CX4][OX2][Pv5X4](=[SX1])([OX2][CX4,#1])[OX2][$([CH3]),$([CH2][CH3])]"
+Haloethylamines,"[NX3]([#1,#6])([#1,#6])[CH2][CH2][Cl,Br,I,F]"
+Haloalkylethers,"[$([#6][OX2][CH2][CH2][Cl,Br,I]),$([#6][OX2][CH2][Cl,Br,I])]"
+α-Halocarbonyl or a-halohydroxy,"[$([CX3](=[OX1])[CH2][Cl,Br,I]),$([CX4!H0]([OH1])[CH2][Cl,Br,I])]"
+Haloamines,"[#6][NX3]([#6])[Cl,Br,I,F]"
+Allylic halides and alkoxides,"[CX3]=[CX3][CH2][$([Cl,Br,I]),$([OX2])]"
+Halogenated methanes,"[CX4]([H,F,Cl,Br,I])([H,F,Cl,Br,I])([H,F,Cl,Br,I])[F,Cl,Br,I]"
+Vinyl halides,"[CX3]=[CX3H1][Cl,Br,I]"
+Isocyanate,[NX2]=[CX2]=[OX1]
+Isothiocyanate,[NX2]=[CX2]=[SX1]
+Alkyl esters of phosphonic or sulphonic acids,"[$([CX4,a][Sv6X4](=[OX1])(=[OX1])[OX2][CX4]),$([CX4,a][Pv5X4](=[OX1])([OX2][#1,CX4])[OX2][CX4])]"
+Aromatic nitro groups,"[a!r0][$([NX3+](=[OX1])[O-]),$([NX3](=[OX1])=[OX1]);!$([NX3]a(a-[!#1])a-[!#1]);!$([NX3]aa-C(=[OX1])[OH])]"
+Aromatic rings N-oxides,[O-][N+]1=CC=CC=C1
+Aromatic mono- and dialkylamino groups,"[a!r0][$([NX3H1][CH3]),$([NX3H1][CH2][CH3]),$([NX3]([CH3])[CH3]),$([NX3]([CH3])[CH2][CH3]),$([NX3]([CH2][CH3])[CH2][CH3]);!$([NX3]a(a-[!#1])a-[!#1]);!$([NX3]aa-C(=[OX1])[OH])]"
+Alkyl hydrazines,"[NX3]([CX4])([#1,CX4])[NX3]([#1,CX4])[#1,CX4]"
+Alkyl aldehydes,"[$([CX3]([H])(=[OX1])[#1,CX4])&!$([CX3]([H])(=[OX1])[CX3]=[CX3])]"
+Monohaloalkenes,"[CX3]([CX4,#1])(Cl)=[CX3]([!F!Cl!Br!I])[CX4,#1]"
+"β-Haloethyl N, S - mustards","[F,Cl,Br,I][CH2][CH2][NX3,SX2][CH2][CH2][F,Cl,Br,I]"
+N-Chloroamines,[#6][NX3]([#6])Cl
+Propiolactones and propiosultones,"[$([OX2]1[CX4][CX4][CX3]1(=[OX1])),$([CX4]1[CX4][CX4][Sv6;X4](=[OX1])(=[OX1])[OX2]1)]"
+Aromatic and aliphatic aziridinyl derivatives,[CX4]1[NX3][CX4]1
+Aromatic and aliphatic substituted primary alkyl halides,"[F,Cl,Br,I][CH2][CX4,a]"
+Derivatives of urethane (carbamates),[NX3][CX3](=[OX1])[OX2]
+Aliphatic and aromatic epoxides,"[$([CX4]1[OX2][CX4]1),$([#6]1=[#6][#8]1)]"
+Activated halo- or nitropyridines,"[$(c1([F,Cl,Br,I,$(N(=O)=O)])ncc([F,Cl,Br,I,$(N(=O)=O),$(C#N),$(C=O),$(C(F)(F)F),$(S=O)])cc1),$(c1([F,Cl,Br,I,$(N(=O)=O)])ncccc1([F,Cl,Br,I,$(N(=O)=O),$(C#N),$(C=O),$(C(F)(F)F),$(S=O)]))]"
+2-Halo- or 2-nitropyrimidines,"c1([F,Cl,Br,I,$(N(=O)=O)])ncccn1"
+4-Halo- or 4-nitropyrimidines,"c1([F,Cl,Br,I,$(N(=O)=O)])ncncc1"
+Activated 2-halo- or 2-nitropyrazines,"c1([F,Cl,Br,I,$(N(=O)=O)])ncc([F,Cl,Br,I,$(N(=O)=O),$(C#N),$(C=O),$(C(F)(F)F),$(S=O)])nc1"
+Halo- or nitro s-triazines,"c1nc([F,Cl,Br,I,$(N(=O)=O)])ncn1"
+Formaldehyde and thioformaldehyde,"[CH2]=[OX1,SX1]"
+Aliphatic aldehydes and thioaldehydes,"[CX4][CX3H1]=[OX1,SX1]"
+Aromatic aldehydes,[a][CX3H1]=[OX1]
+"α, β-Unsaturated carbonyl and thiocarbonyl compounds","C(C)(C)=CC=[OX1,SX1]"
+"α, β-Unsaturated ketones and  thioketones","[C;!r5]([C;!r5])=[C;!r5][C;!r5](C)=[OX1,SX1;!r5]"
+α-Diketones and α-dithiones,"[#6]C(=[OX1,SX1])C(=[OX1,SX1])[#6]"
+β-Diketones and β-dithiones,"[#6]C(=[OX1,SX1])[CX4]C(=[OX1,SX1])[#6]"
+"C-Nitroso compounds,  iso(thio)cyanates, (thio)cyanate esters","[#6][$([NX2]=O),$(N=C=O),$(OC#N),$(SC#N),$(N=C=S)]"
+Primary alkyl amines,[CH2][NH2]
+Tertiary alkyl amines,[CH2][NX3]([CH3])[CH3]
+"α, β-Unsaturated alkoxy","[$(CC(C)=[CH][CH2][OH]),$(CC=C(C)[CH2][OH])]"
+Three-membered heterocycles derivatives,"[CH,CH2,CH3;!$([CH2]CC=[O,S])]([F,Cl,Br,I,$(OS(=O)(=O)[#6,#1]),$(OS(=O)(=O)O[#6,#1])])[#6]1[O,N,SX2][#6]1"
+Lactones and their thio analogues,"C1C(=[O,S])[O,S][CH2,CH]1"
+Esters of aromatic and unsaturated alcohols and their thio analogues,"[$(C=C),$(C#C),a][CH2,CH][O,S][$([CH]=O),$([CH]=S),$(C(C)=O),$(C(C)=S)]"
+Aryloxy (arylthio) containing unsaturated compounds,"[$(C=C),$(C#C),a][CH2,CH][O,S][a]"
+Aliphatic N-(thio)nitroso compounds,"[CH2,CH3][NX3][NX2]=[O,S]"
+Anthracene and anthracene-containing compounds,c1ccc2cc3ccccc3cc2c1
+Phenanthrene and phenanthrene-containing compounds,c1ccc2c(c1)ccc3ccccc23
+Activated alkene (Michael acceptor) (1),"[CH2,CH]=[CH][$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Activated alkene (Michael acceptor) (2),"[CH2]=C[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Activated alkene (Michael acceptor),"aC=C[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Activated alkine,"C#C[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Activated conjugated dienes,"[CH2,CH]=[CH]C=C[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Alkenes containing a gem-dihalo-substituted terminal double bond,"C=C([F,Cl,Br,I])[F,Cl,Br,I]"
+Ortho-disubstituted benzenes,"c1c([O,NH2,NH])c([O,NH2,NH])ccc1"
+Para-disubstituted benzenes,"c1c(=[O,NH2,NH])ccc(=[O,NH2,NH])c1"
+Haloanhydrides,"[F,Cl,Br,I][CX3](=[OX1])[#1,*&!$([OH1])&!$([SH1])]"
+Acylimidazoles,[#6][CX3](=[OX1])n1cncc1
+Acylbenzotriazoles,[#6][CX3](=[OX1])n1nnc2ccccc12
+Anhydrides and mixed anhydrides,[CX3](=[OX1])[OX2][CX3](=[OX1])
+Phosphorus halogen derivatives (1),"[Pv5X4](=[OX1])([F,Cl,Br,I])([#6])[#6]"
+Phosphorus halogen derivatives (2),"[Pv5X4](=[OX1])([F,Cl,Br,I])([#8])[#6]"
+Phosphorus halogen derivatives (3),"[Pv5X4](=[OX1])([F,Cl,Br,I])([#8])[#8]"
+Phosphorus halogen derivatives (4),"[Pv5X4](=[OX1])([F,Cl,Br,I])([#7])[#6]"
+Phosphorus halogen derivatives (5),"[Pv5X4]([F,Cl,Br,I])([#6])([#6])=[SX1]"
+Phosphorus halogen derivatives (6),"[Pv5X4]([#8])([#6])([F,Cl,Br,I])(=[SX1])"
+Phosphorus halogen derivatives (7),"[Pv5X4](=[SX1])([F,Cl,Br,I])([#16])[#6]"
+Phosphorus V derivatives,[Pv5X4]([!#1])([!#1])([!#1])=[NX2]
+Carbodiimides,[#6][NX2]=[CX2]=[NX2][#6]
+Thiocyanates,[SX2][CX2]#[NX1]
+Sulfonylhalides,"[#6][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]"
+Sulfonylanhydrides,[#6][Sv6X4](=[OX1])(=[OX1])[OX2][Sv6X4](=[OX1])(=[OX1])[#6]
+Alkylsulfonates,[#6][Sv6X4](=[OX1])(=[OX1])[OX2][CX4]
+Alkylsulfates,"[#6,#1][OX2,OH1][Sv6X4](=[OX1])(=[OX1])[OX2][CX4]"
+All types of 3-valent phosphorus and similar (1),[Pv3X3]([#8])([#8])[#8]
+All types of 3-valent phosphorus and similar (2),"[Pv3X3]([#8])([#8])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (3),"[Pv3X3]([#8])([#6])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (4),"[Pv3X3]([#6])([#6])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (5),[Pv3X3]([#6])([#6])([#6])
+All types of 3-valent phosphorus and similar (6),"[Pv3X3]([#8])([#7])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (7),"[Pv3X3]([#7])([#7])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (8),"[#16][Pv3X3]([#6])[F,Cl,Br,I]"
+All types of 3-valent phosphorus and similar (9),[Pv3X3]([#7])([#7])[#7]
+All types of 3-valent phosphorus and similar (10),[PX4+]([#6])([#6])([#6])([#6])
+Hydroxamic acid haloanhydrides,"[CX3]([#6])([F,Cl,Br])=[NX2][#8]"
+Halothioanhydrides,"[#6][CX3](=[SX1])[F,Cl,Br,I]"
+Halocarbonates,"[#8][CX3](=[OX1])[F,Cl,Br,I]"
+Halocarbamates,"[#7][CX3](=[OX1])[F,Cl,Br,I]"
+Isocyanides,"[#6][$([NX2+]#[CX1-]),$([NX2]#[CX1])]"
+Azides,"[$([NX2]=[NX2+]=[NX1-]),$(N=[NX2+]=N),$([NX2-]-[NX2+]#[NX1])]"
+Thione esters,"[#6,#1][CX3](=[SX1])[OX2][#6]"
+Acylsulfides,"[#6,#1][CX3](=[OX1])[SX2][#6]"
+Thiones,[#6][CX3](=[SX1])[#6]
+Thioamides,[#6][CX3](=[SX1])[#7]
+Peroxides,[OX2][OX2]
+Acyclic disulfides and polysulfides,[SX2!R][SX2!R]
+Nitroso,[#6][NX2]=[OX1]
+Nitrates,"[#6][OX2][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+N-Nitro,"[#7][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+N-Nitroso,[#7][NX2]=[OX1]
+Azo,[#6][NX2]=[NX2][#6]
+Azoxy,"[#6][$([NX2]=[NX3+]([O-])[#6]),$([NX2]=[NX3](=[OX1])[#6])]"
+Nitroso dimers,"[$([#6][NX3+]([OX1-])=[NX3+]([OX1-])[#6]),$([#6][NX3](=[OX1])=[NX3](=[OX1])[#6])]"
+Sulfenyl halides,"[#6][Sv2X2][F,Cl,Br,I]"
+Sulfinyl halides,"[#6][Sv4X3](=[OX1])[F,Cl,Br,I]"
+Diazonium salts,"[$([NX2+]#[NX1]),$([NX2]#N)]"
+Cyclic and linear haloamidines,"[CX3](=[#7])([#7])[Cl,Br,I]"
+Aldimines and ketimines,[#6][CX3]=[NX2][#6]
+Hydrazones and similar,[CX3]=[NX2][NX3][#6]
+Hydroxylamines,[OH1][NX3][#6]
+N-Oxides,"[$([OX1-,OH1][#7X4+]([*])([*])([*])),$([OX1]=[#7X4v5]([*])([*])([*])),$([OX1]=[Nv5X3&!$([Nv5X3](=[OX1])=[OX1])](=[*])([*])),$([OX1-,OH1][#7X3+R](~[R])(~[R])),$([OX1]=[#7v5X3R](~[R])(~[R]))]"
+Aminals,N[CX4]N
+Ammonium salts,[NX4+]([#6])([#6])([#6])([#6])
+Sulfonium salts,[SX3+]([#6])([#6])([#6])
+α-Haloketones and similar,"[#6][CX3](=[OX1])[CX4][Cl,Br,I]"
+β-Haloamines,"[NX3][CX4][CX4][Cl,Br,I]"
+β-Halosulfides,"[Sv2X2][CX4][CX4][Cl,Br,I]"
+Acrylates and similar,[CX3](=[OX1])([#8])[CX3]=[CX3]
+Acrylamides,[CX3](=[OX1])([#7])[CX3]=[CX3]
+Vinylketones and similar,[CX3](=[OX1])([#6])[CX3]=[CX3]
+Vinylsulfones and similar,[Sv6X4](=[OX1])(=[OX1])[CX3]=[CX3]
+Nitrovinyl,"[CX3]=[CX3][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+Acrylonitriles,[NX1]#CC=C
+Vinylphosphonates and similar,[Pv5X4](=[OX1])([#8])([#8])[CX3]=[CX3]
+Vinylpyridines and similar,"[$(n1c([CX3]=[CX3])cccc1),$(n1cc([CX3]=[CX3])ccc1),$(n1ccc([CX3]=[CX3])cc1)]"
+Cyclic maleimide-like Michael acceptors,C1(=[OX1])C=CC(=[OX1])[NX3]1
+Ketenes,[CX3]=[CX2]=[OX1]
+Allenes,C=C=C
+Oxiranes,[CX4]1[OX2][CX4]1
+Thiiranes,[CX4]1[SX2][CX4]1
+Aziridines,[CX4]1[NX3][CX4]1
+Oxetanes,[CX4]1[OX2][CX4][CX4]1
+Thietanes,[CX4]1[SX2][CX4][CX4]1
+Selen in chain,[Sev2X2]
+O-Silyl derivatives,[Si]([#8])([#6])([#6])([#6])
+N-Silyl derivatives,[Si]([#7])([#6])([#6])([#6])
+Benzylhalogenides and similar,"c1ccccc1([CX4][Cl,Br,I])"
+Halomethyl ethers,"[F,Cl,Br,I][CX4][#8]"
+Halomethyl thioethers,"[F,Cl,Br,I][CX4][#16]"
+Halomethyl amines,"[F,Cl,Br,I][CX4][#7]"
+Iodoso and similar hypervalent compounds,[OX1]=[I!X1][#6]
+Linear thioureas,N[CX3](=[SX1])N
+Linear dithiocarbamates,N[CX3](=[SX1])S
+Trithiocarbonates,[CX3](=[SX1])(S)S
+Thioester,[CX3](=[SX1])([#6])S
+Bunte salts,[Sv6X4](=[OX1])([#8])([#8])[SX2][#6]
+Positively charged N-heterocycles,[#7v4X3R]
+Organometallic compounds,"[$([Te]~[#6]),$([As]~[#6]),$([Ge]~[#6]),$([Hg]~[#6]),$([Co]~[#6]),$([Fe]~[#6]),$([Mn]~[#6]),$([Cr]~[#6]),$([Ti]~[#6]),$([Sn]~[#6])]"
+"Isothiazolinone, isothiazolinthione and their derivatives","[#6]1=,:[#6]C(=[OX1,SX1])N[SX2]1"
+Acyl and thioacyl halides,"[!$(C=C);!$(C#C)]C(=[O,SX1])[F,Cl,Br,I]"
+Imidoyl halides,"[!$(C=C);!$(C#C)]C(=N)[F,Cl,Br,I]"
+Esters of aromatic alcohols and their thio and aza analogues,"[!$(C=C);!$(C#C)]C(=[O,SX1,N])[O,S,N][a]"
+Acid anhydrides and their thio and aza analogues,"[!$(C=C);!$(C#C)]C(=[O,SX1,N])[O,S,N]C(=[O,SX1,N])"
+Esters of unsaturated alcohols and their thio and aza analogues,"[!$(C=C);!$(C#C)]C(=[O,S,N])[O,S][$(C=C),$(C=N),$(C#C),$(C#N)]"
+"β-Lactones, β-lactams and their thio analogues","[#6]1C(=[O,S])[O,N,S][#6]1"
+Benzo-fused five-membered heterocycles,"[C,N,O,S,a]c1[n,o,s]c2ccccc2[n,o,s]1"
+(Thio)carbonyl and imine derivatives of five-membered heterocycles,"[#6]1[#6](=[N,O,S])[#7,#8,#16][#6][#7,#8,#16]1"
+Phthalic anhydrides and their thio and aza analogues,"[C,O]=[#6]1[#7,#8,#16][#6](=[O,N,SX1])c2ccccc12"
+Acylating agents,"[!$(C=C);!$(C#C)]C(=[O,SX1,N])[O,S,N][CX4,O,S][$(C=O),a,$(C=C),$(C#C),$(C=N),$(C#N)]"
+Heteryl-substituted benzenes,"C1=[C,N][$(S(=O)(=O)),$(C=[N,O]),$(S=O)][C,N]=C1c2ccccc2"
+Cyclopentanone and cyclopentathione derivatives,"[CH2,CH]=C1C(=[OX1,SX1])**C1"
+"Ortho-substituted phenols, primary and secondary amines","c1c([OH,NH2,NH])c([OH,NH2,NH,$(N=N),$(N(C)C)])ccc1"
+"Para-substituted phenols, primary and secondary amines","c1c([OH,NH2,NH])ccc([OH,NH2,NH,$(N=N),$(N(C)C)])c1"
+"Meta-substituted phenols, primary and secondary amines","c1c([OH,NH2,NH])cc([OH,NH2,NH,$(N(C)C)])cc1"
+Ortho-hydroxysubstituted methyl phenyl ether,c1([OH])c(O[CH3])cccc1
+Para-hydroxysubstituted methyl phenyl ether,c1([OH])ccc(O[CH3])cc1
+Para-hydroxysubstituted iso-allyl benzene,c1c([OH])ccc(C=C[CH3])c1
+Haloethyl-substituted aromatic compounds,"C([F,Cl,Br,I])[CH2,CH][a]"
+Para-hydroxysubstituted allylbenzene,c1([OH])ccc([CH2][CH]=[CH2])cc1
+Para-methoxysubstituted allylbenzene,c1(O[CH3])ccc([CH2][CH]=[CH2])cc1
+α-Naphthols,[OH]c1cccc2ccccc12
+vic-Difluoroalkyl group,"F[CH2,CH]C(F)[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+vic-Dichloroalkyl group,"Cl[CH2,CH]C(Cl)[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+vic-Dibromoalkyl group,"Br[CH2,CH]C(Br)[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+vic-Diiodoalkyl group,"I[CH2,CH]C(I)[$(N(=[OX1])=[OX1]),$(C=O),$(C#N),$(S=O),$(C(=O)N),$(a)]"
+Carboxylic acid anhydrides,"[$([#6]1[CX3](=[OX1])[OX2][CX3](=[OX1])[#6]1),$([#6]1[CX3](=[OX1])[OX2][CX3](=[OX1])[#6][#6]1)]"
+Dialkyl carbamoylchloride,[NX3]([CX4])([CX4])[CX3](=[OX1])Cl
+Lactones,"[$([#6&!$(C=[O,N,S])]1[OX2][CX3](=[OX1])[#6]1),$([#6&!$(C=[O,N,S])]1[OX2][CX3](=[OX1])[#6][#6]1)]"
+Sulfonic acid esters,[#6][Sv6X4!R](=[OX1])(=[OX1])[OX2!R][#6]
+Sulfuric acid esters,[#6][OX2!R][Sv6X4!R](=[OX1])(=[OX1])[OX2!R][#6]
+Phosphoric acid ester,[Pv5X4]([OX2][#6])([OX2][#6])([OX2][#6])(=[OX1])
+Cyclic sulfonic acid esters,"[$([#6]1[Sv6X4](=[OX1])(=[OX1])[OX2][#6]1),$([#6]1[Sv6X4](=[OX1])(=[OX1])[OX2][#6][#6]1),$([#6]1[Sv6X4](=[OX1])(=[OX1])[OX2][#6][#6][#6]1)]"
+Cyclic sulfuric acid esters,"[$([#6]1[OX2][Sv6X4](=[OX1])(=[OX1])[OX2][#6][#6]1),$([#6]1[OX2][Sv6X4](=[OX1])(=[OX1])[OX2][#6][#6][#6]1)]"
+Halo acetates,"[F,Cl,Br,I][#6][CX3](=[OX1])[OX2H1]"
+Halo acetamides,"[F,Cl,Br,I][#6][CX3](=[OX1])[NX3]"
+Halo ethers,"[$([F,Cl,Br,I]C[OX2]C),$([F,Cl,Br,I]CC[OX2]C)]"
+Haloethyl sulfides (S-mustard),"[F,Cl,Br,I][CX4][CX4][SX2]"
+Haloethyl amines (N-mustard),"[F,Cl,Br,I][CH2][CH2][NX3]"
+"α, β-Unsaturated amides",[#6]=[#6][CX3](=[OX1])[NX3]
+"α, β-Unsaturated nitriles",C=CC#[NX1]
+"α, β-Unsaturated aldehydes",C=C[CX3]([H])=[OX1]
+"α, β-Unsaturated nitro compounds","[#6]=[#6][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+"α, β-Unsaturated sulfones",[#6]=[#6][Sv6X4](=[OX1])(=[OX1])
+"α, β-Unsaturated carboxylic acid ester (acrylates)",[#6]=[#6][CX3](=[OX1])[OX2][#6]
+"α, β-Unsaturated carboxylic acid",[CX3]=[CX3][CX3](=[OX1])[OX2H1]
+"α, β-Unsaturated carbonyl compounds",[#6]=[#6][CX3](=[OX1])([!#1!$([OH1])])
+Alkyl halide,"[*!$([a])&!$(C=C)&!$(C#C)][CX4][F,Cl,Br,I]"
+Aryl halide,"[a!r0][F,Cl,Br,I]"
+Halogenated allylic group,"[F,Cl,Br,I][CX4][CX3]=[CX3]"
+Halogenated benzylic group,"c[CX4][F,Cl,Br,I]"
+Diazo compounds,"[$([#6]=[NX2+]=N),$([#6]=[NX2]=[NX1]),$([#6]=[NX2+]=[NX1-]),$([#6]-[NX2+]#[NX1]),$([#6-]-[NX2+]#[NX1])]"
+Organo metallic compounds,"[$([Cu][#6]),$([Ag][#6]),$([Au][#6]),$([Zn][#6]),$([Cd][#6]),$([Hg][#6]),$([Sn][#6]),$([Pb][#6]),$([As][#6]),$([Sb][#6])]"
+Ammonium compounds,[NX4+]([CX4])([CX4])([CX4])([CX4])
+Sulfonium compounds,[SX3+]([CX4])([CX4])([CX4])
+Iodine,II
+Hydrogen peroxide,[#1][OX2][OX2][#1]
+Sulfoxides,[Sv4X3](=[OX1])
+Sulfenyl iodides,[SX2][IX1]
+Sulfoxides of aliphatic disulfides,[SX2][Sv4X3](=[OX1])
+Thiosulfonates,[SX2][Sv6X4](=[OX1])(=[OX1])
+Carboxy disulfides,[SX2][SX2][CX3](=[OX1])[OX2]
+Arsenic (III) compounds,[OX1]=[AsX2]
+DDT (dichlorodiphenyltrichloroethane) and analogues,c1cc(ccc1[CH1](C(Cl)(Cl)Cl)c1ccc(cc1)Cl)Cl
+(Dithio) carbamates,"[OX2,SX2][CX3](=[OX1,SX1])[NX3]"
+Organotin compounds,[Sn][#6]
+Pyrethroids,"[$(CC(=C[CH]1C([CH]1C(=O)OC1C(=C(C(=O)C1)CC=CC=C)C)(C)C)C),$(C(=C[CH]1C([CH]1C(=O)O[CH]1C(=C(C(=O)C1)CC=CC=C)C)(C)C)(C)C(=O)OC)]"
+Organophosphorothionate esters,"[Pv5X4](=[SX1])([OX2][#6])([OX2,SX2][#6])([OX2,SX2][#6])"
+Acetates,"[CH,$([C!R](=[O,SX1])[#6!R])](=[O,SX1])[O!R,SX2!R,NX3!R][$([a;r6]),$([a;r5]),$(C=C),$(C#C)]"
+Acyclic anhydrides,"[CH,$([C!R]([O,SX2])(=[O,SX1])[#6!R])](=[O,SX1])[O!R,SX2!R][CH,$([C!R]([O,SX2])(=[O,SX1])[#6!R])]=[O,SX1]"
+Dialkyl carbamoylhalides,"[NH2!R,$([NH!R](C=O)[#6!R]),$(N(C=O)([#6!R])[#6!R])]C(=O)[F,Cl,Br,I]"
+Phosphonic acid halides,"[#6]O[P!R](=O)(O[#6])[F,Cl,Br,I,$(C#N)]"
+Cyclopropenones,"[#6]1([#1,#6])=,:[#6]([#1,#6])-,:[#6]1=O"
+β-Lactones,C1C(=O)OC1
+Thio-lactones,C1C(=O)SC1
+Azlactones,"C1=[O,SX2,NX2,CX3]CC(=[O,SX2])[O,SX2,NX3]1"
+Cyclic anhydrides,"[#6R,#8R,#16X2R][#6R](=[O,SX1])[#8R,#16X2R][#6R]([#6,#8R,#16X2])=[#8,#16X1]"
+Dithiocarbonimidic acid esters,[#6]N=C(S[#6])S[#6]
+Polarised alkene-aldehydes,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][CH]=O"
+Polarised alkene-ketones,"[$([$([CH2]),$([CH][#6])]=[CH,$(C[#6])]C(=O)[#6]);!$([#6X3]1=,:[#6X3H][CX3](=[OX1])[#6X3]=,:[#6X3][#6X3]1(=[OX1]));!$([CX3]1(=[OX1])[CX3](=[OX1])[#6X3]=,:[#6X3H][#6X3]=,:[#6X3]1)]"
+Polarised alkene-esters,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]C(=O)O[#6]"
+Polarised alkene-amides,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]C(=O)[NH2,$([NH](C=O)[#6]),$(N(C=O)([#6])[#6])]"
+Polarised alkene-nitros,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+Polarised alkene-cyanos,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]C#N"
+Polarised alkene-alkyl sulphonates,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]S(=O)(=O)O[#6]"
+Polarised alkene-alkyl sulfones,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]S(=O)(=O)[#6]"
+Polarised alkene-alkyl sulfinyls,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][SX3](=O)[#6]"
+Polarised alkene-oximes,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]C=[NX2][OH]"
+Polarised alkene-pyridines,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][$(c1ncccc1),$(c1ccncc1)]"
+Polarised alkene-pyrazines,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])]c1nccnc1"
+Polarised alkene-pyrimidines,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][$(c1ncncc1),$(c1ncccn1),$(c1cncnc1)]"
+Polarised akene-triazines,"[$([CH2]),$([CH][#6])]=[CH,$(C[#6])][$(c1ncncn1),$(c1nncnc1),$(c1nnccn1),$(c1cnncn1),$(c1nnncc1),$(c1cnnnc1)]"
+Azocarbonamides,"[NH2,$([NH](C=O)[#6]),$(N(C=O)([#6])[#6])]C(=O)N=NC(=O)[NH2,$([NH](C=O)[#6]),$(N(C=O)([#6])[#6])]"
+Allyl alcohols,"[CH2,$([CH](=C)[#6])]=[CH,$(C(=C)([CH2][OH])[#6])][CH2][OH]"
+Sulphone-sulfates,[#6][Sv6X4](=[OX1])(=[OX1])[CX4][CX4][OX2][Sv6X4](=[OX1])(=[OX1])[OH1]
+Polarised alkyne-aldehydes,"[CH,$(C(#C)[#6])]#C[CH]=O"
+Polarise alkyne-ketones,"[CH,$(C(#C)[#6])]#CC(=O)[#6]"
+Polarised alkyne-esters,"[CH,$(C(#C)[#6])]#CC(=O)O[#6]"
+Polarised alkyne-amides,"[CH,$(C(#C)[#6])]#CC(=O)[$([NH2]),$([NH](C=O)[#6]),$(N(C=O)([#6])[#6])]"
+Polarised alkyne-nitros,"[CH,$(C(#C)[#6])]#C[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+Polarised alkyne-cyano,"[CH,$(C(#C)[#6])]#CC#N"
+Polarised alkyne-alkyl sulphonates,"[CH,$(C(#C)[#6])]#CS(=O)(=O)O[#6]"
+Polarised alkyne-alkyl sulfones,"[CH,$(C(#C)[#6])]#CS(=O)(=O)[#6]"
+Polarised alkyne-alkyl sulfinyls,"[CH,$(C(#C)[#6])]#C[SX3](=O)[#6]"
+Polarised alkyne-pyridines,"[CH,$(C(#C)[#6])]#C[$(c1ncccc1),$(c1ccncc1)]"
+Polarised alkyne-pyrazines,"[CH,$(C(#C)[#6])]#Cc1nccnc1"
+Polarised alkyne-pyrimidines,"[CH,$(C(#C)[#6])]#C[$(c1ncccn1),$(c1cncnc1),$(c1ncncc1)]"
+Polarised alkyne-triazines,"[CH,$(C(#C)[#6])]#C[$(c1ncncn1),$(c1nncnc1),$(c1nnccn1),$(c1cnncn1)]"
+Propargyl alcohols,"[CH,$(C(#C)[#6])]#C[CH2][OH]"
+Benzoquinones,"[$(C1(=O)[#6]=,:[#6]C(=O)[CH]=C1),$(C1(=O)C(=O)[#6]=,:[#6][CH]=C1)]"
+Quinone-imines,"[$(C1(=O)[#6]=,:[#6][$(C=[NH]),$(C=N[CX4])][CH]=C1),$(C1(=O)[$(C=[NH]),$(C=N[CX4])][#6]=,:[#6][CH]=C1),$(C1(=O)[$(C=[NH]),$(C=N[CX4])]C=[CH][#6]=,:[#6]1)]"
+Quinone-diimines,"[$([CH]1=C[$(C=[NH]),$(C=N[CX4])][#6]=,:[#6][$(C=[NH]),$(C=N[CX4])]1),$([CH]1=C[$(C=[NH]),$(C=N[CX4])][$(C=[NH]),$(C=N[CX4])][#6]=,:[#6]1)]"
+Aminophenols,"[$(c1([OH])c[cH]c([NH2])cc1),$(c1([OH])c([NH2])cc[cH]c1)]"
+Benzenediamines,"[$(c1([NH2])c[cH]c([NH2])cc1),$(c1([NH2])c([NH2])cc[cH]c1)]"
+Quinone-methides,"[$(C1=CC(=O)[#6]=,:[#6]C1(=[CH][CX4])),$(C1(=[CH][CX4])C(=O)[#6]=,:[#6]C=C1)]"
+Pyranones,"[$([cH]1cc(=[O,NH])cc[o,n]1),$([cH]1cc(=[O,NH])[o,n]cc1),$(c1cc(=[O,NH])[o,n][cH]c1)]"
+Poly aromatic hydrocarbons,"[c;R1,R2,R3]1[c;R1,R2,R3][c;R1,R2,R3][c;R2,R3]2[c;R2,R3]([c;R1,R2,R3]1)[c;R1,R2,R3][c;R1,R2,R3][c;R1,R2,R3][c;R1,R2,R3]2"
+Mono-aldehydes,"[CH2,$([CH](=O)[CX4]),$([CH](=O)c1a(*)caaa1),$([CH](=O)c1a(*)aaa1)]=O"
+Aliphatic amines,[#6][CH2][NX3H2]
+"Di-substituted α,β-unsaturated alkenes (polarized by an aldehyde moiety)","[$(C(=C)([#6])[#6]);!$(C(=C)([#6])C=[CH2,CH])]=C[CH]=O"
+Di-substituted allyl alcohols,"C([#6])([#6])=[CH,$(C(=C)([CH2][OH])[#6])][CH2][OH]"
+"1,2-Dicarbonyls","[CH,$(C(=O)(C=O)[CX4]),$(C(=O)(C=O)c1a(*)aaaa1),$(C(=O)(C=O)c1a(*)aaa1)](=O)[CH,$(C(=O)(C=O)[#6]);!$(C(=O)(C=O)C=[CH2,CH]);!$(C(=O)(C=O)C#C)]=O"
+"1,3-Dicarbonyls","[CH,$(C(=O)([CX4]C=O)[CX4]),$(C(=O)([CX4]C=O)c1a(*)aaaa1),$(C(=O)([CX4]C=O)c1a(*)aaa1)](=O)[CX4][CH,$(C(=O)([CX4]C=O)[#6]);!$(C(=O)([CX4]C=O)C=[CH2,CH]);!$(C(=O)([CX4]C=O)C#C)]=O"
+Ethylenediamines,"[$([NH2,$([NH]([CH2])[CX4])][CH2][CH2][NH2]),$([NH]1[CH2][CH2][NH][CH2][CH2]1)]"
+Ethanolamines,"[$([NH2,$([NH]([CH2])[CX4])][CH2][CH2][OH]),$([NH]1[CH2][CH2]O[CH2][CH2]1)]"
+Piperizines,[NH]1CC[NH1]CC1
+Morpholines,O1CC[NH1]CC1
+Alkyl halides,"[CH3,$([CH2]([F,Cl,Br,I])[#6]),$([CH]([F,Br,Cl,I])([#6])[#6]);!$([CH2,CH]C=O);!$([CH2,CH][CX4][NX3,SX2]);!$([CH2,CH][CX4][F,Cl,Br,I])][F,Cl,Br,I]"
+Alkyl diazos,"[CH3,$([CH2](N=N)[#6]),$([CH](N=N)([#6])[#6])][NX2]=[NH,$(N(=N)[#6])]"
+Alkyl sulfates,"[#6]OS(=O)(=O)O[CH3,$([CH2](O)[#6]),$([CH](O)([#6])[#6])]"
+Alkyl sulphonates,"[#6]S(=O)(=O)O[CH3,$([CH2](O)[#6]),$([CH](O)([#6])[#6])]"
+Alkyl (thio)phosphates,"[#6][O,SX2]P(=[O,SX1])([O,SX2][#6])[O,SX2][CH3,$([CH2](O)[#6]),$([CH](O)([#6])[#6])]"
+Alkyl (thio)phosphonates,"[#6][O,SX2]P(=[O,SX1])([#6])[O,SX2][CH3,$([CH2](O)[#6]),$([CH](O)([#6])[#6])]"
+Allyl acetates,"[#6]C(=[O,SX1])[O,SX2][CH2,$([CH]([O,SX2])[#6])][c,CX3,CX2]"
+α-Halocarbonyls,"[$([CH]=[O,SX1]),$(C([#6])=[O,SX1])][CH2,$([CH](C=[O,SX1])[#6])][F,Cl,Br,I]"
+α-Haloalkynes,"[CH,$(C(#C)[#6])]#C[$([CH2](C#C)[F,Cl,Br,I,$(C#N),$(OS(=O)(=O)O[#6]),$(OS(=O)(=O)[#6])]),$([CH](C#C)([#6])[F,Cl,Br,I,$(C#N),$(OS(=O)(=O)O[#6]),$(OS(=O)(=O)[#6])])]"
+α-Halobenzyls,"[c][$([CH2]([c])[F,Cl,Br,I,$(C#N),$(OS(=O)(=O)O[#6]),$(OS(=O)(=O)[#6])]),$([CH]([a])([#6])[F,Cl,Br,I,$(C#N),$(OS(=O)(=O)O[#6]),$(OS(=O)(=O)[#6])])]"
+Sulfuranes,C1[SX2]C1
+Vinyl benzenes,c1([CX3!R]=[CX3!R])ccccc1
+Nitrosoureas,"[NX3]C(=O)[$([NH](C=O)[NX2]=O),$(N(C=O)([#6])[NX2]=O)]"
+Nitrosoguanidines,"[NX3]C(=[NH])[$([NH](C=[NH])[NX2]=O),$(N(C=[NH])([#6])[NX2]=O)]"
+N-Acytoxy-N-acetylphenyls,"[a][NX3](O[$([CH](O)=O),$(C(=O)(O)[#6])])[$([CH](N)=O),$(C(=O)(N)[#6])]"
+N-Acytoxy-N-alkoxyamides,"[#6]O[NX3](O[$([CH](O)=O),$(C(=O)(O)[#6])])[$([CH](N)=O),$(C(=O)(N)[#6])]"
+Thiosulphonates,[#6][SX2][SX4](=O)(=O)[#6]
+Sulfoxides of disulfides,[#6][SX2][SX3](=O)[#6]
+Aromatic sulphonic acids,[a][SX4](=O)(=O)[OH]
+Isothiazol-3-ones,"[cH,$(c(c)([sX2])[#6])]1[cH,$(c(c)(c=O)[#6])]c(=O)[nH,$(n(c=O)([sX2])[#6])][sX2]1"
+Isothiazolin-3-ones,"[CH2,$([CH](C)([SX2])[#6])]1[CH2,$([CH](C)(C=O)[#6])]C(=O)[NH,$(N(C=O)([SX2])[#6])][SX2]1"
+N-Chloro-sulphonamides,[#6][SX4](=O)(=O)[NH]Cl
+Polarized alkenes with a halogen leaving group,"C=[CH][F,Cl,Br,I]"
+Polarized alkenes with an alkyl sulphonate leaving group,C=[CH]OS(=O)(=O)[#6]
+Polarized alkenes with an alkyl sulfate leaving group,C=[CH]OS(=O)(=O)O[#6]
+Polarized alkenes with an alkyl (thio)phosphonate leaving group,"C=[CH]OP(=[O,SX])(O[#6])[#6]"
+Polarized alkenes with an alkyl (thio)phosphate leaving group,"C=[CH]OP(=[O,SX])(O[#6])O[#6]"
+Mustards,"[NX3,SX2][CH2,$([CH]([NX3,SX2])([CX4])[CX4])][CH2,$([CH]([CX4])([Cl,Br,I])[CX4])][Cl,Br,I]"
+"1,2-Dihaloalkanes","[Cl,Br,I][CH2,$([CH]([Cl,Br,I])([CX4])[CX4])][CH2,$([CH]([Cl,Br,I])([CX4])[CX4])][Cl,Br,I]"
+Activated pentafluorobenzenes,"c1([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-]),$([CH]=O),$(C#N),$(C(=O)[CH3])])c(F)c(F)c(F)c(F)c1(F)"
+Formaldehyde releasers (1),"[$(O1COCC(Br)([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])C1),$([OX2H1]CC(Br)([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])C[OX2H1])]"
+Formaldehyde releasers (2),[#7X3]1(C[OH1])C(=[OX1])[#7X3](C[OH1])C([CH3])([CH3])C1(=[OX1])
+Formaldehyde releasers (3),"C1(=[OX1])[NX3H1]C(=[OX1])[NX3H1][CX4]1(C[OH1])[NX3H1][CX3](=[OX1])[NX3!H0][#1,#6]"
+Formaldehyde releasers (4),[OH1][CX4][NX3H1][CX4][CX3](=[OX1])[OX2H1]
+Formaldehyde releasers (5),c1ccccc1[CX4][OX2][CX4][OH1]
+"Hydrazine, hydrazides","[#6,#1][NX3H1][NX3H1][#6,#1]"
+Nitrobenzenes,"a[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]"
+Dibenzazepines,N([CX4])([CX4])C1=Nc2ccccc2[NX3H1]c3c1cccc3
+Benzylamines,"[#1,CX4!R][NX3]([#1,CX4!R])[CH2]c1ccccc1"
+Propargyl amines,"[#1,CX4,$(c1ccccc1)][CX2]#[CX2][NX3]([#1,CX4,$(c1ccccc1)])[#1,CX4,$(c1ccccc1)]"
+Cyclopropyl amines,"[CX4]1[CX4][CX4]1[NX3]([#1,CX4,$(c1ccccc1)])[#1,CX4,$(c1ccccc1)]"
+"N-Substituted-4-aryl-1,2,3,6-tetrahydropyridines","[NX3]1([CX4!R])[CX4][CX3]=[CX3](c2c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c2([#1,#6,F,Cl,Br,I]))[CX4][CX4]1"
+N-Substituted-4-arylpiperidin-4-ol,"[NX3]1([CX4!R])[CX4][CX4][CX4]([OH1])(c2c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c([#1,#6,F,Cl,Br,I])c2([#1,#6,F,Cl,Br,I]))[CX4][CX4]1"
+Formamides,[CX3H1](=[OX1])[NX3H1][#6]
+Hydantoins (glycolylurea),"[NX3H1]1[CX3](=[OX1])[CX4]([#1,#6])([#1,#6])[NX3H1][CX3]1(=[OX1])"
+Thioureas,"[#1,#6][NX3]([#1,#6])[CX3](=[SX1])[#7]"
+Sulfonylureas,[#6][Sv6X4](=[OX1])(=[OX1])[NX3H1][CX3](=[OX1])[NX3H1][#6]
+Ortho- or parahydroquinones,"[$(c1([OH1])c([OH1])cccc1),$(c1([OH1])ccc([OH1])cc1)]"
+Ortho- or paraquinones,"[$([#6]1(=[OX1])-,:[#6]=,:[#6]-,:[#6](=[OX1])-,:[#6]=,:[#6]1),$([#6]1(=[OX1])-,:[#6](=[OX1])-,:[#6]=,:[#6]-,:[#6]=,:[#6]1)]"
+Ortho- or paraalkylphenols,"[$(c1([OH1])c([CX4]([#1,#6])[#1,#6])cccc1),$(c1([OH1])ccc([CX4]([#1,#6])[#1,#6])cc1)]"
+Quinone methide,"[$([OX1]=[#6X3]1-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]-,:[#6X3]1=[CX3]([#1,#6])[#1,#6]),$([OX1]=[#6]1-,:[#6]=,:[#6]-,:[#6](=[CX3]([#1,#6])[#1,#6])-,:[#6]=,:[#6]1)]"
+Benzo-dioxolanes,c1ccc([OX2]2)c([OX2][CX4H1]2[OH1])c1
+3-Methylene indoles,"c1ccc([nX3]2([#1,#6]))c(c([CH2][#1,#6])c2)c1"
+Furans,c1ccc[oX2]1
+Thiophenes,c1ccc[sX2]1
+Thiazoles and 2-amino derivatives,"[$(c1([#1,CX4!R])c([#1,CX4!R])[nX2]c([#1,CX4!R])[sX2]1),$(c1([#1,CX4!R])c([#1,CX4!R])[nX2]c([NX3]([#1,CX4!R])[#1,CX4!R])[sX2]1)]"
+Thiazolidinediones,[SX2]1[CX3](=[OX1])[NX3H1][CX3](=[OX1])[CX4]1[#6]
+2- or 4-Halopyridines,"[$(n1c([Cl,Br,I,F])cccc1),$(n1cccc([Cl,Br,I,F])cc1)]"
+Alkynes,"[#6][CX2]#[CX2][#1,#6]"
+Alkylhalides,"[$([CX4]([F,Cl,Br,I])([H,!F!Cl!Br!I])([H,!F!Cl!Br!I])[H,!F!Cl!Br!I]),$([CX4]([#6])([F,Cl,Br,I])([F,Cl,Br,I])[H,!F!Cl!Br!I])]"
+Carboxylic acids,[#6][CX3](=[OX1])[OH1]
+Fluoroethyl ethers and amines,"[$([F][CX4][$([CH2]),$([CH]),$(C[OH1])][OX2][#1,#6]),$([F][CX4][$([CH2]),$([CH]),$(C[OH1])][NX3][#6])]"
+Three-membered heterocycles,"[#6]1~[#6][#7,#8,#16]1"
+Thioles,[Sv2X2H1]
+Chlor(brom)anhydrides,"[CX3](=[OX1])[Cl,Br]"
+Sulphonic acids/esters,S(=O)(=O)O
+Trihalogensubstituted ketones,"[CX3](=[OX1])[CX4]([F,Cl,Br,I])([F,Cl,Br,I])[F,Cl,Br,I]"
+Monohalogen substituted ketones,"[CX3](=[OX1])C[Cl,Br,I]"
+Sulphonhalogenanhydrides,"S(=[OX1])(=[OX1])[F,Cl,Br,I]"
+Sulphonic acid,[Sv6X4](=[OX1])(=[OX1])[OH1]
+Phosphorus,P
+Selen,[Se]
+Bor,B
+Silicium,[Si]
+"Isocyanates, isothiocyanates","[NX2]=[CX2]=[OX1,SX1]"
+Thione,[CX3]=[SX1!R]
+β-halogen substituted carbonyls,"[CX3](=[OX1])CC[F,Cl,Br,I]"
+β-hydroxy substituted carbonyls,[CX3](=[OX1])[C!H0]C[OH1]
+gem-Dihalo propane and cyclopropane,"CC([Cl,Br,I])([Cl,Br,I])C"
+Activated halides (o-nitro substituted haloaromatics),"[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]cc[F,Cl,Br]"
+Activated halides (p-nitro substituted haloaromatics),"[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]cccc[F,Cl,Br]"
+Activated halides (α-halogen substituted N-heterocycles),"nc[F,Cl,Br]"
+Activated halides (γ-halogen substituted N-heterocycles),"nccc[F,Cl,Br]"
+Thiourea,[#7][CX3](=[SX1])[#7]
+Barbiturates,"N1C(=[OX1,SX1])NC(=[OX1,SX1])C(=C)C1(=[OX1,SX1])"
+Alkyl chains,[CX4H2!R][CH2][CH2][CX4H2!R][CH2]
+"Non-cyclic 1,2-dicarbonyls compounds",C[C!R](=[OX1])[C!R](=[OX1])C
+Crown ethers,[!#1!#6]C~C[!#1!#6]C~C[!#1!#6]C~C[!#1!#6]C~C[!#1!#6]C~C[!#1!#6]C~C
+Coumarins (1),"c1cccc2c1oc(=O)c([$(C=[OX1]),$(C=[SX1]),$(S=[OX1]),$(C#[NX1]),F,Cl,Br,I,$([CX4]([F,Cl,Br,I])([F,Cl,Br,I])([F,Cl,Br,I]));!$([CX3](=[OX1])[OH1])])[c!H0]2"
+Coumarins (2),"[cH1]1[cH1]c2c3[cH1][cH1]c(cc3oc(=O)c2[cH1]c1[OX2][$([CH2]),$([CH3])])[OX2][C!H0]"
+Coumarins (3),c1cccc2c1oc(=[OX1])[c!H0]c2
+Coumarins (4),c1cccc2c1nc(=[OX1])[c!H0]c2
+Coumarins (5),c1cccc2c1nc(=[NX2])[c!H0]c2
+Coumarins (6),"c1([F,Cl,Br,I])cc([F,Cl,Br,I])cc2c1oc(=[NX2H1])c([CX3](=[OX1])[NH2])[c!H0]2"
+Coumarins (7),c1cccc2c1oc(=[NX2])cc2
+Maleimides,C1(=[OX1])NC(=[OX1])[CX3H1]=[CX3]1
+"Michael acceptors (α,β-unsaturated carbonyls)",[CX3!H0!R]=[CX3!R][CX3]=[OX1]
+Michael acceptors (acrylonitriles),[CX3!H0!R]=[CX3!R][CX2]#[NX1]
+"Michael acceptors (α,β-unsaturated ketones)",C[CX3H1]=[CX3H1!R][CX3](=[OX1])C
+Michael acceptors (methyl acrylonitrile derivatives),C[CX3H1]=[CX3!R][CX2]#[NX1]
+o-Quinones (3),"CC(=[OX1])C(=[OX1])[#6,#7]"
+o-Quinones (5),CC(=[OX1])C(=S)C
+p-Quinones (2),"[#6]1=,:[#6]-,:[#6]=,:[#6]2-,:[#6](=,:[#6]1)-,:[#6](=[OX1])-,:[#6]4-,:[#6]3=,:[#6]2-,:[#8]-,:[#7]=,:[#6]3-,:[#6]=,:[#6]-,:[#6]4"
+p-Quinones (3),"[#6]1-,:[#6]=,:[#6]-,:[#6]=,:[#6]2-,:[#6]1-,:[#6](=[OX1])-,:[#6]4=,:[#6]3-,:[#6]2=,:[#6](-,:[#6](=[OX1])-,:[#7]-,:[#6]3=,:[#6]-,:[#6]=,:[#6]4)O"
+Hydroquinone,c1c([OH1])c([OH1])ccc1
+N-N Single bound not in a ring,[N!R][N!R]
+Ketal,CC([OX2]C)([OX2]C)C
+Acetal,[CX4H1](C)([OX2]C)([OX2])
+Acyl and sulfinyl cyanide,"[$(C(=[OX1])[CX2]#[NX1]),$(S(=[OX1])[CX2]#[NX1])]"
+Amidotetrazole,"[#7]1([CX3]=[OX1])-,:[#6]=,:[#7]-,:[#7]=,:[#7]1"
+Hydrazine and other nucleophilic NH2-groups,"[NX3H2][#7,#8]"
+Activated halo- and sulfonyl-aromatics,"c1([F,Cl,Br,I,$(C(C)=NO),$([CX2]#[NX1]),$([CX3]=[OX1]),$([CX4](F)(F)F),$([SX4](=[OX1])=[OX1]);!$([CX3](=[OX1])[OH1])])na([F,Cl,Br,I,$([SX4](=[OX1])(=[OX1])C)])a([!#7])a([!#7])a1"
+Rhodanines,N1C(=[SX1])[SX2]C(=C)[CX3]1=[OX1]
+Acyclic gem-dihalosubstituted carbon atom,"[C!R]([Cl,Br,I])[Cl,Br,I]"
+Imines,"[N!R]=[C,N]"
+Michael acceptors (carbonyl containing acrylonitrile derivatives),C[CX3H1]=[CX3!R](C(=[OX1])[!#1]~[!#1])[CX2]#[NX1]
+Over halogenated rings,"a1c([F,Cl,Br,I])c([F,Cl,Br,I])ac([F,Cl,Br,I])a1"
+o-Quinones (1),"[CX3]1(=[!#1!#6])[CX3](=[!#1!#6])[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]1"
+o-Quinones (2),CC(=[!#1!#6;!R])C(=[!#1!#6;!R])C
+o-Quinones (4),CC(=[!#1!#6;!R])S(=[OX1])(=[OX1])
+p-Quinones (1),"[#6X3]1=,:[#6X3][CX3](=[!#1!#6])[#6X3]=,:[#6X3][#6X3]1(=[!#1!#6])"
+Other undesirable policyclic (adamantane derivatives),C1C4CC9CC1CC(C4)C9
+"Other undesirable policyclic (1,3,5-triazaadamantane derivatives)",C1N4CN8CC1CN(C4)C8
+"Other undesirable policyclic (2,3-dihydro-1H-phenalene derivatives)",c1ccc2c3c1cccc3CCC2
+Other undesirable policyclic (acenaphthene derivatives),c1ccc2c3c1cccc3CC2
+Acid anhydrides and analogues,[!#1](=O)O[!#1]=O
+Acyl halides and analogues,"[C,S](=[O,S])[F,Br,Cl,I]"
+Cyano carbonyl compounds ,N#CC(=O)
+Methylendiamines (1),"[!$([C,S]=O)]N([!$([C,S]=O)])[CX4]N([!$([C,S]=O)])[!$([C,S]=O)]"
+Methylendiamines (2),"[!$([C,S]=O)][NH][CX4]N([!$([C,S]=O)])[!$([C,S]=O)]"
+Methylendiamines (3),"[!$([C,S]=O)][NH][CX4][NH][!$([C,S]=O)]"
+N-Acetoxy amines and their thio analogues,"[#7][#8][C,S]=O"
+α-Halogen substituted N-heterocycles,"[F,Br,Cl,I]-cn"
+Activated haloaromatics,"[F,Cl,Br,I][$(aa[Nv4,S!v2]),$(aaa[Nv4,S!v2]),$(aaaa[Nv4,S!v2])]"
+Compounds containing three bonded nitrogen atoms,[NX1]~[NX2]~[NX2]
+Benzyl ammoniums,cC[NX4+]
+α-Carbonyl ammoniums,C(=O)[#6][NX4+]
+Cations,"[#6+,#17+,#53+,#15+,#16+]"
+Enamines,[#6][CX3](!@N)=[CX3][#6]
+Halogen-bonded heteroatoms,"[!#1&!#6][F,Cl,Br,I]"
+Cumulated double bonds,"[C,N]=C=[C,O,N,S]"
+Acetoxy group attached to the aromatic nitrogen,C(=O)Onnn
+Singel acyclic N-N bonds,[#7]!@-N
+Activated double bonds (1),[C!H0]=C(C#N)C(=O)
+Activated double bonds (2),[!c][C!H0]=CC=O
+Activated double bonds (3),"[C!H0]=C[S,N]=O"
+N-Acyl substituted azoheterocycles,nC(=O)[#6]
+Singel acyclic N-S bonds,[NR0]-[SR0!v6]
+Acetoxy group attached to the substituted aromatic ring,"C(=O)O[$(aa[Nv4,S!v2]),$(aaa[Nv4,S!v2]),$(aaaa[Nv4,S!v2])]"
+"Oxetanes, thietanes","C1[O,S]CC1"
+Trihalomethyl ketones,"CC(=O)C([F,Cl,Br,I])([F,Cl,Br,I])[F,Cl,Br,I]"
+Phosphonates,[#6]P(=O)O[#6]
+Phosphorus containing compounds ,"NP(=[N,O,S])"
+p-Quinones,O=C1C=CC(=O)C=C1
+o-Quinones,O=C1C(=O)C=CC=C1
+"C, N, O, P and S atoms in unusual valence states","[#6!v4+0,#7!v3+0,#8!v2+0,#15!v3!v5+0,#16!v2!v4!v6+0]"
+Sulfurous acid esters,[!#1]OS(=O)O
+Heteroatom-bonded thiocarbonyls,"C(=S)[O,S,N]"
+Thiocarboxylic acids and their derivatives,[CR0](=O)S
+Thiocarbonyls,C(=S)[!#1!H0]
+"N-Acetoxy-N,N-dicarbonyl compounds",C(=O)N(C(=O))OC=O
+Trifluoromethyl sulfinyls,FC(F)(F)S(=O)
+Non-threevalent nitrogen double-bonded to oxygen,[#6!c][N!v3]=O
+Anthracenes,c12ccccc1cc3ccccc3c2
+Double acyclic N=N and N=S bonds,"[NR0,SR0]=[NR0]"
+β-Aminonaphtalenes,c1(cc(N)cc2)c2cccc1
+Dialkyl(aryl) phosphorus containing compounds,[#6]P[#6]
+"Iodosos, chlorosos","[Cl,I]=O"
+Acid grops,"[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH]"
+Phosphocyanates,PC#N
+α-Hydroxy nitriles,N#CC[OH]
+α-Diketones,[CX3R0](=O)[CX3R0](=O)
+Singel acyclic N-O bonds,[NR0v3]-[OR0]
+Activated double bonds (4),C=C(C#N)(C#N)
+Nitrites,[!#1]ON=O
+Nitroso compounds,[NX2]=O
+"Any atoms except organogens, halogens, P, S, K, Na, Mg, Ca",[!#1;!#6;!#7;!#8;!#9;!#11;!#12;!#15;!#16;!#17;!#19;!#20;!#35;!#53]
+Double P=S and P=C bonds,"P=[S,#6]"
+Pentafluorobenzenes,c1c(F)c(F)c(F)c(F)c1(F)
+Phenanthrenes,c12ccccc1ccc3ccccc23
+p-Aminoanilines,c1([NH2])ccc(!@[Nv3])cc1
+Phosphorus derivatives,[P!v5]
+Conjugated olefins,[CR0]=[CR0][CR0]=[CR0][CR0]=[CR0][CR0]=[CR0]
+Carboxylic acid esters,[CX4]C(=O)O[#6][!#1]
+"N,N-Dialkyl aniline derivatives (1)","[CX4][NX3]([CX4])c1cc([$([CX4]),$(O[CX4][CX4])])c([#7])[cH]c1"
+"N,N-Dialkyl aniline derivatives (2)",[CX4][NX3]([CX4])c1c[cH]c([#7])[cH]c1
+"N,N-Dialkyl aniline derivatives (3)",[CX4][NX3]([CX4])c1ccc(C=C)cc1
+p-Alkoxy-N-alkyl anilines,[CX4][NH]c1ccc(O[CX4])cc1
+"p-Alkoxy-N,N-dialkyl anilines",[CX4]N([CX4])c1ccc(O[CX4])cc1
+"N,N-Dialkyl aniline derivatives (4)","[CX4]N([CX4])c1ccc([CX4][$([OH]),$(C=[C!H0]),$(N[CX4])])cc1"
+"N,N-Dialkyl aniline derivatives (5)","[CX4]N([C!H0])c1[cH][cH]c([$([C!H0!H1]),$([C!H0][C!H0])])[cH][cH]1"
+"N,N-Dialkyl aniline derivatives (6)","[CX4]N([C!H0])c1[cH]c([CX4])c([$([C!H0!H1]),$([C!H0][C!H0])])[cH][cH]1"
+Phosphoric anhydrides,P(=O)OP(=O)
+Five-membered heterocycles (1),"C1(=C)C(=O)[#7,#8,#15,#16]N=C1"
+Thioxo-thiazolidinones,C1(=S)NC(=O)C(=[#6])S1
+Six-membered heterocycles,"[#7,#8,#15,#16]~C1~[#7,#8,#15,#16]~C[#7,#8,#15,#16][CX3](=[#7,#8,#15,#16])[CX3]1(=[C!H0])"
+Glutarimides,C1CC(=O)NC(=O)C1
+Aliphatic chain,[CD1][CD2][CD2][CD2][CD2][CX4]
+o-Substituted phenols (1),[OH]c1c(C=NN)cccc1
+p-Substituted phenols,[OH]c1ccc(C=NN)cc1
+"1,2-Diimines, 1,2-diketones and their thio- and phospho-analogues","[#6][#6](=[#7,#8,#15,#16])[#6](=[#7,#8,#15,#16])[#6,Sv6]"
+Indolones,O=C1[#7]c2ccccc2C1=N[#7]
+NH-Indoles,"[nH]1c([$([CH2]),$([C!H0]N),$([CD3]([CH2])[NH][CH2]),$([CD3]([CH2])[CD2][NH][CH2]),$([#6]=,:[#7,#8,#15,#16])])c([CX4!H0])c2[cH]cccc12"
+N-Alkyl substituted indoles,"n1([CH2])c([$([CH2]),$([C!H0]N),$([CD3]([CH2])[NH][CH2]),$([CD3]([CH2])[CD2][NH][CH2]),$([#6]=,:[#7,#8,#15,#16])])c([CX4!H0])c2[cH]cccc12"
+Macrocycles,"[*r10,*r11,*r12,*r13,*r14,*r15,*r16,*r17,*r18,*r19,*r20,*r21,*r22,*r23,*r24,*r25,*r26,*r27,*r28,*r29,*r30]"
+o-Substituted phenols (2),[OH]c1c([CX4][#7])cccc1
+N-Allophanoylamides and their thio analogues,"NC(=[O,S])NC(=[O,S])NC=[O,S]"
+Tetrahydrofuranyltetrahydropyrans,C1COC(C1)C1CCCCO1
+Octahydroisoindolones,[C!H0]1NC(=O)C2CCCCC12
+N-Phenylpyrrole derivatives,N1(c2[!#1]cccc2)C([CX4])=C[C!H0]=C1[CX4]
+"Quinones, quinone-(di)imines and their thio- and phospho-analogues","[#7,#8,#15,#16]=[#6]1-,:[#6]=,:[#6]-,:[#6](=[#7,#8,#15,#16])-,:[#6]=,:[#6]1"
+Five-membered heterocycles (2),"[#7]=C1S[CH]=C([$([CH2]),$(c:c)])N1"
+Five-membered heterocycles (3),"[#7]=C1SC([$([CH2]),$(C=O)])=C([$([CH2]),$(c:c)])N1"
+Tert-butyl carbon atom,c[CX4](c)c
+Acethylenes,"[CH2,CH3]C#C[CH2,CH3]"
+α-Halonitriles,"[F,Cl,Br,I][CX4][CX2]#[NX1]"
+Azide tautomers,[#6]-[NX2-][NX2+]#[NX1;0]
+Benzthiozolium like compounds,"[#7,#8,#16]1-,:[#6]=,:[#6]-,:[#7+]2=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6,#7]=,:[#6]21"
+Cyanates,"[NX2]=[CX2]=[OX1,SX1]"
+Di-carbonyls,"[#1,#6][CX3](=[OX1])[CX3](=[OX1])[#1,#6]"
+Haloalkyl,"[C!H0]([#1,#6,#7,#8,#16])[CX4]([#1,Cl,Br,I])([#1,Cl,Br,I])[Cl,Br,I]"
+"Haloalkyl group attached to S, N or O atoms","[CX4]([#1,Cl,Br,I])([#1,Cl,Br,I])([Cl,Br,I])[#7,#8,#16]"
+Haloethylenes,"[CX3!H0]=[CX3]([#1,Cl,Br,I])[Cl,Br,I]"
+Halopyridines,"c1([F,Cl,Br,I])n[c,n][c,n][c,n][c,n]1"
+Heptanes,"[CH3][CH2][CH2][CH2][CH2][CH2][CH2,CH3]"
+N-Oxides (six-membered rings),"[$([OX1-][#7+]1=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]1),$([OX1]=[#7v5]1=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]1)]"
+N-Oxides (five-membered rings),"[$([OX1-][#7+]1=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6,#7,#8,#16]1),$([OX1]=[#7v5]1=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6,#7,#8,#16]1)]"
+Phosphorus cations,[#15+]
+Peroxide like compounds,"O[F,Cl,Br,I]"
+Phosphates,[Pv5X4](=[OX1])([OX2])([OX2])[#6]
+Double P=O bonds,[#15]=O
+Pyridinium like compounds,"[#6][#7+]1=,:[#6]-,:[#6,#7]=,:[#6]-,:[#6,#7]=,:[#6]1"
+Quinolizinium like compounds,"[#6,#7]1=,:[#6,#7]-,:[#6,#7]=,:[#7+]2-,:[#6,#7]=,:[#6,#7]-,:[#6,#7]=,:[#6,#7]-,:[#6]2=,:[#6,#7]1"
+Sulfates,"[Sv6X4](=[OX1])(=[OX1])([#8])[#6,#8]"
+Thio aldehydes,"[#6,#1][CX3]([H])=[SX1]"
+Thio halogens,"[#16][F,Cl,Br,I]"
+Thioalcohols,"[#6&!$(C(=[OX1,SX1,NX2]))][SX2H1]"
+Thiozolium like compounds,"[#6][#7+]1=,:[#6]-,:[#7,#8,#16]-,:[#6]=,:[#6]1"
+Acyl Halides,"[Br,Cl,F,I][CX3](=[OX1])[#1,*&!$([OH1])&!$([SH1])]"
+Sulphonyl Halides,"[#6][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]"
+Alkyl Halides,"[CX4][F,Cl,Br,I]"
+Activated Halides,"[$(c([F,Cl,Br,I])c[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]),$(c([F,Cl,Br,I])aac[$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])]),$(c([F,Cl,Br,I])n),$(c([F,Cl,Br,I])aan)]"
+Anhydrides,[CX3](=[OX1])[OX2][CX3](=[OX1])
+Aldehydes (including aminoformyl moieties),"[$([#1,#6][CX3]([H])=[OX1]),$([#7]([#1,#6])([#1,#6])[CX3H1]=[OX1])]"
+Nitrosos,[NX2]=[OX1]
+Picrates,"c1([OH1,O-])c([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])cc([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])cc1([$([NX3](=[OX1])=[OX1]),$([NX3+](=[OX1])[O-])])"
+Perchlorates (periodates),"[$([Clv7X4](=[OX1])(=[OX1])(=[OX1])[OX2,O-]),$([Iv7X4](=[OX1])(=[OX1])(=[OX1])[OX2,O-])]"
+Simple anilines and phenols,"[$(c1([NX3]([#1,#6])[#1,#6])ccccc1),$(c1([OH1])ccccc1)]"
+Vinyl ketones (Michael acceptors),[CX3]([!R])([!R])=[CX3][CX3](=[OX1])[!$([OH1])!$([OX2][CH2])!$([NH2])!$([CX2]#[NX1])!a]
+Metals,[!#1;!#6;!#7;!#8;!#9;!#11;!#12;!#15;!#16;!#17;!#19;!#20;!#35;!#53]
+Non-organic chemistry atoms,[!#6!#1!#7!#8!#9!#17!#35!#53!#15!#14!#16]
+Atoms not supported in ALOGPS program,[!#1!#6!#7!#8!#16!#15!#9!#17!#35!#53]
+Perfluoroalkylated compounds (PFCs),C(F)(F)C(F)(F)
+Carbonyl compouns: aldehydes or ketones,"[$([H][CX3]([#1,#6])=[OX1]),$([#6&!$(C#N)][CX3](=[OX1])[#6&!$(C#N)])]"
+Thiocarbonyl compounds: thioaldehydes or thioketones,"[$([#1,#6][#6X3](=[SX1])[#1,#6]),$([#6]=[CX2]=[Sv2X1])]"
+Thioaldehydes,"[#1][CX3]([#1,#6])=[SX1]"
+Thioketones,[#6&!$(C#N)][CX3](=[SX1])[#6&!$(C#N)]
+Hydrazones,"[CX3]([#1,#6])([#1,#6])=[NX2][#7X3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#1,#6&!$([CX3]=[OX1,SX1,NX2])]"
+Semicarbazones,"[#1,#6][CX3]([#1,#6])=[NX2][NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[CX3](=[OX1])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#1,#6&!$([CX3]=[OX1,SX1,NX2])]"
+Thiosemicarbazones,"[#1,#6][CX3]([#1,#6])=[NX2][NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[CX3](=[SX1])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#1,#6&!$([CX3]=[OX1,SX1,NX2])]"
+Oximes,"[#1,#6][CX3]([#1,#6])=[NX2][OH1]"
+Oxime ethers,"[#1,#6][CX3]([#1,#6])=[NX2][OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Ketene acetal derivatives,"[#1,#6][CX3]([#1,#6])=[CX3]([!#6!#1])[!#6!#1]"
+Carbonyl hydrates,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OH1])[OH1]"
+Hemiacetals / Hemiketals,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OH1])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Acetals / Ketals,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OX2][#6&!$([CX3]=[OX1,SX1,NX2])])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Hemiaminals,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([OX2][#1,#6&!$([CX3]=[OX1,SX1,NX2])])[NX3]([#1,*])[#1,*]"
+Thiohemiaminals,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([SX2][#1,#6&!$([CX3]=[OX1,SX1,NX2])&!$(C#N)])[NX3]([#1,*])[#1,*]"
+Thioacetals / Thioketals,"[CH2,$([CH1][#6]),$([CX4]([#6])[#6])]([SX2][#6&!$([CX3]=[OX1,SX1,NX2])&!$(C#N)])[SX2,OX2][#6&!$([CX3]=[OX1,SX1,NX2])&!$(C#N)]"
+Enols,"[CX3]([#1,#6])([#1,#6])=[CX3]([OH1])[#1,#6]"
+Enolethers,"[CX3]([#1,#6])([#1,#6])=[CX3]([OX2][#6&!$([CX3]([OX2])=[OX1,SX1,NX2,C])])[#1,#6]"
+Hydroxy compounds: alcohols or phenols,"[#6&!$([CX4]([OH1])[#8,#16,#7,#15])&!$([CX3]([OH1])=[OX1,SX1,NH2,C])][OH1]"
+Alcohols,"[$([CX4][OH1])&!$(C([OH1])[#7,#8,#15,#16,F,Cl,Br,I])]"
+Primary alcohols,"[$([#6][CH2][OH1]),$([CH3][OH1])]"
+Secondary alcohols,[OH1][CX4H1]([#6])[#6]
+Tertiary alcohols,[CX4]([OH1])([#6])([#6])[#6]
+"1,2-Diols","[CX4]([OH1])([#1,#6])([#1,#6])[CX4]([OH1])([#1,#6])([#1,#6])"
+"1,2-Aminoalcohols","[CX4]([#1,#6])([#1,#6])([OH1])[CX4]([#1,#6])([#1,#6])[NH2,$([NH1]([CX4][CX4][OH1])[#6&!$([CX3]=[OX1,SX1,NX2,C])])]"
+Phenols,c[OH1]
+Diphenols,"[$(c([OH1])c([OH1])),$(c([OH1])[aR1]c([OH1])),$(c1([OH1])aac([OH1])aa1)]"
+Enediols,"[CX3]([#1,#6])([OH1])=[CX3]([#1,#6])([OH1])"
+Dialkylethers,"[CX4&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))][OX2][CX4&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))]"
+Alkylarylethers,"[CX4&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))][OX2]c"
+Diarylethers,c[OX2&!$([OX2r3])]c
+Hydroperoxides,"[#1,#6][OX2][OX2H1]"
+Hydrazine derivatives,"[$([NX4]([#1,#6])([#1,#6])([#1,#6])),$([NX3]([#1,#6])([#1,#6])),$([NX2]=[#1,#6])][$([NX4]([#1,#6])([#1,#6])([#1,#6])),$([NX3]([#1,#6])([#1,#6])),$([NX2]=[#1,#6])]"
+Primary aliphatic amines,"[NX3H2][CX4&!$([CX4]([NH2])[O,N,S,P])]"
+Primary aromatic amines,[NX3H2]c
+Secondary aliphatic amines,"[NX3H1]([CX4&!$([CX4]([NX3H1])[O,S,N,P])])[CX4&!$([CX4]([NX3H1])[O,S,N,P])]"
+Secondary mixed amines (aryl alkyl),"c[NX3H1][CX4&!$([CX4]([NX3H1])[O,N,S,P])]"
+Secondary aromatic amines,[NX3H1](c)c
+Tertiary aliphatic amines,"[NX3]([CX4&!$([CX4]([NX3])[O,S,N,P])])([CX4&!$([CX4]([NX3])[O,S,N,P])])[CX4&!$([CX4]([NX3])[O,S,N,P])]"
+Tertiary mixed amines (aryl alkyl),"c[NX3]([CX4&!$([CX4]([NX3])[O,N,S,P])])[c,CX4&!$([CX4]([NX3]c)[O,S,N,P])]"
+Quaternary ammonium salts,"[NX4,NX4+]([#6])([#6])([#6])[#6]"
+"Halogen derivatives (alkyl, alkenyl, aryl)","[CX4,CX3,c;!$([#6]=[OX1])][F,Cl,Br,I]"
+Aryl fluorides,aF
+Aryl chlorides,aCl
+Aryl bromides,aBr
+Aryl iodides,aI
+Organolithium compounds,[Li][#6]
+Organomagnesium compounds,[Mg][#6]
+Carboxylic acid derivatives,"[#1,#6][CX3](=[OX1])[!#1!#6!$([SH1,SX2])]"
+Carboxylic acid salts,"[#1,#6][CX3](=[OX1])[OX1-]"
+Carboxylic acid amides,"[#1,#6][CX3](=[OX1])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX1])])[#1,#6&!$([CX3]=[OX1,SX1,NX1])]"
+Carboxylic acid primary amides,"[#1,#6][CX3](=[OX1])[NX3H2]"
+Carboxylic acid secondary amides,"[#1,#6][CX3](=[OX1])[NX3H1][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Carboxylic acid tertiary amides,"[#1,#6][CX3](=[OX1])[NX3]([#6&!$([CX3]=[OX1,SX1,NX2])])[#6&!$([CX3]=[OX1,SX1,NX2])]"
+Lactams,"[#6R][CX3R](=[OX1])[NX3R]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#6R&!$([CX3R]=[OX1,SX1,NX2])]"
+Carboxylic acid hydrazides,"[$([#6,#1][#6X3](=[OX1])[#7X3&!$([#7X3]([*]=[OX1,SX1])[#7X3]([*]=[OX1,SX1]))][#7X3]),$(C1(=O)[NX3][NX3]C(=O)cc1)]"
+Carboxylic acid azides,"[#1,#6][CX3](=[OX1])[$([NX2]=[NX2+]=[NX1-]),$([NX2]=[NX2+]=N),$([NX2-]-[NX2+]#[NX1])]"
+Hydroxamic acids,"[#1,#6][CX3](=[OX1])[NX3][OH1]"
+Carboxylic acid amidines,"[#1,#6][NX2]=[CX3]([#1,#6])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#1,#6&!$([CX3]=[OX1,SX1,N])]"
+Carboxylic acid amidrazones,"[#1,#6][NX2]=[CX3]([#1,#6])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#1,#6&!$([CX3]=[OX1,SX1,NX2])]"
+Nitriles,"[#1,#6&!$([CX3]=[OX1,SX1])][CX2]#[NX1]"
+Acyl fluorides,"[#1,#6][CX3](=[OX1])F"
+Acyl chlorides,"[#1,#6][CX3](=[OX1])Cl"
+Acyl bromides,"[#1,#6][CX3](=[OX1])Br"
+Acyl iodides,"[#1,#6][CX3](=[OX1])I"
+Acyl cyanides,"[#1,#6][CX3](=[OX1])[CX2]#[NX1]"
+Imido esters,"[#1,#6][CX3](=[NX2][#1,#6])[OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])]"
+Thiocarboxylic acid derivatives,"[$([#1,#6][CX3](=[SX1])[!#1!#6]),$([#1,#6][CX3](=[OX1])[SX2])]"
+Thiocarboxylic acids,"[$([#1,#6][CX3](=[SX1])[OH1,SH1]),$([#1,#6][CX3](=[OX1])[SH1])]"
+Thiocarboxylic acid esters,"[$([#1,#6][CX3](=[SX1])[OX2,SX2][#6&!$([CX3]=[OX1,SX1,NX2])]),$([#1,#6][CX3](=[OX1])[SX2][#6&!$([CX3]=[OX1,SX1,NX2])])]"
+Thiolactones,"[$([#6R][CX3R](=[SX1])[OX2R,SX2R][#6R&!$([CX3R]=[OX1,SX1,NX2])]),$([#6R][CX3R](=[OX1])[SX2R][#6R&!$([CX3R]=[OX1,SX1,NX2])])]"
+Thiocarboxylic acid amides,"[#1,#6][CX3](=[SX1])[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX1])])[#1,#6&!$([CX3]=[OX1,SX1,NX1])]"
+Thiolactams,"[#6R][CX3R](=[SX1])[NX3R]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])[#6R&!$([CX3R]=[OX1,SX1,NX2])]"
+Imidothioesters,"[#1,#6][CX3](=[NX2][#1,#6])[SX2][C&!$([CX3]=[OX1,SX1,NX2])]"
+Oxohetarenes,"[$(c(=[OX1])[$(n[#1,#6]),o,s]),$(c(=[OX1])a[$(n[#1,#6]),o,s]),$(c(=[OX1])aa[$(n[#1,#6]),o,s]),$(c(=[OX1])aaa[$(n[#1,#6]),o,s])]"
+Thioxohetarenes,"[$(c(=[SX1])[$(n[#1,#6]),o,s]),$(c(=[SX1])a[$(n[#1,#6]),o,s]),$(c(=[SX1])aa[$(n[#1,#6]),o,s]),$(c(=[SX1])aaa[$(n[#1,#6]),o,s])]"
+Iminohetarenes,"[$(c(=N)[$(n[#1,#6]),o,s]),$(c(=N)a[$(n[#1,#6]),o,s]),$(c(=N)aa[$(n[#1,#6]),o,s]),$(c(=N)aaa[$(n[#1,#6]),o,s])]"
+Orthocarboxylic acid derivatives,"[CX4&!$([CX4]([F,Cl,Br,I])([F,Cl,Br,I])([F,Cl,Br,I]))]([#1,#6&!$([CX3]=[OX1,SX1,NX2])])([!#1!#6])([!#1!#6])[!#1!#6]"
+Carboxylic acid orthoesters,"[#1,#6][CX4]([OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])])([OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])])[OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])]"
+Carboxylic acid amide acetals,"[CH1,$([CX4][#6])]([OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])])([OX2][#6&!$([CX3]=[OX1,SX1,NX2,C])])[NX3]([#1,*])[#1,*]"
+Carboxylic acid imides,[CX3](=[OX1])[NX3][CX3](=[OX1])
+Carboxylic acid unsubstituted imides,[CX3](=[OX1])[NX3H1][CX3](=[OX1])
+Carboxylic acid substituted imides,[CX3](=[OX1])[NX3H0][CX3](=[OX1])
+CO2 derivative (general),"[$([Cv4X4]([!#1!#6])([!#1!#6])([!#1!#6])[!#1!#6]),$([CX3](=[!#1!#6])([!#1!#6])[!#1!#6]),$([CX2](=[!#1!#6])=[!#1!#6]),$([CX2](#[!#1!#6])[!#1!#6])]"
+Carbonic acid derivatives,"[$([CX3](=[OX1])([!#1!#6])[!#1!#6])&!$([CX3](=[OX1])([#7,#16X2,#15,#5])[#8X2,#16X2,#7,#15,#5])]"
+Carbonic acid monoesters,"[OH1][CX3](=[OX1])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Carbonic acid diesters,"[#6&!$([CX3]=[OX1,SX1,NX2])][OX2][CX3](=[OX1])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Carbonic acid ester halides,"[#6][OX2][CX3](=[OX1])[F,Cl,Br,I]"
+Thiocarbonic acid derivatives,"[$([CX3](=[SX1])([!#1!#6])[!#1!#6])&!$([CX3](=[SX1])([#7,#16X2,#15,#5])[#8X2,#16X2,#7,#15,#5]),$([CX3](=[OX1])([!#1!#6])[SX2])&!$([CX3](=[OX1])([#7,#15,#5])[#8X2,#16X2,#7,#15,#5])]"
+Thiocarbonic acid monoesters,"[$([OH1,SH1][CX3](=[SX1])[OX2,SX2][#6&!$([CX3]=[OX1,SX1,NX2])]),$([OH1][CX3](=[OX1])[SX2][#6&!$([CX3]=[OX1,SX1,NX2])]),$([SH1][CX3](=[SX1,OX1])[OX2,SX2][#6&!$([CX3]=[OX1,SX1,NX2])])]"
+Thiocarbonic acid diesters,"[$([#6&!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[SX1])[OX2,SX2][#6&!$([CX3]=[OX1,SX1,NX2])]),$([#6&!$([CX3]=[OX1,SX1,NX2])][SX2][CX3](=[OX1])[OX2,SX2][#6&!$([CX3]=[OX1,SX1,NX2])])]"
+Thiocarbonic acid ester halides,"[$([#6&!$([CX3]=[OX1,SX1,NX2])][OX2,SX2][CX3](=[SX1])[F,Cl,Br,I]),$([#6&!$([CX3]=[OX1,SX1,NX2])][SX2][CX3](=[OX1])[F,Cl,Br,I])]"
+Carbamic acid derivatives,"[NX3]([#1,*])([#1,*])[CX3](=[OX1])[!#1!#6!#16!$([Pv5])]"
+Carbamic acid,[OH1][CX3](=[OX1])[NX3]
+Carbamic acid esters (urethanes),"[#6][OX2][CX3](=[OX1])[NH2,NH1,NX3]"
+Carbamic acid halides,"[F,Cl,Br,I][CX3](=[OX1])[NX3]"
+Thiocarbamic acid derivatives,"[$([NX3&!$([NX3]([CX3]=[SX1])[CX3]=[OX1,SX1,NX2])][CX3](=[SX1])[!#1!#6!#7!$([Pv5])]),$([NX3&!$([NX3]([CX3]=[OX1])[CX3]=[OX1,SX1,NX2])][CX3](=[OX1])[SH1,SX2])]"
+Thiocarbamic acids,"[$([OH1,SH1][CX3](=[SX1])[NX3]),$([SH1][CX3](=[OX1])[NX3])]"
+Thiocarbamic acid esters,"[$([#6][OX2,SX2][CX3](=[SX1])[NX3&!$([NX3]([CX3]=[OX1,SX1])[CX3]=[OX1,SX1])]),$([#6][SX2][CX3](=[OX1])[NX3&!$([NX3]([CX3]=[OX1,SX1])[CX3]=[OX1,SX1])])]"
+Thiocarbamic acid halides,"[F,Cl,Br,I][CX3](=[SX1])[NX3]"
+Isoureas,"[NX3&!$([NX3]([CX3]=[OX1,SX1,NX2])([CX3]=[OX1,SX1,NX2]))]([#1,#6])([#1,#6])[CX3]([OX2])=[NX2][#1,#6]"
+Isothioureas,"[NX3&!$([NX3]([CX3]=[OX1,SX1,NX2])([CX3]=[OX1,SX1,NX2]))]([#1,#6])([#1,#6])[CX3]([S&!$([SX2]([CX3]=N)C=C)])=[NX2][#1,#6]"
+Guanidines,"N[CX3](=[NX2][#1,#6])N"
+Semicarbazides,"[$([NX3][CX3](=[OX1])[NX3&!$([NX3]([CX3]=[OX1,SX1])[NX3][CX3]=[OX1,SX1])][NX3])&!$([NX3][CX3](=[OX1])[NX3]N=C)]"
+Thiosemicarbazides,"[$([NX3][CX3](=[SX1])[NX3&!$([NX3]([CX3]=[OX1,SX1])[NX3][CX3]=[OX1,SX1])][NX3])&!$([NX3][CX3](=[SX1])[NX3]N=C)]"
+Isonitriles,"[#6&!$([CX3]=[OX1,SX1])][$([NX2+]#[CX1-]),$([NX2]#[CX1])]"
+Sulfuric acid derivatives,[!#1!#6][Sv6X4](=[OX1])(=[OX1])[!#1!#6]
+Sulfuric acid,"[OH1,O-][Sv6X4](=[OX1])(=[OX1])[OX2,O-]"
+Sulfuric acid monoesters,"[#6][OX2][Sv6X4](=[OX1])(=[OX1])[OH1,O-]"
+Sulfuric acid diesters,[#6][OX2][Sv6X4](=[OX1])(=[OX1])[OX2][#6]
+Sulfuric acid amide esters,[#6][OX2][Sv6X4](=[OX1])(=[OX1])N
+Sulfuric acid amides,"[OH1,O-][Sv6X4](=[OX1])(=[OX1])N"
+Sulfuric acid diamides,N[Sv6X4](=[OX1])(=[OX1])N
+Sulfuryl halides,"[!#1!#6][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]"
+Sulfonic acid derivatives,[#6][Sv6X4](=[OX1])(=[OX1])[!#1!#6]
+Sulfonic acids,"[#6][Sv6X4](=[OX1])(=[OX1])[OH1,O-]"
+Sulfonyl halides,"[#6][Sv6X4](=[OX1])(=[OX1])[F,Cl,Br,I]"
+Sulfones,"[#6][Sv6X4](=[OX1,SX1,NX2])(=[OX1,SX1,NX2])[#6]"
+Sulfinic acid derivatives,[#6][Sv4X3](=[OX1])[!#1!#6]
+Sulfinic acids,"[#6][Sv4X3](=[OX1])[OH1,O-]"
+Sulfinic acid esters,[#6][Sv4X3](=[OX1])[OX2][#6]
+Sulfinic acid halides,"[#6][Sv4X3](=[OX1])[F,Cl,Br,I]"
+Sulfinic acid amides,"[#6][Sv4X3](=[OX1])[NX3&!$([NX3][CX3]=[OX1,SX1,NX2])]"
+Sulfenic acid derivatives,[#6][Sv2X2][!#6!#1!S]
+Sulfenic acids,"[#6&!$([CX3]=[SX1,OX1,NX2])][Sv2X2][OH1]"
+Sulfenic acid esters,"[#6&!$([CX3]=[SX1,OX1,NX2])][Sv2X2][OX2][#6]"
+Sulfenic acid halides,"[#6&!$([CX3]=[SX1,OX1,NX2])][Sv2X2][F,Cl,Br,I]"
+Sulfenic acid amides,"[#6&!$([CX3]=[SX1,OX1,NX2])][Sv2X2][NX3]([#6&!$([CX3]=[OX1,SX1,NX2])])[#6&!$([CX3]=[OX1,SX1,NX2])]"
+Alkylthiols,"[C&!$([CX3]=[OX1,SX1,N,C])&!$(C#N)][Sv2H1]"
+Thiophenols,c[Sv2H1]
+Phosphoric acid derivatives,"[OX1]=[Pv5X4]([H,!#6!$([SX2])])([H,!#6!$([SX2])])[H,!#6!$([SX2])]"
+Phosphoric acids,[OX1]=[Pv5X4]([OH1])([O])[O]
+Phosphoric acid esters,[OX1]=[Pv5X4]([OX2][#6])([!#6!$([SX2])])[!#6!$([SX2])]
+Phosphoric acid halides,"[OX1]=[Pv5X4]([F,Cl,Br,I])([!#6!$([SX2])])[!#6!$([SX2])]"
+Phosphoric acid amides,[OX1]=[Pv5X4]([NX3])([!#6!$([SX2])])[!#6!$([SX2])]
+Thiophosphoric acid derivatives,"[$([SX1]=[Pv5X4]([H,!#6])([H,!#6])[H,!#6]),$([OX1]=[Pv5X4]([SX2])([H,!#6])[H,!#6])]"
+Thiophosphoric acids,"[$([SX1]=[Pv5X4]([OH1,SH1])([O,S])[O,S]),$([OX1]=[Pv5X4]([SH1])([O,S])[O,S])]"
+Thiophosphoric acid esters,"[$([SX1]=[Pv5X4]([OX2,SX2][#6])([!#6])[!#6]),$([OX1]=[Pv5X4]([SX2][#6])([!#6])[!#6])]"
+Thiophosphoric acid halides,"[$([SX1]=[Pv5X4]([F,Cl,Br,I])([!#6])[!#6]),$([OX1]=[Pv5X4]([F,Cl,Br,I])([SX2,SH1])[!#6])]"
+Thiophosphoric acid amides,"[$([SX1]=[Pv5X4]([NX3])([!#6])[!#6]),$([OX1]=[Pv5X4]([NX3])([SX2,SH1])[!#6])]"
+Phosphonic acid derivatives,[OX1]=[Pv5X4]([#6])([!#6])[!#6]
+Phosphonic acids,[OX1]=[Pv5X4]([#6])([OH1])O
+Phosphonic acid esters,[OX1]=[Pv5X4]([#6])([OX2][#6])[!#6]
+Phosphines,[Pv3X3]([#6])([#6])[#6]
+Phosphinoxides,[Pv5X4](=[OX1])([#6])([#6])[#6]
+Boronic acid derivatives,[Bv3X3]([#6])([!#6])[!#6]
+Boronic acids,"[BX3]([#6])([OH1,SH1])[O,S]"
+Boronic acid esters,"[BX3]([#6])([OX2][#6])[H,!#6]"
+Aromatic compounds,[a!r0]
+Heterocyclic compounds,[*R]~[*R&!#6]~[*R]
+Aromatic heterocyclic compounds,[a!#6!r0]
+α-Aminoacids,"[OH1][CX3](=[OX1])[CX4]([#1,#6])([#1,#6])[NH2,$([NH1]([#6])[#6])&!$([NH1](CC(=O)[OH1])[CX3]=[OX1,SX1])]"
+α-Hydroxyacids,"[OH1][CX3](=[OX1])[CX4]([OH1])[#1,#6]"
+"1,2-Diamines","[NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])[CX4][CX4][NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])"
+"1,2-Dithiols","[CX4]([SH1])([#1,#6])([#1,#6])[CX4]([SH1])([#1,#6])([#1,#6])"
+"1,2-Aminothiols","[SH1][CX4][CX4][NX3]([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])([#1,#6&!$([CX3]=[OX1,SX1,NX2,C])])"
+α-Oxoacids,"[OH1][CX3](=[OX1])[CX3](=[OX1])[#1,#6]"
+"α, β-Unsaturated carboxylic acids",[OH1][CX3](=[OX1])[CX3]=[CX3]
+Dithiophenols,"[$(c([SH1])c([SH1])),$(c([SH1])[aR1]c([SH1])),$(c1([SH1])aac([SH1])aa1)]"
+Aminothiophenols,"[$(c([SH1])c[NX3]([#1,#6])[#1,#6]),$(c([SH1])[aR1]c[NX3]([#1,#6])[#1,#6]),$(c1([SH1])aac([NX3]([#1,#6])[#1,#6])aa1)]"
+Aryl halides,"a[F,Cl,Br,I]"
+Primary amines,"[NX3H2][c,CX4&!$([CX4]([NH2])[O,N,S,P])]"
+Secondary amines,"[NX3H1]([c,CX4&!$([CX4]([NX3H1])[O,S,N,P])])[c,CX4&!$([CX4]([NX3H1])[O,S,N,P])]"
+Tertiary amines,"[NX3]([c,CX4&!$([CX4]([NX3])[O,S,N,P])])([c,CX4&!$([CX4]([NX3])[O,S,N,P])])[c,CX4&!$([CX4]([NX3])[O,S,N,P])]"
+"Conjugated alkadienes (1,3-alkadienes)",[CX3]=[CX3][CX3]=[CX3]
+"Unconjugated alkadienes (1,4-alkadienes)",[CX3]=[CX3][CX4][CX3]=[CX3]
+Alkynyl halides,"[F,Cl,Br,I][CX2]#[CX2]"
+Benzyl halides,"a[CX4][F,Cl,Br,I]"
+Benzyl  fluorides,a[CX4]F
+Benzyl  chlorides,a[CX4]Cl
+Benzyl bromides,a[CX4]Br
+Benzyl iodides,a[CX4]I
+Alkali metals,"[#3,#11,#19,#37,#55,#87]"
+Alkaline earth metals,"[#4,#12,#20,#38,#56,#88]"
+Transition metals,"[#21,#22,#23,#24,#25,#26,#27,#28,#29,#30,#39,#40,#41,#42,#43,#44,#45,#46,#47,#48,#72,#73,#74,#75,#76,#77,#78,#79,#80,#104,#105,#106,#107,#108,#109,#110,#111,#112]"
+Lanthanoids,"[#57,#58,#59,#60,#61,#62,#63,#64,#65,#66,#67,#68,#69,#70,#71]"
+Actinoids,"[#89,#90,#91,#92,#93,#94,#95,#96,#97,#98,#99,#100,#101,#102,#103]"
+Post-transition metals,"[#13,#31,#49,#50,#81,#82,#83,#113,#114,#115,#116]"
+Metalloids,"[#5,#14,#32,#33,#51,#52,#84]"
+Nonmetals,"[#1,#6,#7,#8,#15,#16,#34,#9,#17,#35,#53,#85,#117,#2,#10,#18,#36,#54,#86,#118]"
+Halogens,"[#9,#17,#35,#53,#85,#117]"
+Noble gases,"[#2,#10,#18,#36,#54,#86,#118]"
+Chalcogens (oxygen group),"[#8,#16,#34,#52,#84,#116]"
+Pnictogens (nitrogen group),"[#7,#15,#33,#51,#83]"
+Tetragens (carbon group),"[#6,#14,#32,#50,#8,#114]"
+Thioenolethers,"[CX3]([#1,#6])([#1,#6])=[CX3]([SX2][#6&!$([CX3]([OX2])=[OX1,SX1,NX2,C])])[#1,#6]"
+Thioenols,"[CX3]([#1,#6])([#1,#6])=[CX3]([SH1])[#1,#6]"
+Enethiodiols,"[CX3]([#1,#6])([SH1])=[CX3]([#1,#6])([SH1])"
+Alkynyl alcohols,[CX2]#[CX2][OH1]
+Alkynyl thiols,[CX2]#[CX2][SH1]
+Thioquinones,"[$([#6X3]1=,:[#6X3]-,:[#6X3](=[SX1])-,:[#6X3]=,:[#6X3]-,:[#6X3]1(=[OX1])),$([#6X3]1(=[OX1])-,:[#6X3](=[OX1,SX1])-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]1)]"
+4halo_pyrimidine_2_6EWG,"n1c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])[n;R1]c([F,Cl,Br,I])cc1([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])"
+phos_serine_warhead,NC(COP(O)(O)=O)C(O)=O
+phos_threonine_warhead,NC(C(C)OP(O)(O)=O)C(O)=O
+phos_tyrosine_warhead,NC(Cc1ccc(OP(O)(O)=O)cc1)C(O)=O
+sulphonyl_cyanide,S(=O)(=O)C#N
+trifluoroacetate_thioester,C(F)(F)(F)C(=O)S
+2halo_pyrazine_5EWG,"[n;R1]1c([F,Cl,Br,I])[c;!$(c-N)]nc([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])[c;!$(c-N)]1"
+activated_4mem_ring,"[#6]1~[$(C(=O)),$(S(=O))]~[O,S,N]~[$(C(=O)),$(S(=O))]1"
+halo_5heterocycle_bis_EWG,"[n,o,s]1c([$(S(=O)(=O)),$([F,Cl]),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])c([$(S(=O)(=O)),$([F,Cl]),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])nc1([Cl,Br,I])"
+hydroxamate_warhead,C([N;H1]([O;D1]))=O
+thiol_warhead,NC(C[S;D1])C(O)=O
+activated_vinyl_sulfonate,"O(-S(=O)(=O))C=[$(C(S(=O)(=O))),$(C(C(F)(F)(F))),$(C(C#N)),$(C(N(=O)(=O))),$(C([N+](=O)[O-])),$(C(C(=O)));!$(C(N))]"
+acyl_cyanide,C(=O)-C#N
+pentafluorophenylester,C(=O)Oc1c(F)c(F)c(F)c(F)c1(F)
+vinyl_carbonyl_EWG,"[C;!R]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])=[C;!R]([C;!R](=O))([!$([#8]);!$([#7])])"
+4halo_pyrimidine_5EWG,"n1c[n;R1]c([F,Cl,Br,I])[#6]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])c1"
+alpha_halo_EWG,"[$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-])]-[CH,CH2]-[Cl,Br,I,$(O(S(=O)(=O)))]"
+2halo_pyrazine_3EWG,"[n;R1]1c([F,Cl,Br,I])c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])ncc1"
+boron_warhead,"[C,c]~[#5]"
+diamino_sulfide,"[N,n]~[S;!R;D2]~[N,n]"
+dicarbonyl_sulfonamide,"[$(N(-C(=O))(-C(=O))(-S(=O))),$(n([#6](=O))([#6](=O))([#16](=O)))]"
+acyl_imidazole,"[C;!$(C-N)](=O)n1[c;H1,$([#6]([*;!R]))]n[c;H1,$(c([*;!R]))][c;H1,$(c([*;!R]))]1"
+halo_phenolic_sulfonyl,"S(=O)Oc1c([Cl,F])[cH1,$(c[F,Cl])]c([F,Cl])[cH1,$(c[F,Cl])]c1([F,Cl])"
+oxaziridine,"C1~[O,S]~N1"
+sulf_D3_nitrogen,"[S;D3](-N)(-[c,C])(-[c,C])"
+2halo_pyridine_3EWG,"[n;R1]1[c;!$(c=O)]([F,Cl,Br,I])c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])[c;!$(c-N)]c[c;!$(c-N)]1"
+2halo_pyridine_5EWG,"[n;R1]1[c;!$(c=O)]([F,Cl,Br,I])c[c;!$(c-N)]c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])[c;!$(c=O);!$(c-N)]1"
+halo_olefin_bis_EWG,"C([Cl,Br,I,$(O(S(=O)(=O)))])=C([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])"
+hyperval_sulfur,"[$([#16&D3]),$([#16&D4])]=,:[#6]"
+ortho_hydroiminoquinone,c1c([N;D1])c([N;D1])c[cH1][cH1]1
+keto_def_heterocycle,"[$(c([C;!R;!$(C-[N,O,S]);!$(C-[H])](=O))1naaaa1),$(c([C;!R;!$(C-[N,O,S]);!$(C-[H])](=O))1naa[n,s,o]1)]"
+trichloromethyl_ketone,[$(C(=O));!$(C-N);!$(C-O);!$(C-S)]C(Cl)(Cl)(Cl)
+phosphorus_phosphorus_bond,P~P
+monofluoroacetate,"[C;H2](F)C(=O)[O,N,S]"
+aryl_phosphonate,P(=O)-[O;!R]-a
+cyanohydrin,"[C;X4](-[OH,NH1,NH2,SH])(-C#N)"
+activated_vinyl_ester,"O=COC=[$(C(S(=O)(=O))),$(C(C(F)(F)(F))),$(C(C#N)),$(C(N(=O)(=O))),$(C([N+](=O)[O-])),$(C(C(=O)));!$(C(N))]"
+thio_hydroxamate,"[S;D2]([$(N(=C)),$(N(-S(=O)(=O))),$(N(-C(=O)))])"
+halo_imino,"C(=[#7])([Cl,Br,I,$(O(S(=O)(=O)))])"
+activated_acetylene,"[$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))]C#[C;!$(C-N);!$(C-n)]"
+acyl_pyrazole,"[C;!$(C-N)](=O)n1n[c;H1,$(c([*;!R]))][c;H1,$(c([*;!R]))][c;H1,$(c([*;!R]))]1"
+sulfonyl_heteroatom,"[!#6;!#1;!#11;!#19]O(S(=O)(=O)(-[C,c]))"
+triamide,"[$(N(-C(=O))(-C(=O))(-C(=O))),$(n([#6](=O))([#6](=O))([#6](=O)))]"
+acyclic_imide,"[C,c][C;!R](=O)[N;!R][C;!R](=O)[C,c]"
+4halo_pyridine_3EWG,"[n;R1]1[c;!$(c=O);!$(c-N)][#6]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])c([F,Cl,Br,I])c[c;!$(c=O);!$(c-N)]1"
+acyl_123_triazole,"[#7;R1]1=,:[#7;R1]-,:[#7;R1](-C(=O))-,:[#6]=,:[#6]1"
+alpha_dicarbonyl,C(=O)!@C(=O)
+trifluoroacetate_ester,C(F)(F)(F)C(=O)O
+perhalo_dicarbonyl_phenyl,"c1(C=O)c([Br,Cl,I])c([Br,Cl,I])c([Br,Cl,I])c([Br,Cl,I])c1(C=O)"
+trinitromethane_derivative,"C([$([N+](=O)[O-]),$(N(=O)=O)])([$([N+](=O)[O-]),$(N(=O)=O)])([$([N+](=O)[O-]),$(N(=O)=O)])"
+2halo_pyrimidine_5EWG,"[n;R1]1c([F,Cl,Br,I])ncc([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])c1"
+aldehyde,"[C,c][C;H1](=O)"
+alpha_halo_heteroatom_tert,"[N,n,O,S;!$(S(=O)(=O))]-C([Cl,Br,I,$(O(S(=O)(=O)))])(C)(C)"
+sulf_D2_nitrogen,[S;D2](-[N;!$(N(=C));!$(N(-S(=O)(=O)));!$(N(-C(=O)))])
+2halo_pyridazine_5EWG,"[n;R1]1c([F,Cl,Br,I])ccc([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])n1"
+triflate,OS(=O)(=O)(C(F)(F)(F))
+flavanoid,O=C2CC(a3aaaaa3)Oa1aaaaa12
+non_ring_acetal,"[O,N,S;!$(S~O)]!@[C;H1;X4]!@[O,N,S;!$(S~O)]"
+rhodanine,C(=C)1SC(=S)NC(=O)1
+azide,"[$(N#[N+]-[N-]),$([N-]=[N+]=N)]"
+NO_phosphonate,P(=O)ON
+azo_filter3,[N;!R]-[N;!R]-[N;!R]
+disulfonyliminoquinone,S(=O)(=O)N=C1C=CC(=NS(=O)(=O))C=C1
+perchloro_cp,C1(Cl)(Cl)C(Cl)C(Cl)=C(Cl)C1(Cl)
+hetero_silyl,[Si]~[!#6]
+ortho_quinone,"[CH1,$(C(-[Cl,Br,I]))]1=CC(=[O,N,S;!R])C(=[O,N,S])C=[CH1,$(C(-[Cl,Br,I]))]1"
+meldrums_acid_deriv,O=C1OC(C)(C)OC(C1)=O
+sulfonyl_anhydride,"[$(C(=O)),$(S(=O)(=O))][O,S](S(=O)(=O))"
+tertiary_halide_sulfate,"[C;X4](-[Cl,Br,I,$(O(S(=O)(=O)[!$(N);!$([O&D1])]))])(-[c,C])(-[c,C])(-[c,C])"
+azo_filter4,a-N=N-[N;H2]
+trihalovinyl_heteroatom,"C(-[Cl,Br,I])(-[Cl,Br,I])=C(-[Cl,Br,I])(-[N,O,S])"
+sulf_D2_oxygen_D2,[S;D2][O;D2]
+acyl_activated_NO,"O=C(-[!N])O[$([#7;+]),$(N(C=[O,S,N])(C=[O,S,N]))]"
+azo_filter2,[N;!$(N-S(=O)(=O));!$(N-C=O)]-[N;!r3;!$(N-S(=O)(=O));!$(N-C=O)]-[N;!$(N-S(=O)(=O));!$(N-C=O)]
+para_hydroquinone,"a1[cH1]c([O,S;D1])[cH1]ac([O,S;D1])1"
+oxime,[$(C=N[O;D1]);!$(C=[N+])][#6][#6]
+non_ring_CH2O_acetal,"[O,N,S;!$(S~O)]!@[CH2]!@[O,S,N;!$(S~O)]"
+hydrazine,[N;X3;!$(N-S(=O)(=O));!$(N-C(F)(F)(F));!$(N-C#N);!$(N-C(=O));!$(N-C(=S));!$(N-C(=N))]-[N;X3;!$(N-S(=O)(=O));!$(N-C(F)(F)(F));!$(N-C#N);!$(N-C(=O));!$(N-C(=S));!$(N-C(=N))]
+isonitrile,[N+]#[C-]
+sulfite_sulfate_ester,"[C,c]OS(=O)O[C,c]"
+aziridine_diazirine,"[C,N]1~[C,N]~N~1"
+gte_3_COOH,C(=O)[O;D1].C(=O)[O;D1].C(=O)[O;D1]
+acyl_134_triazole,"[#7]1=,:[#6]-,:[#7](-C(=O)[H,!N])-,:[#6]=,:[#7]1"
+trifluoromethyl_ketone,[$(C(=O));!$(C-N);!$(C-O);!$(C-S)]C(F)(F)(F)
+para_nitrophenyl_ester,"c1(-O(-[C;!R](-[H,!N])(=[O,N;!R])))ccc([$(N(=O)(=O)),$([N+](=O)[O-])])cc1"
+phosphorus_sulfur_bond,P~S
+polyene,C=[C;!R][C;!R]=[C;!R][C;!R]=[C;!R]
+thiocarbonate,"SC(=O)[O,S]"
+azo_amino,[N]=[N;!R]-[N]
+secondary_halide_sulfate,"[CH;!$(C=C)][Cl,Br,I,$(O(S(=O)(=O)[!$(N);!$([O&D1])]))]"
+nitrone,[C;!R]=[N+][O;D1]
+trisub_bis_act_olefin,"[CH&!R;!$(C-N)]=C([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])"
+anhydride,"[$(C(=O)),$(C(=S))]-[O,S]-[$(C(=O)),$(C(=S)),$(C(=[N;!R])),$(C(=N(-[C;X4])))]"
+non_ring_ketal,"[O,N,S;!$(S~O)]!@[C;H0;X4](!@[O,N,S;!$(S~O)])(C)"
+triaryl_phosphine_oxide,P(=O)(a)(a)(a)
+betalactam_EWG,"C1(=O)~[#6]~[#6]N1([$(S(=O)(=O)[C,c,O&D2]),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O)[C,c,O&D2])])"
+HOBT_ester,"O=C(-[!N])O[$(nnn),$([#7]-[#7]=[#7])]"
+alpha_halo_amine,"[F,Cl,Br,I,$(O(S(=O)(=O)))]-[CH,CH2;!$(C(F)F)]-[N,n]"
+sulfonium,[S+;X3;$(S-C);!$(S-[O;D1])]
+azo_filter1,[N;!R]=[N;!R]-[N]=[*]
+CH2_S#O_3_ring,"[CH2]1[O,S]C1"
+polysulfide,[S;D2]-[S;D2]-[S;D2]
+acrylate,[CH2]=[C;!$(C-N);!$(C-O)]C(=O)
+four_nitriles,C#N.C#N.C#N.C#N
+primary_halide_sulfate,"[CH2][Cl,Br,I,$(O(S(=O)(=O)[!$(N);!$([O&D1])]))]"
+para_quinone,"[CH1,$(C(-[Cl,Br,I]))]1=[CH1,$(C(-[Cl,Br,I]))]C(=[O,N,S])[CH1,$(C(-[Cl,Br,I]))]=[CH1,$(C(-[Cl,Br,I]))]C1(=[O,N,S])"
+phosphorane,C=P
+activated_S#O_3_ring,"C1~[O,S]~[C,N,O,S]1[a,N,O,S]"
+thioester,"[S;!R;H0]C(=[S,O;!R])([!O;!S;!N])"
+gte_7_aliphatic_OH,C[O;D1].C[O;D1].C[O;D1].C[O;D1].C[O;D1].C[O;D1].C[O;D1]
+bis_activated_aryl_ester,"O=[C,S]Oc1aaa([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O)O),$(C(=O)N)])aa([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O)O),$(C(=O)N)])1"
+ortho_nitrophenyl_carbonyl,"c1(-O-[C;!R](=[O,N;!R]))c([$(N(=O)(=O)),$([N+](=O)[O-])])cccc1"
+gte_2_free_phos,P([O;D1])=O.P([O;D1])=O
+benzidine_like,c([N;!+])1ccc(c2ccc([N;!+])cc2)cc1
+activated_azo,"[N;!R]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])=[N;!R]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C(=O))])"
+quat_N_acyl,"[N,n;+]!@C(=O)"
+aryl_thiocarbonyl,a-[S;X2;!R]-[C;!R](=O)
+hydrazothiourea,[N;!R]=NC(=S)N
+nitrosamine,N-[N;X2](=O)
+halo_phenolic_carbonyl,"C(=O)Oc1c([Cl,F])[cH1,$(c[F,Cl])]c([F,Cl])[cH1,$(c[F,Cl])]c1([F,Cl])"
+gte_8_CF2_or_CH2,"[CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0][CH2,CF2;R0]"
+diazo_carbonyl,"[$(N=N=C~C=O),$(N#N-C~C=O)]"
+2halo_pyridazine_3EWG,"[n;R1]1c([F,Cl,Br,I])c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])ccn1"
+gte_10_carbon_sb_chain,[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]-[C;!R]
+beta_lactone,"[#6,#15,#16]1(=O)~[#6]~[#6]~[#8,#16]1"
+linear_polycyclic_aromatic_I,"[$(a12aaaaa1aa3a(aa(aaaa4)a4a3)a2),$(a12aaaaa1aa3a(aaa4a3aaaa4)a2),$(a12aaaaa1a(aa5)a3a(aaa4a3a5aaa4)a2)]"
+alpha_halo_carbonyl,"C(=O)([CH,CH2][Cl,Br,I,$(O(S(=O)(=O)))])"
+phosphorous_nitrogen_bond,"[#15]~[N,n]"
+gte_2_N_quats,"[N,n;H0;+;!$(N~O);!$(n~O)].[N,n;H0;+;!$(N~O);!$(n~O)]"
+betalactam,C1(=O)~[#6]~[#6]N1
+peroxide,[#8]~[#8]
+paraquat_like,[#6]1[#6][#6]([#6]2[#6][#6][#7;+][#6][#6]2)[#6][#6][#7;+]1
+perhalo_phenyl,"c1c([Br,Cl,I])c([Br,Cl,I])c([Br,Cl,I])c([Br,Cl,I])c1([Br,Cl,I])"
+phosphite,"[c,C]-[P;v3]"
+ortho_hydroquinone,"a1c([O,S;D1])c([O,S;D1])a[cH1][cH1]1"
+maleimide_etc,"[$([C;H1]),$(C(-[F,Cl,Br,I]))]1=[$([C;H1]),$(C(-[F,Cl,Br,I]))]C(=O)[N,O,S]C(=O)1"
+azo_aryl,c[N;!R;!+]=[N;!R;!+]-c
+bad_cations,"[C+,F+,Cl+,Br+,I+,Se+]"
+linear_polycyclic_aromatic_II,"[$(a12aaaa4a1a3a(aaaa3aa4)aa2),$(a12aaaaa1a3a(aaa4a3aaaa4)aa2),$(a1(a(aaaa4)a4a3a2aaaa3)a2aaaa1)]"
+quat_N_N,"[N,n;R;+]!@[N,n]"
+sulfonyl_halide,"S(=O)(=O)[F,Cl,Br,I]"
+gte_7_total_hal,"[Cl,Br,I].[Cl,Br,I].[Cl,Br,I].[Cl,Br,I].[Cl,Br,I].[Cl,Br,I].[Cl,Br,I]"
+para_hydroiminoquinone,a1[cH1]c([N;D1])[cH1]ac([N;D1])1
+carbonyl_halide,"O=C[F,Cl,Br,I]"
+carbodiimide_iso#thio#cyanate,"N=C=[N,O,S]"
+phosphonium,[#15;+]~[!O]
+gte_4_nitro,"[$([N+](=O)[O-]),$(N(=O)=O)].[$([N+](=O)[O-]),$(N(=O)=O)].[$([N+](=O)[O-]),$(N(=O)=O)].[$([N+](=O)[O-]),$(N(=O)=O)]"
+gte_2_sulfonic_acid,"[C,c]S(=O)(=O)[O;D1].[C,c]S(=O)(=O)[O;D1]"
+bis_keto_olefin,"CC(=O)[$([C&H1]),$(C-F),$(C-Cl),$(C-Br),$(C-I)]=[$([C&H1]),$(C-F),$(C-Cl),$(C-Br),$(C-I)]C(=O)C"
+disulfide_acyclic,[S;!R;X2]-[S;!R;X2]
+bad_boron,"[B-,BH2,BH3,$(B(F)(F))]"
+thiopyrylium,"c1[S,s;+]cccc1"
+gte_3_iodine,[#53].[#53].[#53]
+polyhalo_phenol_b,"c1c([O;D1])c(-[Cl,Br,I])cc(-[Cl,Br,I])c1.c1c([O;D1])c(-[Cl,Br,I])cc(-[Cl,Br,I])c1"
+branched_polycyclic_aromatic,a1(a2aa(a3aaaaa3)aa(a4aaaaa4)a2)aaaaa1
+gte_5_phenolic_OH,a[O;D1].a[O;D1].a[O;D1].a[O;D1].a[O;D1]
+oxonium,"[o+,O+]"
+halogen_heteroatom,"[!C;!c;!H][F,Cl,Br,I]"
+diazonium,a[N+]#N
+porphyrin,"[#6;r16,r17,r18]~[#6]1~[#6]~[#6]~[#6](~[#6])~[#7]1"
+polyhalo_phenol_a,"c1c([O;D1])c(-[Cl,Br,I])c(-[Cl,Br,I])cc1.c1c([O;D1])c(-[Cl,Br,I])c(-[Cl,Br,I])cc1"
+thio_xanthate,[S;!R]-[C;!R](=[S;!R])(-[S;!R])
+thiosulfoxide,"[C,c][S;X3](~O)-S"
+polyhalo_phenol_c,"c1c([O;D1])ccc(-[Cl,Br,I])c(-[Cl,Br,I])1.c1c([O;D1])ccc(-[Cl,Br,I])c(-[Cl,Br,I])1"
+quinone_methide,"[#6;!$([#6](-[N,O,S]))]1=[#6;!$([#6](-[N,O,S]))][#6](=[#6])[#6;!$([#6](-[N,O,S]))]=[#6;!$([#6](-[N,O,S]))][#6]1(=[O,N,S])"
+polyhalo_phenol_d,"c(-[Cl,Br,I])1c([O;D1])c(-[Cl,Br,I])ccc1.c(-[Cl,Br,I])1c([O;D1])c(-[Cl,Br,I])ccc1"
+3halo_pyridazine_2EWG,"[n;R1]1c([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])c([F,Cl,Br,I])ccn1"
+3halo_pyridazine_4EWG,"[n;R1]1cc([F,Cl,Br,I])[#6]([$(S(=O)(=O)),$(C(F)(F)(F)),$(C#N),$(N(=O)(=O)),$([N+](=O)[O-]),$(C=O)])cn1"
+cyano_phosphonate,"P(O[A,a])(O[A,a])(=O)C#N"
+double_trouble_warhead,NC(C[S;D1])C([N;H1]([O;D1]))=O
+Anil_di_alk_C,"c1c(ccc(c1)N([CX4])[H,CX4])O[CX4]"
+Anil_di_alk_D,"c1c(ccc(c1)[CX4][$([#8!H0]),$([#6]=[#6!H0]),$([#7][CX4])])[#7]([CX4])[CX4]"
+Anil_di_alk_E,"[$([#6!H0][#7]([CH2,CH3])c1[cH]c([H,CH2,CH3])c([CH,CH2][C!H0])[cH][cH]1),$([#6!H0][#7]([CH2,CH3])c1[cH]c([H,CH2,CH3])c([CH3])[cH][cH]1)]"
+Ene_five_het_A,C1(=C)C=N[!#1!#6]C1=[OX1]
+Ene_six_het_A,[#6]1([#6](~[!#1!#6]~[#6][!#1!#6][#6]1=[!#1!#6])~[!#1!#6])=[#6!R!H0]
+Hzone_phenol_A,c1ccc(c(c1)[#8!H0])[#6]=[#7][#7]
+Quinone_A,"[!#1!#6]=[#6]1-,:[#6]=,:[#6]-,:[#6](=[!#1!#6])-,:[#6]=,:[#6]1"
+Azo_A,[N!R]=N
+Imine_one_A,"[#6][#6](=[!#1!#6!R])[#6](=[!#1!#6!R])[#6,$(S(=O)=O)]"
+Mannich_A,N[CX4]c1c([OH1])cccc1
+Ene_rhod_A,N1C(=S)SC(=C)C1=O
+Hzone_phenol_B,c1(ccc(cc1)C=N[#7])[OH1]
+Imine_one_isatin,[OX1]=C2C(=;!@N[#7])c3c(cccc3)N2
+Anil_di_alk_A,"[CH2,CH3]N([CH2,CH3])c1cc([H,CH2,CH3,$(O(c)[CH2][CH2,CH3])])c(-[#7])[cH]c1"
+Anil_di_alk_B,c1c(ccc(c1)[#6]=[#6])[#7]([CX4])[CX4]
+Pyrrole_A,"[#7]1(c2acccc2)-,:[#6]([CX4])=,:[#6]-,:[#6!H0]=,:[#6]1[CX4]"
+Pyrrole_B,"[#7]1(c2acccc2)-,:[#6]([CX4])=,:[#6]-,:[#6H]=,:[#6]1cc"
+Catechol_A,c1ccc(c(c1)[OH1])[OH1]
+Ene_five_one_A,c2ccc1C(=[OX1])C(=C)C(=[OX1])c1c2
+Ene_five_one_B,"[cH]1[cH][cH][cH]c2[CH2]C(=[OX1])C(=C([CH2,CH3])[CH2,CH3])c12"
+Ene_five_het_B,C1(=C)C(N=CS1)=O
+Ene_five_het_C,C1(C(C=C[!#1!#6]1)=C)=[!#1!#6]
+Ene_five_het_D,C1(=C)C(=[OX1])NNC1=[OX1]
+Ene_five_het_E,NC=!@C2C(=[OX1])c5c(cccc5)[!#1!#6]2
+Ene_five_het_F,c1(ccccc1)[C!H0]=!@C2C(=[OX1])c5c(cccc5)S2
+Ene_one_ene_A,C=!@C([!#1])-&@C(=!@[!#1!#6])-&@C(=!@C)[!#1]
+Ene_one_ester,[#6][#6](=[#8])[#6!H0]=[#6]([#7!H0][#6])[#6](=[#8])[#8][#6]
+Ene_one_A,a1aaa(aa1)[C!H0]=[C!H0]C(=[OX1])Nc2cc3c(cc2)nc(cc3)N([#6])[#6]
+Ene_one_D,c([OH1])c-C(=[OX1])[C!H0]=C([#6])[#6]
+Ene_one_hal,"[#6][#6]=[#6]([F,Cl,Br,I])[#6](=[OX1])[#6]"
+Ene_cyano_A,[#6](C#[#7])(C#[#7])=Cc1ccccc1
+Ene_rhod_B,"[#16]1C(=O)NC(=O)C1=[#6!H0][$([#6]Br),$(c[cH]c([F,Cl,Br,I])cc[F,Cl,Br,I]),$(c[cH][cH]cS[CH2,CH3]),$(ccccccccccO[CH2,CH3]),$(c2c([CH2,CH3])n([CH2,CH3])c([CH2,CH3])c2)]"
+Hzone_pipzn,[#6]N1[CH2][CH2]N([CH2][CH2]1)[#7]=[#6!H0]ca
+Hzone_pyrrol,n1(C)[cH1][cH1][cH1]c1C=NN
+Hzone_enamin,"[#7!H0][#7]=[#6][#6]([H,#6])=[#6]([#6])-!@[#7,#8&!H0]"
+Hzone_anil_di_alk,"[CH2,CH3][#7]([CH2,CH3])c1[cH][cH]c([#6H]=[#7][#7][$([#6](=O)[CH2]Scn),$([#6](=O)[CH2]aan),$([#6](=O)cc[OH1]),$(cn),$([CH2][#6!H0][OH1])])[cH][cH]1"
+Hzone_acyl_naphthol,[cH]1[cH][cH][cH]c2c1[cH]c(C(=[OX1])[N!H0]N=C)c([OH1])[cH]2
+Keto_keto_beta_A,c1ccc2C(=[OX1])[CX4]C(=[OX1])c2c1
+Keto_keto_beta_zone,"cc[N!H0]N=C([CH2,CH3])[CH2]C([CH2,CH3])=N[N!H0]cc"
+Cyano_ene_amine_A,C(C#[NX1])(C#[NX1])C([NH2])=CC#[NX1]
+Cyano_pyridone_A,"[#6]1(=[SX1])-,:[#7!H0]-,:*=,:*-,:*=,:[#6]1C#[NX1]"
+Cyano_pyridone_B,"[#6]1(=,:[#6](-,:[#6](=O)-,:[#7]-,:[#6](=,:[#7]1)[!#1!#6])C#[#7])[#6]"
+Cyano_imine_A,[N!H0]N=C(C#[NX1])C=[!#6&!R]
+Cyano_imine_B,C(C#[NX1])(C#[NX1])=N[N!H0]c1ccccc1
+Cyano_cyano_A,"C(C#[NX1])(C#[NX1])C([$(C#[NX1]),$(C=N)])C#[NX1]"
+Anil_alk_ene,c1ccc4c(c1)NCC9C4C=CC9
+Anil_no_alk,"c1([NH2])[cH][cH]c([#7,#8,CH2,CH3])[cH][cH]1"
+Anil_di_alk_furan_A,"N([CH2,CH3])([CH2,CH3])c1oc(C=N[N!H0]C(=[!#1!#6]))[cH][cH]1"
+Amino_acridine_A,c1cccc5c1c(c8c(n5)cccc8)[#7]
+Thiaz_ene_A,"C1([CH2,CH3,$(cc)])=C([H,CH2,CH3,$(C=O)])SC(N1([H,$([C!H0]),$(cc)]))=[#7!R]"
+Thiaz_ene_B,"C1([$(NC(=[OX1])cc),NH2])=C(-!@C(=[OX1])N[CH2,CH3])SC(N1[$([CH2][CH]=[CH2]),$(cc)])=[SX1]"
+Thio_carbonate_A,"[#8]1-,:[#6](-,:[#16]c4cc(ccc14)[#7,#8])=[OX1,SX1]"
+Thiophene_amino_Aa,[NH2]c1sc([!#1])c([!#1])c1C=[OX1]
+Thiophene_amino_Ab,"[H,CH2,CH3,$(cc)]c1sc([#7!H0][#6](=O)[#6])c(C(=O)[#8])c1[$(c2ccccc2),$(c3sccc3)]"
+Thiophene_hydroxy,"[#16]1-,:[#6]=,:[#6]-,:[#6](=,:[#6]1)[OH1]"
+Sulfonamide_A,"c1(c(c([cH]c([cH]1)[F,Cl,Br,I])[F,Cl,Br,I])[OH1])S(=[OX1])(=[OX1])N"
+Sulfonamide_B,c1c(ccc(c1)[NH]S(=[OX1])=[OX1])[OH1]
+Thio_ketone,"[#6]-,:[CX3](=[SX1])-,:[#6]"
+Anthranil_one_A,"[$(c1c(c(ccc1)C(-cc)=[OX1])[NH&!$([NH][CX3]=[OX1])]),$(c1c(c(ccc1)C(-cc)=[OX1])[NH2])]"
+Diazox_sulfon_A,"N(c1ccccc1)S(=[OX1])(=[OX1])c2c3n[o,s]nc3ccc2"
+Dyes3A,"[#7v4,#7+](-,:[#6]=,:[#6])=,:[#6]-[CH]=CN([CX4])[#6]"
+Dyes5A,"[CH2,CH3][#7](:,-[#6]:[#6])~[#6]-,:[#6]=,:[#6]-[#6]~[#6]:,-[#7]"
+Rhod_sat_A,"[#7]1-,:[#6](=[#16])-,:[#16]-,:[#6X4]-,:[#6]1=[#8]"
+Imine_one_fives,[#6]1(=[!#1!#6!R])[#6](=[OX1])[!#1!#6]*=[#6]1
+Imine_one_sixes,C1(C(=[OX1])NC(=[OX1])NC1(=[OX1]))=N
+Naphth_amino_A,"c1ccc4c5c(cccc15)[#7]=,:[#6]-,:[#7]4"
+Naphth_amino_B,c1ccc4c5c(cccc15)[N!H0][CX4][N!H0]4
+Thio_dibenzo,"[SX1]=[#6]1-,:[#6]=,:[#6]-,:[!#1!#6]-,:[#6]=,:[#6]1"
+Het_65_A,"[OX1]=CC1=C2N=C([CH2,CH3])C=C([OH1])N2N=C1"
+Het_6_tetrazine,"N~c1[n,$(c(N))][n,c!H0,$(c[N!H0])]c([N!H0,$([OX2][CH2,CH3])])nn1"
+Imidazole_A,"[#7]1-,:[#6](-c2ccccc2)=,:[#6](-c3ccccc3)-,:[#7!H0]-,:[#6]1-ca"
+Anthranil_acid_A,c1(C(=[OX1])[OH1])c([N!H0]N=C)cccc1
+Dhp_bis_amino_CN,[NH2]C1=C(C#[NX1])[C!H0](-cc)C(C#[NX1])=C([NH2])S1
+Anisol_A,"c1(O[CH2,CH3])c([H,CH2,CH3])[cH]c(O[CH2,CH3])c([CH2][$([N!H0]C(=[OX1])[CH2][CH2][CH2,CH3]),$([C!H0]([CH2,CH3])[N!H0]C(=[SX1])[N!H0])])[cH]1"
+Anisol_B,"[CH2,CH3](c4c([cH][cH]c([cH]4)[CH2][N!H0][CX4])O[CH2,CH3])"
+Anthranil_acid_B,"c3cc(C(=[OX1])[N!H0]c4ccccc4C(=[OX1])[OH1])cc1c3C(=[OX1])N([CH2,CH3])C1=[OX1]"
+Anthranil_acid_C,"[#6]1(=,:[#6]([NH2])-,:[#7](-c7ccccc7C(=[OX1])[OH1])-,:[#7]=,:[#6]1C=[OX1])[$(C#[NX1]),$(C=S)]"
+Anthranil_acid_D,"c12ncccc1-,:[#6]([NH2])=,:[#6](C(=[OX1])~[OX1,O-])-,:[#16]2"
+Anthranil_acid_E,C1(=[OX1])C(=[CH][NH]c2c(C(=[OX1])[OH1])cccc2)N=C(c3ccccc3)O1
+Anthranil_acid_F,c1([OH1])ccc([N!H0]C(=[OX1])cc)c(c1)C(=[OX1])[OH1]
+Anthranil_acid_G,"c1([cH][cH]c(O[CH2,CH3])[cH]c1(C(=[OX1])[OH1]))[N!H0]cc"
+Anthranil_acid_H,"c1ccc4c(c1C(=[OX1])[OH1])[#7!H0]-,:[#6](=,:[#6]4cc)cc"
+Anthranil_acid_I,c1(oc([#6])[cH][cH]1)C(=[OX1])[N!H0]c1[cH][cH][cH][cH]c1(C(=[OX1])[OH1])
+Anthranil_acid_J,[N!H0](cc)c5c(C(=[OX1])[OH1])ccc(n5)-cc
+Anthranil_amide_A,c1ccccc1C(=[OX1])[N!H0]c2ccccc2C(=[OX1])[N!H0][N!H0]c3nccs3
+Azulene,c1ccc4c(cc1)ccc4
+Anil_alk_A,"[CH2,CH3]Occ[CH2][N!H0]c1[cH]c2n[cH]n([#6!H0])c2[cH][cH]1"
+Anil_alk_B,"[N!H0](c1[cH][cH]c([CH2,CH3])[cH][cH]1)[CH2][CH2]c2[cH][cH]c(O[CH2,CH3])[cH][cH]2"
+Anil_alk_C,"[N!H0](c1ccccc1)C([#6])([#6])c2[cH][cH]c(O[CH2,CH3])[cH][cH]2"
+Anil_alk_D,"[N!H0](c1[cH][cH]c([C!H0]([CH2,CH3])[CH2,CH3])[cH][cH]1)[CH2][CH2]N([CH2,CH3])[CH2,CH3]"
+Anil_alk_thio,c1ccc2c(c1)C3=C(C([#6])([#6])N2)SSC3=*
+Anil_alk_indane,c1(ccc4c(C6Cc8c(C6N4)cccc8)c1)[CX4]
+Anil_di_alk_F,"c1c(ccc(N([H,CX4])([H,CX4]))c1)[CX4]c2ccc(cc2)N([H,CX4])([H,CX4])"
+Anil_di_alk_J,"[CH2,CH3][#7]([CH2,CH3])c1[cH][cH]c([#6!H0]=[#7][#7]=[#6]([#6])-cc)[cH][cH]1"
+Anil_di_alk_I,"[cH]1c([N!H0]C(=[OX1])c2ccccc2)[cH]c(N([CH2,CH3])[CH2,CH3])[cH][cH]1"
+Anil_di_alk_M,[cH]1c([cH]nc7c1[cH][cH][cH][cH]7)[CH2]N2c3c([CH2][CH2]2)[cH][cH][cH][cH]3
+Anil_di_alk_N,c12[cH][cH][cH][cH]c1[C!H0]=[C!H0]C3C(C#[NX1])[CH2][C!H0]N23
+Anil_di_alk_ene_B,"[CH2,CH3]N([CH2,CH3])C1=Cc2ccccc2[CH2]1"
+Anil_di_alk_furan_B,"[CH2,CH3]N([CH2,CH3])c1[cH][cH]c(o1)[C!H0]=CC#[NX1]"
+Anil_di_alk_indol,"c12[cH][cH]c(N([CH2,CH3])[CH2,CH3])[cH]c1-,:[#6](S(=[OX1])=[OX1])=,:[#6H]-,:[#7!H0]2"
+Anil_no_alk_indol_A,"c12[cH][cH]c([NH2])[cH]c1[cH][cH]n2[CH2,CH3]"
+Anil_NH_alk_A,"c1([N!H0][CH2,CH3])[cH][cH]c2c([cH]1)[#7!H0]-,:[#6](=[OX1])-,:[#7!H0]2"
+Anil_NH_alk_B,[N!H0](c1ccacc1)c2ccc([N!H0][C!H0])cc2
+Anil_NH_alk_C,[C!H0][N!H0]c1[cH][cH][cH][cH]c1[N!H0][C!H0]
+Anil_NH_alk_D,"[NH2]c1c([N!H0][C!H0]([#6])[C!H0][CH2,CH3])c[cH][cH][cH]1"
+Anil_NH_no_alk_A,n1[cH]c([NH2])[cH][cH]c1([N!H0]cc)
+Anil_NH_no_alk_B,"[NH2]c1c([N!H0]S(=[OX1])=[OX1])[cH]c([N!H0][CH2,CH3])c([F,Cl,Br,I])[cH]1"
+Anil_OH_alk_A,c1ccccc1[CH2][N!H0]c2[cH][cH]c([OH1])[cH][cH]2
+Anil_OH_no_alk_A,[NH2]c1c([OH1])cc(S(=[OX1])(=[OX1])[OH1])cc1
+Anil_OH_no_alk_B,c1([NH2])c([OH1])c(C=[OX1])[cH]c2[cH][cH][cH][cH]c12
+Anil_OC_alk_A,"[cH]1[cH][cH]c2c([cH]1)c3c(o2)[cH]c([N!H0][CH2,CH3])c(O[CH2,CH3])[cH]3"
+Anil_OC_alk_B,"c2ccccc2N1C(=[OX1])C([N!H0]c2ccc(O[CH2,CH3])cc2)=C([F,Cl,Br,I])C1=[OX1]"
+Anil_OC_alk_C,"[H,CH2,CH3]Oc1[cH][cH][cH][cH]c1[N!H0][CH2]c2nccn2"
+Anil_OC_alk_D,"[CH2,CH3]Oc1[cH][cH]c([CH2,CH3])[cH]c1[NH][CH2]c2c([CH2,CH3,$(O[CH2,CH3])])cccc2"
+Anil_OC_alk_E,"[CH2,CH3]Oc1[cH][cH][cH][cH]c1[N!H0][CH2][C!H0]([OH1])[CH2,CH3]"
+Anil_OC_alk_F,"[CH2,CH3]Oc1[cH][cH][cH][cH]c1[N!H0][C!H0]([#16])C=[OX1]"
+Anil_OC_no_alk_B,c1ccc4c(c1Oc8[cH][cH]c([cH][cH]8)[N!H0])cccc4
+Anil_OC_no_alk_C,[NH2]c1ncccc1O[CH2]cc
+Anil_no_alk_A,"[NH2]c1c(N=[#6]2-,:[#6!H0]=,:[#6]~[#6]~[#6]=,:[#6]2)[cH][cH][cH][cH]1"
+Anil_no_alk_B,"[NH2]c1c(n2cccc2)[cH]c([CH2,CH3])c([CH2,CH3])[cH]1"
+Anil_no_alk_D,"n1c([NH2])c([CH2,CH3])[cH]c([CH2,CH3])c1[NH2]"
+Anil_no_alk_C,"[NH2]c1[cH][cH]c([cH][cH]1)-c2[cH]c(C=[OX1])c([CH2,CH3])o2"
+Amino_acridine_B,c1cccc5c1cc8c(n5)nc2c(c8[#7])cccc2
+Hzone_anil,c1([cH][cH]c([NH2])[cH][cH]1)C=N[N!H0]
+Hzone_anthran_Z,c1cccc5c1cc8c(c5C=N[N!H0]c2ccccc2)cccc8
+Hzone_acyl_misc_A,"c1(oc([H,CH2,CH3])[cH][cH]1)C(=[OX1])[N!H0]N=C([H,CH2,CH3])c2cc(*-*-*c3occc3)ccc2"
+Hzone_acyl_misc_B,n1[cH][cH][cH][cH]c1C(=[OX1])[N!H0]N=[C!H0]c2c(O[CH2]C(=[OX1])[OH1])cccc2
+Hzone_thiophene_A,"[cH]2[cH][cH][cH]c1c2c([C!H0]=N[N!H0]([$(c3nc[cH]s3),$(c[cH][cH]),$(cncncn),$(cnnnn)]))c([H,$([OH1]),CH2,CH3])[a!c]1"
+Hzone_thiophene_B,"c1(s[cH][cH]c1[H,CH2,CH3])[C!H0]=N[N!H0]c2ccccc2"
+Hzone_phenone,"C(c1[cH]cc([H,CX4])[cH][cH]1)(c2[cH][cH]c([H,Cl])[cH][cH]2)=[$(NO[CH2][CH2][CH2]N([CH2,CH3])[CH2,CH3]),$(NO[CH2][CH2]N([CH2,CH3])[CH2,CH3]),$(N[N!H0]C(=[NH1])[NH2]),$([#6!H0][#7])]"
+Hzone_furan_A,"c1(oc([H,CH2,CH3])[cH][cH]1)C([H,CH2,CH3])=N[N!H0]c2nccs2"
+Hzone_furan_B,"c1(oc([H,CH2,CH3])[cH][cH]1)C([H,CH2,CH3])=N[NH]c2ccncc2"
+Hzone_furan_C,c1ccccc1N(c2ccccc2)N=[C!H0]c3ac([cH][cH]3)-c4cc(C(=[OX1])[OH1])ccc4
+Hzone_furan_E,[OH1]C(=[OX1])c1cc(ccc1)-cacC=N[N!H0]C(=[OX1])[CH2][#8]
+Hzone_naphth_A,"[cH]1[cH][cH]c2[cH][cH]c(C=N[N!H0][$(cc),$(C=[SX1])])[cH]c2c1"
+Hzone_acid_A,"[cH]1[cH]c(O[CH2,CH3])[cH]c2C(=N[N!H0]c4[cH][cH]c(C(=[OX1])[OH1])[cH][cH]4)c3[cH]c(O[CH2,CH3])[cH][cH]c3c12"
+Hzone_acid_D,[OH1]C(=[OX1])c1ccc(cc1)NN=[C!H0]c2ac([cH][cH]2)-c3ccccc3
+Het_5_A,N1(c2ccccc2)N=C(C=[OX1])[CX4]C1=[OX1]
+Het_5_B,N1(c2ccccc2)N=C([N!H0]C=[OX1])[CH2]C1=[OX1]
+Het_5_C,"N1=C(c2ccccc2)[CH2]C([OH1])([CX4](F)(F)F)N1[$(cccccc),$(C(=S)cccccc)]"
+Het_5_D,"N1(c2ccccc2)N=C([CH2,CH3])[C!H0](S[#6])C1=[OX1]"
+Het_5_E,"N1(c2cccc3ccccc23)N=C([CH2,CH3])[CH2]C1=[OX1]"
+Het_5_ene,"C1(=[OX1])C(=C([CH2,CH3])[N!H0][CH2][CH2][CH2,CH3])N=C(c2ccccc2)O1"
+Het_5_inium,"[#7]1(c2ccccc2)[#6!H0]=[#7+,#7v4](c3ccccc3)[#6](=Nc4ccccc4)N1"
+Het_5_pyrazole_OH,"n1(c2[cH][cH][cH][cH][cH]2)nc([CX4])c([H,C!H0])c1[OH1]"
+Het_6_imidate_A,"N=[#6]1-,:[#7!H0]-,:[#6]([N!H0])=,:[#6]([N!H0])-,:[#7]=,:[#7]1"
+Het_6_imidate_B,[N!H0](c1[cH][cH][cH][cH]c1[OH1])C2N=NC(=[#7])OC([NH2])=2
+Het_6_pyridone_OH,[OH1]c2nc([OH1])ccc2
+Het_6_pyridone_NH2,[OH1]c2nc([NH2])acc2[CH2]C(=[OX1])[#8]
+Het_6_hydropyridone,C1([N!H0])=N[C!H0](cc)[CH2]C(=[OX1])[N!H0]1
+Het_55_A,cc-n1nc2[CH2][SX2][CH2]c2c1[N!H0]C(=[OX1])[C!H0]=[C!H0]
+Het_55_B,c1cOC2[CH2]C(=[OX1])OC12
+Het_65_B,a1a3a(aaa1)[N!H0]N(C3=O)[#6]
+Het_65_C,"C1=CC=CC2=NC([$(C([!#1])=[C!H0]cc),$(coc)])=C(Ncc)N12"
+Het_65_E,S1C(=C(C4=C1[N!H0]C(C(=[C!H0]4)C(=[OX1])[OH1])=[OX1])[NH2])C(=[OX1])[N!H0]
+Het_65_F,"[#16]1-,:[#6]2:[#6](-,:[#6]([CH2,CH3])=,:[#6]1[CH2,CH3])c(ncn2)NN=C[#6]3=,:[#6]-,:[#6]=,:[#6]-,:[#8]3"
+Het_65_G,"[CH2]1C(=[OX1])[#7]2-,:[#7]=,:[#6]([NH2])-,:[#6]([NH2])=,:[#6]2N=C1[#6]"
+Het_65_H,"[#6]1(=,:[#6]2-,:[#7](-,:[#6](-,:[#6]=,:[#6]-,:[#7]2)=[OX1])-,:[#7]=,:[#6]1[#6]3-,:[#7]-,:[#6]=,:[#6]-,:[#6]=,:3)C#[NX1]"
+Het_65_I,c1(C(~[#8])~[#8])ccn2c(c1)cc(-cc)c2C(=[OX1])-cc
+Het_65_J,"o1c([#6](~[#8])~[#8])cc2[cH]c(O[CH2,CH3])c(O[CH2,CH3])[cH]c12"
+Het_65_K,N1=NNN=C2C=CC=C12
+Het_65_L,"c12[cH]sc(C=[OX1])c2-,:[#6](=[OX1])-,:[#7]-,:[#7]=,:[#6]1[NH2]"
+Het_65_Da,N1=C([#6])C2=CC=CC2=C([#6])N1
+Het_65_Db,n1ccccc1C2=C(N[#6])N1C(=N2)C=CC=C1
+Het_65_pyridone_A,"c1([CH2][CH2,CH3])c([CH2,CH3])c2C(=[!#1!#6X1])N([C!H0][$(C(=O)O),$(cc)])C([H,$(S(C)[CH2,CH3])])=Nc2[a&!c;X2]1"
+Het_65_imidazole,"[#6]1(=,:[#7]c3[cH][cH][cH][cH]c3n1[#6])[N!H0]C(=[OX1])[N!H0]c2[cH]ccc[cH]2"
+Het_65_mannich,[cH]1[cH]c2O[CH2]Oc2c([cH]1)[CH2]N2[CH2][CH2]cc2
+Het_66_A,c1ccc7c(c1)nnc(n7)[CH2]C=[OX1]
+Het_66_B,"c1ccc4c(c1)nc(nc4)[N!H0]C2=NC(C=C[N!H0]2)([CH2,CH3])[CH2,CH3]"
+Het_66_C,c1ccc2nc([C!H0]=C([OH1])[#6])c([C!H0]=C([OH1])[#6])nc2a1
+Het_66_D,c1ccc7c(c1)nc(c(n7)[CH2]C(=[OX1])cc)[CH2]C(=[OX1])cc
+Het_66_E,c1ccc4c(c1)nc(c(n4)c2ccccc2)c7c(cccc7)[OH1]
+Het_66_anisole,"[CH2,CH3]Oc1[cH][cH][cH][cH]c1[N!H0]c2c3c(O[CH2,CH3])ccc(O[CH2,CH3])c3ncc2"
+Het_76_A,s1[cH][cH][cH]c1C2[N!H0]N=C(c4ccncc4)c3c(cccc3)N=2
+Het_465_misc,c1c4CCc4cc2OCOc12
+Het_565_A,c1n([#6])c2c3ncnc3c([OH1])[cH]c2c1C=[OX1]
+Het_565_indole,"[#6!H0]1=,:[#6!H0]-,:[#7]([CH2,CH3])c7c1c9[#6!H0]=,:[#6!H0]-,:[#7](c9c(c7O[CH2,CH3])O[CH2,CH3])[CH2,CH3]"
+Het_666_A,"[#7]1-,:c2c(-,:[#6](=N)c6ccccc16)cccc2"
+Het_666_B,"c1cccc9c1Oc2c(N9[CH2][CH2,CH3])cccc2"
+Het_666_C,"c13cc2ccccc2cc1-,:[#7]([CH2,CH3])-,:[#6](=[OX1])-,:[#6](-cc[N!H0][CH2,CH3])=,:[#7]3"
+Het_6666_A,c1ccc4c(c1)nc8c(n4)ccc5c8cccc5
+Het_pyridiniums_B,"[#6]1=,:[#6]-,:[#6]=,:[#6]-,:*2=,:[#6]1-,:*=,:[#7+,#7v4](~cc)-,:*=,:[#6]2[H,*]"
+Het_pyridiniums_C,"[#6]1~[#6]~[#6]~[#7+,#7v4]2~[#6](~[#7]1)~[#6]3~[#6]~[#6]~[#6]~[#7](-cc)~[#6]3~[#7]2"
+Het_thio_5_A,"[CH2,CH3][SX2]c1n(-!@[CH2,CH3])c(-c2ccccc2)[cH]n1"
+Het_thio_5_B,C1(C=[OX1])(cc)[SX2]C=N[NH]1
+Het_thio_5_C,"[SX1]=[#6]1-,:[#7!H0]-,:[#7]=,:[#6](c2[cH][cH]c(O[CH2,CH3])[cH][cH]2)-,:[#8]1"
+Het_thio_5_imine_A,[#7]=C1SC(=[#7])N=C1
+Het_thio_5_imine_B,"N1([CH2,CH3])C(=S)N(-cc)C(=N-cc)C1=N-cc"
+Het_thio_5_imine_C,S1C(=N[N!H0])SC(=N-cc)C1=N-cc
+Het_thio_6_ene,c1cN=CC(=CN[#6])S1
+Het_thio_6_furan,"[CH2,CH3][SX2]c1nc(-c2o[cH][cH][cH]2)c(-c3o[cH][cH][cH]3)nn1"
+Het_thio_65_A,"[#7]1=,:[#6]([SX2][CH2,CH3])-,:[#7]=,:[#7]-,:[#6]2=,:[#6]1-,:[#6]([CH2,CH3])=,:[#7]-,:[#7]2-c3cccccc3"
+Het_thio_65_B,"[N!H0][#6]3=,:[#7]-,:[#6](=,:[#7]-,:[#6]7=,:[#7]-,:[#7]=,:[#6](-,:[#7]37)S[#6])[N!H0][#6]"
+Het_thio_65_C,"n1c2ccccc2n([CH2,CH3])c1S[CH2]C(=[OX1])[N!H0]N=[C!H0][C!H0]=[C!H0]"
+Het_thio_65_D,"c1(S[CH2]C(=[OX1])[NH]-cc)nc2[cH]c([F,Cl,Br,I])c[cH]c2[nH]1"
+Het_thio_66_A,c1ccc2[CH2][CH2]N=C(c2c1)[SX2][CH2]C(=[OX1])c2ccccc2
+Het_thio_66_one,"c1cccc2c1-,:[#16]-,:[#6](C=[OX1])=,:[#6]-,:[#7]2"
+Het_thio_67_A,"[CH2,CH3][SX2]c1nc2OC=Ncc-c2nn1"
+Het_thio_656a,n1nc(S[CH2]C=[OX1])nc2c1c3c(n2[CH2][CH]=[CH2])cccc3
+Het_thio_656b,CC(=[OX1])[CH2][SX2]c1nc2[nH]c3[cH][cH][cH][cH]c3c2nn1
+Het_thio_656c,"[#6]1=,:[#6]-,:[#6]=,:[#6]-,:[#6]2-,:[#7+,#7v4]=,:[#6]3-,:[#7](N=C(c5ccccc5)[CX4]S3)-,:[#6]12"
+Het_thio_665,"c1ccc7c(c1)NC3=C(S7)SC(=C3)[CH2,CH3]"
+Het_thio_666_A,"[cH]1[cH][cH][cH]c5N([H,CH3,$([CH2][C!H0])])c7c(~[H,$([N!H0][CX4]),$(cc)])c(~[H,$(cc)])c([H,NH2,$([OX2][CX4])])[cH]c7Sc15"
+Het_thio_676_A,"c1ccc4c(c1)Sc8[cH][cH]c([cH]c8C(C4)N([H,CX4])([H,CX4]))[H,#8,#16X2,CX4,$(N([H,CX4])[H,CX4])]"
+Het_thio_676_B,[CH2]1Sc2[cH][cH][cH][cH]c2C(Occ)c3[cH][cH][cH][cH]c13
+Het_thio_pyr_A,"n1c(S[C!H0])c(C#[NX1])c(c2ccc(O[Ch2,CH3])cc2)[cH]c1(cc)"
+Het_thio_N_5A,N=C1N=CNS1
+Het_thio_N_5B,"[#6]1~[#6](~[#7]~[#7]~[#6](~[CH2,CH3])~[CH2,CH3])~[#7]~[#16]~[#6]1"
+Het_thio_N_5D,"[#7]1=,:[#7]-,:[#16]-,:[#6]=,:[#6]1-[#6]2-,:[#8]-,:[#7]=,:[#6](-cc)-,:[#7]=,:2"
+Het_thio_N_55,[C!H0]c1nn(c3ccccc3)s2[a!c]acc12
+Het_thio_N_65A,c1cC2=C(SNC2=S)CN1
+Het_thio_urea_ene,[OX1]=CC1=NN(cc)C(=[C!H0]cc)S1
+Het_pyraz_misc,C(F)(F)C(=[OX1])[N!H0]c1[cH]n([CH2][CH2]O[CH2]-cc)n[cH]1
+Styrene_A,C1Cc3ccccc3C(c5c1cccc5)=CC
+Styrene_B,"c1ccc4c(c1)[SX2,CX4]c8ccc(cc8C4=CC)[H,Cl,CX4]"
+Styrene_C,"c1ccc4c(c1)C([#6]8=,:[#6](SC4)-,:[#16]-,:[#6]=,:[#6]8)=C"
+Styrene_anil_A,c1ccc7c(c1)C(c2c7ccc(c2)[NH2])=[C!H0][#6]
+Styrene_imidazole_A,C(=[C!H0][CH2]n1[cH]n[cH][cH]1)(-cc)-cc
+Ene_cyano_B,[NH2]c1nc2C(C#[NX1])=CC(=C)c2cc1C#[NX1]
+Ene_cyano_C,C=C(C#[NX1])C(=[NH])NN
+Ene_cyano_D,C(C#[NX1])(C#[NX1])=C(S)S
+Ene_cyano_E,[OX1]=C[C!H0]=C(C#[NX1])[#6]
+Ene_cyano_F,[OH1]C(=[OX1])c1c([OH1])[cH]c([cH][cH]1)-c2[cH][cH]c(o2)[C!H0]=C(C#[NX1])-c3nccn3
+Ene_cyano_G,"[#7]1([#6])-,:[#6!H0]=,:[#6!H0]-,:[#6!H0]=,:[#6]1[C!H0]=C(C#[NX1])c2nccs2"
+Ene_five_het_G,"C1(=[OX1])C(=[C!H0][$(c2ccccc2),$(c2ccc[a!c]2)])N=C(aaa)[#16,$(Naa)]1"
+Ene_five_het_H,N1=CC(C(N1)=S)=C
+Ene_five_het_I,c1(ccco1)[C!H0]=!@C2C(=[OX1])c5c(cccc5)[!#1!#6]2
+Ene_five_het_J,"S=[#6]1-,:[#7!H0]-,:[#6]=,:[#6]-,:[#6]2=,:[#6]1C(=[OX1])OC2=[C!H0]"
+Ene_five_het_K,"[#7]1([#6])-,:[#6H]=,:[#6H]-,:[#6H]=,:[#6]1([CH]=C2C(=[OX1])[!#6]C=,:*2)"
+Ene_five_het_L,[OX1]=C1C(=!@[C!H0]c3ccnc3)c2c(cccc2)N1
+Ene_five_het_M,"C1=,:C[O,S]C(=CC=[OX1])C1=[OX1]"
+Ene_five_het_N,"C1(=[OX1])C(=[C!H0]c2cc([F,Cl,Br,I])ccc2O[CH2,CH3])N=C(S[CH2,CH3])S1"
+Ene_six_het_B,"c2ccccc2C(=[OX1])[C!H0]=[#6]1-,:[#6](=[OX1])-,:[#7H]-,:[#6](=[OX1])-,:[#6](=[CH]c3ccccc3)-,:[#7!H0]1"
+Ene_six_het_C,[OX1]=C1cc[CH2]NC1=[C!H0]
+Ene_six_het_D,[OX1]=C1NNC(aa)=NC1=[C!H0]
+Ene_quin_methide,"aaC([H,$(C#[NX1])])=[#6]1-,:[#6]=,:[#6]-,:[#6](=[OX1,N!R])-,:[#6]=,:[#6]1"
+Ene_rhod_C,"S1C(=Ncc)N([H,$([CH2][CH2]O),$(cc)])C(=[OX1])C1(=[C!H0][$(cccCl),$(c[a!c])])"
+Ene_rhod_D,"S1C(=!@N[H,$([N!H0](N)cc)])N([H,$(cnccs)])C(=[OX1])C1=[C!H0]cc[Cl,$(O[C!H0])]"
+Ene_rhod_E,S1C(=[OX1])NC(=[SX1])C1=[C!H0]cc
+Ene_rhod_F,"n1ccc([C!H0]=C2C(=[OX1])NC(=[!#1!#6])N2)c1[CH2,CH3]"
+Ene_rhod_G,[OH1][CX3](=[OX1])c1cccc(c1)cac[C!H0]=C2C(=[!#1!#6])NC(=[!#1!#6])[!#1!#6]2
+Ene_rhod_H,"N1=C([CH2,CH3])C(=[OX1])N=C2N1C(=[OX1])C(=[C!H0]cc)S2"
+Ene_rhod_I,"N1([CH2,CH3])C(=S)[N!H0]C(=[C!H0]c2cc(Br)ccc2)C1(=O)"
+Ene_rhod_J,"[CH2,CH3]N1C(=[#16,#7])[!#6]C(=[#6]2-,:[#6H]=,:[#6H]cc-,:[#7]2[CH2,CH3])C1=[OX1]"
+Ene_misc_A,C1([#8])OC([#6])([#8])C=C1
+Ene_misc_B,cc[CH2][C!H0](C=[OX1])N1C(=[OX1])[C!H0]2[CH2]C=C[CH2][C!H0]2C1(=[OX1])
+Ene_misc_C,"c1ccc4c(c1)N(C(C=C4)([CH2,CH3])[CH2,CH3])C(=[OX1])[N!H0]c3ccc(c(c3)O[CH2,CH3])O[CH2,CH3]"
+Ene_misc_D,"c12[cH]c(O[CH2,CH3])c(O[CH2,CH3])[cH]c1C([#6])=C([#6])S[CH2]2"
+Ene_misc_E,"c1(O[CH2,CH3])c(O[CH2,CH3])[cH]c2C=C[C!H0]Sc2[cH]1"
+Dhp_amidine_A,[N!H0]1N=C([N!H0])SC(-cc)=C1-cc
+Dhp_amino_CN_A,"[NH2]C1=C(C#[NX1])[C!H0](cc)C([CH2,CH3])=C(C=C)O1"
+Dhp_amino_CN_B,"[NX3H2,OX2H1]C1=C(C#[NX1])[C!H0](cc)c2c(n(C)nc2)O1"
+Dhp_amino_CN_C,"[NH2][#6]1=,:[#6](C#[NX1])-,:[#6!H0](cc)-,:[#6](C#[NX1])=,:[#6](cc)-,:[#8]1"
+Dhp_amino_CN_D,[NH2]C1=C(C#[NX1])[C!H0](cc)c2c(ccs2)O1
+Dhp_amino_CN_E,"[CH2,CH3][SX2]C1=C(C#[NX1])[C!H0](cc)C(C#[NX1])C(=O)N1"
+Dhp_amino_CN_F,"[NH2][#6]1=,:[#6](C#[NX1])-,:[#6!H0](c2cccs2)-,:[#6](C(=[OX1])O[#6])=,:[#6]([CH2,CH3])-,:[#8]1"
+Dhp_amino_CN_G,"[SX2]1C=C(C#[NX1])C([#6])(C=[OX1])C([$(C=[OX1]),$(C#[NX1])])=C1[NH2]"
+Dhp_amino_CN_H,[NH2]C1=C(C#[NX1])[C!H0](-cc)S[CX4]S1
+Dhp_keto_A,"[#7]1([H,CX4])-,:[#6]=,:[#6](C(=[OX1])ccc)-,:[#6]([#6])-,:[#6]([$(C=[OX1]),$(C#[NX1])])=,:[#6]1[CH3]"
+Cyano_amino_het_A,c1(c(nc4c(c1C#[NX1])c(c(cc4)C#[NX1])[NH2])[NH2])C#[NX1]
+Cyano_amino_het_B,n1c([SX2]c3c([NH2])cccc3)c(C#[NX1])c(-c2ccccc2)c(C#[NX1])c1([NH2])
+Сyano_keto_A,"[CH2,CH3][C!H0](C#[NX1])C(=[OX1])[#6]"
+Cyano_cyano_B,C1(C#[NX1])(C#[NX1])[C!H0](C(=[OX1])C)[C!H0]1
+Cyano_ene_amine_B,C=CC(C#[NX1])(C#[NX1])C(C#[NX1])=C[NH2]
+Cyano_ene_amine_C,ccC(=[OX1])[N!H0]C(=[OX1])C(C#[NX1])=[C!H0][N!H0]cc
+Cyano_imine_C,[OX1]=S(=[OX1])C(C#[NX1])=N[N!H0]
+Cyano_imine_D,[OX1]=C1C(C#[NX1])=NNCC1
+Cyano_pyridone_C,"C1(C([CH2,CH3])=C(C#[NX1])C(~[#8])~[#7]~[#6]1(~[#8]))=[C!H0]cc"
+Cyano_pyridone_D,"[OX1]=[#6]1-,:[#6](=,:[#6]-,:[#6](-,:[#7]-,:[#7]1)C=[OX1])C#[NX1]"
+Cyano_pyridone_E,"ac[#6]1=,:[#6!H0]-,:[#6](co)=,:[#6](C#[NX1])-,:[#6](=[OX1])-,:[#7!H0]1"
+Cyano_pyridone_G,"N1(c2ccc(O[CH2,CH3])cc2)C(=[OX1])C(C#[NX1])=CC(n3cncc3)=N1"
+Cyano_misc_A,c1(c2ccccc2nnc1)C(cc)C#[NX1]
+Thio_aldehyd_A,"[#1,#6][C!H0](=[SX1])"
+Thio_amide_A,"[#6!H0]1=,:[#6]-,:[#8]-,:[#6](=,:[#6!H0]1)C(=[SX1])N5[CH2][CH2]*[CH2][CH2]5"
+Thio_amide_B,[CX4][N!H0]C(cc)=[C!H0]C(=S)[N!H0]c1ccccc1
+Thio_amide_C,[C!H0](c1ccccc1)(c2ccccc2)C(=S)[N!H0]
+Thio_amide_D,[C!H0]N([C!H0])[#6]:[#6][N!H0]C(=S)[C!H0]
+Thio_amide_E,"c1cccnc1C(=S)[N!H0]c2ccccc2O[CH2,CH3]"
+Thio_amide_F,acC(=S)[N!H0][N!H0]ca
+Thio_ester_A,C1=C(SC(C=C1)=S)[#7]
+Thio_ester_B,"ccC(=[SX1])[SX2][C!H0][CH2,CH3,$(cc)]"
+Thio_ester_C,"[#7]1-,:[#6](=[OX1])=,:[#6!H0]-,:[#6]([#6])-,:[#16]-,:[#6]1(=S)"
+Thio_ene_amine_A,"S=CC([CH2,CH3])=C([CH2,CH3])N([CH2,CH3])[CH2,CH3]"
+Thio_est_cyano_A,C1=CN(C(c5ccccc15)(C#[NX1])C(=S)S)C=[OX1]
+Thio_imide_A,c2ccccc2N1C(=[OX1])C(Sc3ccccc3)=[C!H0]C1=[OX1]
+Thio_pyridine_A,c1(nanc(c2o[cH][cH][cH]2)n1)S[CX4]
+Thio_thiomorph_Z,"[OX1]=C(N3CCSCC3)c9c([cH][cH][cH][cH]9)S[CH2,CH3]"
+Thio_urea_A,"c1c([N!H0][CX3](=[SX1])[N!H0][CH2][CH2][CH2]N([CH2,CH3])c2ccccc2)cccc1"
+Thio_urea_B,"c1c([#7!H0]C(=S)[#7!H0][CH2][CH2][#7]([CH2,CH3])c2ccccc2)cccc1"
+Thio_urea_C,c1(ccccc1)[N!H0]C(=[SX1])N[N!H0]C(=[OX1])c2a[a!c]cc2
+Thio_urea_D,c1(ccccc1)[N!H0]C(=[SX1])N[N!H0]c2ccccc2
+Thio_urea_E,c1c([N!H0]C(=[S1])[N!H0][CH2]c2ncccc2)cccc1
+Thio_urea_F,C1[N!H0][N!H0]C(=[SX1])N[N!H0]1
+Thio_urea_G,"c1ccccc1[N!H0]C(=[SX1])N[N!H0][#6](=,:[#7R])-,:[#7R]"
+Thio_urea_H,"[#6]1(=S)-,:[#7]([CH2]c2occc2)-,:[#6](cc)=,:[#7]-,:[#7!H0]1"
+Thio_urea_I,c1ccccc1[N!H0]C(=[SX1])[N!H0]N=Cc2ccnc2
+Thio_urea_J,c1(ccoc1[C!H0])C=N[N!H0]C(=[SX1])[N!H0]
+Thio_urea_K,"[#6]1(=[SX1])-,:[#7]2-,:[#6]=,:[#6]-,:[#7]=,:[#7]-,:[#6]2=,:[#7][#7!H0]1"
+Thio_urea_L,[CX4][SX2]C(=N-aaaa)[N!H0]N=[#6]
+Thio_urea_M,"cc[#7]([CH2,CH3])[CH2][CH2][CH2][#7!H0]C(=S)[#7!H0]c1c([F,Cl,Br,I])[cH]c([CH2,CH3])[cH][cH]1"
+Thio_urea_N,o1[cH][cH][cH]c1[CH2][N!H0]C(=S)N([C!H0])[CH2]c2ccccc2
+Thio_urea_O,[cH]1c([N!H0]C(=S)[N!H0][C!H0]c3oc([C!H0])[cH][cH]3)[cH]c2c(O[CH2]O2)[cH]1
+Thio_urea_P,"[OX1]=C-!@n1ccc2c1-,:[#7!H0]-,:[#6](=S)-,:[#7!H0]2"
+Thio_urea_Q,"[cH]1[cH][cH][cH]c2[cH][cH][cH]c(c12)C([CH2,CH3])=N[N!H0]C(=S)[N!H0]ccc"
+Thio_urea_R,c1ccccc1[N!H0]C(=S)N[N!H0][C!H0]=[C!H0]C=[OX1]
+Thio_carbam_A,"[CH2,CH3]SC(=S)[N!H0][CH2]-cc"
+Thio_carbam_ene,S1C(=S)NC=C[CX4]1
+Thio_carbonate_B,"[OX1]=[#6]1-,:[#16]c2cccc(O[CH2,CH3])c2-,:[#8]1"
+Thio_cyano_A,[N!H0]1C(=S)[C!H0](C#[NX1])[C!H0](-cc)[C!H0]=C1(-cc)
+Thio_imine_ium,"[CX4][#7+,#7v4]([CX4][OH1])=CS[C!H0]"
+Thio_keto_het,"[#6]1=,:[#6](C=S)-,:[#7]2-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:[#6]2=,:[#6]1"
+Thiophene_C,"[CH2,CH3]N([CH2,CH3])[C!H0]=CC(=[OX1])c1c([SX2])sc([$(C#[NX1]),$(C=[OX1])])c1"
+Thiophene_D,"s1[cH][cH]c(O[CH2,CH3])c1C(=[OX1])[N!H0][N!H0]"
+Thiophene_E,"c1(sc([H,CH2,CH3])[cH][cH]1)C([H,CH2,CH3])C(=[OX1])[NH]c2nccs2"
+Thiophene_F,S(=[OX1])(=[OX1])[N!H0]c1sc([C!H0])c([C!H0])c1(C(=[OX1])[N!H0])
+Thiophene_amino_B,"c2ccccc2[#7!H0]c1sc([$([#6]=[#8]),$(C#[#7]),$([#6]([#8!H0])=[#6])])c([#7])c1[$(C#[#7]),$([#6](n)n)]"
+Thiophene_amino_C,"[C!H0][CH2]c1sc([N!H0]C(=[OX1])CCC=[OX1])c([$(C(=[OX1])O),$(C#[NX1])])c1[CH2,CH3]"
+Thiophene_amino_D,C=CC(=[OX1])Nc1sc(C(=[OX1])O)c([C!H0])c1(C#[NX1])
+Thiophene_amino_E,"[#6]1=,:[#6]-,:[#16]-,:[#6](=,:[#6]1[NH2])[C!H0]=[C!H0][#6]2=,:[#6]-,:[#6]=,:[#6]-,:[#16]2"
+Thiophene_amino_F,[NH2]c1sc([NH]C(=[OX1])c3ccccc3)c(C#[NX1])c1c2aaaaa2
+Thiophene_amino_G,cccccc-c1sc([N!H0]C(=[OX1])[#6])c(C(=[OX1])[OH1])c1
+Thiophene_amino_H,[#6!H0][N!H0]c1sc([#6!H0])c([#6!H0])c1C(=[OX1])[N!H0]cc
+Keto_naphthol_A,"[#6]C(=[OX1])c1cccc2cccc([OH1,NH2])c12"
+Keto_thiophene,"c1(sc2ccccc2c1([CH2,CH3]))C(=[OX1])[CH2][CH2,CH3]"
+Keto_phenone_A,c1cccc5c1C(c8c5nacc8)=[OX1]
+Keto_phenone_B,c1cccc5c1C(C8C5=N[!#1!#6]=CC8)=[OX1]
+Keto_phenone_C,c1(cc3c(c5ccccc15)c4c(C3=[OX1])cccc4)[OH1]
+Keto_phenone_zone_A,c1c(cccc1)C(=[OX1])[N!H0]N=C2c3c(cccc3)c4c2cccc4
+Keto_keto_beta_B,[CX4]1C(=[OX1])NNC(=[OX1])1
+Keto_keto_beta_C,c1ccc7c(c1)C(C(=C7[#8!H0])[#6])=[OX1]
+Keto_keto_beta_D,[OX1]=CC=[C!H0][OH1]
+Keto_keto_beta_E,[OX1]=C[C!H0]=C([OH1])C([OH1])=[C!H0]C(=[OX1])[#6]
+Keto_keto_beta_F,"[CH2,CH3]C([OH1])=C(C(=[OX1])[CH2,CH3])[C!H0]C#C"
+Keto_keto_gamma,[OX1]=C2[CX4]CC(=[OX1])c7c2cccc7
+Thiaz_ene_C,"[#6]1([F,Cl,Br,I,$([#7v4R,#7v4R+](=,:[#6R])-,:[#6R])])=,:[#6](-!@C=N)-,:[#16]-,:[#6](=[OX1])-,:[#7]1"
+Acyl_het_A,"[#7v4,#7+](=,:*-,:*=,:*)-,:*=O"
+Anil_di_alk_G,"[CX4]N([CX4])c1[cH][cH]c([#6]2=,:[#7]-,:[#6]=,:[#6]-,:*2)[cH][cH]1"
+Anil_di_alk_H,"[cH]1c([N!H0]S(=[OX1])(=[OX1])c2caccc2)[cH]c(N([CH2,CH3])[CH2,CH3])[cH][cH]1"
+Anil_di_alk_K,c1([NH2])ccc(N([CX3])[CX3])cc1
+Anil_di_alk_L,c1cc3c(cc1)N([CH2][CH2]N4C(c6c(C4=[OX1])cccc6)=[OX1])[CH2][CH2]3
+Anil_di_alk_O,"[cH]1c([N!H0]C(=S)[N!H0]c2ccccc2)[cH]c(N([CH2,CH3])[CH2,CH3])[cH][cH]1"
+Anil_di_alk_P,"[CH2,CH3]N([CH2,CH3])c1cc2nc(S[CH2,CH3])sc2cc1"
+Anil_di_alk_ene_A,"[CH2,CH3]N([CH2,CH3])C1=[C!H0]c2ccccc2[SX2]c3ccccc13"
+Anil_di_alk_dhp,"N1C=C(C=[OX1])C(-c3ccc(N([CH2,CH3])[CH2,CH3])cc3)C2=C1(~[#7]~[#6](~[#16])~[#7]~[#6]2~[#7])"
+Anil_alk_bim,[cH]1[cH]c([N!H0][CH2]c2ccccc2)[cH]c2c1n([#6])[cH]n2
+Anil_di_alk_coum,"c2ccccc2N([C!H0])[C!H0][C!H0][C!H0][N!H0]C(=[OX1])[#6]1-,:[#6]([CH2,CH3])=,:[#6!H0]-,:[#6](=[OX1])-,:[#8]-,:[#6]([CH2,CH3])=,:1"
+Anil_OC_no_alk_A,[NH2]c4[cH]nc(Oc5ccccc5)[cH][cH]4
+Ene_one_B,C([#16])([#7])=[C!H0]C=[C!H0]C=[OX1]
+Ene_one_C,C1(=[OX1])C(C(C#[NX1])=[C!H0][#7])C([#7])C=C1
+Ene_one_amide_A,"c1ccccc1[C!H0]NC(=[OX1])C([N!H0][CH2,CH3])=[C!H0]C(=[OX1])c2ccc(O[CH2,CH3])cc2"
+Ene_one_amide_B,"c13ccc2ccccc2c1[C!H0][CX4]NC3=[C!H0]C(=[OX1])N([CH2,CH3])[CH2,CH3]"
+Ene_one_one_A,[OX1]=CC1=C(SC(=[#6!H0][#6])S1)C=[OX1]
+Ene_one_one_B,C1(C(=[OX1])[CH2]C[CH2]C1(=[OX1]))=C([N!H0])C=[OX1]
+Ene_one_yne_A,C#CC(=[OX1])C#C
+Imine_one_B,"[N!H0](c1ccccc1)N=C(C(=[OX1])[CH2,CH3])[N!H0][$([N!H0]),$(cc)]"
+Imine_ene_one_A,C1(C=Nc4c(N1)cccc4)=[C!H0]C=[OX1]
+Imine_ene_one_B,c1cC(=[OX1])C=C1N=[C!H0]N([CX4])[CX4]
+Imine_imine_A,c1ccc4c(c1)[#6]([#6]=[#7]4)=[#7!R]
+Imine_imine_B,cc[C!H0]=[C!H0][C!H0]=NN=C
+Imine_imine_C,"[CH2,CH3]N([CH2,CH3])[C!H0]=NC([CH2,CH3])=NN([CH2,CH3])cc"
+Imine_one_fives_B,[N!R]=C2C(=[OX1])c5c(cccc5)S2
+Imine_one_fives_C,cc[N!R]=C2C(=[!#1!#6])c5ccccc5N2
+Imine_one_fives_D,C1(=[!#1!#6])C(N=CS1)=O
+Imine_phenol_A,[#6]=[N!R]c3c([OH1])cccc3
+Imine_naphthol_A,"c12c([cH][cH][cH][cH]1)c(c([cH][cH]2)C(=N-cc)[CH2,CH3])[OH1]"
+Pyrrole_C,"[#7]1([CX4])-,:[#6]([CH2,CH3])=,:[#6!H0]-,:[#6!H0]=,:[#6]1cc"
+Pyrrole_D,"[#7]1(C)-,:[#6!H0]=,:[#6!H0]-,:[#6!H0]=,:[#6]1[CH2][N!H0]C(=[SX1])[N!H0]"
+Pyrrole_E,"[#7]1(c2[cH]a[a!c]a2)-,:[#6]([CX4])=,:[#6!H0]-,:[#6!H0]=,:[#6]1[CX4]"
+Pyrrole_F,[cH]1[cH]n(-c2[a!c]ccc2C#[NX1])c[cH]1
+Pyrrole_G,"n1(c2c[cH]c([$([NH2]),$(cn)])c[cH]2)[cH][cH][cH][cH]1"
+Pyrrole_H,"C1=[Nv4,N+]([#6])CC[#7]2-,:[#6]=,:[#6]-,:[#6]=,:[#6]12"
+Pyrrole_I,"[#7]1([CH2,CH3])-,:[#6]2=,:[#6](-,:[#6]:[#6]-,:[#6]2=[OX1])-,:[#6]=,:[#6]1[CH2,CH3]"
+Pyrrole_J,"[#6]1(=,:[#6]2-,:[#6](=,:[#6](-,:[#7]1C(O)=[OX1])[CH2,CH3])S[CH2]S2)[CH2,CH3]"
+Pyrrole_K,"[#6]1(-,:[#7!H0]-,:[#6](c2[cH][cH][cH][cH][cH]2)=,:[#6]([CH2,CH3])-,:[#6H]=,:1)C(=[OX1])[OH1]"
+Pyrrole_L,"[n!H0]1c(C(=[OX1])O[CH2,CH3])c([CH2,CH3])c([CH2][CH2,CH3])c1[CH2][CH2,CH3]"
+Pyrrole_M,"[#7]1(c2ccccc2)-,:[#6!H0]=,:[#6!H0]-,:[#6!H0]=,:[#6]1C=N[OH1]"
+Pyrrole_N,"[#7]1([C!H0]c2[cH][cH]c[cH][cH]2)-,:[#6]([C!H0])=,:[#6!H0]-,:[#6!H0]=,:[#6]1[C!H0]"
+Pyrrole_O,"[#7]1([CH2,CH3])-,:[#6]([CH2,CH3])=,:[#6](C(=[OX1])[#6])-,:[#6]=,:[#6]1-cc"
+Thiaz_ene_D,"c2ccccc2[#7][#6]1=,:[#7+,#7v4]-,:[#6](c3ccccc3)=,:[#6][#16]1"
+Thiaz_ene_E,"C1(S[#6R])=C([C!H0]([#6])[#6])SC(N1([H,CH2,CH3]))=[OX1]"
+Quinone_B,"c1ccc4c(c1)[#6]7=,:[#6]8-,:[#6]([#6]4=[OX1])=,:[#6]-,:[#6]=,:[#6]-,:[#6]8=,:[#7]-,:[#8]7"
+Quinone_C,[OX1]=C1c2ccccc2C3=C([OH1])C(=[OX1])Nc4cccc1c34
+Quinone_D,"[!#1!#6]=[#6]1[#6]=,:[#6][#6]=,:[#6][#6]1=[!#1!#6]"
+Diazox_A,O(c2ccccc2)c3cc1nonc1cc3
+Diazox_B,Clc2cc1nonc1cc2
+Diazox_C,N2=Nc1n[a!c]nc1N=Ncc2
+Diazox_D,[C!H0]1([OH1])c2n[a!c]nc2[C!H0]([OH1])C=C1
+Diazox_E,[NH2]c1c([NH2])[cH][cH]c2nonc12
+Diazox_sulfon_B,c3ccccc3N1[C!H0][C!H0]N([C!H0][C!H0]1)S(=[OX1])(=[OX1])c4c2nsnc2ccc4
+Sulfonamide_C,[cH]1c([N!H0]S(=[OX1])(=[OX1])c2ccc([!#1!#6])cc2)[cH]c3c(O[CH2]O3)[cH]1
+Sulfonamide_D,c1c(ccc(c1)[N!H0]S(=[OX1])(=[OX1]))[N!H0]S(=[OX1])(=[OX1])
+Sulfonamide_E,cc[N!H0]S(=[OX1])(=[OX1])[N!H0]cc
+Sulfonamide_F,"[OX1]=S(=[OX1])(cc)[N!H0][#6]1=,:[#7]-,:[#6](=,:[#6]-,:[#16]1)cc"
+Sulfonamide_G,"[CH3]c5nc([N!H0]S(c2[cH][cH]c([cH][cH]2)O[CH2][CH2][CH2,CH3])(=[OX1])(=[OX1]))[cH][cH][cH]5"
+Sulfonamide_H,c1([cH][cH]c([NH2])[cH][cH]1)S(=[OX1])(=[OX1])[N!H0]c2[cH][cH][cH]nn2
+Sulfonamide_I,"S(=[OX1])(=[OX1])(c1cn([CH2,CH3])cn1)[N!H0]c2cnn([CH2]ccO[CH2,CH3])c2"
+Sulfonamide_J,"[#7]1(c2c([N!H0]S(=[OX1])(=[OX1])c3sccc3)cccc2)-,:[#6!H0]=,:[#6!H0]-,:[#6!H0]=,:[#6!H0]1"
+Imine_ene_A,cc[CH]=[CH][CH]=NN([CX4])[CX4]
+Thiazol_SC_A,[#6][SX2]c1n[cH]cs1
+Thiazole_amine_A,[N!H0]c1nc(c2cnc([NH2])s2)cs1
+Thiazole_amine_B,"c1(ccc([CH2,CH3])cc1)-c2nc([NH2])sc2[CH3]"
+Thiazole_amine_C,"c1([N!H0][CH2]c2[cH][cH][cH]o2)nc(aaa([$(O[CH2,CH3]),CH2,CH3])aa)[cH]s1"
+Thiazole_amine_D,"[#16]1-,:[#6]([N!H0]c2c([CH2,CH3,$(cc)])cccc2)=,:[#7+,#7v4]([CH2,CH3])-,:[#6]([#6])=,:[#6H]1"
+Thiazole_amine_E,[OX1]=C[N!H0]c1c(-cc)nc([CH2]C#[NX1])s1
+Thiazole_amine_F,[#6!H0][#7!H0]c1nc(-C2=CN=C3N2C=CS3)cs1
+Thiazole_amine_G,"[#6]1=,:[#6]-,:[#16]-,:[#6](NNS(=[OX1])=[OX1])=,:[#7]1"
+Thiazole_amine_H,"c1ccc(C(=[OX1])[OH1])cc1[N!H0][#6]2=,:[#7]-,:[#6](=,:[#6!H0]-,:[#16]2)c3ccc([C!H0]([C!H0])[C!H0])cc3"
+Thiazole_amine_J,"[OX1]=S(=[OX1])(cc)[N!H0][N!H0][#6]1=,:[#7]-,:[#6](=,:[#6]-,:[#16]1)cc"
+Thiazole_amine_K,"n1c2c(cc5c1-,:[#7]=,:[#6](-,:[#16]5)[#7])-,:[#16]-,:[#6](=,:[#7]2)[#7]"
+Thiazole_amine_L,s1ccc(-c2csc([NH2])n2)[cH]1
+Thiazole_amine_M,"c1([N!H0]cc[CH2,CH3])nc(c2ccncc2)[cH]s1"
+Thiazole_amine_N,"[CH2,CH3]Oc1[cH][cH]c(O[CH2,CH3])[cH]c1[N!H0]c2scc(-c3ccc(O[CH2,CH3])cc3)n2"
+Furan_acid_A,"c1(oc([CH2,CH3])c([CH2]Occ)[cH]1)[CX3](=[OX1])[OH1]"
+Furan_A,"c1(oc([CH2,CH3])[cH][cH]1)[C!H0]([OH1])C#C[CX4]"
+Colchicine_A,"[#6]1(-,:[#6](=,:[#6]-,:[#6]=,:[#6]-,:[#6]=,:[#6]1)[N!H0])=NC"
+Colchicine_B,"[CH2,CH3]Sc1ccc(cc1)C2=CC(=[OX1])[#6]3=,:[#6]-,:[#8]-,:[#6]=,:[#6]3C([OH1])=C2"
+Colchicine_het,"c1cccc3-,:[#7]([CH2,CH3])-,:[#6](=NN=[#6]2-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:[#6]=,:[#6]2)-,:[#16]-,:c13"
+Rhod_sat_B,"N1(c2c([CH2,CH3])cccc2)C(=S)N([CH2]aaaaa)[CH2]C1=[OX1]"
+Rhod_sat_C,N1(c2ccccc2)C(=NC=[OX1])S[CH2]C1=[OX1]
+Rhod_sat_D,N1(c2ccccc2)C(=[OX1])S[C!H0]([CH2]C(=[OX1])[N!H0]cc)C1=[OX1]
+Rhod_sat_E,N1(c2ccccc2)C(=[OX1])S[C!H0]([N!H0]c3c4ccccc4ccc3)C1=[OX1]
+Rhod_sat_F,N1(c2ccccc2)C(=[OX1])S[CH2]C1=S
+Rhod_sat_imine_A,N1(C(=[OX1])c2ccccc2)C(=Nc3ccccc3)S[CH2]C1=[OX1]
+Melamine_A,"o1[cH][cH][cH]c1[CH2][N!H0]c1c2ccccc2nc([N!H0]c4c([H,CH2,CH3,SX2,$(O[C!H0])])cc([H,CH2,CH3,SX2,$(O[C!H0])])c([H,CH2,CH3,SX2,$(O[C!H0])])c4)n1"
+Melamine_B,"n1c(N([CH2,CH3])[CH2,CH3])nc(N([CH2,CH3])[CH2,CH3])nc1N([C!H0])C=[OX1]"
+Imidazole_B,"[CH2,CH3][CH2]S[CH2][#6]1=,:[#6]-,:[#7!H0]-,:[#6]=,:[#7]1"
+Imidazole_C,[C!H0]1(n2[cH]n[cH][cH]2)c3[cH]c(Br)[cH][cH]c3[CH2][CH2]c4[cH][cH][cH][cH]c14
+Phthalimide_misc,[cH]1c(C(=[OX1])[OH1])[cH][cH]c2C(=[OX1])N(c3c[cH]c([#8])c[cH]3)C(=[OX1])c12
+Hzide_naphth,[cH]1[cH][cH][cH]c9[cH]c([cH][cH]c19)[N!H0][N!H0]C=[OX1]
+Naphth_amino_C,"c1ccc4c5c(cccc15)-,:[#6]=,:[#7]-,:[#7!H0]4"
+Naphth_amino_D,"c1ccc4c5c(cccc15)-,:[#7]=,:[#7]-,:[#7]4"
+Naphth_ene_one_A,"c1cc3c4c(c1)cccc4C(=CC3=[OX1])O[CH2,CH3]"
+Naphth_ene_one_B,[#7]c1ccc2c3c1cccc3C(=[OX1])C=C2C(F)(F)(F)
+Naphth_ene_one_C,c1(ccc4c5c(cccc15)C(C=C4)=[#7])[#7]
+Coumarin_A,"c1(O[C!H0])[cH][cH]c2c3[cH][cH]c(O[CH2,CH3])[cH]c3-,:[#6](=[OX1])-,:[#8]c2c1"
+Coumarin_B,"c1([CH2][C!H0]=[CH2])cccc2-,:[#6!H0]=,:[#6](C(=[OX1])[N!H0]cc)-,:[#6](=[OX1])-,:[#8]c12"
+Coumarin_C,C1(C=Nc4c(O1)ccc(Cl)c4)=[OX1]
+Coumarin_D,c1c2C(c3ccccc3)=[C!H0]C(=[OX1])Oc2cc(O[CH2]coc)c1
+Coumarin_E,"c1cc2c(o1)cc(Br)c3[#8]-,:[#6](=[OX1])-,:[#6]=,:[#6!H0]c23"
+Coumarin_F,"c1ccc2c(c1)[#6]=,:[#6](C(=[OX1])[N!H0]c3c(Br)con3)-,:[#6](=[OX1])-,:[#8]2"
+Coumarin_G,"c1c([F,Cl,Br,I])cc2c(c1[F,Cl,Br,I])OC(=[N!H0])C(C(=[OX1])[NH2])=[C!H0]2"
+Coumarin_H,"c1cccc2[#6!H0]=,:[#6](C(=[OX1])[N!H0]c3scc(-cs[c!H0])n3)-,:[#6](=[OX1])-,:[#8]c12"
+Cyanamide_A,[#8]C(=[OX1])[CH2][SX2]C(=NC#[NX1])[N!H0]c1ccccc1
+Steroid_A,[OX1]=C1CCC2C3C(=[OX1])CC4CCCC4C3CCC2=C1
+Tert_butyl_A,[CH3]C([CH3])([CH3])c1[cH]c(C([CH3])([CH3])[CH3])c(O[C!H0][#7])c[cH]1
+Tert_butyl_B,[CH3]C([CH3])([CH3])c1c([OH1])c(C([CH3])([CH3])([CH3]))[cH]c([CH2]c2[cH][cH]c([OH1])cc2)[cH]1
+Hydroquin_A,c1([OH1])ccc([OH1])c(c1)C(=!@C[#7])C=[OX1]
+Tetrazole_A,"[CH2,CH3][#6]1=,:[#7]-,:[#7]=,:[#7]-,:[#7]1c2[cH][cH]c(O[CH3])[cH][cH]2"
+Misc_aminal_acid,"c1ccc4c(c1)COC(N4C(=[OX1])[CH2,CH3])(C(=[OX1])[OH1])[CH2,CH3]"
+Misc_aminoacid_A,[CX4]c1[cH][cH]c(C(=[OX1])[N!H0][C!H0]([CH2][CH2]S[CH3])C(=[OX1])[OH1])[cH][cH]1
+Misc_anilide_A,"c1([N!H0]C(=[OX1])[CH2][CH2]-cc)[cH][cH]c([CH2,CH3])c([N!H0]C(=[OX1])[CH2][CH2]-cc)[cH]1"
+Misc_anilide_B,"c1([N!H0]C(=[OX1])[N!H0][CH2][CH2][CH2,CH3])c([CH2,CH3])[cH]c(Br)[cH]c1[CH2,CH3]"
+Misc_anisole_A,"c1(c([cH]c5c([cH]1)c([cH]c([cH]5)c3[cH][cH]c(c([cH]3)O[CH2,CH3])O[CH2,CH3])[N!H0][CH3])O[CH2,CH3])O[CH2,CH3]"
+Misc_anisole_B,"c1([cH]c(O[CH2,CH3])c(O[CH2,CH3])[cH][cH]1)C(=[OX1])[CH2]N([CH2,CH3])c2ccc([CH2,CH3])cc2"
+Misc_anisole_C,[N!Ho](c1[cH][cH]c(O[CH3])c(O[C!H0])[cH]1)C(=[OX1])[N!H0][CH2][CH2][CH2]N([CH3])cc
+Misc_cyclopropane,C1([CH2][CH2]1)(C(=[OX1])[N!H0]c2ccc(O[CH2][#8])cc2)S(=[OX1])(=[OX1])-cc
+Misc_furan_A,"c3c([CH2,CH3])c([CH2,CH3])oc3[CH2]N[CH2][C!H0](O[CH2,CH3])[CH2]Oc1ccc2c(O[CH2]O2)c1"
+Misc_naphthimidazole,"c1c2c(cc5c1cccc5)-,:[#7!H0]-,:[#6](=,:[#7]2)COC(=[OX1])c8cc(cc(c8)[NH2])[NH2]"
+Misc_phthal_thio_N,"c1(c2ccccc2)nc(N([CH2,CH3])[CH2][CH2]NC(=[OX1])c3c(C(=[OX1])[OH1])cccc3)sn1"
+Misc_pyridine_OC,"[OX1]=C(c1[cH]c(O[CH3])nc(O[CH3])[cH]1)[N!H0][C!H0]([CH2,CH3])[CH2,CH3]"
+Misc_pyrrole_benz,"[#7]1(-c2[cH][cH][cH][cH]c2C(=[OX1])[N!H0][C!H0]([CH2,CH3])[CH2]O-cc)-,:[#6!H0]=,:[#6!H0]-,:[#6!H0]=,:[#6!H0]1"
+Misc_pyrrole_thiaz,"c1([C!H0]([CH2,CH3])[CH2][CH2]N[CH2]c2[n!H0]ccc2)nc(-c3ccccc3)[c!H0]s1"
+Misc_stilbene,C1(cc)=C(cc)[CH2][C!H0](C(=[OX1])[#6])[C!H0](C(=[OX1])[OH1])[CH2]1
+Misc_trityl_A,C(cc)(cc)(cc)SccC(=[OX1])[OH1]
+Misc_urea_A,"c1(C([CX4])([CX4])[N!H0]C(=[OX1])N([CH2][CH2,CH3])[CH2][CH2][CH2][CH2]-cc)[cH][cH][cH]c(C(=[CH2])[CH2,CH3])[cH]1"
+Imidazole_amino_A,n1c(c2ccccc2)c(c3ccccc3)n(N=!@[#6])c1[NH2]
+Phenol_sulfite_A,C(c1ccc([OH1])cc1)(c2ccc([OH1])cc2)OS(=[OX1])=[OX1]
+Pyrazole_amino_A,"[#6]1=,:[#6]([NH2])-,:[#7]-,:[#7]=,:[#6]1-[#6]2=,:[#6]([CH2,CH3])-,:[#8]-,:[#6!H0]=,:[#6!H0]2"
+Pyrazole_amino_B,"[#16]1-,:[#6]=,:[#6]-,:[#7]=,:[#6]1-[#6]6-,:[#6!H0]=,:[#7]-,:[#7!H0]-,:[#6]([NH2])=,:6"
+Indole_3yl_alk_B,"c12[cH][cH][cH][cH]c1-,:[#6]([CH2,CH3])=,:[#6](-cc)-,:[#7]2-!@cc"
+Mannich_B,"c1c[cH]c2O[CH2]N(ccO[CH2,CH3])[CH2]c2[cH]1"
+Mannich_catechol_A,"[cH]1c([#8])c([#8])[cH]c2c1O[CH2]N([CH2,CH3])[CH2]2"
+Dyes7A,"c1ccccc1N([CH2,CH3])[C!H0]=[C!H0]C=!@[C!H0][C!H0]=CC=&@Nc2ccccc2"
+Misc_imidazole,"[C!H0](c1[cH][cH]c(Cl)[cH][cH]1)(c2[cH][cH]c(Cl)[cH][cH]2)O[CH2][CH2][CH2][#6]3-,:[#7]([CH3])-,:[#6!H0]=,:[#6!H0]-,:[#7]=,:3"
+Het_thio_N_5C,"cc[N!H0]C(=[OX1])[#6]1-,:[#7]=,:[#7]-,:[#16]-,:[#6]([N!H0]cc)=,:1"
+Valproic acid derivatives,[OH1][CX3](=[OX1])[CX4H1]([CX4H2]-C~[#6])([CX4H2]-C~[#6])
+Retinoic acid derivatives_1,"[$([OH1][CX3](=[OX1])c1[cH][cH]c(-c2c[cH]c3[cH]c([H,CX4])c([H,CX4])[cH]c3[cH]2)[cH][cH]1),$([OH1][CX3](=[OX1])c1[cH]c2[cH]cc(-c3[cH]c([H,CX4])c([H,CX4])[cH][cH]3)[cH]c2[cH][cH]1)]"
+Thiazole_amine_I,"[CH2,CH3][N!H0]C=N[N!H0][#6]1=,:[#7]-,:[#6](-cc)=,:[#6!H0]-,:[#16]1"
+Indol_3yl_alk,"[H,CH2,CH3][#7]1-,:[#6]([CH2,CH3,$([a!c](:[#6]-,:[#7])),$([C!H0][#7]),$([C!H0]([CH2,CH3])[N!H0][CH2,CH3]),$([C!H0]([CH2,CH3])[CH2][N!H0][CH2,CH3])])=,:[#6]([CX4!H0])-,:c2[cH]cccc12"
+Tetrazole_hzide,"a1aaa(aa1)[C!H0]=[C!H0]C(=[OX1])[N!H0][N!H0][#6]2=,:[#7]-,:[#7]=,:[#7]-,:[#7]2[#6]"
+Three-membered heterocycles (LS),[!#6!#1]1~*~*~1
+Three-membered heterocycles with one heteroatom (LS),[!#6!#1]1~[#6]~[#6]~1
+Saturated three-membered heterocycles with one heteroatom (LS),[!#6!#1]1-[#6]-[#6]-1
+Unsaturated three-membered heterocycles with one heteroatom (LS),"[$([!#1!#6]1~[#6]=[#6]~1),$([!#1!#6]1=[#6]~[#6]~1)]"
+Three-membered heterocycles with two heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[#6]~1
+Saturated three-membered heterocycles with two heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[#6]-1
+Unsaturated three-membered heterocycles with two heteroatoms (LS),"[$([!#1!#6]1=[!#1!#6]~[#6]~1),$([!#1!#6]1~[!#6!#1]=[#6]~1)]"
+Three-membered heterocycles with three heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~1
+Saturated three-membered heterocycles with three heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-1
+Unsaturated three-membered heterocycles with three heteroatoms (LS),[!#1!#6]1~[!#1!#6]=[!#1!#6]~1
+Three-membered heterocycles (HS),[!#6!#1;R1]1~[*R1]~[*R1]~1
+Three-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1~[#6&R1]~[#6&R1]~1
+Saturated three-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1-[#6&R1]-[#6&R1]-1
+Aziridines (HS),[#7R1]1-[#6R1]-[#6R1]-1
+Oxiranes (HS),[#8R1]1-[#6R1]-[#6R1]-1
+Thiiranes (HS),[#16X2R1]1-[#6R1]-[#6R1]-1
+Unsaturated three-membered heterocycles with one heteroatom (HS),"[$([!#1!#6;R1]1~[#6R1]=[#6R1]~1),$([!#1!#6;R1]1=[#6R1]~[#6R1]~1)]"
+Azirines (HS),"[$([#7R1]1-[#6R1]=[#6R1]-1),$([#7R1]1=[#6R1]-[#6R1]-1)]"
+1H-Azirines (HS),[#7R1]1-[#6R1]=[#6R1]-1
+2H-Azirines (HS),[#7R1]1=[#6R1]-[#6R1]-1
+Oxirenes (HS),[#8R1]1-[#6R1]=[#6R1]-1
+Thiirenes (HS),[#16X2R1]1-[#6R1]=[#6R1]-1
+Three-membered heterocycles with two heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]~1
+Saturated three-membered heterocycles with two heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[#6R1]-1
+Diaziridines (HS),[#7R1]1-[#7R1]-[#6R1]-1
+Dioxiranes (HS),[#8R1]1-[#8R1]-[#6R1]-1
+Oxaziridines (HS),[#8R1]1-[#7R1]-[#6R1]-1
+Thiaziridines (HS),[#16X2R1]1-[#7R1]-[#6R1]-1
+Unsaturated three-membered heterocycles with two heteroatoms (HS),"[$([!#1!#6;R1]1=[!#1!#6;R1]~[#6R1]~1),$([!#1!#6;R1]1~[!#6!#1;R1]=[#6R1]~1)]"
+1H-Diazirenes (HS),[#7R1]1-[#7R1]=[#6R1]-1
+3H-Diazirenes (HS),[#7R1]1=[#7R1]-[#6R1]-1
+Oxazirenes  (HS),[#7R1]1=[#6R1]-[#8R1]-1
+Thiazerenes  (HS),[#7R1]1=[#6R1]-[#16X2R1]-1
+Three-membered heterocycles with three heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~1
+Saturated three-membered heterocycles with three heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[!#6!#1;R1]-1
+Triaziridines (HS),[#7R1]1-[#7R1]-[#7R1]-1
+Trioxiranes (HS),[#8R1]1-[#8R1]-[#8R1]-1
+Trithiiranes (HS),[#16X2R1]1-[#16X2R1]-[#16X2R1]1
+Oxadiaziridines (HS),[#8R1]1-[#7R1]-[#7R1]1
+Dioxaziridines (HS),[#8R1]1-[#8R1]-[#7R1]1
+Thiodiaziridines (HS),[#16X2R1]1-[#7R1]-[#7R1]1
+Dithiaziridines (HS),[#16X2R1]1-[#16X2R1]-[#7R1]1
+Unsaturated three-membered heterocycles with three heteroatoms (HS),[!#1!#6;R1]1-[!#6!#1;R1]=[!#6!#1;R1]1
+1H-Triazirene  (HS),[#7R1]1-[#7R1]=[#7R1]1
+Oxadiazirenes  (HS),[#7R1]1=[#7R1]-[#8R1]1
+Thiodiazirenes  (HS),[#7R1]1=[#7R1]-[#16X2R1]1
+Four-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[#6]~[#6]~1),$([!#6!#1]1~[#6]~[!#6!#1]~[#6]~1)]"
+Saturated four-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1-[!#6!#1]-[#6]-[#6]-1),$([!#6!#1]1-[#6]-[!#6!#1]-[#6]-1)]"
+Unsaturated four-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1=[!#6!#1]~[#6]~[#6]~1),$([!#6!#1]1~[!#6!#1]=[#6]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[#6]=[#6]~1),$([!#6!#1]1=[#6]~[!#6!#1]~[#6]~1)]"
+Four-membered heterocycles with three heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[#6]~1
+Saturated four-membered heterocycles with three heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[#6]-1
+Unsaturated four-membered heterocycles with three heteroatoms (LS),"[$([!#6!#1]1=[!#6!#1]~[!#6!#1]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[!#6!#1]=[#6]~1)]"
+Four-membered heterocycles with four heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~1
+Saturated four-membered heterocycles with four heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[!#6!#1]-1
+Unsaturated four-membered heterocycles with four heteroatoms (LS),[!#6!#1]1=[!#6!#1]~[!#6!#1]~[!#6!#1]~1
+Four-membered heterocycles (HS),[!#6!#1;R1]1~[*R1]~[*R1]~[*R1]~1
+Four-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1~[#6R1]~[#6R1]~[#6R1]~1
+Saturated four-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1-[#6R1]-[#6R1]-[#6R1]-1
+Azetidines (HS),[#7R1]1-[#6R1]-[#6R1]-[#6R1]-1
+Oxetanes (HS),[#8R1]1-[#6R1]-[#6R1]-[#6R1]-1
+Thietanes (HS),[#16X2R1]1-[#6R1]-[#6R1]-[#6R1]-1
+Unsaturated four-membered heterocycles with one heteroatom (HS),"[$([!#6!#1;R1]1=[#6R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]=[#6R1]~[#6R1]~1)]"
+Azetines (HS),"[$([#7R1]1=[#6R1]-[#6R1]-[#6R1]-1),$([#7R1]1-[#6R1]=[#6R1]-[#6R1]-1)]"
+1-Azetines (HS),[#7R1]1=[#6R1]-[#6R1]-[#6R1]-1
+2-Azetines (HS),[#7R1]1-[#6R1]=[#6R1]-[#6R1]-1
+Azetes (HS),[#7R1]1=[#6R1][#6R1]=[#6R1]1
+Oxetenes (HS),[#8R1]1[#6R1]=[#6R1][#6R1]1
+Thietenes (HS),[#16X2R1]1[#6R1]=[#6R1][#6R1]1
+Four-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]~[!#6!#1;R1]~[#6R1]~1)]"
+Saturated four-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1-[!#6!#1;R1]-[#6R1]-[#6R1]-1),$([!#6!#1;R1]1-[#6R1]-[!#6!#1;R1]-[#6R1]-1)]"
+Diazetidines (HS),"[$([NR1]1[CR1][CR1][NR1]1),$([NR1]1[CR1][NR1][CR1]1)]"
+"1,2-Diazetidines (HS)",[NR1]1[CR1][CR1][NR1]1
+"1,3-Diazetidines (HS)",[NR1]1[CR1][NR1][CR1]1
+Dioxetanes (HS),"[$([OR1]1[OR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1]1)]"
+"1,2-Dioxetanes (HS)",[OR1]1[OR1][CR1][CR1]1
+"1,3-Dioxetanes (HS)",[OR1]1[CR1][OR1][CR1]1
+Dithietanes (HS),"[$([SX2R1]1[SX2R1][CR1][CR1]1),$([SX2R1]1[CR1][SX2R1][CR1]1)]"
+"1,2-Dithietanes (HS)",[SX2R1]1[SX2R1][CR1][CR1]1
+"1,3-Dithietanes (HS)",[SX2R1]1[CR1][SX2R1][CR1]1
+Unsaturated four-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1=[!#6!#1;R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[!#6!#1;R1]=[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]=[#6R1]~1),$([!#6!#1;R1]1=[#6R1]~[!#6!#1;R1]~[#6R1]~1)]"
+Diazetines (HS),"[$([#7]1=,:[#7]-,:[#6]-,=,:[#6]-,:1),$([#7]1-,:[#7]=,:[#6]-,:[#6]-,=,:1),$([#7]1-,:[#7]-,:[#6]=,:[#6]-,=,:1),$([#7]1=,:[#6]-,:[#7]-,=,:[#6]-,:1)]"
+Dioxetenes (HS),"[#8R1]1-,:[#8R1]-,:[#6R1]=,:[#6R1]-,:1"
+Dithietenes (HS),"[#16R1]1-,:[#16R1]-,:[#6R1]=,:[#6R1]-,:1"
+Four-membered heterocycles with one heteroatom (LS),[!#6!#1]1~[#6]~[#6]~[#6]~1
+Saturated four-membered heterocycles with one heteroatom (LS),[!#6!#1]1-[#6]-[#6]-[#6]-1
+Unsaturated four-membered heterocycles with one heteroatom (LS),"[$([!#6!#1]1=[#6]~[#6]~[#6]~1),$([!#6!#1]1~[#6]=[#6]~[#6]~1)]"
+Diazirenes (HS),"[$([#7R1]1-[#7R1]=[#6R1]-1),$([#7R1]1=[#7R1]-[#6R1]-1)]"
+Four-membered heterocycles (LS),[!#6!#1]1~*~*~*~1
+Five-membered heterocycles (LS),[!#6!#1]1~*~*~*~*~1
+Five-membered heterocycles with one heteroatom (LS),[!#6!#1]1~[#6]~[#6]~[#6]~[#6]~1
+Saturated five-membered heterocycles with one heteroatom (LS),[!#6!#1]1CCCC1
+Unsaturated five-membered heterocycles with one heteroatom (LS),"[$([!#6!#1]1=CCCC1),$([!#6!#1]1C=CCC1),$([!#6!#1]1CC=CC1),$([!#6!#1]1=CC=CC1);!$(n1cccc1)]"
+Aromatic five-membered heterocycles with one heteroatom (LS),[a!#6]1cccc1
+Five-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[#6]~[#6]~[#6]~1),$([!#6!#1]1~[#6]~[!#6!#1]~[#6]~[#6]~1)]"
+Saturated five-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1[!#6!#1]CCC1),$([!#6!#1]1C[!#6!#1]CC1)]"
+Unsaturated five-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1=[!#6!#1]C-,=CC1),$([!#6!#1]1[!#6!#1]=CCC1),$([!#6!#1]1[!#6!#1]C=CC1),$([!#6!#1]1=C[!#6!#1]-,=CC1),$([!#6!#1]1C[!#6!#1]CC=1),$([!#6!#1]1C[!#6!#1]C=C1)]"
+Aromatic five-membered heterocycles with two heteroatoms (LS),"[$([a!#6]1[a!#6]ccc1),$([a!#6]1c[a!#6]cc1)]"
+Five-membered heterocycles with three heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[!#6!#1]~[#6]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[#6]~[!#6!#1]~[#6]~1)]"
+Saturated five-membered heterocycles with three heteroatoms (LS),"[$([!#6!#1]1[!#6!#1][!#6!#1]CC1),$([!#6!#1]1[!#6!#1]C[!#6!#1]C1)]"
+Aromatic five-membered heterocycles with three heteroatoms (LS),"[$([a!#6]1[a!#6][a!#6]cc1),$([a!#6]1[a!#6]c[a!#6]c1)]"
+Five-membered heterocycles with four heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~[#6]~1
+Saturated five-membered heterocycles with four heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[!#6!#1]C1
+Unsaturated five-membered heterocycles with four heteroatoms (LS),"[$([!#6!#1]1=[!#6!#1][!#6!#1]-,=[!#6!#1][#6]1),$([!#6!#1]1[!#6!#1]=[!#6!#1][!#6!#1][#6]1),$([!#6!#1]1[!#6!#1][!#6!#1][!#6!#1][#6]=1)]"
+Aromatic five-membered heterocycles with four heteroatoms (LS),[a!#6]1[a!#6][a!#6][a!#6]c1
+Five-membered heterocycles with five heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~1
+Saturated five-membered heterocycles with five heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[!#6!#1]-[!#6!#1]-1
+Unsaturated five-membered heterocycles with five heteroatoms (LS),[!#6!#1]1=[!#6!#1]-[!#6!#1]-[!#6!#1]-[!#6!#1]-1
+Aromatic five-membered heterocycles with five heteroatoms (LS),[a!#6]1[a!#6][a!#6][a!#6][a!#6]1
+Five-membered heterocycles (HS),[!#6!#1;R1]1~[*R1]~[*R1]~[*R1]~[*R1]~1
+Five-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1~[#6R1]~[#6R1]~[#6R1]~[#6R1]~1
+Saturated five-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1[CR1][CR1][CR1][CR1]1
+Pyrrolidines (HS),[NR1]1[CR1][CR1][CR1][CR1]1
+Tetrahydrofurans (HS),[OR1]1[CR1][CR1][CR1][CR1]1
+Tetrahydrothiophenes (HS),[SR1]1[CR1][CR1][CR1][CR1]1
+Unsaturated five-membered heterocycles with one heteroatom (HS),"[$([!#6!#1;R1]1=[CR1][CR1][CR1][CR1]1),$([!#6!#1;R1]1[CR1]=[CR1][CR1][CR1]1),$([!#6!#1;R1]1[CR1][CR1]=[CR1][CR1]1),$([!#6!#1;R1]1=[CR1][CR1]=[CR1][CR1]1);!$(n1cccc1)]"
+Pyrrolines (HS),"[$([NR1]1=[CR1][CR1][CR1][CR1]1),$([NR1]1[CR1]=[CR1][CR1][CR1]1),$([NR1]1[CR1][CR1]=[CR1][CR1]1)]"
+1-Pyrrolines (HS),[NR1]1=[CR1][CR1][CR1][CR1]1
+2-Pyrrolines (HS),[NR1]1[CR1]=[CR1][CR1][CR1]1
+3-Pyrrolines (HS),[NR1]1[CR1][CR1]=[CR1][CR1]1
+Dihydrofurans (HS),"[$([OR1]1[CR1]=[CR1][CR1][CR1]1),$([OR1]1[CR1][CR1]=[CR1][CR1]1)]"
+"2,3-Dihydrofurans (HS)",[OR1]1[CR1]=[CR1][CR1][CR1]1
+"2,5-Dihydrofurans (HS)",[OR1]1[CR1][CR1]=[CR1][CR1]1
+Dihydrothiophenes (HS),"[$([SR1]1[CR1]=[CR1][CR1][CR1]1),$([SR1]1[CR1][CR1]=[CR1][CR1]1)]"
+"2,3-Dihydrothiophenes (HS)",[SR1]1[CR1]=[CR1][CR1][CR1]1
+"2,5-Dihydrothiophenes (HS)",[SR1]1[CR1][CR1]=[CR1][CR1]1
+Aromatic five-membered heterocycles with one heteroatom (HS),[a!#6;R1]1[cR1][cR1][cR1][cR1]1
+Pyrroles (HS),[nR1]1[cR1][cR1][cR1][cR1]1
+Furans (HS),[oR1]1[cR1][cR1][cR1][cR1]1
+Thiophenes (HS),[sR1]1[cR1][cR1][cR1][cR1]1
+Indoles,[cR1]1[cR1][cR1][cR1][cR2]2[nR1][cR1][cR1][cR2]12
+Benzofurans,[cR1]1[cR1][cR1][cR1][cR2]2[oR1][cR1][cR1][cR2]12
+Benzothiophenes,[cR1]1[cR1][cR1][cR1][cR2]2[sR1][cR1][cR1][cR2]12
+Five-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]~[!#6!#1;R1]~[#6R1]~[#6R1]~1)]"
+Saturated five-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1[!#6!#1;R1][CR1][CR1][CR1]1),$([!#6!#1;R1]1[CR1][!#6!#1;R1][CR1][CR1]1)]"
+Diazolidines (HS),"[$([NR1]1[NR1][CR1][CR1][CR1]1),$([NR1]1[CR1][NR1][CR1][CR1]1)]"
+Pyrazolidines (HS),[NR1]1[NR1][CR1][CR1][CR1]1
+Imidazolidines (HS),[NR1]1[CR1][NR1][CR1][CR1]1
+Dioxolanes (HS),"[$([OR1]1[OR1][CR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1][CR1]1)]"
+"1,2-Dioxolanes (HS)",[OR1]1[OR1][CR1][CR1][CR1]1
+"1,3-Dioxolanes (HS)",[OR1]1[CR1][OR1][CR1][CR1]1
+Dithiolanes (HS),"[$([SR1]1[SR1][CR1][CR1][CR1]1),$([SR1]1[CR1][SR1][CR1][CR1]1)]"
+"1,2-Dithiolanes (HS)",[SR1]1[SR1][CR1][CR1][CR1]1
+"1,3-Dithiolanes (HS)",[SR1]1[CR1][SR1][CR1][CR1]1
+Pyrazolines (HS),"[$([NR1]1=[NR1][CR1][CR1][CR1]1),$([NR1]1[NR1]=[CR1][CR1][CR1]1),$([NR1]1[NR1][CR1]=[CR1][CR1]1)]"
+1-Pyrazolines (HS),[NR1]1=[NR1][CR1][CR1][CR1]1
+2-Pyrazolines (HS),[NR1]1[NR1]=[CR1][CR1][CR1]1
+Imidazolines (HS),"[$([NR1]1=[CR1][NR1][CR1][CR1]1),$([NR1]1[CR1][NR1]=[CR1][CR1]1),$([NR1]1[CR1][NR1][CR1]=[CR1]1)]"
+2-Imidazolines (HS),[NR1]1=[CR1][NR1][CR1][CR1]1
+3-Imidazolines (HS),[NR1]1[CR1][NR1]=[CR1][CR1]1
+4-Imidazolines (HS),[NR1]1[CR1][NR1][CR1]=[CR1]1
+Dioxolenes (HS),"[$([OR1]1[OR1][CR1]=[CR1][CR1]1),$([OR1]1[CR1][OR1][CR1]=[CR1]1)]"
+"1,2-Dioxolenes (HS)",[OR1]1[OR1][CR1]=[CR1][CR1]1
+"1,3-Dioxolenes (HS)",[OR1]1[CR1][OR1][CR1]=[CR1]1
+Dithiolenes (HS),"[$([SR1]1[SR1][CR1]=[CR1][CR1]1),$([SR1]1[CR1][SR1][CR1]=[CR1]1)]"
+"1,2-Dithiolenes (HS)",[SR1]1[SR1][CR1]=[CR1][CR1]1
+"1,3-Dithiolenes (HS)",[SR1]1[CR1][SR1][CR1]=[CR1]1
+Aromatic five-membered heterocycles with two heteroatoms (HS),"[$([a!#6;R1]1[a!#6;R1][cR1][cR1][cR1]1),$([a!#6;R1]1[cR1][a!#6;R1][cR1][cR1]1)]"
+Diazoles (HS),"[$([nR1]1[nR1][cR1][cR1][cR1]1),$([nR1]1[cR1][nR1][cR1][cR1]1)]"
+Pyrazoles (HS),[nR1]1[nR1][cR1][cR1][cR1]1
+Imidazoles (HS),[nR1]1[cR1][nR1][cR1][cR1]1
+Oxazoles (HS),"[$([oR1]1[nR1][cR1][cR1][cR1]1),$([oR1]1[cR1][nR1][cR1][cR1]1)]"
+"1,2-Oxazoles (HS)",[oR1]1[nR1][cR1][cR1][cR1]1
+"1,3-Oxazoles (HS)",[oR1]1[cR1][nR1][cR1][cR1]1
+Thiazoles (HS),"[$([sR1]1[nR1][cR1][cR1][cR1]1),$([sR1]1[cR1][nR1][cR1][cR1]1)]"
+"1,2-Thiazoles (HS)",[sR1]1[nR1][cR1][cR1][cR1]1
+"1,3-Thiazoles (HS)",[sR1]1[cR1][nR1][cR1][cR1]1
+Five-membered heterocycles with three heteroatoms (HS),"[$([!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]~[!#6!#1;R1]~[#6R1]~1)]"
+Saturated five-membered heterocycles with three heteroatoms (HS),"[$([!#6!#1;R1]1[!#6!#1;R1][!#6!#1;R1][CR1][CR1]1),$([!#6!#1;R1]1[!#6!#1;R1][CR1][!#6!#1;R1][CR1]1)]"
+Triazolidines (HS),"[$([NR1]1[NR1][NR1][CR1][CR1]1),$([NR1]1[NR1][CR1][NR1][CR1]1)]"
+"1,2,3-Triazolidines (HS)",[NR1]1[NR1][NR1][CR1][CR1]1
+"1,2,4-Triazolidines (HS)",[NR1]1[NR1][CR1][NR1][CR1]1
+Trioxolanes (HS),"[$([OR1]1[OR1][OR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][CR1]1)]"
+"1,2,3-Trioxolanes (HS)",[OR1]1[OR1][OR1][CR1][CR1]1
+"1,2,4-Trioxolanes (HS)",[OR1]1[OR1][CR1][OR1][CR1]1
+Trithiolanes (HS),"[$([SR1]1[SR1][SR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][CR1]1)]"
+"1,2,3-Trithiolanes (HS)",[SR1]1[SR1][SR1][CR1][CR1]1
+"1,2,4-Trithiolanes (HS)",[SR1]1[SR1][CR1][SR1][CR1]1
+"1,2,3-Triazolines (HS)","[$([NR1]1=[NR1][NR1][CR1][CR1]1),$([NR1]1[NR1][NR1][CR1][CR1]=1),$([NR1]1[NR1][NR1][CR1]=[CR1]1)]"
+"1,2,4-Triazolines (HS)","[$([NR1]1=[NR1][CR1][NR1][CR1]1),$([NR1]1[NR1]=[CR1][NR1][CR1]1),$([NR1]1[NR1][CR1]=[NR1][CR1]1)]"
+"1,2,3-Trioxoles (HS)",[OR1]1[OR1][OR1][CR1]=[CR1]1
+"1,2,3-Trithioles (HS)",[SR1]1[SR1][SR1][CR1]=[CR1]1
+Aromatic five-membered heterocycles with three heteroatoms (HS),"[$([a!#6;R1]1[a!#6;R1][a!#6;R1][cR1][cR1]1),$([a!#6;R1]1[a!#6;R1][cR1][a!#6;R1][cR1]1)]"
+Triazoles (HS),"[$([nR1]1[nR1][nR1][cR1][cR1]1),$([nR1]1[nR1][cR1][nR1][cR1]1)]"
+"1,2,3-Triazoles (HS)",[nR1]1[nR1][nR1][cR1][cR1]1
+"1,2,4-Triazoles (HS)",[nR1]1[nR1][cR1][nR1][cR1]1
+Oxadiazoles (HS),"[$([oR1]1[nR1][nR1][cR1][cR1]1),$([oR1]1[nR1][cR1][nR1][cR1]1),$([oR1]1[nR1][cR1][cR1][nR1]1),$([oR1]1[cR1][nR1][nR1][cR1]1)]"
+"1,2,3-Oxadiazoles (HS)",[oR1]1[nR1][nR1][cR1][cR1]1
+"1,2,4-Oxadiazoles (HS)",[oR1]1[nR1][cR1][nR1][cR1]1
+"1,2,5-Oxadiazoles (furazanes) (HS)",[oR1]1[nR1][cR1][cR1][nR1]1
+"1,3,4-Oxadiazoles (HS)",[oR1]1[cR1][nR1][nR1][cR1]1
+Five-membered heterocycles with four heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[#6R1]~1
+Saturated five-membered heterocycles with four heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1][CR1]1
+Tetrazolidines (HS),[NR1]1[NR1][NR1][NR1][CR1]1
+Tetraoxolanes (HS),[OR1]1[OR1][OR1][OR1][CR1]1
+Tetrathiolanes (HS),[SR1]1[SR1][SR1][SR1][CR1]1
+Unsaturated five-membered heterocycles with four heteroatoms (HS),"[$([!#6!#1;R1]1=[!#6!#1;R1][!#6!#1;R1]-,=[!#6!#1;R1][#6R1]1),$([!#6!#1;R1]1[!#6!#1;R1]=[!#6!#1;R1][!#6!#1;R1][#6R1]1),$([!#6!#1;R1]1[!#6!#1;R1][!#6!#1;R1][!#6!#1;R1][#6R1]=1)]"
+Aromatic five-membered heterocycles with four heteroatoms (HS),[a!#6;R1]1[a!#6;R1][a!#6;R1][a!#6;R1][cR1]1
+Tetrazoles (HS),[nR1]1[nR1][nR1][nR1][cR1]1
+Oxatriazoles (HS),"[$([oR1]1[nR1][nR1][nR1][cR1]1),$([oR1]1[nR1][nR1][cR1][nR1]1)]"
+"1,2,3,4-Oxatriazoles (HS)",[oR1]1[nR1][nR1][nR1][cR1]1
+"1,2,3,5-Oxatriazoles (HS)",[oR1]1[nR1][nR1][cR1][nR1]1
+Thiatriazoles (HS),"[$([sR1]1[nR1][nR1][nR1][cR1]1),$([sR1]1[nR1][nR1][cR1][nR1]1)]"
+"1,2,3,4-Thiatriazoles (HS)",[sR1]1[nR1][nR1][nR1][cR1]1
+"1,2,3,5-Thiatriazoles (HS)",[sR1]1[nR1][nR1][cR1][nR1]1
+Five-membered heterocycles with five heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~1
+Saturated five-membered heterocycles with five heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-1
+Pentazolidines (HS),[NR1]1[NR1][NR1][NR1][NR1]1
+Pentaoxolanes (HS),[OR1]1[OR1][OR1][OR1][OR1]1
+Pentathiolanes (HS),[SR1]1[SR1][SR1][SR1][SR1]1
+Unsaturated five-membered heterocycles with five heteroatoms (HS),[!#6!#1;R1]1=[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-1
+Aromatic five-membered heterocycles with five heteroatoms (HS),[a!#6;R1]1[a!#6;R1][a!#6;R1][a!#6;R1][a!#6;R1]1
+Pentazoles,[nR1]1[nR1][nR1][nR1][nR1]1
+Six-membered heterocycles (LS),[!#6!#1]1~*~*~*~*~*~1
+Six-membered heterocycles with one heteroatom (LS),[!#6!#1]1~[#6]~[#6]~[#6]~[#6]~[#6]~1
+Saturated six-membered heterocycles with one heteroatom (LS),[!#6!#1]1CCCCC1
+Unsaturated six-membered heterocycles with one heteroatom (LS),"[$([!#1!#6]1=C~C~C~C~C~1),$([!#1!#6]1~C=C~C~C~C~1),$([!#1!#6]1~C~C=C~C~C~1);!$([a!c]1ccccc1)]"
+Aromatic six-membered heterocycles with one heteroatom (LS),[a!c]1ccccc1
+Six-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[#6]~[#6]~[#6]~[#6]~1),$([!#6!#1]1~[#6]~[!#6!#1]~[#6]~[#6]~[#6]~1),$([!#6!#1]1~[#6]~[#6]~[!#6!#1]~[#6]~[#6]~1)]"
+Saturated six-membered heterocycles with two heteroatoms (LS),"[$([!#6!#1]1[!#6!#1]CCCC1),$([!#6!#1]1C[!#6!#1]CCC1),$([!#6!#1]1CC[!#6!#1]CC1)]"
+Aromatic six-membered heterocycles with two heteroatoms (LS),"[$([a!c]1[a!c]cccc1),$([a!c]1c[a!c]ccc1),$([a!c]1cc[a!c]cc1)]"
+Six-membered heterocycles with three heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[!#6!#1]~[#6]~[#6]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[#6]~[!#6!#1]~[#6]~[#6]~1),$([!#6!#1]1~[#6]~[!#6!#1]~[#6]~[!#6!#1]~[#6]~1)]"
+Saturated six-membered heterocycles with three heteroatoms (LS),"[$([!#6!#1]1[!#6!#1][!#6!#1]CCC1),$([!#6!#1]1[!#6!#1]C[!#6!#1]CC1),$([!#6!#1]1C[!#6!#1]C[!#6!#1]C1)]"
+Aromatic six-membered heterocycles with three heteroatoms (LS),"[$([a!c]1[a!c][a!c]ccc1),$([a!c]1[a!c]c[a!c]cc1),$([a!c]1c[a!c]c[a!c]c1)]"
+Six-membered heterocycles with four heteroatoms (LS),"[$([!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~[#6]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[!#6!#1]~[#6]~[!#6!#1]~[#6]~1),$([!#6!#1]1~[!#6!#1]~[#6]~[!#6!#1]~[!#6!#1]~[#6]~1)]"
+Saturated six-membered heterocycles with four heteroatoms (LS),"[$([!#6!#1]1[!#6!#1][!#6!#1][!#6!#1]CC1),$([!#6!#1]1[!#6!#1][!#6!#1]C[!#6!#1]C1),$([!#6!#1]1[!#6!#1]C[!#6!#1][!#6!#1]C1)]"
+Aromatic six-membered heterocycles with four heteroatoms (LS),"[$([a!c]1[a!c][a!c][a!c]cc1),$([a!c]1[a!c][a!c]c[a!c]c1),$([a!c]1[a!c]c[a!c][a!c]c1)]"
+Six-membered heterocycles with five heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~[#6]~1
+Saturated six-membered heterocycles with five heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[!#6!#1]-[!#6!#1]-C-1
+Aromatic six-membered heterocycles with five heteroatoms (LS),[a!c]1[a!c][a!c][a!c][a!c]c1
+Saturated six-membered heterocycles with six heteroatoms (LS),[!#6!#1]1-[!#6!#1]-[!#6!#1]-[!#6!#1]-[!#6!#1]-[!#6!#1]-1
+Unsaturated six-membered heterocycles with six heteroatoms (LS),[$([!#6!#1]1=[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~1);!$([a!c]1[a!c][a!c][a!c][a!c][a!c]1)]
+Aromatic six-membered heterocycles with six heteroatoms (LS),[a!c]1[a!c][a!c][a!c][a!c][a!c]1
+Six-membered heterocycles (HS),[!#6!#1;R1]1~[*R1]~[*R1]~[*R1]~[*R1]~[*R1]~1
+Six-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1~[#6R1]~[#6R1]~[#6R1]~[#6R1]~[#6R1]~1
+Saturated six-membered heterocycles with one heteroatom (HS),[!#6!#1;R1]1[CR1][CR1][CR1][CR1][CR1]1
+Piperidines (HS),[NR1]1[CR1][CR1][CR1][CR1][CR1]1
+Tetrahydropyrans (HS),[OR1]1[CR1][CR1][CR1][CR1][CR1]1
+Tetrahydrothiopyrans (HS),[SR1]1[CR1][CR1][CR1][CR1][CR1]1
+Unsaturated six-membered heterocycles with one heteroatom (HS),"[$([!#1!#6;R1]1=[CR1]~[CR1]~[CR1]~[CR1]~[CR1]~1),$([!#1!#6;R1]1~[CR1]=[CR1]~[CR1]~[CR1]~[CR1]~1),$([!#1!#6;R1]1~[CR1]~[CR1]=[CR1]~[CR1]~[CR1]~1);!$([a!c]1ccccc1)]"
+Tetrahydropyridines (HS),"[$([NR1]1=[CR1][CR1][CR1][CR1][CR1]1),$([NR1]1[CR1]=[CR1][CR1][CR1][CR1]1),$([NR1]1[CR1][CR1]=[CR1][CR1][CR1]1)]"
+Dihydropyridines (HS),"[$([NR1]1=[CR1][CR1]-,=[CR1]-,=[CR1][CR1]1),$([NR1]1[CR1]=[CR1][CR1][CR1]-,=[CR1]-,=1),$([NR1]1[CR1]=[CR1][CR1]=[CR1][CR1]1)]"
+Pyrans (HS),"[OR1]1[CR1]=[CR1][CR1]-,=[CR1]-,=[CR1]1"
+Thiopyrans (HS),"[SR1]1[CR1]=[CR1][CR1]-,=[CR1]-,=[CR1]1"
+Aromatic six-membered heterocycles with one heteroatom (HS),[a!c;R1]1[cR1][cR1][cR1][cR1][cR1]1
+Pyridines (HS),[nR1]1[cR1][cR1][cR1][cR1][cR1]1
+Six-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1~[!#6!#1]~[#6R1]~[#6R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]~[!#6!#1]~[#6R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]~[#6R1]~[!#6!#1]~[#6R1]~[#6R1]~1)]"
+Saturated six-membered heterocycles with two heteroatoms (HS),"[$([!#6!#1;R1]1[!#6!#1;R1][CR1][CR1][CR1][CR1]1),$([!#6!#1;R1]1[CR1][!#6!#1;R1][CR1][CR1][CR1]1),$([!#6!#1;R1]1[CR1][CR1][!#6!#1;R1][CR1][CR1]1)]"
+Hexahydrodiazines,"[$([NR1]1[NR1][CR1][CR1][CR1][CR1]1),$([NR1]1[CR1][NR1][CR1][CR1][CR1]1),$([NR1]1[CR1][CR1][NR1][CR1][CR1]1)]"
+Dioxanes,"[$([OR1]1[OR1][CR1][CR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1][CR1][CR1]1),$([OR1]1[CR1][CR1][OR1][CR1][CR1]1)]"
+Dithianes,"[$([SR1]1[SR1][CR1][CR1][CR1][CR1]1),$([SR1]1[CR1][SR1][CR1][CR1][CR1]1),$([SR1]1[CR1][CR1][SR1][CR1][CR1]1)]"
+Dioxines (HS),"[$([OR1]1[OR1][CR1]=[CR1][CR1]=[CR1]1),$([OR1]1[CR1]=[CR1][OR1][CR1]=[CR1]1)]"
+Aromatic six-membered heterocycles with two heteroatoms (HS),"[$([a!c;R1]1[a!c;R1][cR1][cR1][cR1][cR1]1),$([a!c;R1]1[cR1][a!c;R1][cR1][cR1][cR1]1),$([a!c;R1]1[cR1][cR1][a!c;R1][cR1][cR1]1)]"
+Pyridazines (HS),[nR1]1[nR1][cR1][cR1][cR1][cR1]1
+Pyrimidines (HS),[nR1]1[cR1][nR1][cR1][cR1][cR1]1
+Pyrazines (HS),[nR1]1[cR1][cR1][nR1][cR1][cR1]1
+Six-membered heterocycles with three heteroatoms (HS),"[$([!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[#6R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[!#6!#1;R1]~[#6R1]~[!#6!#1;R1]~[#6R1]~[#6R1]~1),$([!#6!#1;R1]1~[#6R1]~[!#6!#1;R1]~[#6R1]~[!#6!#1;R1]~[#6R1]~1)]"
+Saturated six-membered heterocycles with three heteroatoms (HS),"[$([!#6!#1;R1]1[!#6!#1;R1][!#6!#1;R1][CR1][CR1][CR1]1),$([!#6!#1;R1]1[!#6!#1;R1][CR1][!#6!#1;R1][CR1][CR1]1),$([!#6!#1;R1]1[CR1][!#6!#1;R1][CR1][!#6!#1;R1][CR1]1)]"
+Hexahydrotriazines (HS),"[$([NR1]1[NR1][NR1][CR1][CR1][CR1]1),$([NR1]1[NR1][CR1][NR1][CR1][CR1]1),$([NR1]1[CR1][NR1][CR1][NR1][CR1]1)]"
+Trioxanes (HS),"[$([OR1]1[OR1][OR1][CR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][CR1][CR1]1),$([OR1]1[CR1][OR1][CR1][OR1][CR1]1)]"
+Trithianes (HS),"[$([SR1]1[SR1][SR1][CR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][CR1][CR1]1),$([SR1]1[CR1][SR1][CR1][SR1][CR1]1)]"
+Aromatic six-membered heterocycles with three heteroatoms (HS),"[$([a!c;R1]1[a!c;R1][a!c;R1][cR1][cR1][cR1]1),$([a!c;R1]1[a!c;R1][cR1][a!c;R1][cR1][cR1]1),$([a!c;R1]1[cR1][a!c;R1][cR1][a!c;R1][cR1]1)]"
+Triazines (HS),"[$([nR1]1[nR1][nR1][cR1][cR1][cR1]1),$([nR1]1[nR1][cR1][nR1][cR1][cR1]1),$([nR1]1[cR1][nR1][cR1][nR1][cR1]1)]"
+Saturated six-membered heterocycles with four heteroatoms (HS),"[$([!#6!#1;R1]1[!#6!#1;R1][!#6!#1;R1][!#6!#1;R1][CR1][CR1]1),$([!#6!#1;R1]1[!#6!#1;R1][!#6!#1;R1][CR1][!#6!#1;R1][CR1]1),$([!#6!#1;R1]1[!#6!#1;R1][CR1][!#6!#1;R1][!#6!#1;R1][CR1]1)]"
+Hexahydrotetrazines (HS),"[$([NR1]1[NR1][NR1][NR1][CR1][CR1]1),$([NR1]1[NR1][CR1][NR1][NR1][CR1]1),$([NR1]1[NR1][NR1][CR1][NR1][CR1]1)]"
+Tetroxanes (HS),"[$([OR1]1[OR1][OR1][OR1][CR1][CR1]1),$([OR1]1[OR1][CR1][OR1][OR1][CR1]1)]"
+Tetrathianes (HS),"[$([SR1]1[SR1][SR1][SR1][CR1][CR1]1),$([SR1]1[SR1][CR1][SR1][SR1][CR1]1)]"
+Aromatic six-membered heterocycles with four heteroatoms (HS),"[$([a!c;R1]1[a!c;R1][a!c;R1][a!c;R1][cR1][cR1]1),$([a!c;R1]1[a!c;R1][a!c;R1][cR1][a!c;R1][cR1]1),$([a!c;R1]1[a!c;R1][cR1][a!c;R1][a!c;R1][cR1]1)]"
+Tetrazines (HS),"[$([nR1]1[nR1][nR1][nR1][cR1][cR1]1),$([nR1]1[nR1][nR1][cR1][nR1][cR1]1),$([nR1]1[nR1][cR1][nR1][nR1][cR1]1)]"
+Six-membered heterocycles with five heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[#6R1]~1
+Saturated six-membered heterocycles with five heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[CR1]-1
+Aromatic six-membered heterocycles with five heteroatoms (HS),[a!c;R1]1[a!c;R1][a!c;R1][a!c;R1][a!c;R1][cR1]1
+Pentazines,[nR1]1[nR1][nR1][nR1][nR1][cR1]1
+Six-membered heterocycles with six heteroatoms (HS),[!#6!#1;R1]1~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~1
+Saturated six-membered heterocycles with six heteroatoms (HS),[!#6!#1;R1]1-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-[!#6!#1;R1]-1
+Unsaturated six-membered heterocycles with six heteroatoms (HS),[$([!#6!#1;R1]1=[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~[!#6!#1;R1]~1);!$([a!c]1[a!c][a!c][a!c][a!c][a!c]1)]
+Aromatic six-membered heterocycles with six heteroatoms (HS),[a!c;R1]1[a!c;R1][a!c;R1][a!c;R1][a!c;R1][a!c;R1]1
+Hexazines,[nR1]1[nR1][nR1][nR1][nR1][nR1]1
+Six-membered heterocycles with six heteroatoms (LS),[!#6!#1]1~[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~[!#6!#1]~1
+Dithiines (HS),"[$([SR1]1[SR1][CR1]=[CR1][CR1]=[CR1]1),$([SR1]1[CR1]=[CR1][SR1][CR1]=[CR1]1)]"
+Hexahydropentazines (HS),[NR1]1[NR1][NR1][NR1][NR1][CR1]1
+Pentoxanes (HS),[OR1]1[OR1][OR1][OR1][OR1][CR1]1
+Pentathianes (HS),[SR1]1[SR1][SR1][SR1][SR1][CR1]1
+"Cumulated alkadienes (1,2-alkadienes)",[CX3]=[CX2]=[CX3]
+Allyl halides,"[CX3]=[CX3][CX4][F,Cl,Br,I]"
+Allyl fluorides,[CX3]=[CX3][CX4]F
+Allyl chlorides,[CX3]=[CX3][CX4]Cl
+Allyl bromides,[CX3]=[CX3][CX4]Br
+Allyl iodides,[CX3]=[CX3][CX4]I
+Vinyl fluorides,F[CX3]=[CX3]
+Vinyl chlorides,Cl[CX3]=[CX3]
+Vinyl bromides,Br[CX3]=[CX3]
+Vinyl iodides,I[CX3]=[CX3]
+Alkynyl fluorides,F[CX2]#[CX2]
+Alkynyl chlorides,Cl[CX2]#[CX2]
+Alkynyl iodides,I[CX2]#[CX2]
+Alkynyl bromides,Br[CX2]#[CX2]
+Dialkylthioethers,"[CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))][SX2][CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))]"
+Alkylarylthioethers,"[CX4&!$([CX4]([SX2])([#7,O,S,F,Cl,Br,I,P]))][SX2]c"
+Diarylthioethers,c[SX2&!$([SX2r3])]c
+"1,2 – Diphenols",c([OH1])c([OH1])
+"1,3 – Diphenols",c([OH1])[aR1]c([OH1])
+"1,4 - Diphenols",c1([OH1])aac([OH1])aa1
+"1,2 – Dithiophenols",c([SH1])c([SH1])
+"1,3 – Dithiophenols",c([SH1])[aR1]c([SH1])
+"1,4 – Dithiophenols",c1([SH1])aac([SH1])aa1
+"1,2 – Aminophenols","c([OH1])c[NX3]([#1,#6])[#1,#6]"
+"1,3 – Aminophenols","c([OH1])[aR1]c[NX3]([#1,#6])[#1,#6]"
+"1,4 – Aminophenols","c1([OH1])aac([NX3]([#1,#6])[#1,#6])aa1"
+"1,2 – Aminothiophenols","c([SH1])c[NX3]([#1,#6])[#1,#6]"
+"1,3 – Aminothiophenols","c([SH1])[aR1]c[NX3]([#1,#6])[#1,#6]"
+"1,4 – Aminothiophenols","c1([SH1])aac([NX3]([#1,#6])[#1,#6])aa1"
+Alkynyl ethers,"[CX2]#[CX2][OX2][#6&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))&!$([CX3]([OX2])=[OX1,SX1,NX2,C])]"
+Alkynyl thioethers,"[CX2]#[CX2][SX2][#6&!$([CX4]([OX2])([#7,O,S,F,Cl,Br,I,P]))&!$([CX3]([OX2])=[OX1,SX1,NX2,C])]"
+Carbonic acid esters,"[#1,#6&!$([CX3]=[OX1,SX1,NX2])][OX2][CX3](=[OX1])[OX2][#6&!$([CX3]=[OX1,SX1,NX2])]"
+Phosphonic acid amides,[OX1]=[Pv5X4]([NX3])([#6])[!#6!$([SX2])]
+Aldehyde,[CX3H1](=O)[#6]
+AliphaticEther,[!$(C=O);$([C&!a])][OX2&H0][!$(C=O);$([C&!a])]
+AminoAcids,"[$([NX3,NX4+][CX4H]([*])[CX3](=[OX1])[O,N]),$([$([$([NX3H2,NX4H3+]),$([NX3H](C)(C))][CX4H2][CX3](=[OX1])[OX2H,OX1-,N])])]"
+AromaticHalogen,"[$([a][F,Cl,I])]"
+AromaticNGroups,"[$([a]N(~O)~O),$([a]N([#1])[*]),$([a]N([#1])[!#1])]"
+AromaticSulphonicAcid,"[$([#16X4](=[OX1])(=[OX1])([a])[OX2H,OX1H0-]),$([#16X4+2]([OX1-])([OX1-])([a])[OX2H,OX1H0-])]"
+AzoGroup,[$([!R&N]=[!R&N])]
+CyanoGroupOnMoreThanEightAtomsChain,[N]#[C]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]
+Epoxide,[$(C1OC1)]
+Esters,[#6][CX3](=O)[$([OX2H0]([#6])[#6])]
+Formaldehyde,[CX3H2](=O)
+Ketone,[C][C](=O)[C]
+MoreThanTwoHydroxyOnAromaticRing,"[$([a&R]([OX2H])[a&R]([OX2H])),$([a&R]([OX2H])a[a&R]([OX2H])),$([a&R]([OX2H])aa[a&R]([OX2H]))]"
+Nitrile,[C]#[N]
+NNitroso,[$(NN=O)]
+PyridineRing,[$(n1ccccc1)]
+TerminalTertButyl,[$([C]([CH3])([CH3])([CH3])([*]))]
+TertiaryAmine,[!R&NX3&H0]
+TriazineRing,"[$(n1nnccc1),$(n1ncncc1),$(n1cncnc1)]"
+Trifluoromethyl,[$([*]C(F)(F)F)]
+Naphthafurans,c1cccc2c1c3c(c5CNCOc25)cco3
+Phenoxazines,"[OX1,N]=[#6]1-,:[#6]=,:[#6]2-,:[#16X2,#8X2]-,:[#6]3=,:[#6]-,:[#6](=,:[#6]-,:[#6]=,:[#6]3-,:[#7]=,:[#6]2-,:[#6]=,:[#6]1)"
+Anthrones,"[#6]2=,:[#6]3-,:[#6]4=,:[#6](-,:[#6]=,:[#6]-,:[#6]=,:[#6]4)-,:[#6](=O)-,:[#6]4=,:[#6]3-,:[#6](=,:[#6]-,:[#6]=,:[#6]4)[#7]-,:[#6]2=O"
+Imidazotriazoles,"[c,n]1cnn2c([NH])cnc12"
+Indenones,"[#6R1]1-,:[#6R1](=[OX1])c2ccccc2-,:[#6]([NX3])=,:1"
+Indolines,[CX4]1c2ccccc2[NX3]([CX4][CX4][CX4][NX3])[CX4]1
+NCCN,"[$(c1[nv3X2][c,n][c,n,s][c,n]1),$(c2[nv3X2][c,n][c,n][c,n][c,n]2)]-[$(c1[nv3X2][c,n][c,n,s][c,n]1),$(c2[nv3X2][c,n][c,n][c,n][c,n]2)]"
+Picolylamines_A,"[$([NX3][CH2]c1ncnc([NX3])c1),$([NX3][CH2]c1nccc([NX3])n1)]"
+Picolylamines_B,"[$([NX3]([H,CX4!H0!R])([H,CX4!H0!R])[C!H0!R]c1[nv3X2]n([H,CH3])cc1),$([NX3]([H,CX4!H0!R])([H,CX4!H0!R])[C!H0!R]c1[nv3X2]ccn1[H,CH3])]"
+Picolylamines_C,"c1cccnc1[CH2!R][NX3!R]([H,CH3])[CH2!R]"
+Bis-picolylamines,"[nv3X2]c([c,s,n])[CX4][NX3]([H,C])[CX4]c([c,s,n])[nv3X2,nv3X3H1]"
+Alkylimidazoles_B,[nv3X2]1cncc1[CX4][CX4][NH2]
+Heterylimidazoles,[nv3X3]1c(-c[nv3X2])c[nv3X2]c1
+Diarylamines,c([nv3X2])(c)[NX3H1!R]c([nv3X2])(c)
+Diarylmethanes,"[$(c1[nX2][c,n][c,n][c,n]1),$([cr6][nX2r6])][CX4H2!R][$(c2[nX2][c,n][c,n][c,n]2),$([cr6][nX2r6])]"
+Heterylsulfides,"[SX2]-[#6R1]2=,:[#7R1]-,:[#6R1]=,:[#6R1]-,:[#7R2]3-,:[#6R1](=O)-,:[#7R1]-,:[#7R1]=,:[#6R2]23"
+Heterylamides_A,"[$([cr5][n,s;r5][n,o;r5]),$([cr5]([nr5])[s,o,n;r5])][Nv3X3H1!R][CX3!R](=[OX1])[$([cr5][nv3X2r5]),$(c1ncccc1),$(c1c([OX2][CH3])cccc1)]"
+Heterylamides_B,"[$(c1nnc[o,n]1),$(c1nccs1)][Nv3X3H!R][C!R](=[OX1])[CX4!H0]([H,CX4])[SX2,n]cc"
+Pyrimidinetriones,C1=C([OH1])[NX3][CX3](=[OX1])[NX3][CX3]1(=[OX1])
+8-Quinolinols,"[H,C][OX2]c1c([CX4][NX3])ccc2cccnc21"
+Benzoxozinones,c1cccc2[NX3][CX4][CX3](=[OX1])[OX2]c12
+Perchloroquinone,"[OX1]=[CX3]1C([F,Cl,Br,I])=C([F,Cl,Br,I])[CX3](=[OX1])C([F,Cl,Br,I])=C1[F,Cl,Br,I]"
+Alkylimidazole_C,nc[nv3X3Hr5]c[CX4]c[nv3X2]
+"A1, A2, A4-A12, B2, B3, B4, B6",[OH][CX3](=[OX1])c1ncccc1
+A3,"[OH][CX3](=[OX1])[#6]1-,:[$([#7X3+]-[OX1-]),$([#7v5X3]=[OX1])]=,:[#6]-,:[#6]=,:[#6]-,:[#6]=,:1"
+B1,c1cccc2c1ccc([OH])n2
+B5,"[#6]1=,:[#6]-,:[#6]=,:[#6]([OH])-,:[#6]2=,:[#6]1-,:[#6]=,:[#6]-,:[#6]=,:[$([#7X3+]-[OX1-]),$([#7v5X3]=[OX1])]2"
+"B7, B8, B9, B12",c1ccc([OH])c2c1cccn2
+B10,c1ccc([SH])c2c1cccn2
+B11,c1ccc([CX3](=[OX1])[OH])c2c1cccn2
+C2,[NH2]c1nc([NH2])cc([OH])n1
+"C3, C7, C8",[SH]c1nc([OH])ccn1
+C4,[OH]c1nc([SH])ccn1
+C5,[SH]c1nc([CH3])cc([CH3])n1
+C5*,[SH]c1nc([CX4])cc([CX4])n1
+"C6, C12",[OH]c1nc([OH])cc([CH3])n1
+"C6*, C12*",[OH]c1nc([OH])cc([CX4])n1
+C9,[NH2]c1ncnc2c1nc[nH]2
+C9*,[NH2]c1ncnc2c1nc[nX3]2
+"C10, C11","[CH3]c1nc([OH])cc([OH,CH3])n1"
+"C10*, C11*","[CX4]c1nc([OH])cc([OH,CX4])n1"
+"D1, D3, D4, D6-D11","O=[#6]1-,:[#6]([OH])=,:[#6]-,:[#8]-,:[#6]=,:[#6]-,:1"
+"D2, D5","S=[#6]1-,:[#6]([OH])=,:[#6]-,:[#8]-,:[#6]=,:[#6]-,:1"
+D12,"O=[#6]1-,:[#8]-,:[#6]=,:[#6]-,:[#6]=,:[#6]([OH])-,:1"
+"E1, E10","O=[#6]1-,:[#7]([OH])-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1"
+E2,"S=[#6]1-,:[#7]([OH])-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1"
+"E3*, E4*, E5*","O=[#6]1-,:[#6]([OH])=,:[#6]([CX4])-,:[#7]([CX4])-,:[#6]=,:[#6]-,:1"
+"E6, E8","O=[#6]1-,:[#7]([H,CH3])-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1([OH])"
+"E6*, E8*","O=[#6]1-,:[#7X3]-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1([OH])"
+"E7*, E11*, E12*","S=[#6]1-,:[#6]([OH])=,:[#6]([CX4])-,:[#7]([CX4])-,:[#6]=,:[#6]-,:1"
+E9,"S=[#6]1-,:[#7]([CH3])-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1([OH])"
+E9*,"S=[#6]1-,:[#7]([CX4])-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:1([OH])"
+"F1, F3-F12",[OH]c1ccccc1[CX3](=[OX1])[OH]
+F2,[OH]c1ccccc1[CX3](=[OX1])[NH2]
+G1,[CX4][CX3](=[OX1])[NX3H1][OH]
+G1*,[CX4][CX3](=[OX1])[NX3][OH]
+G2,[nX3H]1cccc1C(=[OX1])[OH]
+G2*,[nX3]1cccc1C(=[OX1])[OH]
+G3,c1ccnc(c1)C[NX3H]Cc2ccccn2
+G3*,c1ccnc(c1)C[NX3]Cc2ccccn2
+G4,C1C[NX3H1]CC[NX3H1]CC[NX3H1]1
+G4*,C1C[NX3]CC[NX3]CC[NX3]1
+G5,"c1ccc2c(c1)-,:[#6](=O)-,:[#6]=,:[#6](-,:[#6]2=O)[OH]"
+G6,c1cnc(cc1[CX4][OH])c2cc(ccn2)[CX4][OH]
+G7,c1cc2c(nc1)c3c(cccn3)cc2
+G8,c1ccc(c(c1)[OH])[OH]
+"G9,G10","c1ccc(c(c1)[OH,SH])[OX2][CX4]"
+"G11, G12","[OH][#6]1=,:[#6]-,:[#6]=,:[#6]-,:[#6]=,:[#6]-,:[#6]1=[OX1]"
+H1,c1ccc2c(c1)ccc(c2[OH])[OH]
+H2,c1ccc2cc(c(cc2c1)[OH])[OH]
+H3,c1cc(c(c(c1)[NH2])[OH])C(=[OX1])[OH]
+H4,c1cc(c(c(c1)[OH])[OH])C(=[OX1])[OH]
+H5,c1ccc(c(c1)c2nc3ccccc3o2)[OH]
+H6,c1ccc(c(c1)c2nc3ccccc3s2)[OH]
+H7,[CH3]c1ccc(cc1)[Sv6X4](=[OX1])(=[OX1])[NX3H2]
+H7*,[CX4]c1ccc(cc1)[Sv6X4](=[OX1])(=[OX1])[NX3H2]
+H8 - H12,"C[CX3](=[OX1])[CX4!H0]([H,CX4,Cl])[CX3](=[OX1])C"
+H8*- H12*,C[CX3](=[OX1])[CX4][CX3](=[OX1])C
+Salts_C,"[!#1!#2!#5!#6!#7!#8!#9!#10!#14!#15!#16!#17!#18!#32!#33!#34!#35!#36!#51!#52!#53!#54!#84!#85!#86]~[#6,#7,#8,#16]"
+Pt,[Pt]
+N-methylol derivatives,[OX2;H1][CH2][NX3]
+β-lactones and γ- sultones,"[$([OX2]1[CX4][CX4][CX3]1(=[OX1])),$([CX4]1[CX4][CX4][Sv6;X4](=[OX1])(=[OX1])[OX2]1)]"
+"α,β unsaturated carbonyls",[CX3](=[OX1])[CX3H1]=[CX3]
+Alkyl carbamate and thiocarbamate,"[NX3]([C,#1])([C,#1])[CX3](=[OX1,Sv2X1])[OX2,Sv2X2]C"
+Heterocyclic Polycyclic Aromatic Hydrocarbons,"[$([aR3].[n,o,s]),$([$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[$([aR2]([aR])([aR])([aR]))].[n,o,s])]"
+Cyanothiopyrans,[NH2]C1=C(C#[NX1])[C!H0](-cc)C(C#[NX1])=C([NH2])S1
+Cyanodithiine,"[#16X2]1-,:[#6X3]([CX2]#[NX1])=,:[#6X3]([CX2]#[NX1])-,:[#16X2]-,:[#6X3]([CX2]#[NX1])=,:[#6X3]1([CX2]#[NX1])"
+Azafluorenones,"[OX1,SX1]=[#6X3]1c2c([nX2][cX3,nX2,nX3][cX3,nX2,nX3][cX3,nX2,nX3]2)[c,n]2c1[cX3!$([#6X3]=[A])][cX3!$([#6X3]=[A])][cX3!$([#6X3]=[A])][cX3!$([#6X3]=[A])]2"
+Cyanothioazinones,"[SX1]=[#6X3]1-,:[#7X3H1]-,:[#7X2,#6X3!$([#6X3]=[A])]=,:[#7X2,#6X3!$([#6X3]=[A])]-,:[#7X2,#6X3!$([#6X3]=[A])]=,:[#6X3]1([CX2]#[NX1])"
+Cyanopyridinones,"[OX1]=[#6X3]1-,:[#6X3]=,:[#6X3]-,:[#6X3]([CX2]#[NX1])=,:[#6X3]2-,:[#7X3]([CX4][CX4]([OX2H1])[CX4][NX3H1]c5ccccc5)-,:[#6]3ccccc3-,:[#7X3]12"
+Thienopyridinones,[SX2]1C(=C(C4=C1[NX3!H0]C(C(=[C!H0]4)C(=[OX1])[OX2H1])=[OX1])[NX3H2])C(=[OX1])[NX3!H0]
+Pyranopyridinones,"[OX2]1[CX3]([NX3H2])=[CX3]([CX2]#[NX1])[CX4][#6X3]2[#6X3](=[OX1])-,:[#7X3H1]-,:[#6X3]=,:[#6X3]-,:[#6X3]12"
+Benzoxathiolones,"[$([#8]1-,:[#6](-,:[#16]c4cc(ccc14)[#7,#8])=[OX1,SX1]),$([#8]1-,:[#6](-,:[#16]c4ccc(cc14)[#7,#8])=[OX1,SX1])]"
+Indoloquinones,"[#6X3]1-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]2-,:[#6X3]1-,:[#6X3](=[OX1])-,:[#6X3]3-,:[nX3]4-,:[#6X3](-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]4)=,:[#6X3]-,:[#6X3]3-,:[#6X3]2=[OX1]"
+Pyrazolones,"[#7X2]1=,:[#6X3]-,:[#6X3](-,:[#6X3](-,:[#7X3]1)=[SX1,OX1])=,:[#6X3H1](-,:[#7X3H1])"
+Thiopyrylium,c1[#16+]cccc1
+Pyrimidinones_A,"[OX1,SX1]=[#6X3]1[#7X3](-,:[#7X2]=,:[#6X3][NX3H1][#6])-,:[cX3!$([#6X3]=[A])]=,:[#7X2]-,:[cX3!$([#6X3]=[A])]=,:[cX3!$([#6X3]=[A])]1"
+Pyrimidinones_B,"[OX1]=[#6X3]1-,:[#6X3]2scc-,:[#6X3]2-,:[#7X3]3-,:[#6X3](=,:[#7X2]-,:[#7X2]=,:[#6X3]3[CX4])-,:[#7X3]1[CX4H3]"
+Pyrimidinones_C,"[OX1,SX1]=[#6X3]1[#7X3]-,:[#6X3!$([#6X3]=[A])](-[NX3])=,:[#7X2]-,:[#6X3]2([nX2][#6X3!$([#6X3]=[A])][#6X3!$([#6X3]=[A])][#6X3!$([#6X3]=[A])]c12)"
+Pyrimidinodiones,"[#6X3]1(=[OX1,SX1])-,:[#7X3H1]-,:[#6X3](=[OX1,SX1])-,:[#7X3,#7X2]~[#6X3]([#7X2,#7X3;R1])-,:[#6X3]1[sX2r5R1,nX2r5R1,$([nx2r6R1]([cX3])[cX3])]"
+Thienopyrimidinone_A,"[OX1,SX1]=[#6X3]1-,:[#7X3H1]-,:[#6X4]-,:[#7X3H1]-,:[#6]2-,:[#16X2,#8X2]-,:[#6]3[CX4][NX3,CX4][CX4][CX4]-,:[#6]3-,:[#6]12"
+Piperazinediones,"[#7X3]1-,:[#6X3](=[OX1,SX1])-,:[#6X3](=[OX1,SX1])-,:[NX3]-,:[#6X3]2[cX3!$([#6X3]=[A])][cX3]([NX3H1][CX3]=[OX1])[cX3!$([#6X3]=[A])][cX3!$([#6X3]=[A])][cX3]12"
+4-Heteryl-thiazoles,"s1[c,nX2][c,nX2](-c(c)[nX2,nX3,sX2])[nX2]c1"
+Oxadiazoles,o1nc([CX4])nc1[CX4H2][SX4](=[OX1])(=[OX1])[CX4H2][CX3](=[OX1])[NX3!H0]
+Cycloheptenones,"[#6]1-,:[#6]=,:[#6]-,:[#6X3](=[OX1])-,:[#6]([OX2H1])=,:[#6]-,:[#6]=,:1"
+Thiazoles,[nX2]1[cX3](-[cX3])[sX2][cX3][cX3]1[CX3](=[OX1])[NX3H2]
+Cyanothioethers,"[NX1]#[CX2][CX4H2][SX2]c1n[c,n][c,n][c,n]n1"
+Aminopyrimidines_A,c1[nX2]c[nX2][nX3]1[CX4][CX4][NX3]([CX4])-c2cc[nX2]c(-c3cc[nX2]cc3)[nX2]2
+Fused azacycles_A,"[nX2R1][c,n;R2]1[c,n;R2]([c,n;R1])[c,n][c,n][c,n;R2]([c,n;R1])[nR2]1[nX2R1]"
+Fused azacycles_B,"[NX1]#[CX2]c1[c!$([#6]=[OX1])]n[n,c!$([#6]=[OX1])]2[c,n][c!$([#6]=[OX1])][c!$([#6]=[OX1])]nc12"
+Aminopyrimidines_B,[NX3H2]c1ncnc2ncccc21
+Arylethanolamines,"[$([NX3]([CX4,H])([CX4,H])[CX4]),$([OX2]([H,CX4])[CX4])][CX4!H0][CX4H2][NX3H1]c[nX2r6R1][nX2,nX3][nX2,cX3;R1][cX3,nX2][cX3,nX2][sX2,cX3][cX3]"
+Azaspironones,"[X4;R2]12(-,:;@[#6X3]-,:;@[#6X3]-,:;@[#7X3]-,:;@[#6X3]-,:;@1)-,:;@[#16X2]-,:;@[#6X3]=,:;@[#7X2]-,:;@[#7X3]-,:;@2"
+Radical,[#16;X3v3+0]
+N⋯X halogen bonding,"N[F,Cl,Br,I]"
+Charged atoms,"[+,-]"
+Benzyl Imidazole scaffold,"[c,n]:1:c:[c,n]:[c,n]2:[c,n](:c:1)[c,n,o,s][c,n]([c,n,o,s]2)*-,=*c:3:c:c:c:c:c:3"
+6-Phenyl Napthaline type scaffold,"[c,n]:1:c:[c,n]:[c,n]2:[c,n](:c:1)[c,n,o,s][c,n]([c,n,o,s][c,n,o,s]2)*~*c:3:c:c:c:c:c:3"
+2-(2-(1H-pyrrol-2-yl)ethyl)-1H-benzoimidazole scaffold,"[c,n]:1:c:c2:c(:[c,n]:c:1)[c,n,o,s][c,n]([c,n,o,s]2)*~*c3ccc*3"
+2 - Olefin group,"[$([CX3H2]=[CX3H1]),$([CX3H1]=[CX3H1]),$([CX3H2]=[CX3H0]),$([CX3H1]=[CX3H0]),$([CX3H0]=[CX3H0])]"
+5 - Alcohol,[OX2H1!$([OX2H1][CX4H3])!$([OX2H1]-c)!$([OX2H1][CX3]=[OX1])!$([OX2H1][CX4H2][CX4H2][OX2H1])!$([OX2H1][CX4H2][CX4H2][OX2H0!R])!$([OX2H1][CX4H2][CX4H1][OX2H0!R])!$([OX2H1][CX4H1][CX4H2][OX2H0!R])]
+6 - Methanol,[CX4H3][OX2H1]
+7 - Water,[OX2H2]
+9 - Сarbonyl,"[$([CX4H3][CX3](=[OX1])[#6]),$([CX4H2][CX3H0](=[OX1])[#6])]"
+10 - Aldehyde,[CX3H1]([#6])=[OX1]
+11 - Acetate group,"[$([CX4H3][CX3](=[OX1])[OX2][#6]),$([CX4H2][CX3](=[OX1])[OX2][#6])]"
+12 - Formate group,[CX3H1](=[OX1])[OX2][#6]
+14 - Primary amine,"[$([CX4H3][NX3H2]),$([CX4H2][NX3H2]),$([CX4H1][NX3H2])]"
+16 - Tertiary amine,"[$([CX4H3][NX3!$([NX3]([CX4H3])([CH3,CH2])[CX3]=[OX1])]([#6])[#6]),$([CX4H2][NX3!$([NX3]([CX4H2])([CH3,CH2])[CX3]=[OX1])!$([NX3][CX4H3])]([#6])[#6])]"
+19 - CCN,"[$([CX4H3][CX2]#[NX1]),$([CX4H2][CX2]#[NX1])]"
+20 - COOH,"[$([CX3H0](=[OX1])[OX2H1]),$([CX3H1](=[OX1])[OX2H1])]"
+21 - CCl,"[$([CX4H2!$([CX4H2](Cl)Cl)]Cl),$([CX4H1!$([CX4H1]([Cl])F)!$([CX4H1]([Cl])(F)F)]([!Cl])([!Cl])[Cl]),$([CX4H0]([!Cl!F])([!Cl!F])([!Cl!F])[Cl])]"
+22 - CCl2,"[$([CX4H2]([Cl])[Cl]),$([CX4H1]([!Cl!F])([Cl])[Cl]),$([CX4H0]([Cl])([Cl])([!Cl!F])[!Cl!F])]"
+23 - CCl3,"[$([CX4H1]([Cl])([Cl])[Cl]),$([CX4H0]([!Cl!F])([Cl])([Cl])[Cl])]"
+24 - CCl4,[CX4]([Cl])([Cl])([Cl])[Cl]
+26 - CNO2,"[$([CX4H3][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]),$([CX4H2][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]),$([CX4H1][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)])]"
+28 - Carbon disulphide,[SX1]=[CX2]=[SX1]
+29 - CH3SH,"[$([CX4H3][SX2H1]),$([CX4H2][SX2H1])]"
+30 - Furfural,"[OX2]1-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]([CX3H1]=[OX1])-,:1"
+31 - Ethanediol,[OX2H1][CX4H2][CX4H2][OX2H1]
+32 - Iodo compounds,[I]
+33 - Bromo compounds,[Br!$([Br][cR])]
+34 - Carbon triple bond,"[$([CX2H1]#[CX2H0]),$([CX2H0]#[CX2H0])]"
+35 - Dimethylsulphoxide,[CX4H3][Sv4X3](=[OX1])[CX4H3]
+36 - Acrylonitrile,[CX3H2]=[CX3H1][CX2]#[NX1]
+"37 - Cl, double bonded carbon",[Cl][CX3]=[CX3]
+39 - DMF,"[$([CX3H1](=[OX1])[NX3]([CX4H3])[CX4H3]),$([CX3H1](=[OX1])[NX3]([CX4H2])[CX4H2])]"
+40 - CF2,"[$([CX4](F)(F)(F)[!Cl!F]),$([CX4](F)(F)([!F!Cl!H])([!F!Cl!H])),$([CX4](F)([!F!Cl!H])([!F!Cl!H])([!F!Cl!H]))]"
+41 - Acrylate,[#6!$([CX4H3])!$([CX4H2])][CX3](=[OX1])[OX2][#6]
+42 - SiH2,"[$([SiX4H3]),$([SiX4H2]([!$([OX2])])([!$([OX2])])),$([SiX4H1]([!$([OX2])])([!$([OX2])])([!$([OX2])])),$([SiX4H0]([!$([OX2])])([!$([OX2])])([!$([OX2])])([!$([OX2])]))]"
+43 - SiO,"[$([SiX4H2][OX2]),$([SiX4H1][OX2]),$([SiX4H0][OX2])]"
+44 - Methylpyrrolidone,[CX4H2]1[NX3]([CX4H3])[CX3](=[OX1])[CX4H2][CX4H2]1
+47 - OCCOH,"[$([OX2H0!R][CX4H2][CX4H2][OX2H1]),$([OX2H0!R][CX4H1][CX4H2][OX2H1]),$([OX2H0!R][CX4H2][CX4H1][OX2H1])]"
+49 - Morpholine,[OX2]1[CX4H2][CX4H2][NX3H1][CX4H2][CX4H2]1
+52 - Sulphones,"[$([CX4H2][Sv6X4](=[OX1])(=[OX1])[CX4H2]),$([CX4H2][Sv6X4](=[OX1])(=[OX1])[CX4H1])]"
+53 - Oxides,"[$([CX4H2]1[OX2][CX4H2]1),$([CX4H2]1[OX2][CX4H1]1),$([CX4H2]1[OX2][CX4H0]1),$([CX4H1]1[OX2][CX4H1]1),$([CX4H1]1[OX2][CX4H0]1),$([CX4H0]1[OX2][CX4H0]1)]"
+54 - Anhydrides,[CX3](=[OX1])[OX2][CX3](=[OX1])
+5 - CH2=CH (2 - Olefin group),[CX3H2]=[CX3H1]
+6 - CH=CH (2 - Olefin group),[CX3H1]=[CX3H1]
+7 - CH2=C (2 - Olefin group),[CX3H2]=[CX3H0]
+8 - CH=C (2 - Olefin group),[CX3H1]=[CX3H0]
+9 - C=C (2 - Olefin group),[CX3H0]=[CX3H0]
+14 - ACCH (4 - Aromatic carbon-alkane),[cR]-[CX4H1]
+15 - OH (5 - Alcohol),[OX2H1!$([OX2H1][CX4H3])!$([OX2H1]-c)!$([OX2H1][CX3]=[OX1])!$([OX2H1][CX4H2][CX4H2][OX2H1])!$([OX2H1][CX4H2][CX4H2][OX2H0!R])!$([OX2H1][CX4H2][CX4H1][OX2H0!R])!$([OX2H1][CX4H1][CX4H2][OX2H0!R])]
+16 - CH3OH (6 - Metanol),[CX4H3][OX2H1]
+17 - H2O (7 - Water),[OX2H2]
+19 - CH3CO (9 - Сarbonyl),[CX4H3][CX3](=[OX1])[#6]
+20 - CH2CO (9 - Сarbonyl),[CX4H2][CX3H0](=[OX1])[#6]
+21 - CHO (10 - Aldehyde),[CX3H1]([#6])=[OX1]
+22 - CH3COO (11 - Acetate group),[CX4H3][CX3](=[OX1])[OX2][#6]
+23 - CH2COO (11 - Acetate group),[CX4H2][CX3](=[OX1])[OX2][#6]
+24 - HCOO (12 - Formate group),[CX3H1](=[OX1])[OX2][#6]
+25 - CH3O (13 - Ether),"[CX4H3][OX2!R!$([OX2][CX3]=[OX1,SX1,NX2])!$([OX2][CX4H2][CX4H2][OX2H1])!$([OX2][CX4H1][CX4H2][OX2H1])!$([OX2][CX4H2][CX4H1][OX2H1])][#6]"
+26 - CH2O (13 - Ether),"[CX4H2][OX2!R!$([OX2][CX4H2][CX4H2][OX2H1])!$([OX2]([CX4H2])[CX4H1][CX4H2][OX2H1])!$([OX2][CX4H2][CX4H1][OX2H1])!$([OX2][CX3]=[OX1,SX1,NX2])!$([OX2]([CX4H2])[CX4H3])][#6]"
+28 - THF  (13 - Ether),[OX2R!r3!$([OX2]C=[OX1])!$([OX2]1[CX4H2][CX4H2][NX3H1][CX4H2][CX4H2]1)]([R])[CX4H2R]
+29 - CH3NH2 (14 - Primary amine),[CX4H3][NX3H2]
+30 - CH2NH2 (14 - Primary amine),[CX4H2][NX3H2]
+31 - CHNH2 (14 - Primary amine),[CX4H1][NX3H2]
+32 - CH3NH (15 - Secondary amine group),[CX4H3][NX3H1!$([NX3H1]([CX4H3])[CX3]=[OX1])][#6]
+33 - CH2NH (15 - Secondary amine group),[CX4H2][NX3H1!$([NX3H1]1[CX4H2][CX4H2][OX2][CX4H2][CX4H2]1)!$([NX3H1]([CX4H2])[CX3]=[OX1])!$([NX3H1]([CX4H3])[CX4H2])][#6]
+34 - CHNH (15 - Secondary amine group),[CX4H1][NX3H1!$([NX3H1][CX4H3])!$([NX3H1][CX4H2])][#6]
+35 - CH3N (16 - Tertiary amine),"[CX4H3][NX3!$([NX3]([CX4H3])([CH3,CH2])[CX3]=[OX1])]([#6])[#6]"
+36 - CH2N (16 - Tertiary amine),"[CX4H2][NX3!$([NX3]([CX4H2])([CH3,CH2])[CX3]=[OX1])!$([NX3][CX4H3])]([#6])[#6]"
+38 - C5H5N (18 - Pyridine),[cH1]1[nX2][cH1][cH1][cH1][cH1]1
+39 - C5H4N (18 - Pyridine),"[$([nX2]1:[cX3H1]:[cX3H1]:[cX3H1]:[cX3H1]:[cX3H0]1),$([nX2]1:[cX3H1]:[cX3H1]:[cX3H1]:[cX3H0]:[cX3H1]1),$([nX2]1:[cX3H1]:[cX3H1]:[cX3H0]:[cX3H1]:[cX3H1]1)]"
+41 - CH3CN (19 - CCN),[CX4H3][CX2]#[NX1]
+42 - CH2CN (19 - CCN),[CX4H2][CX2]#[NX1]
+43 - COOH (20 - COOH),[CX3H0](=[OX1])[OX2H1]
+44 - HCOOH (20 - COOH),[CX3H1](=[OX1])[OX2H1]
+45 - CH2Cl (21 - CCl),[CX4H2!$([CX4H2](Cl)Cl)]Cl
+46 - CHCl (21 - CCl),[CX4H1!$([CX4H1]([Cl])F)!$([CX4H1]([Cl])(F)F)]([!Cl])([!Cl])[Cl]
+47 - CCl (21 - CCl),[CX4H0]([!Cl!F])([!Cl!F])([!Cl!F])[Cl]
+48 - CH2Cl2 (22 - CCl2),[CX4H2]([Cl])[Cl]
+49 - CHCl2 (22 - CCl2),[CX4H1]([!Cl!F])([Cl])[Cl]
+50 - CCl2 (22 - CCl2),[CX4H0]([Cl])([Cl])([!Cl!F])[!Cl!F]
+51 - CHCl3 (23 - CCl3),[CX4H1]([Cl])([Cl])[Cl]
+52 - CCl3 (23 - CCl3),[CX4H0]([!Cl!F])([Cl])([Cl])[Cl]
+53 - CCl4 (24 - CCl4),[CX4]([Cl])([Cl])([Cl])[Cl]
+55 - CH3NO2 (26 - CNO2),"[CX4H3][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]"
+56 - CH2NO2 (26 - CNO2),"[CX4H2][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]"
+57 - CHNO2 (26 - CNO2),"[CX4H1][$([NX3+](=[OX1])([O-])),$([NX3](=O)=O)]"
+59 - CS2 (28 - Carbon disulphide),[SX1]=[CX2]=[SX1]
+60 - CH3SH (29 - CH3SH),[CX4H3][SX2H1]
+61 - CH2SH (29 - CH3SH),[CX4H2][SX2H1]
+62 - Furfural (30 - Furfural ),"[OX2]1-,:[#6X3]=,:[#6X3]-,:[#6X3]=,:[#6X3]([CX3H1]=[OX1])-,:1"
+63 - DOH (31 - Ethanediol),[OX2H1][CX4H2][CX4H2][OX2H1]
+64 - I (32 - Iodo compounds),[I]
+65 - Br (33 - Bromo compounds),[Br!$([Br][cR])]
+66 - CH#C (34 - Carbon triple bond),[CX2H1]#[CX2H0]
+67 - C#C (34 - Carbon triple bond),[CX2H0]#[CX2H0]
+68 - DMSO (35 - Dimethylsulphoxide),[CX4H3][Sv4X3](=[OX1])[CX4H3]
+69 - ACRY (36 - Acrylonitrile),[CX3H2]=[CX3H1][CX2]#[NX1]
+"70 - Cl-C=C (37 - Cl, double bonded carbon )",[Cl][CX3]=[CX3]
+72 - DMF (39 - Dimethylformamide),[CX3H1](=[OX1])[NX3]([CX4H3])[CX4H3]
+73 - HCON(CH2)2 (39 - Dimethylformamide),[CX3H1](=[OX1])[NX3]([CX4H2])[CX4H2]
+74 - CF3 (40 - CF2),[CX4](F)(F)(F)[!Cl!F]
+75 - CF2 (40 - CF2),[CX4](F)(F)([!F!Cl!H])([!F!Cl!H])
+76 - CF (40 - CF2),[CX4](F)([!F!Cl!H])([!F!Cl!H])([!F!Cl!H])
+77 - COO (41 - Acrylate),[#6!$([CX4H3])!$([CX4H2])][CX3](=[OX1])[OX2][#6]
+78 - SiH3 (42 - SiH2),[SiX4H3]
+79 - SiH2 (42 - SiH2),[SiX4H2]([!$([OX2])])([!$([OX2])])
+80 - SiH (42 - SiH2),[SiX4H1]([!$([OX2])])([!$([OX2])])([!$([OX2])])
+81 - Si (42 - SiH2),[SiX4H0]([!$([OX2])])([!$([OX2])])([!$([OX2])])([!$([OX2])])
+82 - SiH2O (43 - SiO),[SiX4H2][OX2]
+83 - SiHO (43 - SiO),[SiX4H1][OX2]
+84 - SiO (43 - SiO),[SiX4H0][OX2]
+85 - NMP (44 - Methylpyrrolidone),[CX4H2]1[NX3]([CX4H3])[CX3](=[OX1])[CX4H2][CX4H2]1
+86 - CCl3F (45 - CClF),[CX4]([Cl])([Cl])([Cl])[F]
+87 - CCl2F (45 - CClF),[CX4H0]([Cl])([Cl])([F])[!Cl!F]
+88 - HCCl2F (45 - CClF),[CX4H1]([Cl])([Cl])F
+89 - HCClF (45 - CClF),[CX4H1](Cl)(F)([!F!Cl])
+90 - CClF2 (45 - CClF),[CX4H0](Cl)(F)(F)[!Cl!F]
+91 - HCClF2 (45 - CClF),[CX4H1](Cl)(F)F
+92 - CClF3 (45 - CClF),[CX4](Cl)(F)(F)F
+93 - CCl2F2 (45 - CClF),[CX4](Cl)(Cl)(F)F
+94 - CONH2 (46 - CON),[CX3](=[OX1])[NX3H2]
+95 - CONHCH3 (46 - CON),[CX3](=[OX1])[NX3H1][CX4H3]
+96 - CONHCH2 (46 - CON),[CX3](=[OX1])[NX3H1][CX4H2]
+97 - CON(CH3)2 (46 - CON),[CX3](=[OX1])[NX3]([CX4H3])[CX4H3]
+98 - CONCH3CH2 (46 - CON),[CX3](=[OX1])[NX3]([CX4H3])[CX4H2]
+99 - CON(CH2)2 (46 - CON),[CX3](=[OX1])[NX3]([CX4H2])[CX4H2]
+100 - C2H5O2 (47 - OCCOH),[OX2H0!R][CX4H2][CX4H2][OX2H1]
+101 - C2H4O2 (47 - OCCOH),"[$([OX2H0!R][CX4H1][CX4H2][OX2H1]),$([OX2H0!R][CX4H2][CX4H1][OX2H1])]"
+102 - CH3S (48 - CH2S),[CX4H3][SX2H0][*]
+103 - CH2S (48 - CH2S),[CX4H2][SX2H0!$([SX2H0]([CX4H2])[CX4H3])][*]
+105 - MORPH (49 - Morpholine),[OX2]1[CX4H2][CX4H2][NX3H1][CX4H2][CX4H2]1
+106 - C4H4S (50 - Thiophene),"[#6X3H1]1-,:[#16X2]-,:[#6X3H1]=,:[#6X3H1]-,:[#6X3H1]=,:1"
+107 - C4H3S (50 - Thiophene),"[$([#6X3H1]1-,:[#16X2]-,:[#6X3H1]=,:[#6X3H1]-,:[#6X3H0]=,:1),$([#6X3H1]1-,:[#16X2]-,:[#6X3H0]=,:[#6X3H1]-,:[#6X3H1]=,:1)]"
+109 - NCO (51 - NCO),[*][NX2]=[CX2]=[OX1]
+110 - CH2SuCH2 (52 - Sulphones),[CX4H2][Sv6X4](=[OX1])(=[OX1])[CX4H2]
+111 - CH2SuCH (52 - Sulphones),[CX4H2][Sv6X4](=[OX1])(=[OX1])[CX4H1]
+112 - CH2OCH2 (53 - Oxides),[CX4H2]1[OX2][CX4H2]1
+113 - CH2OCH (53 - Oxides),[CX4H2]1[OX2][CX4H1]1
+114 - CH2OC (53 - Oxides),[CX4H2]1[OX2][CX4H0]1
+115 - CHOCH (53 - Oxides),[CX4H1]1[OX2][CX4H1]1
+116 - CHOC (53 - Oxides),[CX4H1]1[OX2][CX4H0]1
+117 - COC (53 - Oxides),[CX4H0]1[OX2][CX4H0]1
+118 - O=COC=O (54 - Anhydrides),[CX3](=[OX1])[OX2][CX3](=[OX1])
+phosphorodithionate,[$([SX2H0]P(=S)([OH0])[OH0])]P(=S)([OH0])[OH0]
+"O,O-diethylphosphorodithionate",CCOP(=S)(OCC)SC([*:1])
+phosphoryl,[PX4H0](=O)([OH0])([OH0])[OH0]
+"O,O-dimethylphosphoryl",COP(=O)(O([*:1]))OC
+phosphorothionate,[$([OH0]P(=S)([OH0])[OH0])]P(=S)([OH0])[OH0]
+diethylphosphorothionate,CCOP(=S)(O([*:1]))OCC
+O-phenyl phenylphosphonothioate,S=P(O([*:1]))(Oc1ccc([*:1])cc1)c1ccccc1
+O-phenyl phosphonothioate,S=P(O([*:1]))(O([*:1]))Oc1ccc([*:1])cc1
+carbamate,[$(N([!H])C(=O)[OH0])]C(=O)[OH0]
+"2,2-dimethyl-2,3-dihydro-1-benzofuran-7-yl N-(aminosulfanyl)-N-methylcarbamate",CN(SN([*:1])([*:1]))C(=O)Oc1cccc2CC(C)(C)Oc12
+methyl(propoxysulfanyl) carbamate,CN(SOCCC([*:1]))C(=O)O([*:1])
+phenyl carbamate,O=C(N([*:1]))Oc1ccccc([*:1])1
+O-(methylaminocarbonyl)oxime,[CX4]NC(=O)ON=C
+dimethylcarbamate,CN(C)C(=O)O([*:1])
+barbiturates,*C1(*)[#6](=O)-[#7]-[#6](=O)-[#7]-[#6]1=O
+4-Hydroxycoumarin,[OH1]C1=CC(=O)Oc2[cH][cH][cH][cH]c12
+Phenothiazine,*-[#7]-1-c2ccccc2-[#16]-c2ccccc-12
+1-carboximidoylpiperazine,[NR1X3]1[CX4R1][CX4R1][NX3R1]([CX3]=[NX2])[CX4R1][CX4R1]1
+phenylpiperazine,[NR1X3]1[CX4R1][CX4R1][NX3R1](c2ccccc2)[CX4R1][CX4R1]1
+"2,4-dichloro-benzene-1,3-dicarbonitrile",N#Cc1c([*:1])c([*:1])c(Cl)c(C#N)c1Cl
+R1 - Reactive alkyl halides,"[Br,Cl,I][CX4;CH,CH2]"
+R2 - Acid halides,"[S,C](=[O,S])[F,Br,Cl,I]"
+R3 - Carbazides,O=CN=[N+]=[N-]
+R4 - Sulphate esters,"COS(=O)O[C,c]"
+R5 - Sulphonates,"COS(=O)(=O)[C,c]"
+R6 - Acid anhydrides,C(=O)OC(=O)
+R7 - Peroxides,OO
+R8 - Pentafluorophenyl esters,C(=O)Oc1c(F)c(F)c(F)c(F)c1(F)
+R9 - Paranitrophenyl esters,C(=O)Oc1ccc(N(=O)=O)cc1
+R10 - Esters of HOBT (Hydroxybenzotriazole),C(=O)Onnn
+R11 - Isocyanates & Isothiocyanantes,"N=C=[S,O]"
+R12 - Triflates,OS(=O)(=O)C(F)(F)F
+R13 - Lawesson's reagent and derivatives,P(=S)(S)S
+R14 - Phosphoramides,NP(=O)(N)N
+R15 - Aromatic azides,cN=[N+]=[N-]
+R16 - beta carbonyl quaternary Nitrogen,"C(=O)C[N+,n+]"
+R17 - Acylhydrazide,[N;R0][N;R0]C(=O)
+"R18 - Quaternary C,Cl,I,P or S","[C+,Cl+,I+,P+,S+]"
+R19 - Phosphoranes,C=P
+R20 - Chloramidines,[Cl]C([C&R0])=N
+R21 - Nitroso,[N&D2](=O)
+R22 - P/S Halides,"[P,S][Cl,Br,F,I]"
+R23 - Carbodiumide,N=C=N
+R24 - Isonitrile,[N+]#[C-]
+R25 - Triacyloximes,C(=O)N(C(=O))OC(=O)
+R26 - Cyanohydrins,N#CC[OH]
+R27 - Acyl cyanides,N#CC(=O)
+R28 - Sulfonyl cyanides,S(=O)(=O)C#N
+R29 - Cyanophosphonates,P(OCC)(OCC)(=O)C#N
+R30 - Azocyanamides,[N;R0]=[N;R0]C#N
+R31 - Azoalkanals,[N;R0]=[N;R0]CC=O
+I1 - Aliphatic methylene chains 7 or more long,[CD2;R0][CD2;R0][CD2;R0][CD2;R0][CD2;R0][CD2;R0][CD2;R0]
+I2 - Compounds with 4 or more acidic groups,"[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH]"
+I3 - Crown ethers,[O;R1][C;R1][C;R1][O;R1][C;R1][C;R1][O;R1]
+I4 - Disulphides,SS
+I5 - Thiols,[SH]
+"I6 - Epoxides, Thioepoxides, Aziridines","C1[O,S,N]C1"
+"I7 - 2,4,5 trihydroxyphenyl",c([OH])c([OH])c([OH])
+"I8 - 2,3,4 trihydroxyphenyl",c([OH])c([OH])cc([OH])
+I9 - Hydrazothiourea,N=NC(=S)N
+I10 - Thiocyanate,SC#N
+I11 - Benzylic quaternary Nitrogen,cC[N+]
+I12 - Thioesters,"C[O,S;R0][C;R0](=S)"
+I13 - Cyanamides,N[CH2]C#N
+I14 - Four membered lactones,C1(=O)OCC1
+I15 - Di and Triphosphates,P(=O)([OH])OP(=O)[OH]
+I16 - Betalactams,N1CCC1=O
+N1 - Quinones,O=C1[#6]~[#6]C(=O)[#6]~[#6]1
+N2 - Polyenes,C=CC=CC=CC=C
+N3 - Saponin derivatives,O1CCCCC1OC2CCC3CCCCC3C2
+N4 - Cytochalasin derivatives,O=C1NCC2CCCCC21
+N5 - Cycloheximide derivatives,O=C1CCCC(N1)=O
+N6 - Monensin derivatives,O1CCCCC1C2CCCO2
+N7 - Cyanidin derivatives,[OH]c1cc([OH])cc2[O+]=C(C([OH])=Cc21)c3cc([OH])c([OH])cc3
+N8 - Squalestatin derivatives,C12OCCC(O1)CC2
+"A1 - e.g., carboxylic acid","[OH1][P,C,S](=O)"
+"A2 - e.g.,imide","[NH1]([P,S]=O)([P,S]=O)"
+A4,[OH1]C1=NC=NO1
+A5,[NH1]1C=NOS1=O
+A6,[OH1]C1=NC(=O)CC1=O
+A7,[OH1]C1NC(=O)C(=O)C1
+A8,[nH1]1ncoc1=O
+A9,[OH1]C1=NN=CO1
+A10,[nH1]1[nH]cnc1=O
+A11,[OH1]C1=N[NH1]C=N1
+A12,[OH1]C1=NOC=C1
+A13,[nH1]1occc1=O
+A14,[OH1]c1oncc1
+A15,[nH1]1ccc(=O)o1
+A16 - tetrazole,[nH1]nnn
+A17,[nH1](n)nn
+A18,[OH1]C1=NC(=O)NO1
+A19,[OH1]C1=NC(=O)ON1
+A20,[nH1]1cnnc1C(F)(F)F
+A21,[nH1]1cnc(n1)C(F)(F)F
+A22,[nH1]1C(=O)CC(=O)O1
+A23,[OH1]C1=CC(=O)NO1
+A24,[OH1]C1=CC(=O)ON1
+A25 - benzosulphimide,[NH1]1C(=O)c2ccccc2S1(=O)=O
+A26,[OH1]C1=NS(=O)(=O)c2ccccc21
+A27,[OH1]C1=NC(=O)c2ccccc21
+A28,[OH1]C1=COC=CC1=O
+A29,[OH1]C1=NSN=C1
+A30 - hyroxamic acid,[OH1]NC(=O)
+A31 - trifluoromethyl sulphonamide,[NH]S(=O)(=O)C(F)(F)F
+A32 - aryl sulphonamide,[NH](c)S(=O)=O
+A33 - phenol,"[OH1]c1c[c,n]ccc1"
+B1 - primary amine,[NH2][CX4]
+B2 - secondary amine,[NH]([CX4])[CX4]
+B3 - tertiary amine,[NX3]([CX4])([CX4])[CX4]
+B4SUB,"[C,c](=N)N"
+B5EXC,"[C,c](=N)N[C,S](=O)"
+B6,"[$([C,c](=N)N);!$([C,c](=N)N[C,S](=O))]"
+B7EXC,n(:c)(:c):a
+B7,[nH0;!$(n-C);!$(n(:c)(:c):a)]1ccccc1
+B8EXC,"[N,n;+1]"
+B9,"[$([NH2]!:c),$([NH1]([CX4])!:c),$([NH0]([CX4])([CX4])!:c)]"
+E1 - alkyl and aryl ketones and aldehydes,"[C;H1](=[O,S])[C,c]"
+"E2 - e.g., carboxylic esters","[C,P;H1](=[O,S])[O,S]"
+"E3 - e.g., carbonates","[C](=O)([C,c,O,S])[C,c,O,S]"
+E4EXC,C(=O)[OH1]
+E5EXC,C(=O)[SH1]
+E6,"C(=[O,S])(N)Oc"
+"E7 - e.g., aryl carbamates","C1(=O)NS(=O)(=O)[C,c]=,:[C,c]1"
+E8SUB,"P(=O)[O,S]"
+E9EXC,P[OH1]
+E10,"[$(P(=O)[O,S]);!$(P[OH1])]"
+E11,c(=O)(~c)~c
+E12EXC,"[$(c1(=O)ccn([C,c])cc1),$(c1(=O)n([C,c])cccc1)]"
+E12,"[$(c(=O)(~c)~c);!$([$(c1(=O)ccn([C,c])cc1),$(c1(=O)n([C,c])cccc1)])]"
+E13 - imides,C(=O)-N-C=O
+N1 - pimary amines,[NX3H2][CX4]
+N2 - secondary amines,[NX3H]([CX4])[CX4]
+N4EXC,"N=[O,C,N,S]"
+N5EXC,"N-[C,c,N]=[C,c,N,n,O,S]"
+N6,"[OH1][C,c,N;!$(C=O)]"
+N7EXC,[OH1]C=C
+N8EXC,"[OH1]NC=[O,S]"
+N9,"[$([NX3H2]!:c),$([NX3H1]([CX4])!:c),$([NX3H0]([CX4])([CX4])!:c)]"
+NUC,"[$([NH2][CX4]),$([NH]([CX4])[CX4]),$([OH1][C,c,N;!$(C=O)]),$([$([NH2]!:c),$([NH1]([CX4])!:c),$([NH0]([CX4])([CX4])!:c)]);!$(N=[O,C,N,S]);!$(N-[C,c,N]=[C,c,N,n,O,S]);!$([OH1]C=C);!$([OH1]NC=[O,S])]"
+> 2 ester groups,"C(=O)O[C,H1].C(=O)O[C,H1].C(=O)O[C,H1]"
+2-halo pyridine,"n1c([F,Cl,Br,I])cccc1"
+Acid halide,"C(=O)[Cl,Br,I,F]"
+Acyclic C=C-O,C=[C!r]O
+Acyl cyanide,N#CC(=O)
+Acyl hydrazine,C(=O)N[NH2]
+Aliphatic long chain,[R0;D2][R0;D2][R0;D2][R0;D2]
+Aniline,c1cc([NH2])ccc1
+Azepane,[CH2R1]1N[CH2R1][CH2R1][CH2R1][CH2R1][CH2R1]1
+Azido group,N=[N+]=[N-]
+Azo group,N=N
+Azocane,[CH2R1]1N[CH2R1][CH2R1][CH2R1][CH2R1][CH2R1][CH2R1]1
+Benzidine,"[cR2]1[cR2][cR2]([Nv3X3,Nv4X4])[cR2][cR2][cR2]1[cR2]2[cR2][cR2][cR2]([Nv3X3,Nv4X4])[cR2][cR2]2"
+Betaketo/anhydride,"[C,c](=O)[CX4,CR0X3,O][C,c](=O)"
+Biotin analogue,C12C(NC(N1)=O)CSC2
+Carbo cation/anion,"[C+,c+,C-,c-]"
+Catechol,"c1c([OH])c([OH,NH2,NH])ccc1"
+Charged oxygen or sulfur atoms,"[O+,o+,S+,s+]"
+Chinone (1),"C1(=[O,N])C=CC(=[O,N])C=C1"
+Chinone (2),"C1(=[O,N])C(=[O,N])C=CC=C1"
+Conjugated nitrile group,C=[C!r]C#N
+Crown ether,"[OR2,NR2]@[CR2]@[CR2]@[OR2,NR2]@[CR2]@[CR2]@[OR2,NR2]"
+Cumarine,c1ccc2c(c1)ccc(=O)o2
+Cyanamide,N[CH2]C#N
+Cyanate/aminonitrile/thiocyanate,"[N,O,S]C#N"
+Cyanohydrins,N#CC[OH]
+Cycloheptane (1),[CR1]1[CR1][CR1][CR1][CR1][CR1][CR1]1
+Cycloheptane (2),[CR1]1[CR1][CR1]cc[CR1][CR1]1
+Cyclooctane (1),[CR1]1[CR1][CR1][CR1][CR1][CR1][CR1][CR1]1
+Cyclooctane,[CR1]1[CR1][CR1]cc[CR1][CR1][CR1]1
+Diaminobenzene (1),"[cR2]1[cR2]c([N+R0,NX3R0,nX3R0])c([N+R0,NX3R0,nX3R0])[cR2][cR2]1"
+Diaminobenzene (2),"[cR2]1[cR2]c([N+R0,NX3R0,nX3R0])[cR2]c([N+R0,NX3R0,nX3R0])[cR2]1"
+Diaminobenzene (3),"[cR2]1[cR2]c([N+R0,NX3R0,nX3R0])[cR2][cR2]c1([N+R0,NX3R0,nX3R0])"
+Diazo group,[N!R]=[N!R]
+Diketo group,"[C,c](=O)[C,c](=O)"
+Disulphide,SS
+Enamine,[CX3R0][NX3R0]
+Ester of HOBT,C(=O)Onnn
+Four member lactones,C1(=O)OCC1
+Halogenated ring (1),"c1cc([Cl,Br,I,F])cc([Cl,Br,I,F])c1[Cl,Br,I,F]"
+Halogenated ring (2),"c1ccc([Cl,Br,I,F])c([Cl,Br,I,F])c1[Cl,Br,I,F]"
+Heavy metal,"[Hg,Fe,As,Sb,Zn,Se,se,Te,B,Si]"
+Het-c-het not in ring,"[NX3R0,NX4R0,OR0,SX2R0][CX4][NX3R0,NX4R0,OR0,SX2R0]"
+Hydantoin,C1NC(=O)NC(=O)1
+Hydroxamic acid,C(=O)N[OH]
+Imine,C=[N!R]
+Isolated alkene,"[$([CH2]),$([CH][CX4]),$(C([CX4])[CX4])]=[$([CH2]),$([CH][CX4]),$(C([CX4])[CX4])]"
+Ketene,C=C=O
+"Methylidene-1,3-dithiole",S1C=CSC1=S
+Michael acceptor (1),"C=!@CC=[O,S]"
+Michael acceptor (2),"[$([CH]),$(CC)]#CC(=O)[C,c]"
+Michael acceptor (3),"[$([CH]),$(CC)]#CS(=O)(=O)[C,c]"
+Michael acceptor (4),C=C(C=O)C=O
+Michael acceptor (5),"[$([CH]),$(CC)]#CC(=O)O[C,c]"
+N oxide,"[NX4,nX3][OX1]"
+"N-acyl-2-amino-5-mercapto-1,3,4-thiadiazole",s1c(S)nnc1NC=O
+N-c-halo,"NC[F,Cl,Br,I]"
+N-halo,"[NX3,NX4][F,Cl,Br,I]"
+N-hydroxylpyridine,n[OH]
+Nitro group,"[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+N-nitroso,[#7]-N=O
+Oxime (1),"[C,c]=N[OH]"
+Oxime (2),"[C,c]=NOC=O"
+Oxygen-nitrogen single bond,"[OR0,NR0][OR0,NR0]"
+Perfluorinated chain,[CX4](F)(F)[CX4](F)F
+Peroxide,OO
+Phenol ester,c1ccccc1OC(=O)[#6]
+Phenyl carbonate,c1ccccc1OC(=O)O
+Phosphor,P
+Phthalimide,"[cR,CR]~C(=O)NC(=O)~[cR,CR]"
+Polycyclic aromatic hydrocarbon (1),"a1aa2a3a(a1)[a,A]=,:[a,A]-,:[a,A]=,:[a,A]3A=AA2"
+Polycyclic aromatichydrocarbon (2),a21aa3a(aa1aaaa2)aaaa3
+Polycyclic aromatichydrocarbon (3),a31a(a2a(aa1)aaaa2)aaaa3
+Polyene,[CR0]=[CR0][CR0]=[CR0]
+Quaternary nitrogen (1),"[s,S,c,C,n,N,o,O]~[nX3+,NX4+](~[s,S,c,C,n,N])~[s,S,c,C,n,N]"
+Quaternary nitrogen (2),"[s,S,c,C,n,N,o,O]~[n+,N+](~[s,S,c,C,n,N,o,O])(~[s,S,c,C,n,N,o,O])~[s,S,c,C,n,N,o,O]"
+Quaternary nitrogen (3),[*]=[N+]=[*]
+Saponine derivative,O1CCCCC1OC2CCC3CCCCC3C2
+Silicon halogen,"[Si][F,Cl,Br,I]"
+Stilbene,c1ccccc1C=Cc2ccccc2
+Sulfinic acid,"[SX3](=O)[O-,OH]"
+Sulfonic acid,"[C,c]S(=O)(=O)O[C,c]"
+Sulfonyl cyanide,S(=O)(=O)C#N
+Sulfur oxygen single bond,[SX2]O
+Sulphate,OS(=O)(=O)[O-]
+Sulphur nitrogen single bond,[SX2H0][N]
+Thiobenzothiazole (1),c12ccccc1(SC(S)=N2)
+Thiobenzothiazole (2),c12ccccc1(SC(=S)N2)
+Thiocarbonyl group,"[C,c]=S"
+Thiol (1),[S-]
+Thiol (2),[SH]
+Three-membered heterocycle,"*1[O,S,N]*1"
+Triflate,OS(=O)(=O)C(F)(F)F
+Triphenyl methylsilyl,"[SiR0,CR0](c1ccccc1)(c2ccccc2)(c3ccccc3)"
+Triple bond,C#C
+Aromatic NO2,"[$([NX3](=O)=O),$([NX3+](=O)[O-])]-c(:*):*"
+Deuterium,[2H]
+C13,[13#6]
+2-Chloropyridine,n1c(cccc1)Cl
+"Si,B,Se atoms","[Si,B,Se]"
+Hetero imides,[!#6]-[CH2]-N1C(=O)CCC(=O)1
+Poly ethers,O[CH2][CH2]O-!@[CH2][CH2]O
+Acyclic imines,"C-!@[NX2]=[C!R,#1]-C"
+Alkyl esters of S or P,"[S,P](=O)OC"
+Ugly P compounds,"P(=[O,S])[C,N]([C,N])[C,N]"
+"Acyclic N-,=N and not N bound to carbonyl or sulfone","[N;!$(N-[C,S]=*)]-,=;!@[N;!$(N-[C,S]=*)]"
+Acyclic N-C-N,N-!@[CX4]-!@N
+Acyclic N-S,N-!@[SX2]-*
+"1,2-Dicarbonyl not in ring",O=[CX3]-!@[CX3]=O
+"Carbamate, t-BOC protected",NC(OC([CH3])([CH3])[CH3])=O
+"Carbamate, Cbz protected",NC(O[CH2]c1ccccc1)=O
+Carbamate include di-substitued N,OC(=O)-!@[NX3]
+Acyl halide,"O=C-[F,Cl,Br,I]"
+Alpha halo carbonyl,"O=C-C-[F,Cl,Br,I]"
+Sufonyl halide,"S(=O)(=O)-[F,Cl,Br,I]"
+N:C-SCH2 groups,[ND1]=C-!@[SX2]-[CH2D2]
+26,N-C(=S)-N
+Terminal vinyl,[CH2D1]=[CD2]-!@*
+28,S=P~*
+Thio cyanates,S-C#N
+Thionyl,[Sv4](=O)(-!@[!#1])-!@[!#1]
+N-Haloamines,"N-[F,Cl,Br,I]"
+N-C-Hal or cyano methyl,"N-C-[F,Cl,Br,I,$(C#N)]"
+Alpha beta-unsaturated ketones; center of Michael reactivity,"[$(C#N),$(N(~O)~O),$(C=O),$(S(=O)=O),$(C(F)(F)F),Cl][C!H0]=[C!H0]"
+Aliphatic ketone not ring and not di-carbonyl,[C;!$(C=*)][C!R](=O)[CH2D2]
+"Aliphatic ester, not lactones",C[C!R](=O)[O!R][CH2D2]
+"Long aliphatic chain, 6+",[CH2][CH2][CH2]-!@[CH2][CH2][CH2]
+Acyclic C=N-H,[NH1X2]=[C!R;!$(C(-N)(=[NH1])-N)]
+Acyclic no not nitro,O-!@[N;!$(N(=O)=O);!$([N+](=O)[O-])]
+42,S-S
+43,O~O
+Aziridine-like N in 3-membered ring,N~1~*~*1
+Aryl iodide,I-c:*
+Aryl bromide,Br-c:*
+Multiple aromatic rings,a1aaa2a(a1)aaa(a2):a
+S/PO3 groups,"[P,S](~O)(~O)~O"
+Adamantyl,C12CC3CC(C1)CC(C2)C3
+Too many cyano groups (>1),C#N.C#N
+Too many COOH groups (>1),[CX3](=O)[OH1].[CX3](=O)[OH1]
+Amino acid,[NH2][CX4]C(=O)O
+Chlorates,Cl~O
+High halogen content (>3),"[F,Cl,Br,I].[F,Cl,Br,I].[F,Cl,Br,I].[F,Cl,Br,I]"
+Filter1_2_halo_ether,"[Cl,Br,I][CX4][CX4][$([O,S,N]*),Cl,Br,I]"
+Filter2_acyl_phosphyl_sulfonyl_halide,"[C,S,P](=O)[F,Cl,Br,I]"
+Filter3_allyl_halide,"[F,Cl,Br,I][CX4]C=C"
+Filter4_alpha_halo_carbonyl,"[Br,Cl,I][C!H0]C=[O,S]"
+Filter5_azo,"[!#7,#1]~[NX2R0]=[NX2R0]~[!#7,#1]"
+Filter6_benzyl_halide,"[Br,Cl,I][CX4]c"
+Filter7_diazo,[!#7]~[NX2]~[NX1]
+Filter8_thio_isocyanat_diimin,"N=C=[N,O,P,S]"
+Filter9_metal,"[!#1!#6!#7!#8!#9!#15!#16!#17]~[*,#1]"
+Filter10_Terminal_vinyl,"[CH2]=[CH][N,O,P,S;R0]"
+Filter11_nitrosamin,[NR0]~[NX2]~[OX1]
+Filter12_nitroso,"[*,#1]~[NX2]~[OX1]"
+Filter13_PS_double_bond,"S=P~[*,#1]"
+Filter14_thio_oxopyrylium_salt,"c1ccc[s,o;X2]c1"
+Filter15_thiosulfate,[SX4](~S)(~O)(~O)~*
+Filter16_trialkyl_phosphin,[PX3]([#6])([#6])[#6]
+Filter17_trialkyl_phosphin2,[PX4](~[!O!S])([#6])([#6])[#6]
+Filter18_oxime_ester,"[!#7,#1]C=NO[C,S,P](=O)*"
+Filter19_hydroxyimide_ester,O=C[NX3](C=O)OC(=O)*
+Filter20_hydrazine,[Nv3X3][Nv3X3!H0]
+Filter21_cyanhydrin,[NX1]#C[CX4][OH]
+Filter22_sulfonium_salt,*[SX3](*)*
+Filter23_ortho_quinone,C1(C=CC=CC1=O)=O
+Filter24_react_imide,"*C([F,Cl,Br,I,$(OS(=O)(=O)*)])=[NX2]*"
+Filter25_sulfonyl_halide,"*S(=O)(=O)[F,Cl,Br,I]"
+Filter26_alkyl_halide,"AA[CH2][F,Cl,Br,I,$(OS(=O)(=O)*)]"
+Filter27_anhydride,"*[C,S](=O)O[C,S](=O)*"
+Filter28_halo_pyrimidine,"c1nc(ncc1)[Br,I]"
+Filter29_thioester,"CC(=[OX1,SX1,NH])[SX2][*,#1]"
+Filter30_beta_halo_carbonyl,"[#6,#1]C(=O)CC[Br,I]"
+Filter31_SO_bond,"[*,#1][SX2R0]O[*,#1]"
+Filter32_OO_bond,"[*,#1][OR0]O[*,#1]"
+Filter33_C10_alkyl,[CH3][CH2][CH2][CH2][CH2][CH2][CH2][CH2][CH2][CH2]
+Filter34_isotope,"[2#1,3#1,13C,14C,15N,125I,23F,22Na,32P,33P,35S,45Ca,57Co,103Ru,141Ce]"
+Filter35_PP_bond,P-P
+Filter36_SS_double_bond,S=S
+Filter37_silicate,[Si]~O
+Filter38_aldehyde,O=[CH]*
+Filter39_imine,C[CR0]=[NR0][*!O]
+Filter40_epoxide_aziridine,"C1C[N,S,O]1"
+Filter41_12_dicarbonyl,*C(=O)C(=O)*
+Filter42_12_dicarbonyl_tautomer,[*!$(C[OH])]=C([OH])C(=O)*
+Filter43_michael_acceptor_sp1,C#CC=O
+Filter44_michael_acceptor2,"[#6,#1,OH0][C!$(C1(=O)C=CC(=O)C=C1)](=O)C=[C!$(C[Nv3X3,OH])]"
+Filter45_allyl_halide2,"[Br,Cl,I][CX4]C=[C,N,P]"
+Filter46_nhalide,"N[F,Cl,Br,I]"
+Filter47_SO2F,O=S(=O)(*)F
+Filter48_FOSO,O=S(*)OF
+Filter49_halogen,"[*,#1]~[F,Cl,Br,I]~[*,#1]"
+Filter50_grignard,"C[Mg][F,Cl,Br,I]"
+Filter51_PN3,N[PX3](N)N
+Filter52_NC_haloamine,"NC[F,Cl,Br,I]"
+Filter53_para_quinones,O=C1C=CC(=O)C=C1
+Filter56_SS_bond,S-S
+Filter57_polyphenol1,Oc1cc(O)cc(O)c1
+Filter58_polyphenol2,Oc1c(O)cc(O)cc1
+Filter59_phoshorous_ylide,C=P
+Filter60_Acyclic_N-S,N!@[SX2]
+Filter61_phosphor_halide_and_P_S_bond,"[#15]~[F,Cl,Br,I,#16]"
+Filter62_oxo_thio_halide,"[O,S]~[Cl,Br,I]"
+Filter63_polyaromatic,a1aaaa2ccc3ccccc3c12
+Filter64_halo_ketone_sulfone,"[#6][C,S](=[O,S])C[F,Cl,Br,I]"
+Filter65_alkyl_sulfonate,"[#6][P,S](~[OX1])(~[OX1])O[C!H0]"
+Filter66_C4_perfluoralkyl,C(F)(F)C(F)(F)C(F)(F)C(F)(F)
+Filter67_S_or_O_C_triplebond_N,"[O,S]C#N"
+Filter68_anthracene_acridine,a1aaac2cc3ccccc3cc12
+Filter69_thio_carbonate,"[O,S]C(=[O,S])[O,S]"
+Filter70_AlkylCN2,*(C#N)C#N
+Filter71_thio_anhydride,"*C(=[O,S])[O,S]C(=[O,S])*"
+Filter72_hydrated_di_ketone,C(=O)C([OH])[OH]
+Filter73_thio_ketone,CC(=S)C
+Filter74_thiol,*[SX2H]
+Filter75_alkyl_Br_I,"[C!H0][Br,I]"
+Filter76_S_ester,CC(=S)O
+Filter77_alkyl_NO2,"[*!#7]~[#6]-,=CN(~O)(~O)"
+Filter78_bicyclic_Imide,*~@C1C(=O)NC(=O)C(~@*)1
+Filter79_maleimide,[CH]1C(=O)NC(=O)[CH]=1
+Filter80_Thioepoxide_aziridone,"[N,S]1[C,N,S][C,N,S]1"
+Filter81_Thiocarbamate,"S!@C(=!@[O,S])!@[#7]"
+Filter82_pyridinium,"[c,n]1[c,n][c,n][c,n][c,n]n(C)1"
+Filter83_per_halo_chain,"[F,Cl,Br,I]C-,=;!@C([F,Cl,Br,I])-,=;!@C([F,Cl,Br,I])"
+Filter84_nitrogen_mustard,"[N,P,Se,S][C!H0]C[Br,Cl,I]"
+Filter85_keto_acrylonitrile,*C(=O)C(=!@[C!H0])C#N
+Filter86_cyanamide,N#C[#7!$(N(C#N)=C(N)NC)]
+Filter87_crowns,"[N,O,S]-@[#6!$(*(~@*)(~@*)~@*)]@[#6!$(*(~@*)(~@*)~@*)]-@[N,O,S]-@[#6!$(*(~@*)(~@*)~@*)]@[#6!$(*(~@*)(~@*)~@*)]-@[O,N]-@[#6!$(*(~@*)(~@*)~@*)]@[#6!$(*(~@*)(~@*)~@*)]-@[N,O,S]-@C"
+Filter88_ene_sulfone,[C!H0]=CS(=O)(=O)*
+Filter89_hydroxylamine,"[*!$(C=O)]!@N!@O[*,#1]"
+Filter90_N_double_bond_S,N=!@S
+Filter92_trityl,*(c1ccccc1)(c1ccccc1)(c1ccccc1)
+Filter93_acetyl_urea,C(=O)!@N!@C(=O)[#7]
+Filter94_2_halo_pyridine,"c1nc(ccc1)[Br,I,Cl,F]"
+Anhydride,C(=O)OC(=O)
+p-Nitrophenyl ester,C(=O)Oc1ccc([N+]([O-])=O)cc1
+Any carbazide,O=*N=[N+]=[N-]
+HOBT ester,C(=O)Onnn
+Aromatic azide,cN=[N+]=[N-]
+Imine2,"[#6,#8,#16]-[CH1]=[NH1]"
+Azocyanamide,[N;R0]=[N;R0]C#N
+Cyanohydrin,N#CC[OH]
+Chloramidine,[Cl]C([C&R0])=N
+P/S halide,"[P,S][F,Cl,Br,I]"
+Quaternary,"[C+,Cl+,I+,P+,S+]"
+Unacceptable atoms,[!#6;!#7;!#8;!#16;!#1;!#3;!#9;!#11;!#12;!#15;!#17;!#19;!#20;!#30;!#35]
+Triacyloxime,C(=O)N(C(=O))OC(=O)
+b-Carbonyl quaternary nitrogen,"C(=O)CC[N+,n+]"
+Benzylic quaternary nitrogen,cC[N+]
+Phosphorane,C=P
+Lawesson reagent derivatives,P(=S)(S)S
+Cyanophosphonate,P(OCC)(OCC)(=O)C#N
+Sulfonate,"COS(=O)(=O)[C,c]"
+Heteroaryl sulfonate,"a-S(=O)(=O)-O[$([a&!#6]),$(c[a&!#6]),$(cc[a&!#6]),$(ccc[a&!#6]),$(cccc[a&!#6]),$(ccccc[a&!#6])]"
+Sulfate ester,"COS(=O)O[C,c]"
+Polyacidic,"[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH].[C,S,P](=O)[OH]"
+Thiol,[SH]
+Benzhydrol,[OH1]-C(-c1ccccc1)c2ccccc2
+Dihydroxybenzene,[OH1]c1ccc([OH1])cc1
+"2,3,4-Trihydroxyphenyl",c([OH])c([OH])c([OH])
+"2,4,5-Trihydroxyphenyl",c([OH])c([OH])cc([OH])
+Allene,*=C=*
+Azide,"[$(*-[NX2-]-[NX2+]#[NX1]),$(*-[NX2]=[NX2+]=[NX1-]),$(N=N=N)]"
+Azoalkanal,[N;R0]=[N;R0]CC=O
+Hydrazothiourea,N=NC(=S)N
+Hemiacetal,[#6]-O[CH1](-[#6])[OH1]
+Ester,[#6]-C(=O)O-[#6]
+Imine 1,"[#6,#8,#16]-C(=[NH1])[#6,#8,#16]"
+Imine 3,C=[NH]
+Thioketone,CC(=S)C
+Thionoester,COC(=S)C
+Thioamide,CC(=S)N
+Long chain hydrocarbon,[CD2;R0][CD2;R0][CD2;R0][CD2;R0][CD2;R0][CD2;R0]
+Long aliphatic chain,"[N,C,S,O]-&!@[N,C,S,O]-&!@[N,C,S,O]-&!@[N,C,S,O]-&!@[N,C,S,O]-&!@[N,C,S,O]-&!@[N,C,S,O]"
+Unbranched chain,"[$([A&D2]),$([A&D1])]!@[A&D2]!@[A&D2]!@[A&D2]!@[A&D2]!@[$([A&D2]),$([A&D1])]"
+Dye 25,acC=&!@Cca
+Isonitrile,[N+]#[C-]
+Thiocyanate,SC#N
+Dye 16 (1),"c[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+Nitro aromatic 2+,"a-[$([NX3](=O)=O),$([NX3+](=O)[O-])].a-[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+Dye 29,"[$([NX3](=O)=O),$([NX3+](=O)[O-])]-caac-[$(N(C)C),$([NH]C),$([NH2])]"
+Dye 1 (1),"c1cccc(C(=O)[C,c]([#7])=,:[C,c]([#7])C2(=O))c12"
+Dye 7,"N=C1[#6]:,=[#6]C(=[C,N])[#6]:,=[#6]1"
+Dye 11,"*=,:[#6]C([#6]=,:*)[#6]=,:*"
+Dye 9,ac-*=&!@*-&!@C(=O)-&!@ca
+Dye 32,"c1cccc2C(=O)C(C:,=*)C(=O)c12"
+Dye 6,c12cccc(C(=O)C(ca)C(=O)3)c2c3ccc1
+Dye 22,NS(=O)(=O)c1cccc([#7])c1
+Dye 2,OCccCO
+Dye 26,c1ccccc1-n2nnnc2[CH2]*
+Perhalo_ketone,"O=CC(-[F,Cl,Br,I])([F,Cl,Br,I])-[F,Cl,Br,I]"
+Beta halo carbonyl,"O=CCC[F,Cl,Br,I]"
+4-Halopyridine,"[F,Cl,Br][c]1:[c,n]:[c,n]:[n]:[c,n]:[c,n]1"
+2-Halopyridine,"[F,Cl,Br][c]1:[c,n]:[c,n]:[c,n]:[c,n]:[n]1"
+Hetero_hetero,"*[N,S,O]-&!@[N,S,O][#6]"
+Disulfide,SS
+Vinyl michael acceptor1,"[#6]-[CH1]=C-C(=O)[#6,#7,#8]"
+Vinyl michael acceptor2,"[CH2]=C-C(=O)[#6,#7,#8]"
+Michael acceptor 5,N#CC(=C)C#N
+Michael acceptor 6,"[#6,#7]-&!@[#6](=&!@[CH])-&!@C(=O)-&!@[C,N,O,S]"
+Alkynyl michael acceptor1,"[#6]-C#CC(=O)[#6,#7,#8]"
+Alkynyl michael acceptor2,"[CH1]#CC(=O)-[#6,#7,#8]"
+Nitroalkane,"C[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+Nitrate,"[#6]-O-[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+Oxalyl,O=C-&!@C=O
+Dipeptide,*-C(=O)-&!@[NH]-C-&!@C(=O)-&!@[NH]-*
+Quaternary nitroxy,C[N+](-[O-])(C)C
+Triphenylphosphine,a-P(-a)-a
+Phosphoric acid,[OH]-P(=O)(-O)-*
+Phosphoric ester,COP(=O)(-*)O
+Di/triphosphate,P(=O)([OH])OP(=O)[OH]
+Tri phosphoric esters,[#6]OP(=O)(*)O[#6].[#6]OP(=O)(*)O[#6].[#6]OP(=O)(*)O[#6]
+Phosphoramide,NP(=O)(N)N
+Phenalene,c1(c)c2c(c)cccc2ccc1
+Poly(azo(anthracene)),"c12:[c,n]:[c,n]:[c,n]:[c,n]:c1[c,n]c3:[c,n]:[c,n]:[c,n]:[c,n]:c3[c,n]2"
+Poly(azo(phenanthrene)),"c12:[c,n]:[c,n]:[c,n]:[c,n]:c1:[c,n]:[c,n]:c3:[c,n]:[c,n]:[c,n]:[c,n]:c23"
+Dye 31,a1aaac2ac3acac4aaac(c34)c12
+Dye 4,c12ccccc1C(=O)c3ccccc3C2=O
+Dye 8,c12cccc(C(=O)N(-&!@C)C(=O)3)c2c3ccc1
+"Epoxide, aziridine, thioepoxide","C1[O,S,N]C1"
+Propiolactone,C1(=O)OCC1
+b-Lactam,N1CCC1=O
+Cycloheximide,O=C1CCCC(N1)=O
+Aromatic sulfonic ester,"[#6,#7]-S(=O)(=O)Oc"
+Quinone,"[$([o,n]=c1ccc(=[o,n])cc1),$([O,N]=C1C=CC(=[O,N])C=C1),$([O,N]=C1[#6]:,=[#6]C(=[O,N])[#6]:,=[#6]1)]"
+Saponin,O1CCCCC1OC2CCC3CCCCC3C2
+Monensin,O1CCCCC1C2CCCO2
+Squalestatin,C12OCCC(O1)CC2
+Cyanidin,[OH]c1cc([OH])cc2=[O+]C(=C([OH])Cc21)c3cc([OH])c([OH])cc3
+Cytochalasin,O=C1NCC2CCCCC21
+"2,2-Dimethyl_4,5-dicarboxy_dithiole",C1(C)(C)SC(C(=O)O)=C(C(=O)O)S1
+"2,3,4_trihydroxyphenyl",c([OH])c([OH])c([OH])
+"2,3,5_trihydroxyphenyl",c([OH])c([OH])cc([OH])
+Acid_anhydrides,C(=O)OC(=O)
+Acid_halides,"[S,C](=[O,S])[F,Br,Cl,I]"
+Acridine,c1c2cc4ccccc4nc2ccc1
+Active_phosphate,"P(=S)([OH1,O$(O[#6])])([OH1,O$(O[#6])])[S,O]"
+Acyl_cyanide,C(=O)-C#N
+Adjacent_ring_double_bonds,[*;R]=[*;R]=[*;R]
+Aliphatic_triflate,COS(=O)(=O)C(F)(F)F
+Alkyl_halides,"[Br,Cl,I][CX4;CH,CH2]"
+Alkylenamine,"[C;H1$(C([#6;!$(C=O)])),H0$(C([#6;!$(C=O)])[#6;!$(C=O)])]=[CH1]!@N([#6;!$(C(=O))])[#6;!$(C(=O))]"
+Alpha_halo_carbonyl,"[C;!$(C[N])](=O)!@[C;h1,h2;H1,H2][F,Cl,Br,I]"
+Amino_naphtalimide,c1(N)ccc(C(=O)NC3(=O))c(c3ccc2)c21
+Aminonitrile,NC#N
+Any_carbazide,O=*N=[N+]=[N-]
+Aromatic_azides,"c[$([NX2-]-[NX2+]#[NX1]),$([NX2]=[NX2+]=[NX1-]),$(N=N=N)]"
+Azanitrone,N=[N+]([O-])C
+Azoalkanals,[N;R0]=[N;R0]CC=O
+Azobenzene,c1ccccc1[N!r]=[N!r]c2ccccc2
+B-carbonyl_quaternary_nitrogen,"C(=O)CC[N+,n+]"
+Benzylic_quaternary_nitrogen,"cC[N+,NX4]"
+Beta-carbonyl_quaternary_nitrogen,"C(=O)C[N+,n+,NX4,nX4]"
+Beta-fluoro-ethyl-on,"[C;H2$(CF),H1$(C(F)F)]!@[CH2][N,O]"
+Biotin_analogue,C12C(NC(N1)=O)CSC2
+Carbazides,"C(=O)[$([NX2-]-[NX2+]#[NX1]),$([NX2]=[NX2+]=[NX1-]),$(N=N=N)]"
+CCl3-CHO_releasing,"C(Cl)(Cl)(Cl)C([O,S])[NX3]"
+Conjugated_dithioether,SC(=[!r])S
+Crown_ether_12cro4,O1CCOCCOCCOCC1
+Crown_ether_15cro5,O1CCOCCOCCOCCOCC1
+Crown_ether_16cro6,O1CCOCCOCCOCCOCCOCC1
+Crown_ethers,[O;R1][C;R1][C;R1][O;R1][C;R1][C;R1][O;R1]
+Di_and_triphosphates,P(=O)([OH])OP(=O)[OH]
+Diacetylene,C#CC#C
+Diazoalkane,C=[N+]=[N-]
+Diazonium_salt,[N+]#N
+Diene,C!@=[CH1]-C!@=[CH1]-[CX3](=O)
+Dinitrobenzene_1,"c1c([$([NX3](=O)=O),$([NX3+](=O)[O-])])c([$([NX3](=O)=O),$([NX3+](=O)[O-])])ccc1"
+Dinitrobenzene_2,"c1c([$([NX3](=O)=O),$([NX3+](=O)[O-])])ccc([$([NX3](=O)=O),$([NX3+](=O)[O-])])c1"
+Dinitrobenzene_3,"c1c([$([NX3](=O)=O),$([NX3+](=O)[O-])])cc([$([NX3](=O)=O),$([NX3+](=O)[O-])])cc1"
+Dithiocarbamate,NC(=S)S
+Dithiole-2-thione,S1SC=CC1=S
+Dithiole-3-thione,S1C=CSC1=C
+Dithiomethylene_acetal,S[C;!$(C=*)]S
+Enyne,C=!@CC#C
+"Epoxides,_thioepoxides,_aziridines","C1[O,S,N]C1"
+Ester_of_HOBT,C(=O)Onnn
+Flavin,"c1cccc(NC(=NC(=[N,S,O])NC(=O)3)C3=N2)c12"
+Fluorescein,c1cc(O)cc(OC(=CC(=O)C=C3)C3=C2)c12
+Fluorinated_carbon_1,C(C(CF)F)F
+Fluorinated_carbon_2,C(C(F)F)(F)F
+Four_member_lactones,C1(=O)OCC1
+Geminal_amines,[NH1;!r][CX4][NH1;!r]
+Geminal_dinitriles,N#CCC#N
+"Halo-pyridine, -diazoles and -triazoles","[Cl,Br,I]c1[c,n][c,n][c,n][c,n]n1"
+Imidazolium,c1[n+]([#6])ccn1([#6])
+Imines_(not_ring),"[#6][CR0](=[NR0,OR0])[#6]"
+Isocyanates_and_isothiocyanates,"N=C=[S,O]"
+Lawesson_reagent_derivatives,P(=S)(S)S
+Michael_phenyl_ketone,c1ccccc1C(=O)C=!@CC(=O)!@*
+Nitrobenz-azadiazole_1,"c1ccc(n[o,s]n2)c2c1[$([NX3](=O)=O),$([NX3+](=O)[O-])]"
+Nitrobenz-azadiazole_2,"c1c([$([NX3](=O)=O),$([NX3+](=O)[O-])])cc(n[o,s]n2)c2c1"
+Nitrosamine,N-[N;X2](=O)
+Noname,"N1=C[S,NH1]C(=[C,N,P][C,N,O,P])C1(=O)"
+N-oxide_aliphatic,[N+!$(N=O)][O-X1]
+N-S (not sulfonamides),[#6][S!$(S(~[OD1])~[OD1])][N;H0]
+Orthoester,C(O)(O)[OH]
+O-tertbutylphenol,c1c([OH1])c(C(C)(C)C)ccc1
+Oxobenzothiepine,C1(=O)C=CCSC=C1
+P_or_S_halides,"[P,S][Cl,Br,F,I]"
+P-aminoaryl_diazo,Nc1aaa(N!@=N)aa1
+PCP,PCP
+Paranitrophenyl_esters,"C(=O)Oc1ccc([$([NX3](=O)=O),$([NX3+](=O)[O-])])cc1"
+Pentahalophenyl,"c1c([F,Cl])c([F,Cl])c([F,Cl])c([F,Cl])c1([F,Cl])"
+Pentafluorophenyl_esters,C(=O)Oc1c(F)c(F)c(F)c(F)c1(F)
+Phenanthrene,c12cccc3c1c4c(cc3)cccc4cc2
+Phenylester,C(=O)!@Oc1ccccc1
+Phosphonate_esters,[#6]P(=O)(~O)O[#6]
+Phosphoramides,NP(=O)(N)N
+Phosphorus_halide,"[S,P][F,Cl,Br,I]"
+Polyenes,C=CC=CC=CC=C
+Polyene_chain_between_aromatics,cC=CC=CC=Cc
+Polyines,CC#CC#CC
+Polynuclear_aromatic_1,c1cccc(cc(cccc2)c2c3)c13
+Polynuclear_aromatic_2,c1cccc(c(cccc2)c2cc3)c13
+Polysulfide,*[SX2][SX2][SX2]*
+Sulphur_halide,"[#16][F,Cl,Br,I]"
+Pyrene_fragments,c1c2cccc3c2c4c(cc3)cccc4c1
+Pyrylium,c1ccc[o+]c1
+Reactive_carbonyls,"[C;!r](=[O,S])[S;!r]"
+Ring_triple_bond,"[C,c;R]#[C,c;R]"
+S=N (not_ring),[S;R0]=[N;R0]
+Sulfonate_ester,O=[SX4](=O)OC
+Sulfonyl_cyanide,S(=O)(=O)C#N
+Sulphate_ester,"COS(=O)O[C,c]"
+Sulphonates,"COS(=O)(=O)[C,c]"
+Sulphur_nitrogen_single_bond,[SX2H0]!@[N]
+Tetraazinane,C1NNC=NN1
+Thioles_(not_aromatic),[!a][SX2;H1]
+Thiophosphothionate,"P(=S)(-[S;H1,H0$(S(P)C)])(-[O;H1,H0$(O(P)C)])(-N(C)C)"
+Three_membered_heterocycle,"*1[O,S]*1"
+Tri_pentavalent_S,"[#16v3,#16v5]"
+Triazole,c1cnnn1!@C!@[NH1][#6]
+Triphenyl_boranyl,B(c1ccccc1)(c2ccccc2)c3ccccc3
+Triphenylphosphines,P(c1aaaaa1)(c1aaaaa1)(c1aaaaa1)
+Triphenyl_silyl,[Si](c1ccccc1)(c2ccccc2)(c3ccccc3)
+Vinyl_halide,"[Cl,Br,I]C=[!O!R]"
+Vinyl_sulphone,"[#6][CH1]!@=[CH1][S;H1,H0$(S(C)C)](=O)(=O)"
+Sulphates,[#6]S(=O)(=O)O
+Tropone,C1C(=O)C=CC=CC=1
+Oxime,"[#6]C(=!@N[$(OC),$([OH])])[#6]"
+Hydrazone,[#6]C(=!@NNa)[#6]
+Nitrosone_not_nitro,[$(N(~!@[#6])!@O);!$([N+]([O-])=O)]
+Thiocarbonyl_group,C=S
+Enamine_like,C=[NH]
+Analine,"c1ccccc1[NH2,NH3+]"
+Acid_anhydrides_2,"[#6]C(=O)!@OC(=!@[N,O])[#6]"
+Trifluroacetate_amide,FC(F)(F)C(=O)N
+Triple_bond,[#6]C#[CH]
+Thiatetrazolidine,"[$(Sc1nnn[nH,n-]1),$(Sc1nn[nH,n-]n1)]"
+Glycol,"[#6][O;R0][$(C([#6])[#6]),$([CH][#6]),$([CH2])][O;R0][#6]"
+Oxy-amide,[#6]C(=O)!@C!@C(=O)N
+Formate_formide,"O=[CH][O,N][#6]"
+Pyranone,O=C1C=COC=C1
+Coumarin,c1cc2C=CC(=O)Oc2cc1
+Aminothiazole,s1ccnc1[N!H0]
+Thiazolidinone,O=C1CSCN1
+Thiomorpholinedione,N1C(=O)CSCC1=O
+Oxepine,O1C=CC=CC=C1
+Phenylethene,c1ccccc1!@[CH]=!@[C!H0]
+Ethene,C=[CH2]
+Cyclobutene,C1CC=C1
+Poly_sub_atomatic,*!@c1c(!@*)c(!@*)c(!@*)c(!@*)c1
+Isotopes,"[2#1,3#1,11C,11c,14C,14c,125I,32P,33P,35S]"
+Metal_carbon_bond,"[#6;$([#6]~[#3,#11,#12,#13,#19,#20,#26,#27,#28,#29,#30])]"
+Aromatic_N-oxide_more_than_one,[n+][O-X1].[n+][O-X1]
+Nitro_more_than_one,[N+](=O)[O-].[N+](=O)[O-]
+Sulphur atom (1),[SX2H1]
+Sulphur atom (2),"[$([SX2H0]);!$([S][#6X3,#7X2]);!$([S][CX4H0])]"
+Sulphur atom (3),"[$([SX2H0][#6X3,#7X2]);!$([S](~[#6X3,#7X2])[#6X3,#7X2]);!$([S][CX4H0])]"
+Sulphur atom (4),[$([S][*D4H0]);$([SX2H0])]
+Sulphur atom (5),"[$([SX2H0]([#6X3,#7X2])[#6X3,#7X2]);!$([S][CX4H0])]"
+Sulphur atom (6),[sX2r5]
+Sulphur atom (7),[$([#16X3](=[OX1]));$([#16]);!$([#16X3](=[OX1])[#6X3](~[#7X2]))]
+Sulphur atom (8),[$([#16X3](=[OX1]));$([#16]);$([#16X3](=[OX1])[#6X3](~[#7X2]))]
+Aldehyde carbon atoms,[$([CX3H1](=O)[#6])]
+Phosphor with double bonded sulphur,[$([PX4]);$([P]=[S])]
+sp3 hybridized carbon atoms (1),[$([CX4]([#6X3])([#6X3])[#6X3]);!$([CH0])]
+sp3 hybridized carbon atoms (2),"[$([CX4][N]);!$([CH0]);!$([C][N]([#6X3,#7X2])[#6X3,#7X2]);!$([C][N]=[#6X3]);!$([CX4][NX3][C]=[O])]"
+sp3 hybridized carbon atoms (3),"[!$([CH0]);$([CX4]([#6X3])[#6X3]),$([CX4][#7]=[#6X3]),$([CX4]([#8])[#8]);!$([CX4]([#8])[#8][C]=[O])]"
+sp3 hybridized carbon atoms (4),[$([CX4][S]);!$([CH0]);!$([C][S]=[O])]
+sp3 hybridized carbon atoms (5),"[$([CX4][#6X3]~[#8]),$([CX4][#6X3](~[#7])~[#7]),$([CX4][#6X2]),$([CX4][CX3]=[CX3]-[#6X3]);!$([CH0]);!$([CX4][C](=[O])[NX3]);!$([CX4][#6X3](=[#8])-[#8]);!$([CX4][CX3]([CX3])=[CX3]-[#6X3])]"
+sp3 hybridized carbon atoms (6),[$([CX4][O]);!$([CH0]);!$([C][O][C]=[O]);!$([CX4]1[O][C]1)]
+sp3 hybridized carbon atoms (7),[$([CX4][#6X3]);!$([CH0]);!$([CX4][C](=[O])[NX3])]
+sp3 hybridized carbon atoms (8),"[$([CX4][#7](~[#6X3,#7X2])~[#6X3,#7X2]);!$([CH0])]"
+sp3 hybridized carbon atoms (9),[$([CX4][S](=[O])=[O]);!$([CH0])]
+sp3 hybridized carbon atoms (10),"[CX4;CH1,CH2;!$([CX4][NX3H1][C]=[O])]"
+sp3 hybridized carbon atoms (11),[CX4H3;!$([CX4][NX3H1][C]=[O])]
+sp3 hybridized carbon atoms (12),[$([CX4][NX3H1][C]=[O]);!$([CH0])]
+sp2 hybridized carbon atoms (1),"[$([CX3H2]);$([C]=[#6X3,#7X2]-[#6X3,#7X2])]"
+sp2 hybridized carbon atoms (2),"[$([CX3H1]);$([C]=[#6X3,#7X2]-[#6X3,#7X2]);!$([C](-[#6X3,#7X2])=[#6X3,#7X2]-[#6X3,#7X2])]"
+sp2 hybridized carbon atoms (3),[$([cH1]);$([c](:[#7]):[#7])]
+sp2 hybridized carbon atoms (4),"[$([ch1]);!$([ch1]1:[c](-[NX3]-[#6X3,#7X2]):[c]:[c]:[c]:[c]1);!$([c]1:[c]:[c]:[c](-[NX3]-[#6X3,#7X2]):[c]:[c]1);$([ch1]1:[c](-[NX3]):[c]:[c]:[c]:[c]1),$([c]1:[c]:[c]:[c](-[NX3]):[c]:[c]1)]"
+sp2 hybridized carbon atoms (5),"[$([CX3]);$([CX3]=[CX3]);!$([CH0]);!$([CX3](-[#6X3,#7X2])=[CX3]);!$([CX3]=[CX3]-[#6X3,#7X2])]"
+sp2 hybridized carbon atoms (6),[$([cH1]);$([c]:[#16])]
+sp2 hybridized carbon atoms (7),"[$([ch1]);$([c]1:[c]:[c]:[c](~[#7X2H0]~[cX3,CX3]):[c]:[c]1),$([c]1:[c]:[c]:[c](~[#7X3H1]~[cX3,CX3]):[c]:[c]1);!$([c]1:[c]:[c]:[c](-[NH]-[C]=[O]):[c]:[c]1)]"
+sp2 hybridized carbon atoms (8),"[$([ch1]);!$([c]1:[c]:[c]:[c](-[O]-[C]=[O]):[c]:[c]1);$([c]1:[c]:[c]:[c](-[NH]-[C]=[O]):[c]:[c]1),$([c]1:[c]:[c]:[c](-[O,SX2]):[c]:[c]1)]"
+sp2 hybridized carbon atoms (9),[$([cH1]);$([c]1:[c]:[#16]:[c]:[c]1)]
+sp2 hybridized carbon atoms (10),"[$([ch1]);$([ch1]1:[c](~[#7X2H0]~[cX3,CX3]):[c]:[c]:[c]:[c]1),$([ch1]1:[c](~[#7X3H1]~[cX3,CX3]):[c]:[c]:[c]:[c]1),$([ch1]:[c]-[O,SX2]);!$([ch1]:[c]-[O]-[C]=[O])]"
+sp2 hybridized carbon atoms (11),"[$([CX3H1,cX3H1]);!$([ch1]1:[c]:[c]:[#7]:[c]:[c]1);!$([ch1]1:[c]:[#7]:[c]:[c]:[c]1);!$([ch1]1:[c]:[#7]:[c]:[c]1);!$([ch1]:[#7])]"
+sp2 hybridized carbon atoms (12),"[$([ch1]1:[c]:[c]:[#7]:[c]:[c]1),$([ch1]1:[c]:[#7]:[c]:[c]:[c]1),$([ch1]1:[c]:[#7]:[c]:[c]1),$([ch1]:[#7])]"
+Nitrogen atoms (1),"[$([NX3H0]);!$([NX3][#6X3,#7X2])]"
+Nitrogen atoms (2),"[$([NX3]);$([H1,H2])]"
+Nitrogen atoms (3),[$([N]([#6X3]1)[#6X3]=[#6X3][#6X4][#6X3]=1)]
+Nitrogen atoms (4),"[$([NX3H0]);$([NX3][#6X3,#7X2]);!$([NX3]([#6X3,#7X2])[#6X3,#7X2])]"
+Nitrogen atoms (5),"[$([nr6]),$([NX2]=[C])]"
+Nitrogen atoms (6),"[$([N]);$([NX3H0]([#6X3,#7X2])[#6X3,#7X2]),$([NX2H1][C]=[O])]"
+Nitrogen atoms (7),[nr5H0]
+SA01,[#6]-1-[#6]-[#6]-[#6]-4-[#6](-[#6]-1)-[#6]-2-[#6](-[#6]-3-[#6](-[#6]-[#6]-2)-[#6]-[#6]-[#6]-3)-[#6]-[#6]-4
+SA03,c1cc-2c(cc1)-[#6]-[#6]-[#6](-[#6]-2-[#6])-[#6]
+SA04,c1cc(ccc1)-[#6]=[#6]-c2ccc(cc2)-[#8]-[#1]
+SA05,c1cc(ccc1)-[#6]-[#6]-c2ccc(cc2)-[#8]-[#1]
+SA07,c1cc(ccc1)-[#6](=[#6]-c2ccccc2)-c3ccccc3
+SA11,[#6]-2(=[#6]-c1ccccc1-[#8]-[#6]-2=[#8])-c3ccccc3
+SA12b,[#8]=[#6](-c1ccccc1)-[#6]=[#6]-c2ccccc2
+SA15c,c1cc(ccc1-[#8]-[#1])-[#6](-c2ccccc2)=[#8]
+SA16,c1cc(ccc1)-[#6](-c2ccccc2)=[#6](-[Cl])-[Cl]
+SA17,c1cc(ccc1)-[#6](-c2ccccc2)-[#6]
+SA18,c1c(cccc1)-c2ccccc2
+SA19,c1c(cccc1)-c2ccccc2-[Cl]
+SA20c,c1c(cccc1)-c2ccc(cc2)-[#8]-[#1]
+SA21,c1cc-3c(cc1)-[#8]-c2ccccc2-[#8]-3
+SA23,c1cc(c(cc1)-[#6](=[#8])-[#8]-[#6])-[#6](-[#8]-[#6])=[#8]
+SA24,c1c(ccc(c1)-[#8]-[#1])-[#6](-[#8]-[#6])=[#8]
+SA25c,[#8](-[#6])-c1ccc(cc1)-[#8]-[#1]
+SA30a,c1cc(ccc1-[Cl])-[#8]-c2ccc(cc2-[Cl])-[Cl]
+SA30b,c1cc(ccc1-[#7](=[#8])=[#8])-[#8]-c2ccc(cc2-[Cl])-[Cl]
+SA31c,c1cc(ccc1-[#8]-[#1])-[#6]-[#7]-3-[#6](-c2ccccc2-[#6]-3=[#8])=[#8]
+SA32a,c1cc(ccc1)-[#8]-[P](=[#8])(-[#8]-[#6])-[#8]-[#6]
+SA32b,c1cc(ccc1)-[#8]-[P](=[#16])(-[#8]-[#6])-[#8]-[#6]
+SA34a,[#8](-[#1])-c1ccc(cc1)-[#6]-[#6]
+SA34d,[#8](-[#1])-c1ccc(cc1)-[#6](-[#6])(-[#6])-[#6]
+SA35,c12ccc3c(c1cccc2)cccc3
+SA37,c1c(cccc1)-[#7]-2-[#6](=[#8])-[#6]-[#6]-[#6]-2=[#8]
+SA38,[#6]-1-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-[#6]-1
+SA39,[#6]-[#6]-[#6]-[#6]-[#6]-c1cccc(c1)-[#8]-[#6]
+SA40,[#6]-[#6]-[#6]-[#6]-[#6]-c1ccc(cc1)-[#8]-[#6]
+SA41,c1c(cccc1-[#6](-[F])(-[F])-[F])-[#7](-[#6](=[#8])-[#1])-[#1]
+SA43,c1c(cccc1)-[#6]-[#8]-c2ccccc2
+SA46,[#6]-1-2-[#6]=[#6]-[#6](-[#6]-1)-[#6]-[#6]-2
+SA47,[#6]-1-2-[#6]-[#6]-[#6](-[#6]-1)-[#6]-[#6]-2
+SA48,c1(c(cccc1)-[#8]-c2ccccc2)-[Br]
+SA49,c1-2c(cccc1)-[#6]-[#6]-[#6]-2
+Primary amines (strict),"[NX3H2][CX4&!$([CX4]([NH2])[O,N,S,P])]"
+4-chlorobenzene,Clc1ccc([*:1])cc1
+4-nitrobenzene,[O-][N+](=O)c1cc([*:1])c([*:1])cc1
