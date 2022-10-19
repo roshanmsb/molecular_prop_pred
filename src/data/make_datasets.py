@@ -49,19 +49,14 @@ class FGRDataset(Dataset):
         num_features = np.asarray(
             [self.descriptor_funcs[key](mol) for key in self.descriptor_funcs.keys()]
         )
-        return (
-            f_g,
-            mfg,
-            num_features,
-            target,
-        )
+        return f_g, mfg, num_features, target
 
 
 class FGRPretrainDataset(Dataset):
     """Pytorch dataset for pretraining autoencoder"""
 
     def __init__(self, smiles: List[str], fgroups_list: List[str], tokenizer: Tokenizer) -> None:
-        """Initialize arguments
+        """Initialize dataset with arguments
 
         Args:
             smiles (List[str]): List of SMILES strings
@@ -78,7 +73,4 @@ class FGRPretrainDataset(Dataset):
     def __getitem__(self, idx):
         smile = self.smiles[idx]
         f_g, mfg = util_funcs.smiles2vector_fgr(smile, self.tokenizer, self.fgroups_list)
-        return (
-            f_g,
-            mfg,
-        )
+        return f_g, mfg
