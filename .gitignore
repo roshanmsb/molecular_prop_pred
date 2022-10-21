@@ -1,4 +1,4 @@
 *.pyc
-*.ipynb
 *.txt
 .vscode
+datasets/processed/pubchem

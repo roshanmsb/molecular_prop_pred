@@ -23,7 +23,7 @@ def smiles2index(s_1: str, tokenizer: tokenizers.Tokenizer) -> List[int]:
     Returns:
         List[int]: List of tokens
     """
-    return tokenizer.encode(s_1).ids
+    return tokenizer.encode(str(s_1)).ids
 
 
 def index2multi_hot_fg(molecule: Chem.rdchem.Mol, fgroups_list: List[str]) -> np.ndarray:
@@ -79,7 +79,6 @@ def get_weights(labels: np.ndarray) -> np.ndarray:
     return samples_weight
 
 
-
 def load_dataset(task_name: str) -> DiskDataset:
     """Load local datasets in deepchem format
 
@@ -96,4 +95,3 @@ def load_dataset(task_name: str) -> DiskDataset:
     data = DiskDataset.from_numpy(X=mols, y=labels.astype(float), ids=ids, w=get_weights(labels))
     data.tasks = np.asarray([task_name])
     return data
-    

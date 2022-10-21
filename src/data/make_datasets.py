@@ -6,7 +6,7 @@ import numpy as np
 from deepchem.data.datasets import DiskDataset
 from tokenizers import Tokenizer
 from torch.utils.data import Dataset
-from utils import util_funcs
+from src.utils import util_funcs
 
 
 lg = RDLogger.logger()
