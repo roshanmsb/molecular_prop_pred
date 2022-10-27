@@ -40,6 +40,7 @@ class FGRDataModule(LightningDataModule):
             split_type (str): Type of splitting data
             num_folds (int): Number of independent folds
             fold_index (int): Fold number to load data
+            method (str): Method for training
         """
         super().__init__()
 
@@ -148,6 +149,7 @@ class FGRPretrainDataModule(LightningDataModule):
             batch_size (int): Batch size
             num_workers (int): Number of workers for data loading
             pin_memory (bool): Save data in memory
+            method (str): Method for training
         """
         super().__init__()
 

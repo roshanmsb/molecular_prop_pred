@@ -32,6 +32,7 @@ class FGRDataset(Dataset):
             fgroups_list (List[str]): List of functional groups
             tokenizer (Tokenizer): Pretrained tokenizer
             descriptor_funcs (Dict[str, Callable]): RDKit descriptor dictionary
+            method (str): Method for training
         """
         self.mols = data.X
         self.labels = data.y
@@ -81,6 +82,7 @@ class FGRPretrainDataset(Dataset):
             smiles (List[str]): List of SMILES strings
             fgroups_list (List[str]): List of functional groups
             tokenizer (Tokenizer): Pretrained Tokenizer
+            method (str): Method for training
         """
         self.smiles = smiles
         self.fgroups_list = fgroups_list
@@ -91,7 +93,7 @@ class FGRPretrainDataset(Dataset):
         return len(self.smiles)
 
     def __getitem__(self, idx):
-        smile = standardize_smiles(self.smiles[idx])
+        smile = self.smiles[idx]
         if self.method == "FG":
             f_g = util_funcs.smiles2vector_fg(smile, self.fgroups_list)
             return f_g
