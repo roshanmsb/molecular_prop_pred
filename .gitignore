@@ -1,0 +1,8 @@
+*.pyc
+*.txt
+.vscode
+scratch
+datasets/raw/chembl.csv
+datasets/raw/pubchem
+datasets/processed/chembl_processed
+datasets/processed/pubchem_processed
