@@ -2,7 +2,6 @@
 *.txt
 .vscode
 scratch
-src/dask-worker-space
 datasets/raw/chembl.csv
 datasets/raw/pubchem
 datasets/processed/chembl_processed
