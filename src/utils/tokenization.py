@@ -7,7 +7,7 @@ from tokenizers.pre_tokenizers import Whitespace
 
 tokenizer = Tokenizer(BPE(unk_token="[UNK]"))
 trainer = BpeTrainer(special_tokens=["[UNK]"], min_frequency=1500, show_progress=True)  # type: ignore
-tokenizer.pre_tokenizer = Whitespace()
+tokenizer.pre_tokenizer = Whitespace()  # type: ignore
 
 
 df = dd.read_parquet("../datasets/processed/pubchem_proc")
