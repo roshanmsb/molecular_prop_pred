@@ -1,4 +1,9 @@
 *.pyc
 *.txt
 .vscode
-datasets/processed/pubchem
+scratch
+src/dask-worker-space
+datasets/raw/chembl.csv
+datasets/raw/pubchem
+datasets/processed/chembl_processed
+datasets/processed/pubchem_processed
