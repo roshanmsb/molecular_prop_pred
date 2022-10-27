@@ -43,16 +43,17 @@ def get_weights(labels: np.ndarray) -> np.ndarray:
     return samples_weight
 
 
-def load_dataset(task_name: str) -> DiskDataset:
+def load_dataset(root: str, task_name: str) -> DiskDataset:
     """Load local datasets in deepchem format
 
     Args:
+        root(str): Root directory for dataset
         task_name (str): Name of task
 
     Returns:
         DiskDataset: Deepchem compatible dataset
     """
-    d_f = pd.read_csv(f"../datasets/processed/{task_name}.csv")
+    d_f = pd.read_csv(f"{root}{task_name}.csv")
     ids = d_f["SMILES"]
     labels = np.expand_dims(d_f["Target"], 1)
     mols = [MolFromSmiles(smiles) for smiles in ids]

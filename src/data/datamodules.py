@@ -11,7 +11,7 @@ from pytorch_lightning import LightningDataModule
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
 from src.utils import util_funcs
-from make_datasets import FGRDataset, FGRPretrainDataset
+from src.data.make_datasets import FGRDataset, FGRPretrainDataset
 
 
 class FGRDataModule(LightningDataModule):
@@ -27,6 +27,7 @@ class FGRDataModule(LightningDataModule):
         split_type: str,
         num_folds: int,
         fold_index: int,
+        method: str,
     ) -> None:
         """Initialize lightning datamodule for training and testing
 
@@ -50,16 +51,19 @@ class FGRDataModule(LightningDataModule):
         self.split_type = split_type
         self.num_folds = num_folds
         self.fold_index = fold_index
-        self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file("tokenizer_bpe.json")
+        self.method = method
 
     def prepare_data(self) -> None:
         try:
             load_fn = getattr(dcm, "load_%s" % self.task_name)
             data = load_fn(featurizer="raw", splitter=None)[1][0]
         except AttributeError:
-            data = util_funcs.load_dataset(self.task_name)
+            data = util_funcs.load_dataset(self.root, self.task_name)
         fgroups = pd.read_csv(self.root + "fg.csv")["SMARTS"].tolist()
         self.fgroups_list = [MolFromSmarts(x) for x in fgroups]
+        self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file(
+            self.root + "tokenizer_bpe.json"
+        )
         self.descriptor_funcs = {name: func for name, func in Descriptors.descList}
 
         if self.split_type == "scaffold":
@@ -73,17 +77,20 @@ class FGRDataModule(LightningDataModule):
                 self.fgroups_list,
                 self.tokenizer,
                 self.descriptor_funcs,
+                self.method,
             )
             self.train_ind, self.val_ind, self.test_ind = self.splits[self.fold_index][1]
+            assert len(set(self.train_ind) & set(self.val_ind) & set(self.test_ind)) == 0
         else:
             splitter = RandomStratifiedSplitter()
             self.splits = [
                 splitter.split(dataset=data, seed=fold_num) for fold_num in range(self.num_folds)
             ]
             self.dataset = FGRDataset(
-                data, self.fgroups_list, self.tokenizer, self.descriptor_funcs
+                data, self.fgroups_list, self.tokenizer, self.descriptor_funcs, self.method
             )
             self.train_ind, self.val_ind, self.test_ind = self.splits[self.fold_index]
+            assert len(set(self.train_ind) & set(self.val_ind) & set(self.test_ind)) == 0
 
     def setup(self, stage=None):
         self.train_fold = Subset(self.dataset, self.train_ind)  # type: ignore
@@ -128,9 +135,11 @@ class FGRPretrainDataModule(LightningDataModule):
     def __init__(
         self,
         root: str,
+        dataset_name: str,
         batch_size: int,
         num_workers: int,
         pin_memory: bool,
+        method: str,
     ) -> None:
         """Initialize lightning datamodule for pretraining
 
@@ -146,21 +155,29 @@ class FGRPretrainDataModule(LightningDataModule):
         self.num_workers = num_workers
         self.pin_memory = pin_memory
         self.batch_size = batch_size
-        self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file("tokenizer_bpe.json")
+        self.method = method
+        self.dataset = dataset_name
 
     def prepare_data(self) -> None:
-        df = dd.read_csv(self.root + "pubchem/pubchem_data_*.csv")
+        df = dd.read_parquet(self.root + self.dataset)["SMILES"]
         print("Reading SMILES")
-        self.train, self.valid = df["SMILES"].random_split((0.9, 0.1), random_state=123)
+        self.train, self.valid = df.random_split((0.9, 0.1), random_state=123)  # type: ignore
         print("Splitting")
-        self.train.compute()
-        self.valid.compute()
+        self.train = self.train.compute().tolist()
+        self.valid = self.valid.compute().tolist()
         fgroups = pd.read_csv(self.root + "fg.csv")["SMARTS"].tolist()
         self.fgroups_list = [MolFromSmarts(x) for x in fgroups]
+        self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file(
+            self.root + "tokenizer_bpe.json"
+        )
 
     def setup(self, stage=None):
-        self.train_fold = FGRPretrainDataset(self.train, self.fgroups_list, self.tokenizer)
-        self.val_fold = FGRPretrainDataset(self.valid, self.fgroups_list, self.tokenizer)
+        self.train_fold = FGRPretrainDataset(
+            self.train, self.fgroups_list, self.tokenizer, self.method
+        )
+        self.val_fold = FGRPretrainDataset(
+            self.valid, self.fgroups_list, self.tokenizer, self.method
+        )
 
     def train_dataloader(self):
         loader = DataLoader(
