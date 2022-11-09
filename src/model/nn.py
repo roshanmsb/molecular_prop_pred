@@ -64,6 +64,9 @@ class FGRModel(nn.Module):
             num_input_dim (int): Input dimension for RDKit features
             hidden_dims (Tuple[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
+            output_dims (Tuple[int]): Dimensions for each layer in predictor
+            num_tasks (int): Number of tasks for each dataset
+            dropout (float): Dropout for each layer
             method (str): Representation method to train
         """
         super().__init__()
@@ -111,7 +114,7 @@ class FGRModel(nn.Module):
 
 
 class FGRPretrainModel(nn.Module):
-    """Pytorch model for FG based representation"""
+    """Pytorch model for Pretraining FG based representation"""
 
     def __init__(
         self,
@@ -126,7 +129,6 @@ class FGRPretrainModel(nn.Module):
         Args:
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
-            num_input_dim (int): Input dimension for RDKit features
             hidden_dims (Tuple[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
             method (str): Representation method to train
