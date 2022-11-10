@@ -1,5 +1,3 @@
-*.pyc
-*.txt
 .vscode
 scratch
 datasets/raw/chembl.csv
@@ -7,3 +5,4 @@ datasets/raw/pubchem
 datasets/processed/chembl
 datasets/processed/pubchem
 wandb
+__pycache__
