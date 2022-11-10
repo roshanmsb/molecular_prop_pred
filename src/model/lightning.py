@@ -3,7 +3,7 @@ import torch
 from torch import nn
 from pytorch_lightning import LightningModule
 import torchmetrics
-from src.model.nn import FGRModel, FGRPretrainModel
+from src.model.network import FGRModel, FGRPretrainModel
 
 
 class FGRLightning(LightningModule):

@@ -11,7 +11,7 @@ from pytorch_lightning import LightningDataModule
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
 from src.utils import util_funcs
-from src.data.make_datasets import FGRDataset, FGRPretrainDataset
+from src.data.datasets import FGRDataset, FGRPretrainDataset
 
 
 class FGRDataModule(LightningDataModule):
