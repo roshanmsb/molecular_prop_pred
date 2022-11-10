@@ -98,7 +98,7 @@ class FGRLightning(LightningModule):
         optimizer = torch.optim.AdamW(
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
-        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(  # type: ignore
             optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches
         )
         return [optimizer], [scheduler]
@@ -300,7 +300,7 @@ class FGRPretrainLightning(LightningModule):
         optimizer = torch.optim.AdamW(
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
-        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(  # type: ignore
             optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches
         )
         return [optimizer], [scheduler]
