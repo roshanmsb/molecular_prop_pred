@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import List, Tuple
 import torch
 from torch import nn
 import torch.nn.functional as F
@@ -6,14 +6,14 @@ import torch.nn.functional as F
 
 def make_encoder_decoder(
     input_dim: int,
-    hidden_dims: Tuple[int],
+    hidden_dims: List[int],
     bottleneck_dim: int,
 ) -> Tuple[nn.modules.container.Sequential, nn.modules.container.Sequential]:
     """Function for creating encoder and decoder models
 
     Args:
         input_dim (int): Input dimension for encoder
-        hidden_dims (Tuple[int]): Dimensions for each layer
+        hidden_dims (List[int]): Dimensions for each layer
         bottleneck_dim (int): Dimension of bottleneck layer
 
     Returns:
@@ -49,9 +49,9 @@ class FGRModel(nn.Module):
         fg_input_dim: int,
         mfg_input_dim: int,
         num_feat_dim: int,
-        hidden_dims: Tuple[int],
+        hidden_dims: List[int],
         bottleneck_dim: int,
-        output_dims: Tuple[int],
+        output_dims: List[int],
         num_tasks: int,
         dropout: float,
         method: str,
@@ -62,9 +62,9 @@ class FGRModel(nn.Module):
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
             num_input_dim (int): Input dimension for RDKit features
-            hidden_dims (Tuple[int]): Dimensions for each layer
+            hidden_dims (List[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
-            output_dims (Tuple[int]): Dimensions for each layer in predictor
+            output_dims (List[int]): Dimensions for each layer in predictor
             num_tasks (int): Number of tasks for each dataset
             dropout (float): Dropout for each layer
             method (str): Representation method to train
@@ -120,7 +120,7 @@ class FGRPretrainModel(nn.Module):
         self,
         fg_input_dim: int,
         mfg_input_dim: int,
-        hidden_dims: Tuple[int],
+        hidden_dims: List[int],
         bottleneck_dim: int,
         method: str,
     ) -> None:
@@ -129,7 +129,7 @@ class FGRPretrainModel(nn.Module):
         Args:
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
-            hidden_dims (Tuple[int]): Dimensions for each layer
+            hidden_dims (List[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
             method (str): Representation method to train
         """

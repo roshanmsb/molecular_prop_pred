@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import List
 import torch
 from torch import nn
 from pytorch_lightning import LightningModule
@@ -17,9 +17,9 @@ class FGRLightning(LightningModule):
         num_tasks: int,
         method: str,
         regression: bool,
-        hidden_dims: Tuple[int],
+        hidden_dims: List[int],
         bottleneck_dim: int,
-        output_dims: Tuple[int],
+        output_dims: List[int],
         dropout: float,
         lr: float,
         weight_decay: float,
@@ -35,9 +35,9 @@ class FGRLightning(LightningModule):
             num_tasks (int): Number of tasks for each dataset
             method (str): Representation method to train
             regression (bool):Whether the task is regression or classification
-            hidden_dims (Tuple[int]): Dimensions for each layer
+            hidden_dims (List[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
-            output_dims (Tuple[int]): Dimensions for each layer in predictor
+            output_dims (List[int]): Dimensions for each layer in predictor
             dropout (float): Dropout for each layer
             lr (float): Learning rate for optimizer
             weight_decay (float): Weight decay for optimizer
@@ -103,7 +103,7 @@ class FGRLightning(LightningModule):
         )
         return [optimizer], [scheduler]
 
-    def training_step(self, batch):
+    def training_step(self, batch, batch_idx):
         if self.method != "FGR_desc":
             fgr, y_true = batch
             y_pred, recon = self(fgr)
@@ -169,7 +169,7 @@ class FGRLightning(LightningModule):
             )
         return loss
 
-    def validation_step(self, batch):
+    def validation_step(self, batch, batch_idx):
         f_g, mfg, num_features, y_true = batch
         y_pred, _ = self(f_g, mfg, num_features)
         loss = self.criterion(y_pred, y_true)
@@ -208,7 +208,7 @@ class FGRLightning(LightningModule):
                 "val_f1", self.val_f1, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
 
-    def test_step(self, batch):
+    def test_step(self, batch, batch_idx):
         f_g, mfg, num_features, y_true = batch
         y_pred, _ = self(f_g, mfg, num_features)
         loss = self.criterion(y_pred, y_true)
@@ -257,7 +257,7 @@ class FGRPretrainLightning(LightningModule):
         fg_input_dim: int,
         mfg_input_dim: int,
         method: str,
-        hidden_dims: Tuple[int],
+        hidden_dims: List[int],
         bottleneck_dim: int,
         lr: float,
         weight_decay: float,
@@ -305,20 +305,20 @@ class FGRPretrainLightning(LightningModule):
         )
         return [optimizer], [scheduler]
 
-    def training_step(self, batch):
+    def training_step(self, batch, batch_idx):
         fgr = batch
         _, recon = self(fgr)
         loss = self.recon_loss(recon, fgr)
         self.log("train_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
         return loss
 
-    def validation_step(self, batch):
+    def validation_step(self, batch, batch_idx):
         fgr = batch
         _, recon = self(fgr)
         loss = self.recon_loss(recon, fgr)
         self.log("val_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
 
-    def test_step(self, batch):
+    def test_step(self, batch, batch_idx):
         fgr = batch
         _, recon = self(fgr)
         loss = self.recon_loss(recon, fgr)
