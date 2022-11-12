@@ -77,6 +77,7 @@ def run_sweep(config=None):
             devices=-1,
             max_epochs=3,
             precision=16,
+            strategy="ddp",
         )
         trainer.fit(model, datamodule)
         del model
