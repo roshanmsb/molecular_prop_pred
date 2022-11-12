@@ -36,7 +36,7 @@ sweep_config = {
 
 
 def run_sweep(config=None):
-    with wandb.init(config=config): #type: ignore
+    with wandb.init(config=config):  # type: ignore
         config = wandb.config
 
         gc.collect()
