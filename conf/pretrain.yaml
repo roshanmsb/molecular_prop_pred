@@ -70,6 +70,7 @@ model:
   - 200
   - 100
   bottleneck_dim: 50
+  dropout: 0.2
   lr: 1e-4
   weight_decay: 0.3
   max_lr: 1e-2

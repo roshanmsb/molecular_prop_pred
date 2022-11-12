@@ -4,6 +4,7 @@ from torch import nn
 from pytorch_lightning import LightningModule
 import torchmetrics
 from src.model.network import FGRModel, FGRPretrainModel
+from torchvision.ops import sigmoid_focal_loss
 
 
 class FGRLightning(LightningModule):
@@ -18,7 +19,6 @@ class FGRLightning(LightningModule):
         method: str,
         regression: bool,
         hidden_dims: List[int],
-        bottleneck_dim: int,
         output_dims: List[int],
         dropout: float,
         lr: float,
@@ -36,7 +36,6 @@ class FGRLightning(LightningModule):
             method (str): Representation method to train
             regression (bool):Whether the task is regression or classification
             hidden_dims (List[int]): Dimensions for each layer
-            bottleneck_dim (int): Dimension of bottleneck layer
             output_dims (List[int]): Dimensions for each layer in predictor
             dropout (float): Dropout for each layer
             lr (float): Learning rate for optimizer
@@ -51,7 +50,6 @@ class FGRLightning(LightningModule):
             mfg_input_dim,
             num_input_dim,
             hidden_dims,
-            bottleneck_dim,
             output_dims,
             num_tasks,
             dropout,
@@ -66,8 +64,6 @@ class FGRLightning(LightningModule):
             self.criterion = nn.SmoothL1Loss()
         else:
             self.criterion = nn.BCEWithLogitsLoss()
-
-        self.recon_loss = nn.BCEWithLogitsLoss()
 
         if self.regression:
             self.train_mae = torchmetrics.MeanAbsoluteError()
@@ -111,7 +107,7 @@ class FGRLightning(LightningModule):
             fgr, num_features, y_true = batch
             y_pred, recon = self(fgr, num_features)
 
-        loss_r_pre = self.recon_loss(recon, fgr)
+        loss_r_pre = sigmoid_focal_loss(recon, fgr, reduction="mean")
         if self.regression:
             y_true = y_true.float()
         criterion_loss = self.criterion(y_pred, y_true)
@@ -258,7 +254,7 @@ class FGRPretrainLightning(LightningModule):
         mfg_input_dim: int,
         method: str,
         hidden_dims: List[int],
-        bottleneck_dim: int,
+        dropout: float,
         lr: float,
         weight_decay: float,
         max_lr: float,
@@ -271,26 +267,24 @@ class FGRPretrainLightning(LightningModule):
             mfg_input_dim (int): Input dimension for MFG
             method (str): Representation method to train
             hidden_dims (Tuple[int]): Dimensions for each layer
-            bottleneck_dim (int): Dimension of bottleneck layer
+            dropout (float): Dropout for input layer
             lr (float): Learning rate for optimizer
             weight_decay (float): Weight decay for optimizer
             max_lr (float): Maximum learning rate for scheduler
         """
 
         super().__init__()
-        self.save_hyperparameters()
         self.net = FGRPretrainModel(
             fg_input_dim,
             mfg_input_dim,
             hidden_dims,
-            bottleneck_dim,
+            dropout,
             method,
         )
         self.l_r = lr
         self.method = method
         self.weight_decay = weight_decay
         self.max_lr = max_lr
-        self.recon_loss = nn.BCEWithLogitsLoss()
 
     def forward(self, fgr):
         preds = self.net(fgr)
@@ -308,18 +302,12 @@ class FGRPretrainLightning(LightningModule):
     def training_step(self, batch, batch_idx):
         fgr = batch
         _, recon = self(fgr)
-        loss = self.recon_loss(recon, fgr)
-        self.log("train_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
+        loss = sigmoid_focal_loss(recon, fgr, reduction="mean")
+        self.log("train_loss", loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
         return loss
 
     def validation_step(self, batch, batch_idx):
         fgr = batch
         _, recon = self(fgr)
-        loss = self.recon_loss(recon, fgr)
+        loss = sigmoid_focal_loss(recon, fgr, reduction="mean")
         self.log("val_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
-
-    def test_step(self, batch, batch_idx):
-        fgr = batch
-        _, recon = self(fgr)
-        loss = self.recon_loss(recon, fgr)
-        self.log("test_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)

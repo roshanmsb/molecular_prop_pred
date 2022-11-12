@@ -162,9 +162,7 @@ class FGRPretrainDataModule(LightningDataModule):
 
     def prepare_data(self) -> None:
         df = dd.read_parquet(self.root + self.dataset)["SMILES"]
-        print("Reading SMILES")
         self.train, self.valid = df.random_split((0.9, 0.1), random_state=123)  # type: ignore
-        print("Splitting")
         self.train = self.train.compute().tolist()
         self.valid = self.valid.compute().tolist()
         fgroups = pd.read_csv(self.root + "fg.csv")["SMARTS"].tolist()
