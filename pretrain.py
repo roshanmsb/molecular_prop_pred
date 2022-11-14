@@ -1,7 +1,8 @@
 """Module for pretraining"""
+from pytorch_lightning.cli import LightningCLI
+
 from src.data.lightning import FGRPretrainDataModule
 from src.model.lightning import FGRPretrainLightning
-from pytorch_lightning.cli import LightningCLI
 
 
 class PretrainLightningCLI(LightningCLI):

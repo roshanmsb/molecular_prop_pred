@@ -1,14 +1,16 @@
 """Module for making datasets for training and testing."""
 
 from typing import Callable, Dict, List
-from rdkit import RDLogger
-from rdkit.Chem.rdmolfiles import MolFromSmiles
+
 import numpy as np
 from deepchem.data.datasets import DiskDataset
+from molvs import standardize_smiles
+from rdkit import RDLogger
+from rdkit.Chem.rdmolfiles import MolFromSmiles
 from tokenizers import Tokenizer
 from torch.utils.data import Dataset
+
 from src.utils import util_funcs
-from molvs import standardize_smiles
 
 lg = RDLogger.logger()
 lg.setLevel(RDLogger.CRITICAL)

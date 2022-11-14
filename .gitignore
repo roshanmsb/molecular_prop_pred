@@ -6,3 +6,4 @@ datasets/processed/chembl
 datasets/processed/pubchem
 wandb
 __pycache__
+lightning_logs

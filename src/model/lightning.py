@@ -1,10 +1,12 @@
 from typing import List
+
 import torch
-from torch import nn
-from pytorch_lightning import LightningModule
 import torchmetrics
-from src.model.network import FGRModel, FGRPretrainModel
+from pytorch_lightning import LightningModule
+from torch import nn
 from torchvision.ops import sigmoid_focal_loss
+
+from src.model.network import FGRModel, FGRPretrainModel
 
 
 class FGRLightning(LightningModule):
