@@ -1,18 +1,19 @@
 from typing import List, Tuple
+
 import torch
-from torch import nn
 import torch.nn.functional as F
+from torch import nn
 
 
 def make_encoder_decoder(
-    input_dim: int,
-    hidden_dims: List[int],
+    input_dim: int, hidden_dims: List[int], bottleneck_dim: int,
 ) -> Tuple[nn.modules.container.Sequential, nn.modules.container.Sequential]:
     """Function for creating encoder and decoder models
 
     Args:
         input_dim (int): Input dimension for encoder
         hidden_dims (List[int]): Dimensions for each layer
+        bottleneck_dim (int): Dimension of bottleneck layer
 
     Returns:
         Tuple[nn.modules.container.Sequential]: Encoder and decoder models
@@ -21,19 +22,19 @@ def make_encoder_decoder(
     encoder_layers = []
     decoder_layers = []
     output_dim = input_dim
-    enc_shape = hidden_dims[-1]
-    for enc_dim in hidden_dims[:-1]:
+    dec_shape = bottleneck_dim
+    for enc_dim in hidden_dims:
         encoder_layers.extend([nn.Linear(input_dim, enc_dim), nn.SiLU()])
         input_dim = enc_dim
 
-    encoder_layers.append(nn.Linear(input_dim, enc_shape))
+    encoder_layers.append(nn.Linear(input_dim, bottleneck_dim))
 
-    enc_dec_dims = list(reversed(hidden_dims))
-    for dec_dim in enc_dec_dims[1:]:
-        decoder_layers.extend([nn.Linear(enc_shape, dec_dim), nn.SiLU()])
-        enc_shape = dec_dim
+    dec_dims = list(reversed(hidden_dims))
+    for dec_dim in dec_dims:
+        decoder_layers.extend([nn.Linear(dec_shape, dec_dim), nn.SiLU()])
+        dec_shape = dec_dim
 
-    decoder_layers.append(nn.Linear(enc_shape, output_dim))
+    decoder_layers.append(nn.Linear(dec_shape, output_dim))
 
     return nn.Sequential(*encoder_layers), nn.Sequential(*decoder_layers)
 
@@ -47,6 +48,7 @@ class FGRModel(nn.Module):
         mfg_input_dim: int,
         num_feat_dim: int,
         hidden_dims: List[int],
+        bottleneck_dim: int,
         output_dims: List[int],
         num_tasks: int,
         dropout: float,
@@ -59,6 +61,7 @@ class FGRModel(nn.Module):
             mfg_input_dim (int): Input dimension for MFG
             num_input_dim (int): Input dimension for RDKit features
             hidden_dims (List[int]): Dimensions for each layer
+            bottleneck_dim (int): Dimension of bottleneck layer
             output_dims (List[int]): Dimensions for each layer in predictor
             num_tasks (int): Number of tasks for each dataset
             dropout (float): Dropout for each layer
@@ -75,12 +78,10 @@ class FGRModel(nn.Module):
             input_dim = fg_input_dim + mfg_input_dim
         else:
             raise ValueError("Method not supported")
-        self.encoder, self.decoder = make_encoder_decoder(input_dim, hidden_dims)
+        self.encoder, self.decoder = make_encoder_decoder(input_dim, hidden_dims, bottleneck_dim)
 
         self.dropout = nn.Dropout(dropout)
         self.predict_out_dim = num_tasks
-
-        bottleneck_dim = hidden_dims[-1]
 
         if self.method == "FGR_desc":
             fcn_input_dim = bottleneck_dim + num_feat_dim
@@ -118,6 +119,7 @@ class FGRPretrainModel(nn.Module):
         fg_input_dim: int,
         mfg_input_dim: int,
         hidden_dims: List[int],
+        bottleneck_dim: int,
         dropout: float,
         method: str,
     ) -> None:
@@ -127,6 +129,7 @@ class FGRPretrainModel(nn.Module):
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
             hidden_dims (List[int]): Dimensions for each layer
+            bottleneck_dim (int): Dimension of bottleneck layer
             dropout (float): Dropout for input layer
             method (str): Representation method to train
         """
@@ -141,7 +144,7 @@ class FGRPretrainModel(nn.Module):
             input_dim = fg_input_dim + mfg_input_dim
         else:
             raise ValueError("Method not supported")
-        self.encoder, self.decoder = make_encoder_decoder(input_dim, hidden_dims)
+        self.encoder, self.decoder = make_encoder_decoder(input_dim, hidden_dims, bottleneck_dim)
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):

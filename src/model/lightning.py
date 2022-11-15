@@ -21,6 +21,7 @@ class FGRLightning(LightningModule):
         method: str,
         regression: bool,
         hidden_dims: List[int],
+        bottleneck_dim: int,
         output_dims: List[int],
         dropout: float,
         lr: float,
@@ -38,6 +39,7 @@ class FGRLightning(LightningModule):
             method (str): Representation method to train
             regression (bool):Whether the task is regression or classification
             hidden_dims (List[int]): Dimensions for each layer
+            bottleneck_dim (int): Dimension of bottleneck layer
             output_dims (List[int]): Dimensions for each layer in predictor
             dropout (float): Dropout for each layer
             lr (float): Learning rate for optimizer
@@ -52,6 +54,7 @@ class FGRLightning(LightningModule):
             mfg_input_dim,
             num_input_dim,
             hidden_dims,
+            bottleneck_dim,
             output_dims,
             num_tasks,
             dropout,
@@ -102,12 +105,12 @@ class FGRLightning(LightningModule):
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
-        if self.method != "FGR_desc":
-            fgr, y_true = batch
-            y_pred, recon = self(fgr)
-        else:
+        if self.method == "FGR_desc":
             fgr, num_features, y_true = batch
             y_pred, recon = self(fgr, num_features)
+        else:
+            fgr, y_true = batch
+            y_pred, recon = self(fgr)
 
         loss_r_pre = sigmoid_focal_loss(recon, fgr, reduction="mean")
         if self.regression:
@@ -138,12 +141,7 @@ class FGRLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_r2",
-                self.train_r2,
-                on_step=False,
-                on_epoch=True,
-                prog_bar=True,
-                logger=True,
+                "train_r2", self.train_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
             )
         else:
             y_true = y_true.int()
@@ -158,12 +156,7 @@ class FGRLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_f1",
-                self.train_f1,
-                on_step=False,
-                on_epoch=True,
-                prog_bar=True,
-                logger=True,
+                "train_f1", self.train_f1, on_step=False, on_epoch=True, prog_bar=True, logger=True,
             )
         return loss
 
@@ -188,12 +181,7 @@ class FGRLightning(LightningModule):
                 "val_mae", self.val_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "val_r2",
-                self.val_r2,
-                on_step=False,
-                on_epoch=True,
-                prog_bar=True,
-                logger=True,
+                "val_r2", self.val_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
             )
         else:
             y_true = y_true.int()
@@ -227,12 +215,7 @@ class FGRLightning(LightningModule):
                 "test_mae", self.test_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "test_r2",
-                self.test_r2,
-                on_step=False,
-                on_epoch=True,
-                prog_bar=True,
-                logger=True,
+                "test_r2", self.test_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
             )
 
         else:
@@ -256,6 +239,7 @@ class FGRPretrainLightning(LightningModule):
         mfg_input_dim: int,
         method: str,
         hidden_dims: List[int],
+        bottleneck_dim: int,
         dropout: float,
         lr: float,
         weight_decay: float,
@@ -277,11 +261,7 @@ class FGRPretrainLightning(LightningModule):
 
         super().__init__()
         self.net = FGRPretrainModel(
-            fg_input_dim,
-            mfg_input_dim,
-            hidden_dims,
-            dropout,
-            method,
+            fg_input_dim, mfg_input_dim, hidden_dims, bottleneck_dim, dropout, method,
         )
         self.l_r = lr
         self.method = method
@@ -305,7 +285,7 @@ class FGRPretrainLightning(LightningModule):
         fgr = batch
         _, recon = self(fgr)
         loss = sigmoid_focal_loss(recon, fgr, reduction="mean")
-        self.log("train_loss", loss, on_step=True, on_epoch=True, prog_bar=True, logger=True)
+        self.log("train_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
         return loss
 
     def validation_step(self, batch, batch_idx):

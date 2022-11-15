@@ -19,6 +19,8 @@ parameters:
   dropout:
     values: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
   n_layers:
-    values: [1, 2, 3, 4, 5]
+    values: [1, 2, 3]
   hidden_size:
-    values: [128, 256, 512, 1024, 2048]
+    values: [256, 512, 1024]
+  bottleneck_dim:
+    values: [4, 16, 32, 64]
