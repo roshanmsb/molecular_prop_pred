@@ -3,8 +3,7 @@
 import dask.dataframe as dd
 import deepchem.molnet as dcm
 import pandas as pd
-from deepchem.splits.splitters import (RandomStratifiedSplitter,
-                                       ScaffoldSplitter)
+from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
 from pytorch_lightning import LightningDataModule
 from rdkit.Chem import Descriptors
 from rdkit.Chem.rdmolfiles import MolFromSmarts
@@ -163,8 +162,8 @@ class FGRPretrainDataModule(LightningDataModule):
     def setup(self, stage=None):
         df = dd.read_parquet(self.root + self.dataset)["SMILES"]
         self.train, self.valid = df.random_split((0.9, 0.1), random_state=123)  # type: ignore
-        self.train = self.train.compute().tolist()
-        self.valid = self.valid.compute().tolist()
+        self.train = self.train.compute()
+        self.valid = self.valid.compute()
         fgroups = pd.read_csv(self.root + "fg.csv")["SMARTS"].tolist()
         self.fgroups_list = [MolFromSmarts(x) for x in fgroups]
         self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file(
@@ -181,7 +180,7 @@ class FGRPretrainDataModule(LightningDataModule):
         loader = DataLoader(
             self.train_fold,
             batch_size=self.batch_size,
-            shuffle=True,
+            shuffle=False,
             num_workers=self.num_workers,
             pin_memory=self.pin_memory,
             drop_last=True,

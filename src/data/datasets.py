@@ -95,7 +95,7 @@ class FGRPretrainDataset(Dataset):
         return len(self.smiles)
 
     def __getitem__(self, idx):
-        smile = self.smiles[idx]
+        smile = self.smiles.iloc[idx]
         if self.method == "FG":
             f_g = util_funcs.smiles2vector_fg(smile, self.fgroups_list)
             return f_g

@@ -4,7 +4,7 @@ trainer:
   logger:
     - class_path: pytorch_lightning.loggers.WandbLogger
       init_args:
-        project: Pretrain
+        project: Pretrain_pubchem
   callbacks:
     - class_path: pytorch_lightning.callbacks.ModelCheckpoint
       init_args:
@@ -30,7 +30,7 @@ trainer:
   check_val_every_n_epoch: 1
   fast_dev_run: false
   accumulate_grad_batches: null
-  max_epochs: 5
+  max_epochs: 1
   min_epochs: null
   max_steps: -1
   min_steps: null
@@ -44,7 +44,7 @@ trainer:
   accelerator: gpu
   strategy: null
   sync_batchnorm: false
-  precision: 32
+  precision: 16
   enable_model_summary: true
   num_sanity_val_steps: 2
   resume_from_checkpoint: null
@@ -67,18 +67,17 @@ model:
   mfg_input_dim: 3000
   method: FGR
   hidden_dims: 
-  - 200
-  - 100
-  bottleneck_dim: 50
-  dropout: 0.2
-  lr: 1e-4
-  weight_decay: 0.3
-  max_lr: 1e-2
+  - 256
+  bottleneck_dim: 64
+  dropout: 0.4
+  lr: 9e-3
+  weight_decay: 0.12
+  max_lr: 0.02
 data:
   root: datasets/processed/
-  dataset_name: chembl
-  batch_size: 32
-  num_workers: 4
+  dataset_name: pubchem
+  batch_size: 256
+  num_workers: 48
   pin_memory: true
   method: FGR
 ckpt_path: null
