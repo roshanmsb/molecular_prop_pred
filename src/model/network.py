@@ -59,7 +59,7 @@ class FGRModel(nn.Module):
         Args:
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
-            num_input_dim (int): Input dimension for RDKit features
+            num_feat_dim (int): Input dimension for RDKit features
             hidden_dims (List[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
             output_dims (List[int]): Dimensions for each layer in predictor
