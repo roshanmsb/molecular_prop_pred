@@ -22,7 +22,6 @@ def run_sweep(config=None):
         fg_input_dim = 2786
         mfg_input_dim = 3000
         method = "FGR"
-        dropout = wandb.config.dropout
         weight_decay = wandb.config.weight_decay
         lr = wandb.config.lr
         max_lr = wandb.config.max_lr
@@ -34,14 +33,13 @@ def run_sweep(config=None):
             hidden_dims.append(hidden_size)
             hidden_size = hidden_size // 2
 
-        datamodule = FGRPretrainDataModule("datasets/processed/", "chembl", 256, 8, True, method)
+        datamodule = FGRPretrainDataModule("datasets/processed/", "chembl", 256, 32, True, method)
         model = FGRPretrainLightning(
             fg_input_dim,
             mfg_input_dim,
             method,
             hidden_dims,
             bottleneck_dim,
-            dropout,
             lr,
             weight_decay,
             max_lr,
@@ -49,7 +47,7 @@ def run_sweep(config=None):
         wandb_logger = WandbLogger()
 
         trainer = Trainer(
-            logger=wandb_logger, accelerator="gpu", devices=1, max_epochs=3, precision=16,
+            logger=wandb_logger, accelerator="gpu", devices=1, max_epochs=2, precision=16,
         )
         trainer.fit(model, datamodule)
         del model

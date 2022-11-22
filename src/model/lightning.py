@@ -242,7 +242,6 @@ class FGRPretrainLightning(LightningModule):
         method: str,
         hidden_dims: List[int],
         bottleneck_dim: int,
-        dropout: float,
         lr: float,
         weight_decay: float,
         max_lr: float,
@@ -254,16 +253,16 @@ class FGRPretrainLightning(LightningModule):
             fg_input_dim (int): Input dimension for FG
             mfg_input_dim (int): Input dimension for MFG
             method (str): Representation method to train
-            hidden_dims (Tuple[int]): Dimensions for each layer
-            dropout (float): Dropout for input layer
+            hidden_dims (List[int]): Dimensions for each layer
             lr (float): Learning rate for optimizer
             weight_decay (float): Weight decay for optimizer
             max_lr (float): Maximum learning rate for scheduler
         """
 
         super().__init__()
+        self.save_hyperparameters()
         self.net = FGRPretrainModel(
-            fg_input_dim, mfg_input_dim, hidden_dims, bottleneck_dim, dropout, method,
+            fg_input_dim, mfg_input_dim, hidden_dims, bottleneck_dim, method,
         )
         self.l_r = lr
         self.method = method
@@ -314,7 +313,7 @@ class Finetuning(BaseFinetuning):
     def finetune_function(self, pl_module, current_epoch, optimizer, optimizer_idx):
         # When `current_epoch` is 10, feature_extractor will start training.
         if current_epoch == self._unfreeze_at_epoch:
-            print('Unfreezing encoder')
+            print("Unfreezing encoder")
             self.unfreeze_and_add_param_group(
                 modules=pl_module.encoder, optimizer=optimizer, train_bn=True,
             )
@@ -407,7 +406,7 @@ class FGRFinetuneLightning(LightningModule):
             self.test_f1 = torchmetrics.F1Score(num_classes=num_tasks)
 
     def load_model(self):
-        model = FGRPretrainLightning(2786, 3000, "FGR", [256], 64, 0.4, 9e-3, 0.12, 0.02)
+        model = FGRPretrainLightning(2786, 3000, "FGR", [256], 64, 9e-3, 0.12, 0.02)
         checkpoint = torch.load("checkpoints/pretrain.ckpt")
         model.load_state_dict(checkpoint["state_dict"])
         return model.net.encoder

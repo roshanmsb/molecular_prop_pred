@@ -120,7 +120,6 @@ class FGRPretrainModel(nn.Module):
         mfg_input_dim: int,
         hidden_dims: List[int],
         bottleneck_dim: int,
-        dropout: float,
         method: str,
     ) -> None:
         """Initialize Pytorch model
@@ -130,7 +129,6 @@ class FGRPretrainModel(nn.Module):
             mfg_input_dim (int): Input dimension for MFG
             hidden_dims (List[int]): Dimensions for each layer
             bottleneck_dim (int): Dimension of bottleneck layer
-            dropout (float): Dropout for input layer
             method (str): Representation method to train
         """
         super().__init__()
@@ -145,11 +143,10 @@ class FGRPretrainModel(nn.Module):
         else:
             raise ValueError("Method not supported")
         self.encoder, self.decoder = make_encoder_decoder(input_dim, hidden_dims, bottleneck_dim)
-        self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
         """Perform forward pass"""
 
-        z_d = self.encoder(self.dropout(x))
+        z_d = self.encoder(x)
         v_d_hat = self.decoder(z_d)
         return z_d, v_d_hat
