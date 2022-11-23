@@ -3,6 +3,7 @@
 from typing import Callable, Dict, List
 
 import numpy as np
+import pandas as pd
 from deepchem.data.datasets import DiskDataset
 from molvs import standardize_smiles
 from rdkit import RDLogger
@@ -76,12 +77,12 @@ class FGRPretrainDataset(Dataset):
     """Pytorch dataset for pretraining autoencoder"""
 
     def __init__(
-        self, smiles: List[str], fgroups_list: List[str], tokenizer: Tokenizer, method: str
+        self, smiles: pd.Series, fgroups_list: List[str], tokenizer: Tokenizer, method: str
     ) -> None:
         """Initialize dataset with arguments
 
         Args:
-            smiles (List[str]): List of SMILES strings
+            smiles (pd.Series): List of SMILES strings
             fgroups_list (List[str]): List of functional groups
             tokenizer (Tokenizer): Pretrained Tokenizer
             method (str): Method for training
