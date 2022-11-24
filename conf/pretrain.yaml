@@ -21,7 +21,7 @@ trainer:
   num_processes: null
   devices: 1
   gpus: null
-  auto_select_gpus: false
+  auto_select_gpus: true
   tpu_cores: null
   ipus: null
   enable_progress_bar: true
@@ -30,7 +30,7 @@ trainer:
   check_val_every_n_epoch: 1
   fast_dev_run: false
   accumulate_grad_batches: null
-  max_epochs: 2
+  max_epochs: 1
   min_epochs: null
   max_steps: -1
   min_steps: null
@@ -76,5 +76,5 @@ data:
   root: datasets/processed/
   dataset_name: pubchem
   batch_size: 256
-  num_workers: 16
+  num_workers: 40
   pin_memory: true
