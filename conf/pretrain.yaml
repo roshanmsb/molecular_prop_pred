@@ -21,7 +21,7 @@ trainer:
   num_processes: null
   devices: 1
   gpus: null
-  auto_select_gpus: true
+  auto_select_gpus: false
   tpu_cores: null
   ipus: null
   enable_progress_bar: true
@@ -65,7 +65,7 @@ trainer:
 model:
   fg_input_dim: 2786
   mfg_input_dim: 3000
-  method: FGR
+  method: FG
   hidden_dims:
     - 1024
   bottleneck_dim: 64
@@ -76,5 +76,5 @@ data:
   root: datasets/processed/
   dataset_name: pubchem
   batch_size: 256
-  num_workers: 40
+  num_workers: 20
   pin_memory: true
