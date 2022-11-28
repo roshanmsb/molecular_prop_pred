@@ -1,14 +1,17 @@
 """Module for making datasets for training and testing."""
 
 from typing import Callable, Dict, List
+
+import numpy as np
+import pandas as pd
+from deepchem.data.datasets import DiskDataset
+from molvs import standardize_smiles
 from rdkit import RDLogger
 from rdkit.Chem.rdmolfiles import MolFromSmiles
-import numpy as np
-from deepchem.data.datasets import DiskDataset
 from tokenizers import Tokenizer
 from torch.utils.data import Dataset
+
 from src.utils import util_funcs
-from molvs import standardize_smiles
 
 lg = RDLogger.logger()
 lg.setLevel(RDLogger.CRITICAL)
@@ -74,12 +77,12 @@ class FGRPretrainDataset(Dataset):
     """Pytorch dataset for pretraining autoencoder"""
 
     def __init__(
-        self, smiles: List[str], fgroups_list: List[str], tokenizer: Tokenizer, method: str
+        self, smiles: pd.Series, fgroups_list: List[str], tokenizer: Tokenizer, method: str
     ) -> None:
         """Initialize dataset with arguments
 
         Args:
-            smiles (List[str]): List of SMILES strings
+            smiles (pd.Series): List of SMILES strings
             fgroups_list (List[str]): List of functional groups
             tokenizer (Tokenizer): Pretrained Tokenizer
             method (str): Method for training
@@ -93,7 +96,7 @@ class FGRPretrainDataset(Dataset):
         return len(self.smiles)
 
     def __getitem__(self, idx):
-        smile = self.smiles[idx]
+        smile = self.smiles.iloc[idx]
         if self.method == "FG":
             f_g = util_funcs.smiles2vector_fg(smile, self.fgroups_list)
             return f_g
