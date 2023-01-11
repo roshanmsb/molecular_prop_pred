@@ -3,8 +3,9 @@
 import dask.dataframe as dd
 import deepchem.molnet as dcm
 import pandas as pd
-from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
-from pytorch_lightning import LightningDataModule
+from deepchem.splits.splitters import (RandomStratifiedSplitter,
+                                       ScaffoldSplitter)
+from lightning.pytorch import LightningDataModule
 from rdkit.Chem import Descriptors
 from rdkit.Chem.rdmolfiles import MolFromSmarts
 from tokenizers import Tokenizer

@@ -5,6 +5,7 @@ trainer:
     - class_path: pytorch_lightning.loggers.WandbLogger
       init_args:
         project: Pretrain_Pubchem
+        offline: true
   callbacks:
     - class_path: pytorch_lightning.callbacks.ModelCheckpoint
       init_args:
@@ -13,6 +14,7 @@ trainer:
         mode: min
         save_last: true
         auto_insert_metric_name: true
+        every_n_train_steps: 10000
   enable_checkpointing: true
   default_root_dir: null
   gradient_clip_val: null

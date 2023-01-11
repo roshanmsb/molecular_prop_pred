@@ -2,12 +2,12 @@
 import gc
 
 import torch
-from pytorch_lightning import Trainer, seed_everything
-from pytorch_lightning.loggers.wandb import WandbLogger
+from lightning.pytorch import Trainer, seed_everything
+from lightning.pytorch.loggers.wandb import WandbLogger
 
 import wandb
-from src.data.lightning import FGRPretrainDataModule
-from src.model.lightning import FGRPretrainLightning
+from src.data.data_module import FGRPretrainDataModule
+from src.model.lightning_module import FGRPretrainLightning
 
 
 def run_sweep(config=None):

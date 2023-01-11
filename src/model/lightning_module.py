@@ -3,8 +3,8 @@ from typing import List
 import torch
 import torch.nn.functional as F
 import torchmetrics
-from pytorch_lightning import LightningModule
-from pytorch_lightning.callbacks import BaseFinetuning
+from lightning.pytorch import LightningModule
+from lightning.pytorch.callbacks import BaseFinetuning
 from torch import nn
 from torchvision.ops import sigmoid_focal_loss
 
@@ -83,12 +83,12 @@ class FGRLightning(LightningModule):
             self.val_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
             self.test_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
         else:
-            self.train_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.val_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.test_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.train_f1 = torchmetrics.F1Score(num_classes=num_tasks)
-            self.val_f1 = torchmetrics.F1Score(num_classes=num_tasks)
-            self.test_f1 = torchmetrics.F1Score(num_classes=num_tasks)
+            self.train_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.val_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.test_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.train_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.val_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.test_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
 
     def forward(self, fgr=None, num_feat=None):
         if self.method != "FGR_desc":
@@ -101,9 +101,8 @@ class FGRLightning(LightningModule):
         optimizer = torch.optim.AdamW(
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
-        scheduler = torch.optim.lr_scheduler.OneCycleLR(  # type: ignore
-            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches
-        )
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches) # type: ignore
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
@@ -277,9 +276,9 @@ class FGRPretrainLightning(LightningModule):
         optimizer = torch.optim.AdamW(
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
-        scheduler = torch.optim.lr_scheduler.OneCycleLR(  # type: ignore
-            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches
-        )
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(  
+            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches # type: ignore
+        ) 
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
@@ -398,12 +397,12 @@ class FGRFinetuneLightning(LightningModule):
             self.val_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
             self.test_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
         else:
-            self.train_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.val_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.test_auc = torchmetrics.AUROC(num_classes=num_tasks)
-            self.train_f1 = torchmetrics.F1Score(num_classes=num_tasks)
-            self.val_f1 = torchmetrics.F1Score(num_classes=num_tasks)
-            self.test_f1 = torchmetrics.F1Score(num_classes=num_tasks)
+            self.train_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.val_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.test_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
+            self.train_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.val_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.test_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
 
     def load_model(self):
         model = FGRPretrainLightning(2786, 3000, "FGR", [256], 64, 9e-3, 0.12, 0.02)

@@ -1,7 +1,7 @@
 from pytorch_lightning.cli import LightningCLI
 
-from src.data.lightning import FGRDataModule
-from src.model.lightning import FGRFinetuneLightning
+from src.data.data_module import FGRDataModule
+from src.model.lightning_module import FGRFinetuneLightning
 
 
 class FinetuneLightningCLI(LightningCLI):
