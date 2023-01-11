@@ -1,6 +1,5 @@
 """Module for pretraining"""
 from lightning.pytorch.cli import LightningCLI
-import torch
 
 from src.data.data_module import FGRPretrainDataModule
 from src.model.lightning_module import FGRPretrainLightning
@@ -12,7 +11,6 @@ class PretrainLightningCLI(LightningCLI):
 
 
 if __name__ == "__main__":
-    torch.multiprocessing.set_start_method('spawn')
     cli = PretrainLightningCLI(
         model_class=FGRPretrainLightning,
         datamodule_class=FGRPretrainDataModule,
