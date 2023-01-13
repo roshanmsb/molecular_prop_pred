@@ -3,9 +3,9 @@
 import dask.dataframe as dd
 import deepchem.molnet as dcm
 import pandas as pd
-from deepchem.splits.splitters import (RandomStratifiedSplitter,
-                                       ScaffoldSplitter)
+from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
 from lightning.pytorch import LightningDataModule
+from nonechucks import SafeDataLoader, SafeDataset
 from rdkit.Chem import Descriptors
 from rdkit.Chem.rdmolfiles import MolFromSmarts
 from tokenizers import Tokenizer
@@ -170,15 +170,15 @@ class FGRPretrainDataModule(LightningDataModule):
         self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file(
             self.root + "tokenizer_bpe.json"
         )
-        self.train_fold = FGRPretrainDataset(
-            self.train, self.fgroups_list, self.tokenizer, self.method
+        self.train_fold = SafeDataset(
+            FGRPretrainDataset(self.train, self.fgroups_list, self.tokenizer, self.method)
         )
-        self.val_fold = FGRPretrainDataset(
-            self.valid, self.fgroups_list, self.tokenizer, self.method
+        self.val_fold = SafeDataset(
+            FGRPretrainDataset(self.valid, self.fgroups_list, self.tokenizer, self.method)
         )
 
     def train_dataloader(self):
-        loader = DataLoader(
+        loader = SafeDataLoader(
             self.train_fold,
             batch_size=self.batch_size,
             shuffle=False,
@@ -189,7 +189,7 @@ class FGRPretrainDataModule(LightningDataModule):
         return loader
 
     def val_dataloader(self):
-        loader = DataLoader(
+        loader = SafeDataLoader(
             self.val_fold,
             batch_size=self.batch_size,
             shuffle=False,
