@@ -3,8 +3,7 @@
 import dask.dataframe as dd
 import deepchem.molnet as dcm
 import pandas as pd
-from deepchem.splits.splitters import (RandomStratifiedSplitter,
-                                       ScaffoldSplitter)
+from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
 from lightning.pytorch import LightningDataModule
 from rdkit.Chem import Descriptors
 from rdkit.Chem.rdmolfiles import MolFromSmarts
@@ -173,6 +172,7 @@ class FGRPretrainDataModule(LightningDataModule):
         self.train_fold = FGRPretrainDataset(
             self.train, self.fgroups_list, self.tokenizer, self.method
         )
+
         self.val_fold = FGRPretrainDataset(
             self.valid, self.fgroups_list, self.tokenizer, self.method
         )

@@ -8,3 +8,4 @@ wandb
 __pycache__
 lightning_logs
 *ipynb
+Pretrain_Pubchem
