@@ -1,0 +1,88 @@
+# pytorch_lightning==1.8.1
+seed_everything: 123
+trainer:
+  logger:
+    - class_path: lightning.pytorch.loggers.WandbLogger
+      init_args:
+        project: Pretrain_pubchem
+  callbacks:
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
+      init_args:
+        monitor: val_loss
+        verbose: true
+        mode: min
+        save_last: true
+        auto_insert_metric_name: true
+    - class_path: src.model.lightning_module.Finetuning
+      init_args:
+        unfreeze_at_epoch: 15
+  enable_checkpointing: true
+  default_root_dir: null
+  gradient_clip_val: null
+  gradient_clip_algorithm: null
+  num_nodes: 1
+  num_processes: null
+  devices: 1
+  gpus: null
+  auto_select_gpus: false
+  tpu_cores: null
+  ipus: null
+  enable_progress_bar: true
+  overfit_batches: 0.0
+  track_grad_norm: -1
+  check_val_every_n_epoch: 1
+  fast_dev_run: false
+  accumulate_grad_batches: null
+  max_epochs: 100
+  min_epochs: null
+  max_steps: -1
+  min_steps: null
+  max_time: null
+  limit_train_batches: null
+  limit_val_batches: null
+  limit_test_batches: null
+  limit_predict_batches: null
+  val_check_interval: null
+  log_every_n_steps: 50
+  accelerator: gpu
+  strategy: null
+  sync_batchnorm: false
+  precision: 16
+  enable_model_summary: true
+  num_sanity_val_steps: 2
+  resume_from_checkpoint: null
+  profiler: null
+  benchmark: null
+  deterministic: null
+  reload_dataloaders_every_n_epochs: 0
+  auto_lr_find: false
+  replace_sampler_ddp: true
+  detect_anomaly: false
+  auto_scale_batch_size: false
+  plugins: null
+  amp_backend: native
+  amp_level: null
+  move_metrics_to_cpu: false
+  multiple_trainloader_mode: max_size_cycle
+  inference_mode: true
+model:
+  checkpoint_path: Pretrain_Pubchem/lna45gyo/checkpoints/last.ckpt
+  num_feat_dim: 208
+  bottleneck_dim: 64
+  method: FG
+  output_dims:
+  - 32
+  dropout: 0.5
+  lr: 1e-2
+  weight_decay: 0.1
+  milestones: 15
+  task_name: delaney
+data:
+  root: datasets/processed/
+  task_name: delaney
+  batch_size: 16
+  num_workers: 16
+  pin_memory: true
+  split_type: scaffold
+  num_folds: 5
+  fold_index: 0

@@ -1,0 +1,24 @@
+program: tune.py
+method: bayes
+metric:
+  name: val_loss
+  goal: minimize
+parameters:
+  lr:
+    distribution: log_uniform_values
+    min: 1e-6
+    max: 1e-2
+  max_lr:
+    distribution: log_uniform_values
+    min: 1e-4
+    max: 1e-1
+  weight_decay:
+    distribution: log_uniform_values
+    min: 1e-3
+    max: 0.9
+  n_layers:
+    values: [1, 2, 3]
+  hidden_size:
+    values: [256, 512, 1024]
+  bottleneck_dim:
+    values: [4, 16, 32, 64]

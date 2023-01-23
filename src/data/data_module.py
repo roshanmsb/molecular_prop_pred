@@ -1,17 +1,18 @@
 """Module for lightning datamodules"""
 
-from rdkit.Chem.rdmolfiles import MolFromSmarts
-from rdkit.Chem import Descriptors
-import pandas as pd
 import dask.dataframe as dd
-from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
 import deepchem.molnet as dcm
-from torch.utils.data import DataLoader, Subset
-from pytorch_lightning import LightningDataModule
+import pandas as pd
+from deepchem.splits.splitters import RandomStratifiedSplitter, ScaffoldSplitter
+from lightning.pytorch import LightningDataModule
+from rdkit.Chem import Descriptors
+from rdkit.Chem.rdmolfiles import MolFromSmarts
 from tokenizers import Tokenizer
 from tokenizers.models import BPE
+from torch.utils.data import DataLoader, Subset
+
+from src.data.datasets import FGRDataset, FGRPretrainDataset
 from src.utils import util_funcs
-from src.data.make_datasets import FGRDataset, FGRPretrainDataset
 
 
 class FGRDataModule(LightningDataModule):
@@ -54,7 +55,7 @@ class FGRDataModule(LightningDataModule):
         self.fold_index = fold_index
         self.method = method
 
-    def prepare_data(self) -> None:
+    def setup(self, stage=None):
         try:
             load_fn = getattr(dcm, "load_%s" % self.task_name)
             data = load_fn(featurizer="raw", splitter=None)[1][0]
@@ -92,8 +93,6 @@ class FGRDataModule(LightningDataModule):
             )
             self.train_ind, self.val_ind, self.test_ind = self.splits[self.fold_index]
             assert len(set(self.train_ind) & set(self.val_ind) & set(self.test_ind)) == 0
-
-    def setup(self, stage=None):
         self.train_fold = Subset(self.dataset, self.train_ind)  # type: ignore
         self.val_fold = Subset(self.dataset, self.val_ind)  # type: ignore
         self.test_fold = Subset(self.dataset, self.test_ind)  # type: ignore
@@ -160,23 +159,20 @@ class FGRPretrainDataModule(LightningDataModule):
         self.method = method
         self.dataset = dataset_name
 
-    def prepare_data(self) -> None:
+    def setup(self, stage=None):
         df = dd.read_parquet(self.root + self.dataset)["SMILES"]
-        print("Reading SMILES")
         self.train, self.valid = df.random_split((0.9, 0.1), random_state=123)  # type: ignore
-        print("Splitting")
-        self.train = self.train.compute().tolist()
-        self.valid = self.valid.compute().tolist()
+        self.train = self.train.compute()
+        self.valid = self.valid.compute()
         fgroups = pd.read_csv(self.root + "fg.csv")["SMARTS"].tolist()
         self.fgroups_list = [MolFromSmarts(x) for x in fgroups]
         self.tokenizer = Tokenizer(BPE(unk_token="[UNK]")).from_file(
             self.root + "tokenizer_bpe.json"
         )
-
-    def setup(self, stage=None):
         self.train_fold = FGRPretrainDataset(
             self.train, self.fgroups_list, self.tokenizer, self.method
         )
+
         self.val_fold = FGRPretrainDataset(
             self.valid, self.fgroups_list, self.tokenizer, self.method
         )
@@ -185,7 +181,7 @@ class FGRPretrainDataModule(LightningDataModule):
         loader = DataLoader(
             self.train_fold,
             batch_size=self.batch_size,
-            shuffle=True,
+            shuffle=False,
             num_workers=self.num_workers,
             pin_memory=self.pin_memory,
             drop_last=True,

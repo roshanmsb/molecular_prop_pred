@@ -1,12 +1,12 @@
 """Module for utility functions"""
 from typing import List
+
 import numpy as np
-from rdkit.Chem.rdmolfiles import MolFromSmiles
 import pandas as pd
+import tokenizers
 from deepchem.data import DiskDataset
 from rdkit import RDLogger
-import tokenizers
-
+from rdkit.Chem.rdmolfiles import MolFromSmiles
 
 lg = RDLogger.logger()
 lg.setLevel(RDLogger.CRITICAL)
