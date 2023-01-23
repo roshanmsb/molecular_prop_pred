@@ -2,20 +2,20 @@
 seed_everything: 123
 trainer:
   logger:
-    - class_path: pytorch_lightning.loggers.WandbLogger
+    - class_path: lightning.pytorch.loggers.WandbLogger
       init_args:
         project: Pretrain_pubchem
   callbacks:
-    - class_path: pytorch_lightning.callbacks.ModelCheckpoint
+    - class_path: lightning.pytorch.callbacks.ModelCheckpoint
       init_args:
         monitor: val_loss
         verbose: true
         mode: min
         save_last: true
         auto_insert_metric_name: true
-    - class_path: src.model.lightning.Finetuning
+    - class_path: src.model.lightning_module.Finetuning
       init_args:
-        unfreeze_at_epoch: 25
+        unfreeze_at_epoch: 15
   enable_checkpointing: true
   default_root_dir: null
   gradient_clip_val: null
@@ -33,7 +33,7 @@ trainer:
   check_val_every_n_epoch: 1
   fast_dev_run: false
   accumulate_grad_batches: null
-  max_epochs: 50
+  max_epochs: 100
   min_epochs: null
   max_steps: -1
   min_steps: null
@@ -66,25 +66,22 @@ trainer:
   multiple_trainloader_mode: max_size_cycle
   inference_mode: true
 model:
-  checkpoint_path: test
-  fg_input_dim: 2786
-  mfg_input_dim: 3000
+  checkpoint_path: Pretrain_Pubchem/lna45gyo/checkpoints/last.ckpt
   num_feat_dim: 208
   bottleneck_dim: 64
-  num_tasks: 1
-  method: FGR
-  regression: false
+  method: FG
   output_dims:
   - 32
-  dropout: 0.4
+  dropout: 0.5
   lr: 1e-2
   weight_decay: 0.1
-  max_lr: 1e-2
+  milestones: 15
+  task_name: delaney
 data:
   root: datasets/processed/
-  task_name: ecoli
+  task_name: delaney
   batch_size: 16
-  num_workers: 32
+  num_workers: 16
   pin_memory: true
   split_type: scaffold
   num_folds: 5

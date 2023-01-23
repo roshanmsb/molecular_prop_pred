@@ -77,6 +77,6 @@ model:
 data:
   root: datasets/processed/
   dataset_name: pubchem
-  batch_size: 256
-  num_workers: 20
+  batch_size: 32
+  num_workers: 16
   pin_memory: true

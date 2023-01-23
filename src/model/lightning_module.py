@@ -83,12 +83,12 @@ class FGRLightning(LightningModule):
             self.val_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
             self.test_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
         else:
-            self.train_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.val_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.test_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.train_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
-            self.val_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
-            self.test_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.train_auc = torchmetrics.AUROC(task="binary", num_classes=num_tasks)
+            self.val_auc = torchmetrics.AUROC(task="binary", num_classes=num_tasks)
+            self.test_auc = torchmetrics.AUROC(task="binary", num_classes=num_tasks)
+            self.train_f1 = torchmetrics.F1Score(task="binary", num_classes=num_tasks)
+            self.val_f1 = torchmetrics.F1Score(task="binary", num_classes=num_tasks)
+            self.test_f1 = torchmetrics.F1Score(task="binary", num_classes=num_tasks)
 
     def forward(self, fgr=None, num_feat=None):
         if self.method != "FGR_desc":
@@ -102,7 +102,8 @@ class FGRLightning(LightningModule):
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
         scheduler = torch.optim.lr_scheduler.OneCycleLR(
-            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches) # type: ignore
+            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches  # type: ignore
+        )
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
@@ -142,7 +143,12 @@ class FGRLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_r2", self.train_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "train_r2",
+                self.train_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         else:
             y_true = y_true.int()
@@ -157,7 +163,12 @@ class FGRLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_f1", self.train_f1, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "train_f1",
+                self.train_f1,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         return loss
 
@@ -182,7 +193,12 @@ class FGRLightning(LightningModule):
                 "val_mae", self.val_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "val_r2", self.val_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "val_r2",
+                self.val_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         else:
             y_true = y_true.int()
@@ -216,7 +232,12 @@ class FGRLightning(LightningModule):
                 "test_mae", self.test_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "test_r2", self.test_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "test_r2",
+                self.test_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
 
         else:
@@ -261,7 +282,11 @@ class FGRPretrainLightning(LightningModule):
         super().__init__()
         self.save_hyperparameters()
         self.net = FGRPretrainModel(
-            fg_input_dim, mfg_input_dim, hidden_dims, bottleneck_dim, method,
+            fg_input_dim,
+            mfg_input_dim,
+            hidden_dims,
+            bottleneck_dim,
+            method,
         )
         self.l_r = lr
         self.method = method
@@ -276,9 +301,9 @@ class FGRPretrainLightning(LightningModule):
         optimizer = torch.optim.AdamW(
             self.parameters(), lr=self.l_r, weight_decay=self.weight_decay
         )
-        scheduler = torch.optim.lr_scheduler.OneCycleLR(  
-            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches # type: ignore
-        ) 
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+            optimizer, max_lr=self.max_lr, total_steps=self.trainer.estimated_stepping_batches  # type: ignore
+        )
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
@@ -286,7 +311,12 @@ class FGRPretrainLightning(LightningModule):
         _, recon = self(fgr)
         loss = sigmoid_focal_loss(recon, fgr, reduction="mean")
         self.log(
-            "train_loss", loss, on_step=True, on_epoch=True, prog_bar=True, logger=True,
+            "train_loss",
+            loss,
+            on_step=True,
+            on_epoch=True,
+            prog_bar=True,
+            logger=True,
         )
         return loss
 
@@ -295,7 +325,12 @@ class FGRPretrainLightning(LightningModule):
         _, recon = self(fgr)
         loss = sigmoid_focal_loss(recon, fgr, reduction="mean")
         self.log(
-            "val_loss", loss, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+            "val_loss",
+            loss,
+            on_step=False,
+            on_epoch=True,
+            prog_bar=True,
+            logger=True,
         )
 
 
@@ -314,36 +349,54 @@ class Finetuning(BaseFinetuning):
         if current_epoch == self._unfreeze_at_epoch:
             print("Unfreezing encoder")
             self.unfreeze_and_add_param_group(
-                modules=pl_module.encoder, optimizer=optimizer, train_bn=True,
+                modules=pl_module.encoder,
+                optimizer=optimizer,
+                train_bn=True,
             )
 
 
 class FGRFinetuneLightning(LightningModule):
     """Lightning module for finetuning"""
 
+    task_dict = {
+        "bbbp": [1, "binary", False],
+        "bace_classification": [1, "binary", False],
+        "ecoli": [1, "binary", False],
+        "aa_746": [1, "binary", False],
+        "aa_1625": [1, "binary", False],
+        "impens": [1, "binary", False],
+        "mpro": [1, "binary", False],
+        "schilling": [1, "binary", False],
+        "sider": [27, "multilabel", False],
+        "tox21": [12, "multilabel", False],
+        "toxcast": [617, "multilabel", False],
+        "clintox": [2, "multilabel", False],
+        "delaney": [1, "", True],
+        "lipo": [1, "", True],
+        "freesolv": [1, "", True],
+        "qm7": [1, "", True],
+        "qm8": [16, "", True],
+        "qm9": [12, "", True],
+    }
+
     def __init__(
         self,
         checkpoint_path: str,
-        fg_input_dim: int,
-        mfg_input_dim: int,
         num_feat_dim: int,
         bottleneck_dim: int,
-        num_tasks: int,
         method: str,
-        regression: bool,
         output_dims: List[int],
         dropout: float,
         lr: float,
         weight_decay: float,
-        max_lr: float,
+        milestones: int,
+        task_name: str,
         **kwargs
     ):
         """Initialize the FGR model
 
         Args:
             checkpoint_path (str): Path to checkpoint
-            fg_input_dim (int): Input dimension for FG
-            mfg_input_dim (int): Input dimension for MFG
             num_feat_dim (int): Input dimension for RDKit features
             bottleneck_dim (int): Bottleneck dimension
             num_tasks (int): Number of tasks for each dataset
@@ -353,34 +406,29 @@ class FGRFinetuneLightning(LightningModule):
             dropout (float): Dropout for each layer
             lr (float): Learning rate for optimizer
             weight_decay (float): Weight decay for optimizer
-            max_lr (float): Maximum learning rate for scheduler
+            milestones (int): Number of epochs to freeze encoder
+            task_name: (str): Name of the task
         """
 
         super().__init__()
         self.save_hyperparameters()
-        self.encoder = self.load_model()
 
         if method == "FGR_desc":
             fcn_input_dim = bottleneck_dim + num_feat_dim
         else:
             fcn_input_dim = bottleneck_dim
 
+        self.checkpoint_path = checkpoint_path
+        self.milestones = milestones
         self.dropout = nn.Dropout(dropout)
-        layers = []
-        for output_dim in output_dims:
-            layers.extend(
-                [nn.Linear(fcn_input_dim, output_dim), nn.BatchNorm1d(output_dim), nn.SiLU()]
-            )
-            fcn_input_dim = output_dim
-
-        layers.extend([self.dropout, nn.Linear(fcn_input_dim, num_tasks)])
-
-        self.predictor = nn.Sequential(*layers)
         self.l_r = lr
         self.method = method
-        self.regression = regression
         self.weight_decay = weight_decay
-        self.max_lr = max_lr
+        num_tasks, task_type, self.regression = self.task_dict[task_name]
+
+        self.encoder = self.load_model()
+        self.predictor = self.build_predictor(output_dims, fcn_input_dim, num_tasks)
+
         if self.regression:
             self.criterion = nn.SmoothL1Loss()
         else:
@@ -397,18 +445,39 @@ class FGRFinetuneLightning(LightningModule):
             self.val_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
             self.test_r2 = torchmetrics.R2Score(num_outputs=num_tasks)
         else:
-            self.train_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.val_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.test_auc = torchmetrics.AUROC(task = 'binary',num_classes=num_tasks)
-            self.train_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
-            self.val_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
-            self.test_f1 = torchmetrics.F1Score(task = 'binary',num_classes=num_tasks)
+            self.train_auc = torchmetrics.AUROC(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
+            self.val_auc = torchmetrics.AUROC(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
+            self.test_auc = torchmetrics.AUROC(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
+            self.train_f1 = torchmetrics.F1Score(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
+            self.val_f1 = torchmetrics.F1Score(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
+            self.test_f1 = torchmetrics.F1Score(
+                task=task_type, num_classes=num_tasks, num_labels=num_tasks
+            )
 
     def load_model(self):
-        model = FGRPretrainLightning(2786, 3000, "FGR", [256], 64, 9e-3, 0.12, 0.02)
-        checkpoint = torch.load("checkpoints/pretrain.ckpt")
-        model.load_state_dict(checkpoint["state_dict"])
+        model = FGRPretrainLightning.load_from_checkpoint(self.checkpoint_path)
         return model.net.encoder
+
+    def build_predictor(self, output_dims, fcn_input_dim, num_tasks):
+        layers = []
+        for output_dim in output_dims:
+            layers.extend(
+                [nn.Linear(fcn_input_dim, output_dim), nn.BatchNorm1d(output_dim), nn.SiLU()]
+            )
+            fcn_input_dim = output_dim
+
+        layers.extend([self.dropout, nn.Linear(fcn_input_dim, num_tasks)])
+        return nn.Sequential(*layers)
 
     def forward(self, fgr=None, num_feat=None):
         if self.method != "FGR_desc":
@@ -428,7 +497,9 @@ class FGRFinetuneLightning(LightningModule):
             lr=self.l_r,
             weight_decay=self.weight_decay,
         )
-        scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[5], gamma=1e-2)
+        scheduler = torch.optim.lr_scheduler.MultiStepLR(
+            optimizer, milestones=[self.milestones], gamma=1e-1
+        )
         return [optimizer], [scheduler]
 
     def training_step(self, batch, batch_idx):
@@ -466,7 +537,12 @@ class FGRFinetuneLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_r2", self.train_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "train_r2",
+                self.train_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         else:
             y_true = y_true.int()
@@ -481,7 +557,12 @@ class FGRFinetuneLightning(LightningModule):
                 logger=True,
             )
             self.log(
-                "train_f1", self.train_f1, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "train_f1",
+                self.train_f1,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         return loss
 
@@ -510,7 +591,12 @@ class FGRFinetuneLightning(LightningModule):
                 "val_mae", self.val_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "val_r2", self.val_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "val_r2",
+                self.val_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
         else:
             y_true = y_true.int()
@@ -548,7 +634,12 @@ class FGRFinetuneLightning(LightningModule):
                 "test_mae", self.test_mae, on_step=False, on_epoch=True, prog_bar=True, logger=True
             )
             self.log(
-                "test_r2", self.test_r2, on_step=False, on_epoch=True, prog_bar=True, logger=True,
+                "test_r2",
+                self.test_r2,
+                on_step=False,
+                on_epoch=True,
+                prog_bar=True,
+                logger=True,
             )
 
         else:

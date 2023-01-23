@@ -1,4 +1,4 @@
-from pytorch_lightning.cli import LightningCLI
+from lightning.pytorch.cli import LightningCLI
 
 from src.data.data_module import FGRDataModule
 from src.model.lightning_module import FGRFinetuneLightning
@@ -16,6 +16,5 @@ if __name__ == "__main__":
         save_config_callback=None,
         run=False,
     )
-    cli.trainer.fit(cli.model, cli.datamodule)
+    cli.trainer.fit(cli.model, cli.datamodule)  # type: ignore
     cli.trainer.test(cli.model, cli.datamodule, ckpt_path="best")
-
